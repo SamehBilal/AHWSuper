@@ -1,138 +1,110 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-white dark:bg-zinc-800" data-theme="light">
+    <body class="min-h-screen bg-white dark:bg-zinc-800" x-data>
         <input type="hidden" name="userId" value="{{ auth()->user()->id ?? '' }}" />
 
-        <flux:sidebar sticky stashable class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
-            <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
+
+        <x-mary-nav sticky full-width >
+
+        <x-slot:brand>
+            {{-- Drawer toggle for "main-drawer" --}}
+            <label for="main-drawer" class="lg:hidden mr-3">
+                <x-mary-icon name="o-bars-3" class="cursor-pointer" />
+            </label>
+
+            {{-- Brand --}}
             <a href="{{ route('dashboard') }}" class="me-5 flex items-center space-x-2 rtl:space-x-reverse" wire:navigate>
                 <x-app-logo />
             </a>
+        </x-slot:brand>
 
-            <flux:navlist variant="outline">
-                <flux:navlist.group :heading="__('Platform')" class="grid">
-                    <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
-                </flux:navlist.group>
-            </flux:navlist>
+        {{-- Right side actions --}}
+        <x-slot:actions>
+                <x-mary-theme-toggle  class="btn btn-circle" />
+ <x-mary-button label="Search" @click.stop="$dispatch('mary-search-open')" />
+            <x-mary-button label="Messages" icon="o-envelope" link="###" class="btn-ghost btn-sm" responsive />
+            <x-mary-button label="Notifications" icon="o-bell" link="###" class="btn-ghost btn-sm" responsive />
+            <x-mary-dropdown label="{{ auth()->user()->name }}" {{-- icon="o-bell" --}} class="btn-ghost btn-sm" responsive >
+                <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" title="{{ auth()->user()->name }}" subtitle="{{ auth()->user()->email }}" class="!w-10" />
 
-            <flux:spacer />
+                {{-- By default any click closes dropdown --}}
+                <x-mary-menu-item title="Close after click" />
 
-            <flux:navlist variant="outline">
-                <flux:navlist.item icon="folder-git-2" :href="route('pulse')" :current="request()->routeIs('pulse')">
-                {{ __('Pulse') }}
-                </flux:navlist.item>
+                <x-mary-menu-separator />
 
-                <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                {{ __('Repository') }}
-                </flux:navlist.item>
+                <x-mary-menu-item icon="o-cog-8-tooth" title="Profile" route="settings.profile" link="{{ route('settings.profile') }}" wire:navigate />
 
-                <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
-                {{ __('Documentation') }}
-                </flux:navlist.item>
-            </flux:navlist>
+                {{-- Use `@click.STOP` to stop event propagation --}}
+                <x-mary-menu-item title="Keep open after click" @click.stop="alert('Keep open')" />
 
-            <!-- Desktop User Menu -->
-            <flux:dropdown class="hidden lg:block" position="bottom" align="start">
-                <flux:profile
-                    :name="auth()->user()->name"
-                    :initials="auth()->user()->initials()"
-                    icon:trailing="chevrons-up-down"
-                />
+                {{-- Or `wire:click.stop`  --}}
+                <x-mary-menu-item title="Call wire:click" wire:click.stop="delete" />
 
-                <flux:menu class="w-[220px]">
-                    <flux:menu.radio.group>
-                        <div class="p-0 text-sm font-normal">
-                            <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
-                                <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-lg">
-                                    <span
-                                        class="flex h-full w-full items-center justify-center rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white"
-                                    >
-                                        {{ auth()->user()->initials() }}
-                                    </span>
-                                </span>
+                <x-mary-menu-separator />
 
-                                <div class="grid flex-1 text-start text-sm leading-tight">
-                                    <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
-                                    <span class="truncate text-xs">{{ auth()->user()->email }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </flux:menu.radio.group>
+                <x-mary-menu-item @click.stop="">
+                    <x-mary-checkbox label="Hard mode" hint="Make things harder" />
+                </x-mary-menu-item>
 
-                    <flux:menu.separator />
+                <x-mary-menu-item @click.stop="">
+                    <x-mary-checkbox label="Transparent checkout" hint="Make things easier" />
+                </x-mary-menu-item>
 
-                    <flux:menu.radio.group>
-                        <flux:menu.item :href="route('settings.profile')" icon="cog" wire:navigate>{{ __('Settings') }}</flux:menu.item>
-                    </flux:menu.radio.group>
-
-                    <flux:menu.separator />
-
-                    <form method="POST" action="{{ route('logout') }}" class="w-full">
+                <form id="logout" method="POST" action="{{ route('logout') }}" class="w-full">
                         @csrf
-                        <flux:menu.item as="button" type="submit" icon="arrow-right-start-on-rectangle" class="w-full">
-                            {{ __('Log Out') }}
-                        </flux:menu.item>
+{{--                         <x-mary-button label="{{ __('Log Out') }}"  type="submit" icon="o-envelope" link="###" class="btn-ghost w-full" responsive />
+ --}}                        <x-mary-menu-item icon="o-arrow-right-start-on-rectangle" title="Log Out" class="w-full" wire:submit="#logout" />
                     </form>
-                </flux:menu>
-            </flux:dropdown>
-        </flux:sidebar>
+            </x-mary-dropdown>
 
-        <!-- Mobile User Menu -->
-        <flux:header class="lg:hidden">
-            <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
+        </x-slot:actions>
+    </x-mary-nav>
 
-            <flux:spacer />
+    {{-- The main content with `full-width` --}}
+    <x-mary-main with-nav full-width>
 
-            <flux:dropdown position="top" align="end">
-                <flux:profile
-                    :initials="auth()->user()->initials()"
-                    icon-trailing="chevron-down"
-                />
+        {{-- This is a sidebar that works also as a drawer on small screens --}}
+        {{-- Notice the `main-drawer` reference here --}}
+        <x-slot:sidebar drawer="main-drawer" collapsible class="bg-base-200 border-e border-zinc-200">
 
-                <flux:menu>
-                    <flux:menu.radio.group>
-                        <div class="p-0 text-sm font-normal">
-                            <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
-                                <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-lg">
-                                    <span
-                                        class="flex h-full w-full items-center justify-center rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white"
-                                    >
-                                        {{ auth()->user()->initials() }}
-                                    </span>
-                                </span>
+            {{-- User --}}
+            @if($user = auth()->user())
+                <x-mary-list-item :item="$user" value="name" sub-value="email" no-separator no-hover class="pt-2">
+                    <x-slot:actions>
+                        <x-mary-button icon="o-power" class="btn-circle btn-ghost btn-xs" tooltip-left="logoff" no-wire-navigate link="/logout" />
+                    </x-slot:actions>
+                </x-mary-list-item>
 
-                                <div class="grid flex-1 text-start text-sm leading-tight">
-                                    <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
-                                    <span class="truncate text-xs">{{ auth()->user()->email }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </flux:menu.radio.group>
+                <x-mary-menu-separator />
+            @endif
 
-                    <flux:menu.separator />
+            {{-- Activates the menu item when a route matches the `link` property --}}
+            <x-mary-menu activate-by-route {{-- active-bg-color="font-black " --}}>
+                <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="dashboard" link="{{ route('dashboard') }}" wire:navigate />
+                <x-mary-menu-item title="Messages" icon="o-envelope" link="###" />
+                <x-mary-menu-sub title="Settings" icon="o-cog-6-tooth">
+                    <x-mary-menu-item title="Wifi" icon="o-wifi" link="####" />
+                    <x-mary-menu-item title="Archives" icon="o-archive-box" link="####" />
+                </x-mary-menu-sub>
+            </x-mary-menu>
+        </x-slot:sidebar>
 
-                    <flux:menu.radio.group>
-                        <flux:menu.item :href="route('settings.profile')" icon="cog" wire:navigate>{{ __('Settings') }}</flux:menu.item>
-                    </flux:menu.radio.group>
+        {{-- The `$slot` goes here --}}
+        <x-slot:content>
+            {{ $slot }}
+        </x-slot:content>
+    </x-mary-main>
 
-                    <flux:menu.separator />
-
-                    <form method="POST" action="{{ route('logout') }}" class="w-full">
-                        @csrf
-                        <flux:menu.item as="button" type="submit" icon="arrow-right-start-on-rectangle" class="w-full">
-                            {{ __('Log Out') }}
-                        </flux:menu.item>
-                    </form>
-                </flux:menu>
-            </flux:dropdown>
-        </flux:header>
-
-        {{ $slot }}
+        {{-- {{ $slot }} --}}
         <x-mary-toast />
-        {{-- @fluxScripts --}}
+        <x-mary-spotlight
+    shortcut="meta.slash"
+    search-text="Find docs, app actions or users"
+    no-results-text="Ops! Nothing here."
+    url="/custom/search/url/here" />
     </body>
 </html>

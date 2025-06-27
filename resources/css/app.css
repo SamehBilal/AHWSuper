@@ -34,7 +34,7 @@
     }
 } */
 
-@layer base {
+/* @layer base {
 
     *,
     ::after,
@@ -43,9 +43,9 @@
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
     }
-}
+} */
 
-[data-flux-field]:not(ui-radio, ui-checkbox) {
+/* [data-flux-field]:not(ui-radio, ui-checkbox) {
     @apply grid gap-2;
 }
 
@@ -57,18 +57,13 @@ input:focus[data-flux-control],
 textarea:focus[data-flux-control],
 select:focus[data-flux-control] {
     @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
-}
+} */
 
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
 
 
-
-/**
-    The lines above are intact.
-    The lines below were added by maryUI installer.
-*/
 
 /** daisyUI */
 @plugin "daisyui" {

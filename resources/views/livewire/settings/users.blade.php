@@ -15,7 +15,7 @@ new class extends Component {
 
 
         // Toast
-        $this->success('We are done, check it out');
+        $this->success('We are done, check it out',position: 'bottom-end');
     }
 
     public function save2()
@@ -26,7 +26,7 @@ new class extends Component {
         // Your stuff here ...
 
         // Toast
-        $this->error('It will last just 1 second ...', timeout: 1000, position: 'toast-bottom toast-start');
+        $this->error('It will last just 1 second ...', timeout: 1000, position: 'bottom-end');
     }
 
     public function save3()
@@ -68,7 +68,7 @@ new class extends Component {
 
 
     <div class="flex flex-wrap gap-4 mb-6">
-            <x-mary-button label="Primary Save" class="btn-primary" wire:click="save" spinner="save" />
+            <x-mary-button label="Primary Save" class="btn-primary btn-sm" wire:click="save" spinner="save" />
             <x-mary-button label="Success Save" class="btn-success" wire:click="save" spinner="save" />
             <x-mary-button label="Quick Error" class="btn-error" wire:click="save2" spinner="save2" />
             <x-mary-button label="Save and redirect" class="btn-primary" wire:click="save3" spinner="save3" />
