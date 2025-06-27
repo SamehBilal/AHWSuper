@@ -60,13 +60,14 @@ new class extends Component {
     }
 }; ?>
 
-<x-roles::layouts.master>
-    <div>
-        <h1>Hello World</h1>
+<section class="w-full">
 
-        <p>Module: {!! config('roles.name') !!}</p>
+    <x-mary-button label="Theme" icon="o-swatch" @click="$dispatch('mary-toggle-theme')" />
+    <x-mary-button label="Like" wire:click="save4" icon="o-heart" spinner />
+    <x-mary-theme-toggle darkTheme="aqua" lightTheme="retro" />
 
-        <div class="flex flex-wrap gap-4 mb-6">
+
+    <div class="flex flex-wrap gap-4 mb-6">
             <x-mary-button label="Primary Save" class="btn-primary" wire:click="save" spinner="save" />
             <x-mary-button label="Success Save" class="btn-success" wire:click="save" spinner="save" />
             <x-mary-button label="Quick Error" class="btn-error" wire:click="save2" spinner="save2" />
@@ -90,5 +91,4 @@ new class extends Component {
                 <x-button label="Cancel" @click="$wire.myModal1 = false" />
             </x-slot:actions>
         </x-modal> --}}
-    </div>
-</x-roles::layouts.master>
+</section>
