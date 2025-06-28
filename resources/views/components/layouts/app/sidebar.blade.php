@@ -102,9 +102,7 @@
         {{-- {{ $slot }} --}}
         <x-mary-toast />
         <x-mary-spotlight
-    shortcut="meta.slash"
     search-text="Find docs, app actions or users"
-    no-results-text="Ops! Nothing here."
-    url="/custom/search/url/here" />
+    no-results-text="Ops! Nothing here." />
     </body>
 </html>
