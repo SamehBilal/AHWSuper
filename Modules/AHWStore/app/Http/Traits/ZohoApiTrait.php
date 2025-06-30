@@ -10,16 +10,16 @@ trait ZohoApiTrait
     protected function getZohoSettings()
     {
         // You may want to cache this for performance
-        /* APIToken::create([
+        APIToken::create([
             'provider' => 'zoho',
-            'access_token' => "1000.1685ebee15bedccfd1f47b68696e2c93.05005168c761e5c92ddba83285a14d4f",
-            'refresh_token' => "",
+            'access_token' => "1000.85073680498199de0be185d29ee85dde.11c0d2a969e5d121c8bee1d86a7c3cf5",
+            'refresh_token' => "1000.f0c22e43e9ccf7ca8188d555e82a659d.f6db102137d5c09226e11020601e3b40",
             'client_id' => '1000.GTDDX00LS0Q7U9XEX2IVM1KESLWVLI',
             'client_secret' => 'e1945c2ffd9b07fc412041ad3ed8126188cbfb0372',
             'redirect_url' => 'http://127.0.0.1:8000/auth/zoho/callback',
             'base_url' => "https://www.zohoapis.com/inventory/v1/",
             'organization_id' => "889324195",
-        ]); */
+        ]);
 
         /* https://accounts.zoho.com/oauth/v2/auth?
                 scope=ZohoInventory.fullaccess.all&
@@ -27,6 +27,7 @@ trait ZohoApiTrait
                 response_type=code&access_type=offline&prompt=consent&
                 redirect_uri=http://127.0.0.1:8000/auth/zoho/callback */
         $settings = APIToken::where('provider', 'zoho')->first();
+         /* dd($settings); */
         if (!$settings) {
             // Handle the case where settings are not found
             return response()->json(['error' => 'Zoho settings not found'], 404);

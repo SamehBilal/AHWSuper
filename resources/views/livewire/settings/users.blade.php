@@ -8,6 +8,28 @@ new class extends Component {
 
     public bool $myModal1 = false;
 
+     /*   protected $listeners = ['show-toast' => 'savet'];
+
+    public function savet($data)
+    {
+        $type = $data['type'] ?? 'info';
+        $title = $data['title'] ?? 'Notification';
+        $description = $data['description'] ?? '';
+        $position = $data['position'] ?? 'toast-top toast-end';
+        $timeout = $data['timeout'] ?? 5000;
+
+
+         match($type) {
+            'success' => $this->success($title, $description, position: $position, timeout: $timeout),
+            'error' => $this->error($title, $description, position: $position, timeout: $timeout),
+            'warning' => $this->warning($title, $description, position: $position, timeout: $timeout),
+            'info' => $this->info($title, $description, position: $position, timeout: $timeout),
+            default => $this->info($title, $description, position: $position, timeout: $timeout),
+        };
+        // Toast
+        //$this->success('We are done, check it out', position: 'bottom-end');
+    } */
+
     public function save()
     {
         // Simulate some processing time

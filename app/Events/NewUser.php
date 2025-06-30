@@ -30,9 +30,9 @@ class NewUser implements ShouldBroadcast
     public function broadcastOn(): array
     {
         return [
-            //new Channel('Live-Updates'),
+            new Channel('Live-Updates'),
             //new PrivateChannel('channel-name'),
-            new PrivateChannel('users.2'),
+            //new PrivateChannel('users.2'),
         ];
     }
 }

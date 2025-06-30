@@ -1,18 +1,18 @@
 <?php
 
-namespace Modules\AHWStore\Http\Controllers;
+namespace Modules\AHWStore\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AHWStoreController extends Controller
+class ItemsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('ahwstore::index');
+        return view('ahwstore::items.index');
     }
 
     /**

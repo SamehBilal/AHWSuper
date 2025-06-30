@@ -5,9 +5,12 @@ namespace App\Support;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Blade;
+use Modules\AHWStore\Http\Traits\ZohoApiTrait;
+use Exception;
 
 class Spotlight
 {
+    use ZohoApiTrait;
     public function search(Request $request)
     {
         // Example of security concern
@@ -30,12 +33,30 @@ class Spotlight
                 ->get()
                 ->map(function (User $user) {
                     return [
-                        'avatar' => $user->profile_picture,
+                        'avatar' => $user->profile_picture ?? "https://avatar.iran.liara.run/public",
                         'name' => $user->name,
                         'description' => $user->email,
                         'link' => "/users/{$user->id}"
                     ];
                 });
+    }
+
+    public function items(string $search = '')
+    {
+        try {
+            $response = $this->zohoRequest('items');
+            $data = $response->json();
+            return $data['items']->map(function ($item) {
+                    return [
+                        'avatar' => $item->profile_picture ?? "https://avatar.iran.liara.run/public",
+                        'name' => $item->name,
+                        'description' => $item->email,
+                        'link' => "/users/{$item->id}"
+                    ];
+                });
+        } catch (Exception $e) {
+            return response()->json(['error' => 'Failed to fetch items: ' . $e->getMessage()], 500);
+        }
     }
 
     // Static search, but it could come from a database

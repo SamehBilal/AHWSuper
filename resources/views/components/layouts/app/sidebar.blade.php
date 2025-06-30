@@ -28,11 +28,24 @@
         {{-- Right side actions --}}
         <x-slot:actions>
             <x-mary-theme-toggle class="btn btn-circle" />
-            <x-mary-button label="Search" @click.stop="$dispatch('mary-search-open')" />
-            <x-mary-button label="Messages" icon="o-envelope" link="###" class="btn-ghost btn-sm" responsive />
-            <x-mary-button label="Notifications" icon="o-bell" link="###" class="btn-ghost btn-sm" responsive />
-            <x-mary-dropdown label="{{ auth()->user()->name }}" {{-- icon="o-bell" --}} class="btn-ghost btn-sm"
-                responsive>
+            {{-- <x-mary-button icon="o-magnifying-glass" label="Search" @click.stop="$dispatch('mary-search-open')" /> --}}
+            {{-- <x-mary-button label="Messages" icon="o-envelope" link="###" class="btn-ghost btn-sm" responsive /> --}}
+            <x-mary-button icon="o-magnifying-glass" class="btn-primary-content btn-dash" @click.stop="$dispatch('mary-search-open')">
+                Search...
+            </x-mary-button>
+            <x-mary-menu-separator />
+            <x-mary-dropdown>
+                <x-slot:trigger>
+                    <x-mary-button icon="o-bell" class="btn-circle" />
+                </x-slot:trigger>
+
+                <x-mary-menu-item title="Archive" />
+                <x-mary-menu-item title="Move" />
+            </x--dropdown>
+            <x-mary-dropdown {{-- label="{{ auth()->user()->name }}" --}} {{-- icon="o-bell" --}} class="btn-ghost btn-sm" responsive right>
+                <x-slot:trigger>
+                    <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" class="!w-10" />
+                </x-slot:trigger>
                 <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" title="{{ auth()->user()->name }}"
                     subtitle="{{ auth()->user()->email }}" class="!w-10" />
 
@@ -82,6 +95,9 @@
             @if ($user = auth()->user())
                 <x-mary-list-item :item="$user" value="name" sub-value="email" no-separator no-hover
                     class="pt-2">
+                    <x-slot:avatar>
+                        <x-avatar {{-- :image="'https://avatar.iran.liara.run/public'" --}} placeholder="RT" alt="My image" />
+                    </x-slot:avatar>
                     <x-slot:actions>
                         <x-mary-button icon="o-power" class="btn-circle btn-ghost btn-xs" tooltip-left="logoff"
                             no-wire-navigate link="/logout" />
@@ -95,7 +111,21 @@
             <x-mary-menu activate-by-route {{-- active-bg-color="font-black " --}}>
                 <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="dashboard"
                     link="{{ route('dashboard') }}" wire:navigate />
-                <x-mary-menu-item title="Messages" icon="o-envelope" link="###" />
+                <x-mary-menu-item title="{{ __('Items') }}" icon="o-shopping-cart" route="ahwstore.items.index"
+                    link="{{ route('ahwstore.items.index') }}" wire:navigate />
+                <x-mary-menu-item title="{{ __('Invoices') }}" icon="o-document-currency-dollar"
+                    route="ahwstore.invoices.index" link="{{ route('ahwstore.invoices.index') }}" wire:navigate />
+                <x-mary-menu-item title="{{ __('Customers') }}" icon="o-user-group" route="ahwstore.customers.index"
+                    link="{{ route('ahwstore.customers.index') }}" wire:navigate />
+                <x-mary-menu-item title="{{ __('Vendors') }}" icon="o-users" route="ahwstore.vendors.index"
+                    link="{{ route('ahwstore.vendors.index') }}" wire:navigate />
+                <x-mary-menu-item title="{{ __('Purchase orders') }}" icon="o-document-plus"
+                    route="ahwstore.purchase-orders.index" link="{{ route('ahwstore.purchase-orders.index') }}"
+                    wire:navigate />
+                <x-mary-menu-item title="{{ __('Sales orders') }}" icon="o-clipboard-document-list"
+                    route="ahwstore.sales-orders.index" link="{{ route('ahwstore.sales-orders.index') }}"
+                    wire:navigate />
+                {{-- <x-mary-menu-item title="Messages" icon="o-envelope" link="###" /> --}}
                 <x-mary-menu-sub title="Settings" icon="o-cog-6-tooth">
                     <x-mary-menu-item title="Wifi" icon="o-wifi" link="####" />
                     <x-mary-menu-item title="Archives" icon="o-archive-box" link="####" />
@@ -110,6 +140,7 @@
     </x-mary-main>
 
     {{-- {{ $slot }} --}}
+    <livewire:toast-handler />
     <x-mary-toast />
     <x-mary-spotlight search-text="Find docs, app actions or users" no-results-text="Ops! Nothing here." />
 </body>

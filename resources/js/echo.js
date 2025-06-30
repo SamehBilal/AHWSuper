@@ -16,6 +16,13 @@ window.Echo = new Echo({
 window.Echo.channel('Live-Updates')
 .listen('NewUser', (e) => {
     console.log('New event received:', e);
+     window.Livewire.dispatch('show-toast', {
+        type: 'success',
+        title: 'New User!',
+        description: e.message,
+        position: 'toast-bottom toast-end',
+        timeout: 5000
+    });
     alert(e.message)
 });
 
