@@ -5,6 +5,7 @@ import { join,relative,dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 export default defineConfig({
+    publicDir: __dirname + '/resources/assets',
     build: {
         outDir: '../../public/build-roles',
         emptyOutDir: true,
@@ -15,7 +16,7 @@ export default defineConfig({
             publicDirectory: '../../public',
             buildDirectory: 'build-roles',
             input: [
-                __dirname + '/resources/assets/sass/app.css',
+                __dirname + '/resources/assets/css/app.css',
                 __dirname + '/resources/assets/js/app.js'
             ],
             refresh: true,
