@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="x-mary-UA-Compatible" content="IE=edge">
 
-    <title>Roles Module - {{ config('app.name', 'Laravel') }}</title>
+    <title>Roles Module - {{ config('app.name', 'Arabhardware') }}</title>
 
     <meta name="description" content="{{ $description ?? '' }}">
     <meta name="keywords" content="{{ $keywords ?? '' }}">
