@@ -17,8 +17,9 @@ new class extends Component {
     {
         $this->list = collect($this->items());
         $this->headers = [
-            ['key' => 'item_id', 'label' => 'ID'],
-            ['key' => 'item_name', 'label' => 'Name'],
+            ['key' => 'name', 'label' => 'Name'],
+            ['key' => 'sku', 'label' => 'SKU'],
+            ['key' => 'status', 'label' => 'Status'],
         ];
     }
 
