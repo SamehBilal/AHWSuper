@@ -75,41 +75,21 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
     <x-auth-session-status class="text-center" :status="session('status')" />
 
     <form wire:submit="resetPassword" class="flex flex-col gap-6">
-        <!-- Email Address -->
-        <flux:input
-            wire:model="email"
-            :label="__('Email')"
-            type="email"
-            required
-            autocomplete="email"
-        />
+       <!-- Email Address -->
+        <x-mary-input :label="__('Email address')" type="email" wire:model="email" placeholder="email@example.com" inline clearable
+            required autofocus autocomplete="email" />
 
         <!-- Password -->
-        <flux:input
-            wire:model="password"
-            :label="__('Password')"
-            type="password"
-            required
-            autocomplete="new-password"
-            :placeholder="__('Password')"
-            viewable
-        />
+        <x-mary-password :label="__('Password')" wire:model="password" :placeholder="__('Password')" password-icon="o-lock-closed"
+            password-visible-icon="o-lock-open" inline right required autocomplete="current-password" />
 
         <!-- Confirm Password -->
-        <flux:input
-            wire:model="password_confirmation"
-            :label="__('Confirm password')"
-            type="password"
-            required
-            autocomplete="new-password"
-            :placeholder="__('Confirm password')"
-            viewable
-        />
+        <x-mary-password :label="__('Confirm Password')" wire:model="password_confirmation" :placeholder="__('Confirm Password')" password-icon="o-lock-closed"
+            password-visible-icon="o-lock-open" inline right required autocomplete="new-password" />
 
         <div class="flex items-center justify-end">
-            <flux:button type="submit" variant="primary" class="w-full">
-                {{ __('Reset password') }}
-            </flux:button>
+            <x-mary-button label="{{ __('Reset password') }}" type="submit" wire:click="resetPassword" class="w-full btn-primary"
+                spinner />
         </div>
     </form>
 </div>

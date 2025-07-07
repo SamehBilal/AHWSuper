@@ -42,17 +42,13 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
     <x-auth-session-status class="text-center" :status="session('status')" />
 
     <form wire:submit="confirmPassword" class="flex flex-col gap-6">
-        <!-- Password -->
-        <flux:input
-            wire:model="password"
-            :label="__('Password')"
-            type="password"
-            required
-            autocomplete="new-password"
-            :placeholder="__('Password')"
-            viewable
-        />
+       <!-- Password -->
+        <x-mary-password :label="__('Password')" wire:model="password" :placeholder="__('Password')" password-icon="o-lock-closed"
+            password-visible-icon="o-lock-open" inline right required autocomplete="current-password" />
 
-        <flux:button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</flux:button>
+        <div class="flex items-center justify-end">
+            <x-mary-button label="{{ __('Confirm') }}" type="submit" wire:click="confirmPassword" class="w-full btn-primary"
+                spinner />
+        </div>
     </form>
 </div>

@@ -20,8 +20,8 @@
 
                 <div class="relative z-20 mt-auto">
                     <blockquote class="space-y-2">
-                        <flux:heading size="lg">&ldquo;{{ trim($message) }}&rdquo;</flux:heading>
-                        <footer><flux:heading>{{ trim($author) }}</flux:heading></footer>
+                        <div class="font-medium [:where(&)]:text-white [:where(&)]:dark:text-white text-base [&:has(+[data-flux-subheading])]:mb-2 [[data-flux-subheading]+&]:mt-2" size="lg">&ldquo;{{ trim($message) }}&rdquo;</div>
+                        <footer><div class="font-medium [:where(&)]:text-white [:where(&)]:dark:text-white text-sm [&:has(+[data-flux-subheading])]:mb-2 [[data-flux-subheading]+&]:mt-2">{{ trim($author) }}</div></footer>
                     </blockquote>
                 </div>
             </div>
