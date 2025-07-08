@@ -27,6 +27,9 @@
             </div>
             <div class="w-full lg:p-8">
                 <div class="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
+                    <div class="absolute top-4 right-4 z-30">
+                        <x-mary-theme-toggle class="btn btn-circle" />
+                    </div>
                     <a href="{{ route('home') }}" class="z-20 flex flex-col items-center gap-2 font-medium lg:hidden" wire:navigate>
                         <span class="flex h-9 w-9 items-center justify-center rounded-md">
                             <x-app-logo-icon class="size-9 fill-current text-black dark:text-white" />
