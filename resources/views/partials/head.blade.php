@@ -37,7 +37,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
-@if (!empty(@$gschema))
+{{-- @if (!empty(@$gschema))
     <script type="application/ld+json">
         {!! @$gschema !!}
     </script>
@@ -85,9 +85,13 @@
             "itemListElement": [@json($breadcrumblist)]
         }
     </script>
-@endif
+@endif--}}
 @stack('rsnippets')
 @stack('header')
+@guest
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1196873931302632"
+        crossorigin="anonymous"></script>
+@endguest 
 @guest
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1196873931302632"
         crossorigin="anonymous"></script>

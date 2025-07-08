@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use Modules\Roles\Http\Controllers\Auth\SocialAuthController;
 
 Route::middleware('guest')->group(function () {
     Volt::route('login', 'auth.login')
