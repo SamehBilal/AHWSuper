@@ -70,14 +70,18 @@ new class extends Component {
 }; ?>
 
 <section class="w-full">
-    @include('partials.settings-heading')
+    @include('roles::partials.settings-heading')
 
-    <x-settings.layout :heading="__('Profile')" :subheading="__('Update your name and email address')">
+    <x-roles::settings.layout :heading="__('Profile')" :subheading="__('Update your name and email address')">
         <form wire:submit="updateProfileInformation" class="my-6 w-full space-y-6">
-            <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
+            <!-- Name -->
+            <x-mary-input :label="__('Name')" wire:model="name" placeholder="{{ __('Full name') }}" inline clearable
+            required autofocus autocomplete="name" />
 
             <div>
-                <flux:input wire:model="email" :label="__('Email')" type="email" required autocomplete="email" />
+                <!-- Email Address -->
+                <x-mary-input :label="__('Email address')" type="email" wire:model="email" placeholder="email@example.com" inline clearable
+                required autocomplete="email" />
 
                 @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail &&! auth()->user()->hasVerifiedEmail())
                     <div>
@@ -99,8 +103,10 @@ new class extends Component {
             </div>
 
             <div class="flex items-center gap-4">
+
                 <div class="flex items-center justify-end">
-                    <flux:button variant="primary" type="submit" class="w-full">{{ __('Save') }}</flux:button>
+                    <x-mary-button label="{{ __('Save') }}" type="submit" wire:click="updateProfileInformation" class="w-full btn-primary"
+                        spinner />
                 </div>
 
                 <x-action-message class="me-3" on="profile-updated">
@@ -110,5 +116,5 @@ new class extends Component {
         </form>
 
         <livewire:settings.delete-user-form />
-    </x-settings.layout>
+    </x-roles::settings.layout>
 </section>

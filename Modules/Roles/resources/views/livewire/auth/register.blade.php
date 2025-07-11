@@ -72,11 +72,11 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
     <x-auth-session-status class="text-center" :status="session('status')" />
 
     <form wire:submit="register" class="flex flex-col gap-6">
-         <!-- Name -->
+        <!-- Name -->
         <x-mary-input :label="__('Name')" wire:model="name" placeholder="{{ __('Full name') }}" inline clearable
             required autofocus autocomplete="name" />
 
-       <!-- Email Address -->
+        <!-- Email Address -->
         <x-mary-input :label="__('Email address')" type="email" wire:model="email" placeholder="email@example.com" inline clearable
             required autocomplete="email" />
 

@@ -124,12 +124,12 @@
 
 
     <!-- Riot Games -->
-    <x-mary-button class="btn btn-square bg-[#D32936] text-white border-[#b71c27]" spinner :link="route('social.login', ['provider' => 'riot'])" no-wire-navigate>
+    {{-- <x-mary-button class="btn btn-square bg-[#D32936] text-white border-[#b71c27]" spinner :link="route('social.login', ['provider' => 'riot'])" no-wire-navigate>
         <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24px" height="24px" viewBox="0 0 24 24" role="img"><title>Riot Games icon</title><path d="M12.534 21.77l-1.09-2.81 10.52.54-.451 4.5zM15.06 0L.307 6.969 2.59 17.471H5.6l-.52-7.512.461-.144 1.81 7.656h3.126l-.116-9.15.462-.144 1.582 9.294h3.31l.78-11.053.462-.144.82 11.197h4.376l1.54-15.37Z"/></svg>
-    </x-mary-button>
+    </x-mary-button> --}}
 
     <!-- LinkedIn -->
-    {{-- <x-mary-button
+    <x-mary-button
         class="btn btn-square bg-[#0967C2] text-white border-[#0059b3]"
         spinner
         :link="route('social.login', ['provider' => 'linkedin'])" no-wire-navigate
@@ -140,7 +140,7 @@
                 d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
                 fill-rule="evenodd"></path>
         </svg>
-    </x-mary-button> --}}
+    </x-mary-button>
 
     <!-- Twitch -->
     <x-mary-button

@@ -7,13 +7,52 @@ new class extends Component {
 }; ?>
 
 <section class="w-full">
-    @include('partials.settings-heading')
+    @include('roles::partials.settings-heading')
 
-    <x-settings.layout :heading="__('Appearance')" :subheading=" __('Update the appearance settings for your account')">
-        <flux:radio.group x-data variant="segmented" x-model="$flux.appearance">
-            <flux:radio value="light" icon="sun">{{ __('Light') }}</flux:radio>
-            <flux:radio value="dark" icon="moon">{{ __('Dark') }}</flux:radio>
-            <flux:radio value="system" icon="computer-desktop">{{ __('System') }}</flux:radio>
-        </flux:radio.group>
-    </x-settings.layout>
+    <x-roles::settings.layout :heading="__('Appearance')" :subheading=" __('Update the appearance settings for your account')">
+        <div class="join join-horizontal">
+            <input
+              type="radio"
+              name="theme-buttons"
+              class="btn theme-controller join-item"
+              aria-label="Default"
+              value="default" />
+            <input
+              type="radio"
+              name="theme-buttons"
+              class="btn theme-controller join-item"
+              aria-label="Dark"
+              value="dark" />
+            <input
+              type="radio"
+              name="theme-buttons"
+              class="btn theme-controller join-item"
+              aria-label="Bumblebee"
+              value="bumblebee" />
+            <input
+              type="radio"
+              name="theme-buttons"
+              class="btn theme-controller join-item"
+              aria-label="Retro"
+              value="retro" />
+            <input
+              type="radio"
+              name="theme-buttons"
+              class="btn theme-controller join-item"
+              aria-label="Cyberpunk"
+              value="cyberpunk" />
+            <input
+              type="radio"
+              name="theme-buttons"
+              class="btn theme-controller join-item"
+              aria-label="Valentine"
+              value="valentine" />
+            <input
+              type="radio"
+              name="theme-buttons"
+              class="btn theme-controller join-item"
+              aria-label="Aqua"
+              value="aqua" />
+          </div>
+    </x-roles::settings.layout>
 </section>

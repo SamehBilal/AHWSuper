@@ -12,6 +12,9 @@ class Logout
      */
     public function __invoke()
     {
+        Auth::user()->forceFill([
+            'two_factor_confirmed_at' => null,
+        ])->save();
         Auth::guard('web')->logout();
 
         Session::invalidate();

@@ -1,17 +1,16 @@
 <div class="flex items-start max-md:flex-col">
     <div class="me-10 w-full pb-4 md:w-[220px]">
-        <flux:navlist>
-            <flux:navlist.item :href="route('settings.profile')" wire:navigate>{{ __('Profile') }}</flux:navlist.item>
-            <flux:navlist.item :href="route('settings.password')" wire:navigate>{{ __('Password') }}</flux:navlist.item>
-            <flux:navlist.item :href="route('settings.appearance')" wire:navigate>{{ __('Appearance') }}</flux:navlist.item>
-        </flux:navlist>
+        <x-mary-menu activate-by-route active-bg-color="font-black" class="p-0">
+            <x-mary-menu-item link="{{ route('settings.profile') }}" title="{{ __('Profile') }}" />
+            <x-mary-menu-item link="{{ route('settings.password') }}" title="{{ __('Password') }}" />
+            <x-mary-menu-item link="{{ route('settings.appearance') }}" title="{{ __('Appearance') }}" />
+            <x-mary-menu-item link="{{ route('settings.two-factor') }}" title="{{ __('Two Factor Authentication') }}" />
+            <x-mary-menu-item link="{{ route('settings.sessions') }}" title="{{ __('Browser Sessions') }}" />
+        </x-mary-menu>
     </div>
 
-    <flux:separator class="md:hidden" />
-
     <div class="flex-1 self-stretch max-md:pt-6">
-        <flux:heading>{{ $heading ?? '' }}</flux:heading>
-        <flux:subheading>{{ $subheading ?? '' }}</flux:subheading>
+        <x-mary-header title="{{ $heading ?? '' }}" subtitle="{{ $subheading ?? '' }}" size="text-sm" />
 
         <div class="mt-5 w-full max-w-lg">
             {{ $slot }}

@@ -20,9 +20,11 @@ Route::middleware('guest')->group(function () {
 
     Route::get('login/{provider}', [SocialAuthController::class, 'redirectToProvider'])
     ->name('social.login');
-    
+
     Route::get('login/{provider}/callback', [SocialAuthController::class, 'handleProviderCallback']);
 
+    Route::get('available-drivers', [SocialAuthController::class, 'getAvailableDrivers'])
+    ->name('social.available-drivers');
 });
 
 Route::middleware('auth')->group(function () {
@@ -35,6 +37,10 @@ Route::middleware('auth')->group(function () {
 
     Volt::route('confirm-password', 'auth.confirm-password')
         ->name('password.confirm');
+
+    Volt::route('two-factor-verify', 'auth.two-factor-verify')
+        ->middleware(['has-two-factor'])
+        ->name('two-factor-verify');
 });
 
 Route::post('logout', App\Livewire\Actions\Logout::class)

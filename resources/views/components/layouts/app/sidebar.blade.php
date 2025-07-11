@@ -88,25 +88,14 @@
                             link="{{ route('ahwstore.items.index') }}" wire:navigate />
                     </x-slot:trigger>
                     <x-slot:content>
-                        <div class="stats bg-base-100 border-base-300 border">
-                            <div class="stat">
-                              <div class="stat-title">Account balance</div>
-                              <div class="stat-value">$89,400</div>
-                              <div class="stat-actions">
-                                <button class="btn btn-xs btn-success">Add funds</button>
-                              </div>
+                        <div class="mockup-browser border-base-300 border w-full">
+                            <div class="mockup-browser-toolbar">
+                                <div class="input">https://ahw.store/</div>
                             </div>
-
-                            <div class="stat">
-                              <div class="stat-title">Current balance</div>
-                              <div class="stat-value">$89,400</div>
-                              <div class="stat-actions">
-                                <button class="btn btn-xs">Withdrawal</button>
-                                <button class="btn btn-xs">Deposit</button>
-                              </div>
+                            <div class="grid place-content-center border-t border-base-300 h-80">
+                                <img src="{{ asset('ahwstores.png') }}" width="560px" alt="">
                             </div>
                           </div>
-                        {{ __('AHW Store') }}
                     </x-slot:content>
                 </x-mary-popover>
 
