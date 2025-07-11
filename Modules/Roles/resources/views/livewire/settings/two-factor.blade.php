@@ -131,6 +131,8 @@ new class extends Component {
                     <flux:button variant="primary" wire:click="toggleQrCode" class="w-full">
                         {{ __('Enable') }}
                     </flux:button>
+                    neutral
+                    <x-mary-button label="You?" class="btn-neutral" />
                 </div>
             @endif
         @else
