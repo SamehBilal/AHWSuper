@@ -5,8 +5,9 @@ use Modules\AHWStore\Http\Controllers\AHWStoreController;
 use Modules\AHWStore\Http\Controllers\Dashboard\ItemsController;
 use Livewire\Volt\Volt;
 
-Route::middleware(['auth', 'verified'])->prefix('ahwstore/')->name('ahwstore.')->group(function () {
+Route::middleware(['auth', 'verified'])->prefix('ahwstore')->name('ahwstore.')->group(function () {
     /* Route::resource('ahwstores', AHWStoreController::class)->names('ahwstore'); */
+    Volt::route('dashboard', "dashboard")->name('dashboard');
     Volt::route('customers', "customers.index")->name('customers.index');
     Volt::route('vendors', "vendors.index")->name('vendors.index');
     Volt::route('invoices', "invoices.index")->name('invoices.index');

@@ -87,6 +87,17 @@ new class extends Component {
         $user->save();
         $this->dispatch('done', success: 'Two Factor Authentication Disabled');
     }
+
+    public function regenerateRecoveryCodes()
+    {
+        $user = Auth::user();
+        $this->recoveryCodes = (new Recovery())->toJson();
+        $user->two_factor_recovery_codes = $this->recoveryCodes;
+        $user->save();
+        
+        $this->showingRecoveryCodes = true;
+        $this->dispatch('done', success: 'Recovery codes have been regenerated');
+    }
 }; ?>
 
 <section class="w-full">
@@ -97,7 +108,8 @@ new class extends Component {
             @if ($showingQrCode)
                 <div class="mt-2 space-y-4">
                     <span class="text-md font-semibold">Finish enabling two factor authentication.</span>
-                    <p class="text-sm mt-3">To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code.                    </p>
+                    <p class="text-sm mt-3">To finish enabling two factor authentication, scan the following QR code using your
+                        phone's authenticator application or enter the setup key and provide the generated OTP code. </p>
 
                     <div class="flex justify-start">
                         <img src="{{ $qrCodeUrl }}" alt="QR Code" class="w-50">
@@ -108,45 +120,45 @@ new class extends Component {
                     <x-mary-input :label="__('Code')" wire:model="code" placeholder="{{ __('Code') }}" inline clearable />
 
                     <div class="flex items-center gap-4">
-                        <x-mary-button label="{{ __('Confirm') }}"  wire:click="enableTwoFactor" class="btn-primary" spinner />
-                        <x-mary-button label="{{ __('Cancel') }}"  wire:click="toggleQrCode" class="btn" />
+                        <x-mary-button label="{{ __('Confirm') }}" wire:click="enableTwoFactor" class="btn-primary" spinner />
+                        <x-mary-button label="{{ __('Cancel') }}" wire:click="toggleQrCode" class="btn" />
                     </div>
                 </div>
             @else
                 <div class="mt-2 space-y-4">
                     <span class="text-md font-semibold">You have not enabled two factor authentication.</span>
 
-                    <p class="text-sm">When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.</p>
+                    <p class="text-sm">When two factor authentication is enabled, you will be prompted for a secure, random
+                        token during authentication. You may retrieve this token from your phone's Google Authenticator
+                        application.</p>
 
-                    <x-mary-button label="{{ __('Enable') }}"  wire:click="toggleQrCode" class="btn-primary" spinner />
+                    <x-mary-button label="{{ __('Enable') }}" wire:click="toggleQrCode" class="btn-primary" spinner />
                 </div>
             @endif
         @else
             <div class="mt-2 space-y-4">
                 <span class="text-md font-semibold">You have enabled two factor authentication.</span>
-                <p class="text-sm mt-3">When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.                </p>
-                <p class="text-sm mt-3 font-semibold">Store these recovery codes in a secure password manager. They can be used to recover access to your account if your two factor authentication device is lost.                </p>
-                
-                <x-mary-button label="{{ __('Disable') }}"  wire:click="disableTwoFactor" class="btn-primary" spinner />
-                @if (!$showingRecoveryCodes)
-                    <flux:button variant="primary" wire:click="toggleRecoveryCodes" class="w-full">
-                        {{ __('Show Recovery Codes') }}
-                    </flux:button>
-                @else
-                    <ul class="space-y-2 grid grid-cols-2 gap-2">
+                <p class="text-sm mt-3">When two factor authentication is enabled, you will be prompted for a secure, random
+                    token during authentication. You may retrieve this token from your phone's Google Authenticator
+                    application. </p>
+                <p class="text-sm mt-3 font-semibold">Store these recovery codes in a secure password manager. They can be
+                    used to recover access to your account if your two factor authentication device is lost. </p>
+                <template x-if="$wire.showingRecoveryCodes">
+                    <ul class="text-sm mt-3 bg-gray-50 rounded-[8px] p-3 space-y-2 grid grid-row gap-1">
                         @foreach (json_decode($recoveryCodes) as $code)
-                            <li>{{ $code }}</li>
+                            <li class="font-semibold">{{ $code }}</li>
                         @endforeach
                     </ul>
-
-                    <flux:button variant="primary" class="w-full">
-                        {{ __('Regenerate Recovery Codes') }}
-                    </flux:button>
-
-                    <flux:button variant="primary" class="w-full">
-                        {{ __('Disable') }}
-                    </flux:button>
-                @endif
+                </template>
+                <div class="flex items-center gap-4">
+                    @if (!$showingRecoveryCodes)
+                        <x-mary-button label="{{ __('Show Recovery Codes') }}" wire:click="toggleRecoveryCodes"
+                            class="btn" spinner />
+                    @else
+                        <x-mary-button label="{{ __('Regenerate Recovery Codes') }}" wire:click="regenerateRecoveryCodes" class="btn" spinner />
+                    @endif
+                    <x-mary-button label="{{ __('Disable') }}" wire:click="disableTwoFactor" class="btn-primary" spinner />
+                </div>
             </div>
         @endif
     </x-roles::settings.layout>

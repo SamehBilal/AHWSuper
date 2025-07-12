@@ -85,8 +85,8 @@
 
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
-                        <x-mary-menu-item icon="o-building-storefront" :tooltip="__('AHW Store')" route="ahwstore.items.index"
-                            link="{{ route('ahwstore.items.index') }}" wire:navigate />
+                        <x-mary-menu-item icon="o-building-storefront" :tooltip="__('AHW Store')" route="ahwstore.dashboard"
+                            link="{{ route('ahwstore.dashboard') }}" wire:navigate />
                     </x-slot:trigger>
                     <x-slot:content>
                         <div class="mockup-browser border-base-300 border w-full">
@@ -167,8 +167,8 @@
                         <div
                             class="w-16 flex-shrink-0 flex flex-col items-center py-2  border-e border-zinc-200 dark:border-[#1E2938]">
                             <x-mary-menu vertical class="space-y-2">
-                                <x-mary-menu-item icon="o-home" :tooltip="__('Dashboard')" route="dashboard"
-                                    link="{{ route('dashboard') }}" wire:navigate />
+                                <x-mary-menu-item icon="o-home" :tooltip="__('Dashboard')" route="ahwstore.dashboard"
+                                    link="{{ route('ahwstore.dashboard') }}" wire:navigate />
                                 <x-mary-menu-item icon="o-shopping-cart" :tooltip="__('Items')" route="ahwstore.items.index"
                                     link="{{ route('ahwstore.items.index') }}" wire:navigate />
                                 <x-mary-menu-item icon="o-document-currency-dollar" :tooltip="__('Invoices')"
@@ -201,8 +201,8 @@
                                 <x-mary-menu-separator />
                             @endif
                             <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" :collapsed="false">
-                                <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="dashboard"
-                                    link="{{ route('dashboard') }}" wire:navigate />
+                                <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="ahwstore.dashboard"
+                                    link="{{ route('ahwstore.dashboard') }}" wire:navigate />
                                 <x-mary-menu-item title="{{ __('Items') }}" icon="o-shopping-cart"
                                     route="ahwstore.items.index" link="{{ route('ahwstore.items.index') }}"
                                     wire:navigate />
@@ -244,8 +244,8 @@
                             <x-mary-menu-separator />
                         @endif
                         <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" :collapsed="false">
-                            <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="dashboard"
-                                link="{{ route('dashboard') }}" wire:navigate />
+                            <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="ahwstore.dashboard"
+                                link="{{ route('ahwstore.dashboard') }}" wire:navigate />
                             <x-mary-menu-item title="{{ __('Items') }}" icon="o-shopping-cart"
                                 route="ahwstore.items.index" link="{{ route('ahwstore.items.index') }}"
                                 wire:navigate />
