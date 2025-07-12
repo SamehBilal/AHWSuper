@@ -7,6 +7,7 @@
 
 <body class="min-h-screen" x-data>
     <input type="hidden" name="userId" value="{{ auth()->user()->id ?? '' }}" />
+    
 
     <x-mary-nav sticky full-width>
 
@@ -140,7 +141,8 @@
                     </x-slot:content>
                 </x-mary-popover>
 
-                <x-mary-popover position="right-start" offset="0">
+                <livewire:theme />
+               {{--  <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
                         <x-mary-menu-item icon="o-document-text" @click="$wire.myModal1 = true" />
                     </x-slot:trigger>
@@ -148,6 +150,11 @@
                         {{ __('Theme') }}
                     </x-slot:content>
                 </x-mary-popover>
+
+
+
+                <livewire:settings.delete-user-form /> --}}
+
             </x-mary-menu>
         </aside>
 
