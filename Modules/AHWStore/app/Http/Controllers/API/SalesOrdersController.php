@@ -29,9 +29,42 @@ class SalesOrdersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $validatedData = $request->validate([
+                'customer_id' => 'required|integer',
+                'date' => 'required|date',
+                'shipment_date' => 'nullable|date',
+                'delivery_method' => 'nullable|string',
+                'reference_number' => 'nullable|string',
+                'notes' => 'nullable|string',
+                'terms' => 'nullable|string',
+                'line_items' => 'required|array|min:1',
+                'line_items.*.item_id' => 'required|integer',
+                'line_items.*.name' => 'required|string',
+                'line_items.*.quantity' => 'required|integer|min:1',
+                'line_items.*.rate' => 'required|numeric|min:0',
+                'line_items.*.tax_percentage' => 'nullable|numeric|min:0|max:100',
+                'line_items.*.item_total' => 'required|numeric|min:0',
+            ]);
 
-        return response()->json([]);
+            // Add any additional required fields with defaults
+            $salesOrderData = array_merge($validatedData, [
+                'unit' => 'qty',
+                'is_inclusive_tax' => false,
+                'exchange_rate' => 1,
+            ]);
+
+            $response = $this->zohoRequest('salesorders', 'post', $salesOrderData);
+            
+            if ($response->successful()) {
+                $data = $response->json();
+                return response()->json($data, 201);
+            } else {
+                return response()->json(['error' => 'Failed to create sales order: ' . $response->body()], $response->status());
+            }
+        } catch (Exception $e) {
+            return response()->json(['error' => 'Failed to create sales order: ' . $e->getMessage()], 500);
+        }
     }
 
     /**

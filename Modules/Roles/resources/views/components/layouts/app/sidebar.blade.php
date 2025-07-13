@@ -225,10 +225,7 @@
                                 <x-mary-menu-item title="{{ __('Monitoring') }}" icon="o-clipboard-document-list"
                                     route="ahwstore.sales-orders.index"
                                     link="{{ route('ahwstore.sales-orders.index') }}" wire:navigate />
-                                <x-mary-menu-sub title="Settings" icon="o-cog-6-tooth">
-                                    <x-mary-menu-item title="Wifi" icon="o-wifi" link="####" />
-                                    <x-mary-menu-item title="Archives" icon="o-archive-box" link="####" />
-                                </x-mary-menu-sub>
+                                
                             </x-mary-menu>
                         </div>
                     </div>
@@ -266,10 +263,7 @@
                             <x-mary-menu-item title="{{ __('Sales orders') }}" icon="o-clipboard-document-list"
                                 route="ahwstore.sales-orders.index" link="{{ route('ahwstore.sales-orders.index') }}"
                                 wire:navigate />
-                            <x-mary-menu-sub title="Settings" icon="o-cog-6-tooth">
-                                <x-mary-menu-item title="Wifi" icon="o-wifi" link="####" />
-                                <x-mary-menu-item title="Archives" icon="o-archive-box" link="####" />
-                            </x-mary-menu-sub>
+                            
                         </x-mary-menu>
                     </div>
                 </x-slot:sidebar>
