@@ -5,11 +5,11 @@
     <meta name="robots" content="noindex">
 @endif
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<meta name="pgToken" content="{{ csrf_token() }}">
+{{-- <meta name="pgToken" content="{{ csrf_token() }}"> --}}
 
 <title>{{ $pageTitle ?? "Arabhardware" }}</title>
 
-<link rel="preload" href="https://arabhardware.net/theme-assets/fonts/helvetica/HelveticaNeuellight.woff2" as="font" type="font/woff2" crossorigin>
+{{-- <link rel="preload" href="https://arabhardware.net/theme-assets/fonts/helvetica/HelveticaNeuellight.woff2" as="font" type="font/woff2" crossorigin> --}}
 <link rel="shortcut icon" href="{{ @$favicon ?? /* url('favicon.png') */"https://arabhardware.net/favicon.png" }} " type="image/x-icon">
 <link rel="canonical" href="{{ @$canonical }}">
 <meta name="description" content="{{ strip_tags(@$description) }}" />

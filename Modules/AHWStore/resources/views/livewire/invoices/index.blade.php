@@ -1,13 +1,14 @@
 <?php
 
 use Livewire\Volt\Component;
+use Livewire\Attributes\Layout;
 use Mary\Traits\Toast;
 use Livewire\WithPagination;
 use Modules\AHWStore\Http\Traits\ZohoApiTrait;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 
-new class extends Component {
+new #[Layout('ahwstore::components.layouts.master')] class extends Component {
     use Toast, ZohoApiTrait;
     use WithPagination;
 

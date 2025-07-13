@@ -17,10 +17,4 @@ Route::middleware(['auth', 'verified'])->prefix('ahwstore')->name('ahwstore.')->
     Volt::route('sales-orders', "sales-orders.index")->name('sales-orders.index');
     Volt::route('purchase-orders', "purchase-orders.index")->name('purchase-orders.index');
     Volt::route('items', "items.index")->name('items.index');
-    
-    // Temporary debug route to check contact types
-    Route::get('debug/contact-types', [\Modules\AHWStore\Http\Controllers\API\VendorsController::class, 'debugContactTypes'])->name('debug.contact-types');
-    
-    // Temporary debug route to test dashboard API calls
-    Route::get('debug/dashboard-test', [\Modules\AHWStore\Http\Controllers\API\VendorsController::class, 'debugDashboardTest'])->name('debug.dashboard-test');
 });

@@ -1,12 +1,13 @@
 <?php
 
 use Livewire\Volt\Component;
+use Livewire\Attributes\Layout;
 use Mary\Traits\Toast;
 use Modules\AHWStore\Http\Traits\ZohoApiTrait;
 use Illuminate\Support\Facades\Cache;
 use Carbon\Carbon;
 
-new class extends Component {
+new #[Layout('ahwstore::components.layouts.master')] class extends Component {
     use Toast, ZohoApiTrait;
 
     public $pageTitle = 'AHW Store Dashboard';
@@ -811,7 +812,5 @@ new class extends Component {
                 </div>
             </div>
         </div>
-    @endif
-
-    <x-toast />
+     @endif
 </div>

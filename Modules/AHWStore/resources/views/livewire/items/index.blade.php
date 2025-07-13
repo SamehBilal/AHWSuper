@@ -1,12 +1,13 @@
 <?php
 
 use Livewire\Volt\Component;
+use Livewire\Attributes\Layout;
 use Mary\Traits\Toast;
 use Livewire\WithPagination;
 use Modules\AHWStore\Http\Traits\ZohoApiTrait;
 use Illuminate\Support\Facades\Cache;
 
-new class extends Component {
+new #[Layout('ahwstore::components.layouts.master')] class extends Component {
     use Toast, ZohoApiTrait;
     use WithPagination;
 
@@ -16,9 +17,24 @@ new class extends Component {
     public $search = '';
     public $filteredList;
     public $loading = false;
+    public $page = 1;
+    public $perPage = 25;
+    public $total = 0;
+    public $hasMorePage = false;
+    public $perPageOptions = [
+            ['id' => 10, 'name' => 10],
+            ['id' => 25, 'name' => 25],
+            ['id' => 50, 'name' => 50],
+            ['id' => 100, 'name' => 100]
+        ];
+    public $sortField = 'name';
+    public $sortDirection = 'asc';
+    public $sortBy = ['column' => 'name', 'direction' => 'asc'];
 
     public function mount()
     {
+        $this->page = 1;
+        $this->perPage = 25;
         $this->loadItemsData();
         $this->headers = [
             ['key' => 'image', 'label' => '', 'class' => 'w-12'],
@@ -35,47 +51,59 @@ new class extends Component {
             $this->loading = true;
             
             // Use cached data if available (cache for 5 minutes)
-            $cacheKey = 'ahwstore_items_data';
+            $cacheKey = 'ahwstore_items_data_' . $this->page . '_' . $this->perPage . '_' . md5($this->search);
             $cachedData = Cache::get($cacheKey);
             
             if ($cachedData) {
-                $this->list = collect($cachedData);
+                $this->list = collect($cachedData['items']);
                 $this->filteredList = $this->list;
+                $this->total = $cachedData['total'] ?? 0; // not used for controls
+                $this->hasMorePage = $cachedData['has_more_page'] ?? false;
                 $this->loading = false;
                 return;
             }
             
             // Fetch fresh data
-            $this->list = collect($this->items());
+            $itemsData = $this->items();
+            $this->list = collect($itemsData['items']);
             $this->filteredList = $this->list;
+            $this->total = $itemsData['total'] ?? 0; // not used for controls
+            $this->hasMorePage = $itemsData['has_more_page'] ?? false;
             
             // Cache the results for 5 minutes
-            Cache::put($cacheKey, $this->list->toArray(), now()->addMinutes(5));
+            Cache::put($cacheKey, ['items' => $this->list->toArray(), 'total' => $this->total, 'has_more_page' => $this->hasMorePage], now()->addMinutes(5));
             
             $this->loading = false;
         } catch (Exception $e) {
             $this->loading = false;
-            $this->error('Error loading items data: ' . $e->getMessage());
+            $this->error('Error loading items data: ' . $e->getMessage(), position:'bottom-right');
         }
     }
 
     public function refreshItems()
     {
         // Clear cache and reload
-        Cache::forget('ahwstore_items_data');
+        $cacheKey = 'ahwstore_items_data_' . $this->page . '_' . $this->perPage . '_' . md5($this->search);
+        Cache::forget($cacheKey);
         $this->loadItemsData();
-        $this->success('Items refreshed successfully!');
+        $this->success('Items refreshed successfully!', position:'bottom-right');
     }
 
     public function items()
     {
         try {
-            $response = $this->zohoRequest('items');
+            $params = [
+                'page' => $this->page,
+                'per_page' => $this->perPage,
+                'sort_column' => $this->sortBy['column'],
+                'sort_order' => $this->sortBy['direction'] === 'asc' ? 'A' : 'D',
+            ];
+            $response = $this->zohoRequest('items', 'get', $params);
             $data = $response->json();
             $items = $data['items'] ?? [];
-
+            $hasMorePage = $data['page_context']['has_more_page'] ?? false;
             // Transform the data to include the new columns
-            return collect($items)->map(function ($item) {
+            $transformed = collect($items)->map(function ($item) {
                 $status = $item['status'] ?? 'active';
                 $name = $item['name'] ?? '-';
                 $sku = $item['sku'] ?? '-';
@@ -93,14 +121,28 @@ new class extends Component {
                     'actions' => $itemId, // Pass the item ID for the buttons
                 ];
             })->toArray();
+            return ['items' => $transformed, 'has_more_page' => $hasMorePage];
         } catch (Exception $e) {
-            return [];
-            $this->error('Error', 'Failed to load items: ' . $e->getMessage());
+            return ['items' => [], 'has_more_page' => false];
+            $this->error('Error', 'Failed to load items: ' . $e->getMessage(), position:'bottom-right');
         }
     }
 
+    public function goToPage($page)
+    {
+        $this->page = $page;
+        $this->loadItemsData();
+    }
+
+    public function updatedPerPage()
+    {
+        $this->page = 1; // Reset to first page when changing per page
+        $this->loadItemsData();
+    }
+    
     public function updatedSearch()
     {
+        $this->page = 1;
         if (empty($this->search)) {
             $this->filteredList = $this->list;
             return;
@@ -113,6 +155,12 @@ new class extends Component {
                    str_contains(strtolower($item['status']), $searchTerm) ||
                    str_contains(strtolower($item['item_id']), $searchTerm);
         });
+    }
+
+    public function updatedSortBy()
+    {
+        $this->page = 1; // Reset to first page when sorting
+        $this->loadItemsData();
     }
 
     public function viewItem($itemId)
@@ -150,19 +198,52 @@ new class extends Component {
                 <x-mary-input wire:model.live="search" icon="o-magnifying-glass" placeholder="Search items..." />
             </x-slot:middle>
             <x-slot:actions>
-                <x-mary-button wire:click="refreshItems" icon="o-arrow-path" class="btn-sm" 
+                <x-mary-button wire:click="refreshItems" icon="o-arrow-path" class="btn-sm"
                     :loading="$loading" title="Refresh Items" />
-                <x-mary-button icon="o-funnel" />
-                <x-mary-button wire:click="save" icon="o-plus" class="btn-primary" />
+                <x-mary-button icon="o-funnel" class="btn-sm" />
+                <x-mary-select wire:model.live="perPage" :options="$perPageOptions" class="w-20 btn-sm" />
+                <x-mary-button wire:click="save" icon="o-plus" class="btn-primary btn-sm" />
             </x-slot:actions>
         </x-mary-header>
 
-        @if($loading)
-            <div class="flex items-center justify-center h-32">
-                <div class="loading loading-spinner loading-lg text-primary"></div>
+        <div wire:loading>
+            <div class="w-full">
+                <table class="table table-zebra w-full min-w-full">
+                    <thead>
+                        <tr>
+                            @foreach($headers as $header)
+                                <th class="{{ $header['class'] ?? '' }}">
+                                    <div class="skeleton h-8 w-full min-w-full"></div>
+                                </th>
+                            @endforeach
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for($i = 0; $i < 8; $i++)
+                            <tr>
+                                @foreach($headers as $header)
+                                    <td class="{{ $header['class'] ?? '' }}">
+                                        @if(isset($header['key']) && $header['key'] === 'image')
+                                            <div class="skeleton h-12 w-12 rounded-lg mx-auto"></div>
+                                        @elseif(isset($header['key']) && $header['key'] === 'actions')
+                                            <div class="flex gap-1 justify-center">
+                                                <div class="skeleton h-10 w-10 rounded"></div>
+                                                <div class="skeleton h-10 w-10 rounded"></div>
+                                                <div class="skeleton h-10 w-10 rounded"></div>
+                                            </div>
+                                        @else
+                                            <div class="skeleton h-10 w-full min-w-full"></div>
+                                        @endif
+                                    </td>
+                                @endforeach
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
             </div>
-        @else
-            <x-mary-table :headers="$headers" :rows="$filteredList" class="table-zebra">
+        </div>
+        <div wire:loading.remove>
+            <x-mary-table :headers="$headers" :rows="$filteredList" class="table-zebra" sortable wire:model.live="sortBy">
                 {{-- Image/Icon column styling --}}
                 @scope('cell_image', $row)
                     <div class="flex items-center justify-center">
@@ -214,6 +295,21 @@ new class extends Component {
                     </div>
                 @endscope
             </x-mary-table>
-        @endif
+            @if($page > 1 || $hasMorePage)
+                <div class="flex justify-end mt-4 min-h-[40px]">
+                    @if($loading)
+                        <div class="flex items-center justify-center w-full">
+                            <span class="loading loading-spinner loading-md text-primary"></span>
+                        </div>
+                    @else
+                        <div class="join">
+                            <button class="join-item btn" @if($page == 1) disabled @endif wire:click="goToPage({{ $page - 1 }})">«</button>
+                            <button class="join-item btn btn-active">Page {{ $page }}</button>
+                            <button class="join-item btn" @if(!$hasMorePage) disabled @endif wire:click="goToPage({{ $page + 1 }})">»</button>
+                        </div>
+                    @endif
+                </div>
+            @endif
+        </div>
     </section>
 </div>

@@ -8,6 +8,7 @@ use Nwidart\Modules\Traits\PathNamespace;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use Livewire\Volt\Volt;
+
 class AHWStoreServiceProvider extends ServiceProvider
 {
     use PathNamespace;
@@ -161,12 +162,6 @@ class AHWStoreServiceProvider extends ServiceProvider
         }
 
         Blade::componentNamespace(config('modules.namespace').'\\' . $this->name . '\\View\\Components', $this->nameLower);
-
-        /* $this->publishes([$sourcePath => $viewPath], ['views', $this->nameLower.'-module-views']);
-
-        $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $this->nameLower);
-
-        Blade::componentNamespace(config('modules.namespace').'\\' . $this->name . '\\View\\Components', $this->nameLower); */
     }
 
     /**

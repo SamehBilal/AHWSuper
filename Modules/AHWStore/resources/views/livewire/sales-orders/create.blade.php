@@ -1,11 +1,12 @@
 <?php
 
 use Livewire\Volt\Component;
+use Livewire\Attributes\Layout;
 use Mary\Traits\Toast;
 use Modules\AHWStore\Http\Traits\ZohoApiTrait;
 use Carbon\Carbon;
 
-new class extends Component {
+new #[Layout('ahwstore::components.layouts.master')] class extends Component {
     use Toast, ZohoApiTrait;
 
     // Form fields

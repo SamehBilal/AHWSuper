@@ -1,3 +1,13 @@
+<?php
+
+use Livewire\Volt\Component;
+
+new class extends Component {
+    public string $pageTitle = 'AHW Store';
+};
+
+?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
@@ -5,7 +15,7 @@
     @include('partials.head')
 </head>
 
-<body class="min-h-screen" x-data x-on:set-page-title.window="document.title = $event.detail.title">
+<body class="min-h-screen flex flex-col" x-data x-on:set-page-title.window="document.title = $event.detail.title">
     <input type="hidden" name="userId" value="{{ auth()->user()->id ?? '' }}" />
 
     <x-mary-nav sticky full-width>
@@ -15,7 +25,7 @@
                 <x-mary-icon name="o-bars-3" class="cursor-pointer" />
             </label>
 
-            <a href="{{ route('dashboard') }}" class="me-5 flex items-center space-x-2 rtl:space-x-reverse"
+            <a href="{{ route('ahwstore.dashboard') }}" class="me-5 flex items-center space-x-2 rtl:space-x-reverse"
                 wire:navigate>
                 <x-app-logo />
             </a>
@@ -47,7 +57,6 @@
                 <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" title="{{ auth()->user()->name }}"
                     subtitle="{{ auth()->user()->email }}" class="!w-10" />
 
-
                 <x-mary-menu-separator />
 
                 <x-mary-menu-item icon="o-cog-8-tooth" title="Profile" route="settings.profile"
@@ -63,9 +72,7 @@
         </x-slot:actions>
     </x-mary-nav>
 
-    <div class="flex h-screen">
-        <aside
-            class="border-e border-zinc-200 dark:border-[#1E2938] w-16 flex-shrink-0 flex-col items-center py-4 hidden lg:flex">
+    <aside class="fixed top-16 left-0 h-screen border-e border-zinc-200 dark:border-[#1E2938] w-16 flex-shrink-0 flex flex-col items-center py-4 hidden lg:flex z-30">
             <x-mary-menu activate-by-route vertical class="space-y-2">
 
                 <x-mary-popover position="right-start" offset="0">
@@ -130,7 +137,6 @@
                     </x-slot:content>
                 </x-mary-popover>
 
-
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
                         <x-mary-menu-item icon="o-document-text" :tooltip="__('Editors')" route="roles.index"
@@ -142,23 +148,11 @@
                 </x-mary-popover>
 
                 <livewire:theme />
-                {{-- <x-mary-popover position="right-start" offset="0">
-                    <x-slot:trigger>
-                        <x-mary-menu-item icon="o-document-text" @click="$wire.myModal1 = true" />
-                    </x-slot:trigger>
-                    <x-slot:content>
-                        {{ __('Theme') }}
-                    </x-slot:content>
-                </x-mary-popover>
-
-
-
-                <livewire:settings.delete-user-form /> --}}
 
             </x-mary-menu>
         </aside>
 
-        <div class="flex-1 flex flex-col">
+    <div class="flex-1 flex flex-col lg:ml-16">
             <x-mary-main with-nav full-width>
 
                 <x-slot:sidebar drawer="main-drawer" collapsible
@@ -267,13 +261,14 @@
                     </div>
                 </x-slot:sidebar>
 
+                <!-- Content Area -->
                 <x-slot:content>
                     {{ $slot }}
                 </x-slot:content>
+
             </x-mary-main>
         </div>
     </div>
-    
 
     <livewire:toast-handler />
     <x-mary-toast />
@@ -292,4 +287,4 @@
     
 </body>
 
-</html>
+</html> 
