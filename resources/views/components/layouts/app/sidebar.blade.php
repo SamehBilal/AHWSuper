@@ -62,12 +62,12 @@
             <x-mary-menu vertical class="space-y-2">
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
-                        <x-mary-menu-item 
-                            icon="o-home" 
-                            :tooltip="__('Dashboard')" 
+                        <x-mary-menu-item
+                            icon="o-home"
+                            :tooltip="__('Dashboard')"
                             route="dashboard"
-                            link="{{ route('dashboard') }}" 
-                            wire:navigate 
+                            link="{{ route('dashboard') }}"
+                            wire:navigate
                             class="{{ request()->routeIs('dashboard') ? 'bg-primary text-primary-content' : '' }}"
                         />
                     </x-slot:trigger>
@@ -83,12 +83,12 @@
 
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
-                        <x-mary-menu-item 
-                            icon="o-building-storefront" 
-                            :tooltip="__('AHW Store')" 
+                        <x-mary-menu-item
+                            icon="o-building-storefront"
+                            :tooltip="__('AHW Store')"
                             route="ahwstore.dashboard"
-                            link="{{ route('ahwstore.dashboard') }}" 
-                            wire:navigate 
+                            link="{{ route('ahwstore.dashboard') }}"
+                            wire:navigate
                             class="{{ request()->routeIs('ahwstore.*') ? 'bg-primary text-primary-content' : '' }}"
                         />
                     </x-slot:trigger>
@@ -106,12 +106,12 @@
 
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
-                        <x-mary-menu-item 
-                            icon="o-user-group" 
-                            :tooltip="__('User Management')" 
+                        <x-mary-menu-item
+                            icon="o-user-group"
+                            :tooltip="__('User Management')"
                             route="roles.index"
-                            link="{{ route('roles.index') }}" 
-                            wire:navigate 
+                            link="{{ route('roles.index') }}"
+                            wire:navigate
                             class="{{ request()->routeIs('roles.*') ? 'bg-primary text-primary-content' : '' }}"
                         />
                     </x-slot:trigger>
@@ -122,12 +122,12 @@
 
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
-                        <x-mary-menu-item 
-                            icon="o-chart-bar" 
-                            :tooltip="__('App Monitoring')" 
+                        <x-mary-menu-item
+                            icon="o-chart-bar"
+                            :tooltip="__('App Monitoring')"
                             route="roles.index"
-                            link="{{ route('roles.index') }}" 
-                            wire:navigate 
+                            link="{{ route('roles.index') }}"
+                            wire:navigate
                             class="{{ request()->routeIs('roles.*') ? 'bg-primary text-primary-content' : '' }}"
                         />
                     </x-slot:trigger>
@@ -138,12 +138,12 @@
 
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
-                        <x-mary-menu-item 
-                            icon="o-briefcase" 
-                            :tooltip="__('Ads Management')" 
+                        <x-mary-menu-item
+                            icon="o-briefcase"
+                            :tooltip="__('Ads Management')"
                             route="roles.index"
-                            link="{{ route('roles.index') }}" 
-                            wire:navigate 
+                            link="{{ route('roles.index') }}"
+                            wire:navigate
                             class="{{ request()->routeIs('roles.*') ? 'bg-primary text-primary-content' : '' }}"
                         />
                     </x-slot:trigger>
@@ -154,12 +154,12 @@
 
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
-                        <x-mary-menu-item 
-                            icon="o-document-text" 
-                            :tooltip="__('Editors')" 
+                        <x-mary-menu-item
+                            icon="o-document-text"
+                            :tooltip="__('Editors')"
                             route="roles.index"
-                            link="{{ route('roles.index') }}" 
-                            wire:navigate 
+                            link="{{ route('roles.index') }}"
+                            wire:navigate
                             class="{{ request()->routeIs('roles.*') ? 'bg-primary text-primary-content' : '' }}"
                         />
                     </x-slot:trigger>

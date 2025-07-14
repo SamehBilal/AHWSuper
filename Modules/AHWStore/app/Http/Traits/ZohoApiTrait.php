@@ -32,7 +32,7 @@ trait ZohoApiTrait
             // Handle the case where settings are not found
             return response()->json(['error' => 'Zoho settings not found'], 404);
         }
-        return APIToken::where('provider','zoho')->first();
+        return $settings;
     }
 
     protected function zohoRequest($endpoint, $method = 'get', $options = [])
@@ -68,5 +68,32 @@ trait ZohoApiTrait
         //dd($response->json());
 
         return $response;
+    }
+
+    /**
+     * Fetch all pages of a Zoho API resource and merge the results.
+     * @param string $endpoint
+     * @param string $dataKey The key in the response containing the data array (e.g. 'items', 'salesorders')
+     * @param array $options Additional query parameters
+     * @param int $perPage Number of items per page (default 200)
+     * @return array
+     */
+    protected function fetchAllZohoPages($endpoint, $dataKey, $options = [], $perPage = 200)
+    {
+        $all = [];
+        $page = 1;
+        do {
+            $params = array_merge($options, [
+                'page' => $page,
+                'per_page' => $perPage,
+            ]);
+            $response = $this->zohoRequest($endpoint, 'get', $params);
+            $data = $response->json();
+            $items = $data[$dataKey] ?? [];
+            $all = array_merge($all, $items);
+            $hasMore = $data['page_context']['has_more_page'] ?? false;
+            $page++;
+        } while ($hasMore);
+        return $all;
     }
 }

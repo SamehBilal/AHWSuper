@@ -1,13 +1,3 @@
-<?php
-
-use Livewire\Volt\Component;
-
-new class extends Component {
-    public string $pageTitle = 'AHW Store';
-};
-
-?>
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
@@ -36,7 +26,7 @@ new class extends Component {
 
             <x-mary-button icon="o-magnifying-glass" class="btn-primary-content btn-dash"
                 @click.stop="$dispatch('mary-search-open')">
-                Search...
+                Search  <x-mary-kbd>Ctrl</x-mary-kbd> <x-mary-kbd>K</x-mary-kbd>
             </x-mary-button>
             <x-mary-menu-separator />
             <x-mary-dropdown>
@@ -45,15 +35,15 @@ new class extends Component {
                 <x-mary-menu-item title="Move" />
 
                 <x-slot:trigger>
-                    <x-mary-button icon="o-bell" class="btn-circle" />
+                    <x-mary-button icon="o-bell" class="btn btn-circle btn-ghost !w-10 !rounded-lg" />
                 </x-slot:trigger>
             </x-mary-dropdown>
-            <x-mary-theme-toggle class="btn btn-circle" />
+            <x-mary-theme-toggle class="btn btn-circle btn-ghost !w-10 !rounded-lg" />
 
-            <x-mary-dropdown 
+            <x-mary-dropdown
                 class="btn-ghost btn-sm cursor-pointer" responsive right>
                 <x-slot:trigger>
-                    <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" class="!w-10 cursor-pointer" />
+                    <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" class="!w-10 !rounded-lg cursor-pointer" />
                 </x-slot:trigger>
                 <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" title="{{ auth()->user()->name }}"
                     subtitle="{{ auth()->user()->email }}" class="!w-10" />
@@ -102,8 +92,8 @@ new class extends Component {
                         <div class="mockup-browser-toolbar">
                             <div class="input">https://ahw.store/</div>
                         </div>
-                        <div class="grid place-content-center border-t border-base-300 h-80">
-                            <img src="{{ asset('ahwstores.png') }}" width="560px" alt="">
+                        <div class="grid place-content-center border-t border-base-300 w-50">
+                            <img src="{{ asset('ahwstores.png') }}" height="580" alt="">
                         </div>
                     </div>
                 </x-slot:content>
@@ -272,19 +262,8 @@ new class extends Component {
 
     <livewire:toast-handler />
     <x-mary-toast />
-    <x-mary-spotlight search-text="Find docs, app actions or users" no-results-text="Ops! Nothing here." />
-
-    @php $myModal1 = false; @endphp
-    <x-modal wire:model="myModal1" title="Hey" class="backdrop-blur">
-        Press `ESC`, click outside or click `CANCEL` to close.
-
-        <x-slot:actions>
-            <x-button label="Cancel" @click="$wire.myModal1 = false" />
-        </x-slot:actions>
-    </x-modal>
-
-
-
+    <x-mary-spotlight shortcut="{{ str_contains(request()->header('User-Agent'), 'Mac') ? 'meta.k' : 'ctrl.k' }}" search-text="Find docs, app actions or users" no-results-text="Ops! Nothing here." />
+    <x-cookies />
 </body>
 
 </html>

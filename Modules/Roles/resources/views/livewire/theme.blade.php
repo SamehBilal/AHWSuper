@@ -42,14 +42,14 @@ new class extends Component {
                     <div class="relative">
                         <input
                             type="radio"
-                            name="theme-buttons-modal"
+                            name="theme-buttons"
                             class="btn theme-controller h-20 w-full flex-col gap-2 opacity-0 absolute inset-0"
-                            :aria-label="$themeData['name']"
+                            {{-- :aria-label="$themeData['name']" --}}
                             value="{{ $themeKey }}"
                             @if($selectedTheme === $themeKey) checked @endif />
                         <div class="btn btn-outline h-20 w-full flex-col gap-2 pointer-events-none">
                             <x-mary-icon :name="$themeData['icon']" class="w-6 h-6" />
-                            <span class="text-sm">{{ $themeData['name'] }}</span>
+                            <span class="text-sm">{{-- {{ $themeData['name'] }} --}}</span>
                         </div>
                     </div>
                 @endforeach
