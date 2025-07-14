@@ -5,6 +5,8 @@
     <meta name="robots" content="noindex">
 @endif
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<meta name="user-id" content="{{ auth()->id() }}">
+
 {{-- <meta name="pgToken" content="{{ csrf_token() }}"> --}}
 
 <title>{{ $pageTitle ?? "Arabhardware" }}</title>
@@ -107,3 +109,4 @@
     gtag('js', new Date());
     gtag('config', 'G-4Q0YRG9XSF');
 </script>
+

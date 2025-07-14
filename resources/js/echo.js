@@ -13,9 +13,11 @@ if (import.meta.env.VITE_REVERB_APP_KEY && import.meta.env.VITE_REVERB_HOST) {
         wssPort: import.meta.env.VITE_REVERB_PORT ?? 443,
         forceTLS: (import.meta.env.VITE_REVERB_SCHEME ?? 'https') === 'https',
         enabledTransports: ['ws', 'wss'],
+        authEndpoint: '/broadcasting/auth',
         auth: {
             headers: {
                 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '',
+                'Accept': 'application/json',
             },
         },
     });
@@ -54,8 +56,10 @@ window.Echo.channel('Live-Updates')
 
 document.addEventListener("DOMContentLoaded", function() {
     //let userId = document.getElementById('userId')?.value;
-    let userId = 2;
-
+    let userId = document.querySelector('meta[name="user-id"]')?.getAttribute('content');
+    //let userId = window.currentUserId;
+    //let userId = 1;
+    
     if (userId) {
         window.Echo.private(`users.${userId}`)
             .notification((notification) => {

@@ -219,7 +219,7 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        @for($i = 0; $i < 8; $i++)
+                        @for($i = 0; $i < 9; $i++)
                             <tr>
                                 @foreach($headers as $header)
                                     <td class="{{ $header['class'] ?? '' }}">

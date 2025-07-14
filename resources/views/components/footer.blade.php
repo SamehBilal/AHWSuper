@@ -1,4 +1,4 @@
-<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center  p-4">
+<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
     <aside class="grid-flow-col items-center">
       <a href="{{ route('dashboard') }}" wire:navigate>
           <x-app-logo :white="true" :text="true" />

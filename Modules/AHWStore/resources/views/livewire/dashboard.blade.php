@@ -575,51 +575,51 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
                 </div>
 
                 <!-- Sales Pipeline -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl border border-base-300">
                     <div class="card-body">
-                        <h2 class="card-title text-lg font-semibold mb-4">
-                            <x-mary-icon name="o-chart-pie" class="w-5 h-5 text-blue-500" />
-                            Sales Pipeline
-                        </h2>
+                        <div class="flex items-center gap-2 mb-6">
+                            <x-mary-icon name="o-chart-pie" class="w-6 h-6 text-primary" />
+                            <h2 class="card-title text-xl font-bold">Sales Pipeline</h2>
+                        </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                            <div class="stat bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border border-yellow-200 dark:border-yellow-700">
-                                <div class="stat-figure text-yellow-500">
-                                    <x-mary-icon name="o-archive-box" class="w-6 h-6" />
+                            <div class="stat bg-warning/10 rounded-box p-4 border border-warning/20">
+                                <div class="stat-figure text-warning">
+                                    <x-mary-icon name="o-archive-box" class="w-8 h-8" />
                                 </div>
-                                <div class="stat-title text-yellow-700 dark:text-yellow-300">To be Packed</div>
-                                <div class="stat-value text-yellow-600 dark:text-yellow-400">{{ $dashboardData['sales_activity']['to_be_packed'] ?? 0 }}</div>
+                                <div class="stat-title text-warning-content">To be Packed</div>
+                                <div class="stat-value text-warning">{{ $dashboardData['sales_activity']['to_be_packed'] ?? 0 }}</div>
                             </div>
                             
-                            <div class="stat bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border border-orange-200 dark:border-orange-700">
+                            <div class="stat bg-orange-500/10 rounded-box p-4 border border-orange-500/20">
                                 <div class="stat-figure text-orange-500">
-                                    <x-mary-icon name="o-truck" class="w-6 h-6" />
+                                    <x-mary-icon name="o-truck" class="w-8 h-8" />
                                 </div>
                                 <div class="stat-title text-orange-700 dark:text-orange-300">To be Shipped</div>
                                 <div class="stat-value text-orange-600 dark:text-orange-400">{{ $dashboardData['sales_activity']['to_be_shipped'] ?? 0 }}</div>
                             </div>
                             
-                            <div class="stat bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border border-green-200 dark:border-green-700">
-                                <div class="stat-figure text-green-500">
-                                    <x-mary-icon name="o-map-pin" class="w-6 h-6" />
+                            <div class="stat bg-success/10 rounded-box p-4 border border-success/20">
+                                <div class="stat-figure text-success">
+                                    <x-mary-icon name="o-map-pin" class="w-8 h-8" />
                                 </div>
-                                <div class="stat-title text-green-700 dark:text-green-300">To be Delivered</div>
-                                <div class="stat-value text-green-600 dark:text-green-400">{{ $dashboardData['sales_activity']['to_be_delivered'] ?? 0 }}</div>
+                                <div class="stat-title text-success-content">To be Delivered</div>
+                                <div class="stat-value text-success">{{ $dashboardData['sales_activity']['to_be_delivered'] ?? 0 }}</div>
                             </div>
                             
-                            <div class="stat bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border border-red-200 dark:border-red-700">
-                                <div class="stat-figure text-red-500">
-                                    <x-mary-icon name="o-document-text" class="w-6 h-6" />
+                            <div class="stat bg-error/10 rounded-box p-4 border border-error/20">
+                                <div class="stat-figure text-error">
+                                    <x-mary-icon name="o-document-text" class="w-8 h-8" />
                                 </div>
-                                <div class="stat-title text-red-700 dark:text-red-300">To be Invoiced</div>
-                                <div class="stat-value text-red-600 dark:text-red-400">{{ $dashboardData['sales_activity']['to_be_invoiced'] ?? 0 }}</div>
+                                <div class="stat-title text-error-content">To be Invoiced</div>
+                                <div class="stat-value text-error">{{ $dashboardData['sales_activity']['to_be_invoiced'] ?? 0 }}</div>
                             </div>
                             
-                            <div class="stat bg-indigo-50 dark:bg-indigo-900/20 rounded-lg p-4 border border-indigo-200 dark:border-indigo-700">
-                                <div class="stat-figure text-indigo-500">
-                                    <x-mary-icon name="o-arrow-down-tray" class="w-6 h-6" />
+                            <div class="stat bg-info/10 rounded-box p-4 border border-info/20">
+                                <div class="stat-figure text-info">
+                                    <x-mary-icon name="o-arrow-down-tray" class="w-8 h-8" />
                                 </div>
-                                <div class="stat-title text-indigo-700 dark:text-indigo-300">To be Received</div>
-                                <div class="stat-value text-indigo-600 dark:text-indigo-400">{{ $dashboardData['inventory_summary']['quantity_to_be_received'] ?? 0 }}</div>
+                                <div class="stat-title text-info-content">To be Received</div>
+                                <div class="stat-value text-info">{{ $dashboardData['inventory_summary']['quantity_to_be_received'] ?? 0 }}</div>
                             </div>
                         </div>
                     </div>
@@ -628,36 +628,38 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
                 <!-- Recent Activity -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <!-- Recent Orders -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl border border-base-300">
                         <div class="card-body">
-                            <div class="flex items-center justify-between mb-4">
-                                <h2 class="card-title text-lg font-semibold">
-                                    <x-mary-icon name="o-shopping-cart" class="w-5 h-5 text-blue-500" />
-                                    Recent Orders
-                                </h2>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-2">
+                                    <x-mary-icon name="o-shopping-cart" class="w-6 h-6 text-primary" />
+                                    <h2 class="card-title text-xl font-bold">Recent Orders</h2>
+                                </div>
                                 <x-mary-badge :value="count($dashboardData['recent_orders'])" class="badge-primary" />
                             </div>
                             <div class="space-y-3">
                                 @forelse($dashboardData['recent_orders'] as $order)
-                                    <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                    <div class="flex items-center justify-between p-4 bg-base-200/50 rounded-box hover:bg-base-200 transition-colors">
                                         <div class="flex items-center space-x-3">
-                                            <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
-                                                <x-mary-icon name="o-shopping-cart" class="w-5 h-5 text-blue-500" />
+                                            <div class="avatar placeholder">
+                                                <div class="bg-primary text-primary-content rounded-full w-12">
+                                                    <x-mary-icon name="o-shopping-cart" class="w-6 h-6" />
+                                                </div>
                                             </div>
                                             <div>
-                                                <div class="font-medium text-gray-900 dark:text-gray-100">{{ $order['number'] }}</div>
-                                                <div class="text-sm text-gray-500 dark:text-gray-400">{{ $order['customer'] }}</div>
+                                                <div class="font-bold text-base-content">{{ $order['number'] }}</div>
+                                                <div class="text-sm opacity-70">{{ $order['customer'] }}</div>
                                             </div>
                                         </div>
                                         <div class="text-right">
-                                            <div class="font-medium text-gray-900 dark:text-gray-100">${{ number_format($order['total'], 2) }}</div>
-                                            <x-mary-badge :value="$order['status']" class="badge-sm" />
+                                            <div class="font-bold text-base-content">${{ number_format($order['total'], 2) }}</div>
+                                            <x-mary-badge :value="$order['status']" class="badge-sm badge-outline" />
                                         </div>
                                     </div>
                                 @empty
-                                    <div class="text-center py-8 text-gray-500 dark:text-gray-400">
-                                        <x-mary-icon name="o-inbox" class="w-12 h-12 mx-auto mb-2 opacity-50" />
-                                        <p>No recent orders</p>
+                                    <div class="text-center py-12">
+                                        <x-mary-icon name="o-inbox" class="w-16 h-16 mx-auto mb-4 opacity-50" />
+                                        <p class="text-base-content/70">No recent orders</p>
                                     </div>
                                 @endforelse
                             </div>
@@ -665,36 +667,38 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
                     </div>
 
                     <!-- Recent Invoices -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl border border-base-300">
                         <div class="card-body">
-                            <div class="flex items-center justify-between mb-4">
-                                <h2 class="card-title text-lg font-semibold">
-                                    <x-mary-icon name="o-document-text" class="w-5 h-5 text-green-500" />
-                                    Recent Invoices
-                                </h2>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-2">
+                                    <x-mary-icon name="o-document-text" class="w-6 h-6 text-success" />
+                                    <h2 class="card-title text-xl font-bold">Recent Invoices</h2>
+                                </div>
                                 <x-mary-badge :value="count($dashboardData['recent_invoices'])" class="badge-success" />
                             </div>
                             <div class="space-y-3">
                                 @forelse($dashboardData['recent_invoices'] as $invoice)
-                                    <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                    <div class="flex items-center justify-between p-4 bg-base-200/50 rounded-box hover:bg-base-200 transition-colors">
                                         <div class="flex items-center space-x-3">
-                                            <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center">
-                                                <x-mary-icon name="o-document-text" class="w-5 h-5 text-green-500" />
+                                            <div class="avatar placeholder">
+                                                <div class="bg-success text-success-content rounded-full w-12">
+                                                    <x-mary-icon name="o-document-text" class="w-6 h-6" />
+                                                </div>
                                             </div>
                                             <div>
-                                                <div class="font-medium text-gray-900 dark:text-gray-100">{{ $invoice['number'] }}</div>
-                                                <div class="text-sm text-gray-500 dark:text-gray-400">{{ $invoice['customer'] }}</div>
+                                                <div class="font-bold text-base-content">{{ $invoice['number'] }}</div>
+                                                <div class="text-sm opacity-70">{{ $invoice['customer'] }}</div>
                                             </div>
                                         </div>
                                         <div class="text-right">
-                                            <div class="font-medium text-gray-900 dark:text-gray-100">${{ number_format($invoice['total'], 2) }}</div>
-                                            <x-mary-badge :value="$invoice['status']" class="badge-sm" />
+                                            <div class="font-bold text-base-content">${{ number_format($invoice['total'], 2) }}</div>
+                                            <x-mary-badge :value="$invoice['status']" class="badge-sm badge-outline" />
                                         </div>
                                     </div>
                                 @empty
-                                    <div class="text-center py-8 text-gray-500 dark:text-gray-400">
-                                        <x-mary-icon name="o-document-text" class="w-12 h-12 mx-auto mb-2 opacity-50" />
-                                        <p>No recent invoices</p>
+                                    <div class="text-center py-12">
+                                        <x-mary-icon name="o-document-text" class="w-16 h-16 mx-auto mb-4 opacity-50" />
+                                        <p class="text-base-content/70">No recent invoices</p>
                                     </div>
                                 @endforelse
                             </div>
@@ -704,33 +708,33 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
 
                 <!-- Low Stock Items -->
                 @if(count($dashboardData['low_stock_items']) > 0)
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl border border-base-300">
                     <div class="card-body">
-                        <div class="flex items-center justify-between mb-4">
-                            <h2 class="card-title text-lg font-semibold">
-                                <x-mary-icon name="o-exclamation-triangle" class="w-5 h-5 text-red-500" />
-                                Low Stock Alerts
-                            </h2>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center gap-2">
+                                <x-mary-icon name="o-exclamation-triangle" class="w-6 h-6 text-warning" />
+                                <h2 class="card-title text-xl font-bold">Low Stock Alerts</h2>
+                            </div>
                             <x-mary-badge :value="count($dashboardData['low_stock_items'])" class="badge-warning" />
                         </div>
                         <div class="overflow-x-auto">
-                            <table class="table table-zebra">
+                            <table class="table table-zebra w-full">
                                 <thead>
                                     <tr>
-                                        <th>Item Name</th>
-                                        <th>Available Stock</th>
-                                        <th>Reorder Level</th>
-                                        <th>Status</th>
+                                        <th class="text-base-content">Item Name</th>
+                                        <th class="text-base-content">Available Stock</th>
+                                        <th class="text-base-content">Reorder Level</th>
+                                        <th class="text-base-content">Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach($dashboardData['low_stock_items'] as $item)
-                                        <tr>
-                                            <td class="font-medium">{{ $item['name'] }}</td>
+                                        <tr class="hover">
+                                            <td class="font-bold text-base-content">{{ $item['name'] }}</td>
                                             <td>
-                                                <span class="text-red-600 dark:text-red-400 font-semibold">{{ $item['available_stock'] }}</span>
+                                                <span class="text-error font-bold">{{ $item['available_stock'] }}</span>
                                             </td>
-                                            <td>{{ $item['reorder_level'] }}</td>
+                                            <td class="text-base-content">{{ $item['reorder_level'] }}</td>
                                             <td>
                                                 <x-mary-badge value="Low Stock" class="badge-sm badge-warning" />
                                             </td>
@@ -746,34 +750,36 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
                 <!-- Top Selling Items and Purchase Order Summary -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <!-- Top Selling Items -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl border border-base-300">
                         <div class="card-body">
-                            <div class="flex items-center justify-between mb-4">
-                                <h2 class="card-title text-lg font-semibold">
-                                    <x-mary-icon name="o-trophy" class="w-5 h-5 text-yellow-500" />
-                                    Top Selling Items
-                                </h2>
-                                <span class="text-sm text-gray-500 dark:text-gray-400">{{ $selectedDateRange }}</span>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-2">
+                                    <x-mary-icon name="o-trophy" class="w-6 h-6 text-warning" />
+                                    <h2 class="card-title text-xl font-bold">Top Selling Items</h2>
+                                </div>
+                                <span class="text-sm opacity-70">{{ $selectedDateRange }}</span>
                             </div>
                             <div class="space-y-3">
                                 @forelse($topSellingItems as $index => $item)
-                                    <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                    <div class="flex items-center justify-between p-4 bg-base-200/50 rounded-box hover:bg-base-200 transition-colors">
                                         <div class="flex items-center space-x-3">
-                                            <div class="w-8 h-8 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-sm font-bold text-yellow-600 dark:text-yellow-400">
-                                                {{ $index + 1 }}
+                                            <div class="avatar placeholder">
+                                                <div class="bg-warning text-warning-content rounded-full w-10 h-10 text-sm font-bold">
+                                                    {{ $index + 1 }}
+                                                </div>
                                             </div>
                                             <div class="flex-1 min-w-0">
-                                                <div class="font-medium text-gray-900 dark:text-gray-100 truncate">{{ $item['name'] }}</div>
+                                                <div class="font-bold text-base-content truncate">{{ $item['name'] }}</div>
                                             </div>
                                         </div>
                                         <div class="text-right">
-                                            <div class="font-medium text-gray-900 dark:text-gray-100">{{ $item['quantity'] }} {{ $item['unit'] }}</div>
+                                            <div class="font-bold text-base-content">{{ $item['quantity'] }} {{ $item['unit'] }}</div>
                                         </div>
                                     </div>
                                 @empty
-                                    <div class="text-center py-8 text-gray-500 dark:text-gray-400">
-                                        <x-mary-icon name="o-trophy" class="w-12 h-12 mx-auto mb-2 opacity-50" />
-                                        <p>No top selling items</p>
+                                    <div class="text-center py-12">
+                                        <x-mary-icon name="o-trophy" class="w-16 h-16 mx-auto mb-4 opacity-50" />
+                                        <p class="text-base-content/70">No top selling items</p>
                                     </div>
                                 @endforelse
                             </div>
@@ -781,30 +787,30 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
                     </div>
 
                     <!-- Purchase Order Summary -->
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl border border-base-300">
                         <div class="card-body">
-                            <div class="flex items-center justify-between mb-4">
-                                <h2 class="card-title text-lg font-semibold">
-                                    <x-mary-icon name="o-shopping-bag" class="w-5 h-5 text-blue-500" />
-                                    Purchase Order
-                                </h2>
-                                <span class="text-sm text-gray-500 dark:text-gray-400">{{ $selectedDateRange }}</span>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-2">
+                                    <x-mary-icon name="o-shopping-bag" class="w-6 h-6 text-primary" />
+                                    <h2 class="card-title text-xl font-bold">Purchase Order</h2>
+                                </div>
+                                <span class="text-sm opacity-70">{{ $selectedDateRange }}</span>
                             </div>
                             <div class="grid grid-cols-1 gap-4">
-                                <div class="stat bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-700">
-                                    <div class="stat-figure text-blue-500">
-                                        <x-mary-icon name="o-cube" class="w-6 h-6" />
+                                <div class="stat bg-primary/10 rounded-box p-4 border border-primary/20">
+                                    <div class="stat-figure text-primary">
+                                        <x-mary-icon name="o-cube" class="w-8 h-8" />
                                     </div>
-                                    <div class="stat-title text-blue-700 dark:text-blue-300">Quantity Ordered</div>
-                                    <div class="stat-value text-blue-600 dark:text-blue-400">{{ number_format($purchaseOrderSummary['quantity_ordered'], 2) }}</div>
+                                    <div class="stat-title text-primary-content">Quantity Ordered</div>
+                                    <div class="stat-value text-primary">{{ number_format($purchaseOrderSummary['quantity_ordered'], 2) }}</div>
                                 </div>
                                 
-                                <div class="stat bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border border-green-200 dark:border-green-700">
-                                    <div class="stat-figure text-green-500">
-                                        <x-mary-icon name="o-currency-dollar" class="w-6 h-6" />
+                                <div class="stat bg-success/10 rounded-box p-4 border border-success/20">
+                                    <div class="stat-figure text-success">
+                                        <x-mary-icon name="o-currency-dollar" class="w-8 h-8" />
                                     </div>
-                                    <div class="stat-title text-green-700 dark:text-green-300">Total Cost</div>
-                                    <div class="stat-value text-green-600 dark:text-green-400">{{ $purchaseOrderSummary['currency'] }} {{ number_format($purchaseOrderSummary['total_cost'], 2) }}</div>
+                                    <div class="stat-title text-success-content">Total Cost</div>
+                                    <div class="stat-value text-success">{{ $purchaseOrderSummary['currency'] }} {{ number_format($purchaseOrderSummary['total_cost'], 2) }}</div>
                                 </div>
                             </div>
                         </div>

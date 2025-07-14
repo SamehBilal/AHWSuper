@@ -7,18 +7,18 @@ new class extends Component {
     public string $selectedTheme = 'light';
 
     public array $themes = [
-        'light' => ['name' => 'Light', 'icon' => 'o-sun'],
-        'dark' => ['name' => 'Dark', 'icon' => 'o-moon'],
-        'midnight' => ['name' => 'Midnight', 'icon' => 'o-moon-stars'],
-        'cupcake' => ['name' => 'Cupcake', 'icon' => 'o-cake'],
+        'light'     => ['name' => 'Light', 'icon' => 'o-sun'],
+        'dark'      => ['name' => 'Dark', 'icon' => 'o-moon'],
+        'midnight'  => ['name' => 'Midnight', 'icon' => 'o-star'],
+        'cupcake'   => ['name' => 'Cupcake', 'icon' => 'o-cake'],
         'synthwave' => ['name' => 'Synthwave', 'icon' => 'o-tv'],
-        'retro' => ['name' => 'Retro', 'icon' => 'o-camera'],
+        'retro'     => ['name' => 'Retro', 'icon' => 'o-camera'],
         'cyberpunk' => ['name' => 'Cyberpunk', 'icon' => 'o-bolt'],
-        'aqua' => ['name' => 'Aqua', 'icon' => 'o-droplet'],
-        'dracula' => ['name' => 'Dracula', 'icon' => 'o-vampire'],
-        'luxury' => ['name' => 'Luxury', 'icon' => 'o-crown'],
-        'night' => ['name' => 'Night', 'icon' => 'o-moon'],
-        'coffee' => ['name' => 'Coffee', 'icon' => 'o-mug-hot']
+        'aqua'      => ['name' => 'Aqua', 'icon' => 'o-eye-dropper'],
+        'dracula'   => ['name' => 'Dracula', 'icon' => 'c-beaker'],
+        'luxury'    => ['name' => 'Luxury', 'icon' => 'o-user'],
+        'night'     => ['name' => 'Night', 'icon' => 'o-moon'],
+        'coffee'    => ['name' => 'Coffee', 'icon' => 'o-camera']
     ];
 
     public function mount()
@@ -44,12 +44,12 @@ new class extends Component {
                             type="radio"
                             name="theme-buttons-modal"
                             class="btn theme-controller h-20 w-full flex-col gap-2 opacity-0 absolute inset-0"
-                            {{-- :aria-label="$themeData['name']" --}}
+                            :aria-label="$themeData['name']"
                             value="{{ $themeKey }}"
                             @if($selectedTheme === $themeKey) checked @endif />
                         <div class="btn btn-outline h-20 w-full flex-col gap-2 pointer-events-none">
-                            {{-- <x-mary-icon :name="$themeData['icon']" class="w-6 h-6" /> --}}
-                            <span class="text-sm">{{-- {{ $themeData['name'] }} --}}</span>
+                            <x-mary-icon :name="$themeData['icon']" class="w-6 h-6" />
+                            <span class="text-sm">{{ $themeData['name'] }}</span>
                         </div>
                     </div>
                 @endforeach
