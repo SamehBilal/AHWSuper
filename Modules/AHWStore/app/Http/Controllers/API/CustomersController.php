@@ -10,8 +10,22 @@ use Exception;
 class CustomersController extends Controller
 {
     use ZohoApiTrait;
-    /**
-     * Display a listing of the resource.
+
+     /**
+     * @OA\Get(
+     *     path="/ahwstore/customers",
+     *     tags={"Customers"},
+     *     summary="Get all customers",
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/User")
+     *         )
+     *     ),
+     *     @OA\Response(response="400", description="Invalid request")
+     * )
      */
     public function index()
     {

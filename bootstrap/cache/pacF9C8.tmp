@@ -230,17 +230,6 @@
       0 => 'Mary\\MaryServiceProvider',
     ),
   ),
-  'scalar/laravel' => 
-  array (
-    'aliases' => 
-    array (
-      'Scalar' => 'Scalar\\Facades\\Scalar',
-    ),
-    'providers' => 
-    array (
-      0 => 'Scalar\\ScalarServiceProvider',
-    ),
-  ),
   'socialiteproviders/manager' => 
   array (
     'providers' => 

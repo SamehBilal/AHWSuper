@@ -13,6 +13,10 @@ new class extends Component {
     public $showingRecoveryCodes = false;
     public $recoveryCodes = [];
     public $code;
+    // Add state for password confirmation modal and pending action
+    public bool $showConfirmPasswordModal = false;
+    public ?string $pendingAction = null;
+
     public function mount()
     {
         $google2fa = app('pragmarx.google2fa');
@@ -94,9 +98,33 @@ new class extends Component {
         $this->recoveryCodes = (new Recovery())->toJson();
         $user->two_factor_recovery_codes = $this->recoveryCodes;
         $user->save();
-        
+
         $this->showingRecoveryCodes = true;
         $this->dispatch('done', success: 'Recovery codes have been regenerated');
+    }
+
+    // Add request methods for password confirmation
+    public function requestEnableTwoFactor()
+    {
+        $this->pendingAction = 'enableTwoFactor';
+        $this->showConfirmPasswordModal = true;
+    }
+
+    public function requestDisableTwoFactor()
+    {
+        $this->pendingAction = 'disableTwoFactor';
+        $this->showConfirmPasswordModal = true;
+    }
+
+    // Callback for password confirmation
+    public function passwordConfirmed()
+    {
+        if ($this->pendingAction === 'enableTwoFactor') {
+            $this->enableTwoFactor();
+        } elseif ($this->pendingAction === 'disableTwoFactor') {
+            $this->disableTwoFactor();
+        }
+        $this->pendingAction = null;
     }
 }; ?>
 
@@ -120,7 +148,7 @@ new class extends Component {
                     <x-mary-input :label="__('Code')" wire:model="code" placeholder="{{ __('Code') }}" inline clearable />
 
                     <div class="flex items-center gap-4">
-                        <x-mary-button label="{{ __('Confirm') }}" wire:click="enableTwoFactor" class="btn-primary" spinner />
+                        <x-mary-button label="{{ __('Confirm') }}" wire:click="requestEnableTwoFactor" class="btn-primary" spinner />
                         <x-mary-button label="{{ __('Cancel') }}" wire:click="toggleQrCode" class="btn" />
                     </div>
                 </div>
@@ -157,9 +185,10 @@ new class extends Component {
                     @else
                         <x-mary-button label="{{ __('Regenerate Recovery Codes') }}" wire:click="regenerateRecoveryCodes" class="btn" spinner />
                     @endif
-                    <x-mary-button label="{{ __('Disable') }}" wire:click="disableTwoFactor" class="btn-primary" spinner />
+                    <x-mary-button label="{{ __('Disable') }}" wire:click="requestDisableTwoFactor" class="btn-primary" spinner />
                 </div>
             </div>
         @endif
     </x-roles::settings.layout>
+    <livewire:settings.confirm-password :show="$showConfirmPasswordModal" callback="passwordConfirmed" wire:key="confirm-password-modal" />
 </section>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use Scalar\Laravel\Scalar;
 
 Route::get('/', function () {
     return view('welcome');

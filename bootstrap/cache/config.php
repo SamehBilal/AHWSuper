@@ -1886,6 +1886,47 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       ),
     ),
   ),
+  'scalar' => 
+  array (
+    'domain' => NULL,
+    'path' => '/scalar',
+    'middleware' => 
+    array (
+      0 => 'web',
+    ),
+    'url' => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\storage\\api-docs/api-docs.json',
+    'cdn' => 'https://cdn.jsdelivr.net/npm/@scalar/api-reference',
+    'configuration' => 
+    array (
+      'theme' => 'default',
+      'layout' => 'modern',
+      'proxyUrl' => 'https://proxy.scalar.com',
+      'showSidebar' => true,
+      'hideModels' => false,
+      'hideDownloadButton' => false,
+      'hideTestRequestButton' => false,
+      'hideSearch' => false,
+      'darkMode' => false,
+      'forceDarkModeState' => 'dark',
+      'hideDarkModeToggle' => false,
+      'searchHotKey' => 'k',
+      'metaData' => 
+      array (
+        'title' => 'Arabhardware API Reference',
+      ),
+      'favicon' => '',
+      'hiddenClients' => 
+      array (
+      ),
+      'defaultHttpClient' => 
+      array (
+        'targetId' => 'shell',
+        'clientKey' => 'curl',
+      ),
+      'withDefaultFonts' => true,
+      'defaultOpenAllTags' => false,
+    ),
+  ),
   'scout' => 
   array (
     'driver' => 'algolia',
@@ -1946,6 +1987,46 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       array (
       ),
     ),
+  ),
+  'scramble' => 
+  array (
+    'api_path' => 'api',
+    'api_domain' => NULL,
+    'export_path' => 'api.json',
+    'info' => 
+    array (
+      'title' => 'Your API Documentation',
+      'version' => '0.0.1',
+      'description' => 'API documentation for Arabhardware',
+    ),
+    'ui' => 
+    array (
+      'title' => NULL,
+      'theme' => 'light',
+      'hide_try_it' => false,
+      'hide_schemas' => false,
+      'logo' => '',
+      'try_it_credentials_policy' => 'include',
+      'layout' => 'responsive',
+    ),
+    'servers' => 
+    array (
+      0 => 
+      array (
+        'url' => 'http://localhost',
+      ),
+    ),
+    'enum_cases_description_strategy' => 'description',
+    'middleware' => 
+    array (
+      0 => 'web',
+      1 => 'Dedoc\\Scramble\\Http\\Middleware\\RestrictedDocsAccess',
+    ),
+    'extensions' => 
+    array (
+    ),
+    'type' => 'openapi',
+    'output_path' => 'openapi.json',
   ),
   'services' => 
   array (
