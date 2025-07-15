@@ -5,17 +5,23 @@ use Livewire\Volt\Component;
 use PragmaRX\Recovery\Recovery;
 use Endroid\QrCode\QrCode;
 use Endroid\QrCode\Writer\PngWriter;
+use Mary\Traits\Toast;
 
 new class extends Component {
+    use Toast;
+
+    public string $password = '';
+    public bool $disableTwoFactorModel = false;
     public $secret;
     public $qrCodeUrl;
     public $showingQrCode = false;
     public $showingRecoveryCodes = false;
     public $recoveryCodes = [];
     public $code;
-    // Add state for password confirmation modal and pending action
-    public bool $showConfirmPasswordModal = false;
-    public ?string $pendingAction = null;
+    public bool $showConfirmModal = false;
+    public string $modalAction = '';
+    public string $modalHeader = '';
+    public string $modalSubheader = '';
 
     public function mount()
     {
@@ -59,8 +65,93 @@ new class extends Component {
         $this->showingRecoveryCodes = !$this->showingRecoveryCodes;
     }
 
-    public function enableTwoFactor()
+    public function openConfirmModal($action, $header, $subheader)
     {
+        $this->modalAction = $action;
+        $this->modalHeader = $header;
+        $this->modalSubheader = $subheader;
+        $this->showConfirmModal = true;
+    }
+
+    public function requestEnableTwoFactor()
+    {
+        $this->openConfirmModal(
+            'enable',
+            __('Enable Two Factor Authentication'),
+            __('Please confirm your password to enable two factor authentication.')
+        );
+    }
+
+    public function requestShowRecoveryCodes()
+    {
+        $this->openConfirmModal(
+            'show_recovery',
+            __('Show Recovery Codes'),
+            __('Please confirm your password to view your recovery codes.')
+        );
+    }
+
+    public function requestRegenerateRecoveryCodes()
+    {
+        $this->openConfirmModal(
+            'regenerate_recovery',
+            __('Regenerate Recovery Codes'),
+            __('Please confirm your password to regenerate your recovery codes.')
+        );
+    }
+
+    public function requestDisableTwoFactor()
+    {
+        $this->openConfirmModal(
+            'disable',
+            __('Disable Two Factor Authentication'),
+            __('Please confirm your password to disable two factor authentication.')
+        );
+    }
+
+    public function requestShowQrCode()
+    {
+        $this->openConfirmModal(
+            'show_qr',
+            __('Show QR Code'),
+            __('Please confirm your password to view the QR code for enabling two factor authentication.')
+        );
+    }
+
+    public function confirmModalAction()
+    {
+        $this->validate([
+            'password' => ['required', 'string', 'current_password'],
+        ]);
+
+        switch ($this->modalAction) {
+            case 'enable':
+                $this->enableTwoFactor(true);
+                break;
+            case 'show_recovery':
+                $this->showingRecoveryCodes = true;
+                break;
+            case 'regenerate_recovery':
+                $this->regenerateRecoveryCodes(true);
+                break;
+            case 'disable':
+                $this->disableTwoFactor(true);
+                break;
+            case 'show_qr':
+                $this->showingQrCode = true;
+                break;
+        }
+
+        $this->showConfirmModal = false;
+        $this->password = '';
+    }
+
+    public function enableTwoFactor($fromModal = false)
+    {
+        if (!$fromModal) {
+            $this->requestEnableTwoFactor();
+            return;
+        }
         $google2fa = app('pragmarx.google2fa');
         $this->validate([
             'code' => [
@@ -80,51 +171,41 @@ new class extends Component {
         $user->two_factor_confirmed_at = now();
         $user->save();
 
-        $this->dispatch('done', success: 'Two Factor Authentication Enabled');
-    }
-    public function disableTwoFactor()
-    {
-        $user = Auth::user();
-        $user->two_factor_secret = null;
-        $user->two_factor_recovery_codes = null;
-        $user->two_factor_confirmed_at = null;
-        $user->save();
-        $this->dispatch('done', success: 'Two Factor Authentication Disabled');
+        $this->showingRecoveryCodes = true;
+
+        $this->success('Two Factor Authentication Enabled', position:'bottom-right');
     }
 
-    public function regenerateRecoveryCodes()
+    public function regenerateRecoveryCodes($fromModal = false)
     {
+        if (!$fromModal) {
+            $this->requestRegenerateRecoveryCodes();
+            return;
+        }
         $user = Auth::user();
         $this->recoveryCodes = (new Recovery())->toJson();
         $user->two_factor_recovery_codes = $this->recoveryCodes;
         $user->save();
 
         $this->showingRecoveryCodes = true;
-        $this->dispatch('done', success: 'Recovery codes have been regenerated');
+        $this->success('Recovery codes have been regenerated', position:'bottom-right');
     }
 
-    // Add request methods for password confirmation
-    public function requestEnableTwoFactor()
+    public function disableTwoFactor($fromModal = false): void
     {
-        $this->pendingAction = 'enableTwoFactor';
-        $this->showConfirmPasswordModal = true;
-    }
-
-    public function requestDisableTwoFactor()
-    {
-        $this->pendingAction = 'disableTwoFactor';
-        $this->showConfirmPasswordModal = true;
-    }
-
-    // Callback for password confirmation
-    public function passwordConfirmed()
-    {
-        if ($this->pendingAction === 'enableTwoFactor') {
-            $this->enableTwoFactor();
-        } elseif ($this->pendingAction === 'disableTwoFactor') {
-            $this->disableTwoFactor();
+        if (!$fromModal) {
+            $this->requestDisableTwoFactor();
+            return;
         }
-        $this->pendingAction = null;
+        $user = Auth::user();
+        $user->two_factor_secret = null;
+        $user->two_factor_recovery_codes = null;
+        $user->two_factor_confirmed_at = null;
+        $user->save();
+
+        $this->disableTwoFactorModel = false;
+
+        $this->success('Dashboard refreshed successfully!', position:'bottom-right');
     }
 }; ?>
 
@@ -160,7 +241,7 @@ new class extends Component {
                         token during authentication. You may retrieve this token from your phone's Google Authenticator
                         application.</p>
 
-                    <x-mary-button label="{{ __('Enable') }}" wire:click="toggleQrCode" class="btn-primary" spinner />
+                    <x-mary-button label="{{ __('Enable') }}" wire:click="requestShowQrCode" class="btn-primary" spinner />
                 </div>
             @endif
         @else
@@ -180,15 +261,39 @@ new class extends Component {
                 </template>
                 <div class="flex items-center gap-4">
                     @if (!$showingRecoveryCodes)
-                        <x-mary-button label="{{ __('Show Recovery Codes') }}" wire:click="toggleRecoveryCodes"
+                        <x-mary-button label="{{ __('Show Recovery Codes') }}" wire:click="requestShowRecoveryCodes"
                             class="btn" spinner />
                     @else
-                        <x-mary-button label="{{ __('Regenerate Recovery Codes') }}" wire:click="regenerateRecoveryCodes" class="btn" spinner />
+                        <x-mary-button label="{{ __('Regenerate Recovery Codes') }}" wire:click="requestRegenerateRecoveryCodes" class="btn" spinner />
                     @endif
                     <x-mary-button label="{{ __('Disable') }}" wire:click="requestDisableTwoFactor" class="btn-primary" spinner />
                 </div>
             </div>
         @endif
+
+        <x-mary-modal wire:model="disableTwoFactorModel" title="{{ __('Disable two factor') }}" subtitle="{{ __('Are you sure you want to disable your two factor authentication? Once your is disabled, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to disable your two factor authentication.') }}">
+
+            <x-mary-form wire:submit="disableTwoFactor" no-separator>
+                <!-- Password -->
+                <x-mary-password :label="__('Password')" wire:model="password" :placeholder="__('Password')" password-icon="o-lock-closed"
+                password-visible-icon="o-lock-open" inline right required autocomplete="current-password" />
+
+                <x-slot:actions>
+                    <x-mary-button label="{{ __('Cancel') }}" @click="$wire.disableTwoFactorModel = false" />
+                    <x-mary-button label="{{ __('Disable two factor') }}" wire:click='disableTwoFactor' class="btn-primary" type="submit" spinner />
+                </x-slot:actions>
+            </x-mary-form>
+        </x-mary-modal>
+
+        <x-mary-modal wire:model="showConfirmModal" :title="$modalHeader" :subtitle="$modalSubheader">
+            <x-mary-form wire:submit="confirmModalAction" no-separator>
+                <x-mary-password :label="__('Password')" wire:model="password" :placeholder="__('Password')" password-icon="o-lock-closed"
+                    password-visible-icon="o-lock-open" inline right required autocomplete="current-password" />
+                <x-slot:actions>
+                    <x-mary-button label="{{ __('Cancel') }}" @click="$wire.showConfirmModal = false" />
+                    <x-mary-button label="{{ __('Confirm') }}" class="btn-primary" type="submit" spinner />
+                </x-slot:actions>
+            </x-mary-form>
+        </x-mary-modal>
     </x-roles::settings.layout>
-    <livewire:settings.confirm-password :show="$showConfirmPasswordModal" callback="passwordConfirmed" wire:key="confirm-password-modal" />
 </section>

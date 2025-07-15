@@ -24,7 +24,7 @@ return [
     | affect the paths of its internal API that aren't exposed to users.
     |
     */
-    'path' => '/scalar',
+    'path' => '/api/docs',
 
     /*
     |--------------------------------------------------------------------------
@@ -49,7 +49,7 @@ return [
     |
     */
     //'url' => 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.json',
-    'url' => storage_path('api-docs/api-docs.json'),
+    'url' => env('SCALAR_API_DOCS_URL', '/api/v1/documentation'),
 
     /*
     |--------------------------------------------------------------------------
@@ -122,7 +122,7 @@ return [
         'darkMode' => false,
 
         /** forceDarkModeState makes it always this state no matter what*/
-        'forceDarkModeState' => 'dark',
+        //'forceDarkModeState' => 'dark',
 
         /** Whether to show the dark mode toggle */
         'hideDarkModeToggle' => false,

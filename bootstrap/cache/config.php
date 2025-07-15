@@ -150,9 +150,9 @@
       'reverb' => 
       array (
         'driver' => 'reverb',
-        'key' => 'ojeyjsaam1cvfoujvrik',
-        'secret' => 's5qbznhtbetfjnjpznnh',
-        'app_id' => '732050',
+        'key' => 'k4se8qqvyrjombvvi9s1',
+        'secret' => 'elmto72kkdkdbbx3flrk',
+        'app_id' => '928329',
         'options' => 
         array (
           'host' => 'localhost',
@@ -748,6 +748,7 @@
           'annotations' => 
           array (
             0 => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\app',
+            1 => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\Modules/AHWStore/app/Http/Controllers',
           ),
         ),
       ),
@@ -839,7 +840,7 @@
       ),
       'constants' => 
       array (
-        'L5_SWAGGER_CONST_HOST' => 'http://my-default-host.com',
+        'L5_SWAGGER_CONST_HOST' => 'http://localhost:8000',
       ),
     ),
   ),
@@ -1865,9 +1866,9 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       array (
         0 => 
         array (
-          'key' => 'ojeyjsaam1cvfoujvrik',
-          'secret' => 's5qbznhtbetfjnjpznnh',
-          'app_id' => '732050',
+          'key' => 'k4se8qqvyrjombvvi9s1',
+          'secret' => 'elmto72kkdkdbbx3flrk',
+          'app_id' => '928329',
           'options' => 
           array (
             'host' => 'localhost',
@@ -1889,12 +1890,12 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
   'scalar' => 
   array (
     'domain' => NULL,
-    'path' => '/scalar',
+    'path' => '/api/docs',
     'middleware' => 
     array (
       0 => 'web',
     ),
-    'url' => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\storage\\api-docs/api-docs.json',
+    'url' => '/api/v1/documentation',
     'cdn' => 'https://cdn.jsdelivr.net/npm/@scalar/api-reference',
     'configuration' => 
     array (
@@ -1907,7 +1908,6 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       'hideTestRequestButton' => false,
       'hideSearch' => false,
       'darkMode' => false,
-      'forceDarkModeState' => 'dark',
       'hideDarkModeToggle' => false,
       'searchHotKey' => 'k',
       'metaData' => 
@@ -2343,6 +2343,10 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
   'ahwstore' => 
   array (
     'name' => 'AHWStore',
+  ),
+  'developers' => 
+  array (
+    'name' => 'Developers',
   ),
   'roles' => 
   array (

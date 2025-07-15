@@ -1,15 +1,2634 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Arabhardware",
-        "description": "A short description of the API",
+        "title": "Arabhardware API Documentation",
+        "description": "This is the API documentation for the Arabhardware project. It provides a comprehensive guide to interacting with the API endpoints.",
         "contact": {
             "name": "Support Team",
             "email": "sbilal@arabhardware.net"
         },
         "version": "1.0.0"
     },
+    "servers": [
+        {
+            "url": "http://localhost:8000",
+            "description": "Arabhardware API Server"
+        }
+    ],
     "paths": {
-        "api/v1": {}
-    }
+        "/api/": {},
+        "api/v1/ahwstore/customers": {
+            "get": {
+                "tags": [
+                    "Customers"
+                ],
+                "summary": "Get all customers",
+                "operationId": "6d39e92b0ea5e92b0be77bed221f7cd2",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "contact_name": {
+                                                "type": "string",
+                                                "example": "Bowman and Co"
+                                            },
+                                            "company_name": {
+                                                "type": "string",
+                                                "example": "Bowman and Co"
+                                            },
+                                            "payment_terms": {
+                                                "type": "integer",
+                                                "example": 15
+                                            },
+                                            "currency_id": {
+                                                "type": "integer",
+                                                "example": 460000000000097
+                                            },
+                                            "website": {
+                                                "type": "string",
+                                                "example": "www.bowmanfurniture.com"
+                                            },
+                                            "contact_type": {
+                                                "type": "string",
+                                                "example": "customer"
+                                            },
+                                            "custom_fields": {
+                                                "type": "array",
+                                                "items": {
+                                                    "properties": {
+                                                        "value": {
+                                                            "type": "string",
+                                                            "example": "GBGD078"
+                                                        },
+                                                        "index": {
+                                                            "type": "integer",
+                                                            "example": 1
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "opening_balances": {
+                                                "type": "array",
+                                                "items": {
+                                                    "properties": {
+                                                        "location_id": {
+                                                            "type": "string",
+                                                            "example": "460000000038080"
+                                                        },
+                                                        "exchange_rate": {
+                                                            "type": "number",
+                                                            "format": "float",
+                                                            "example": 1
+                                                        },
+                                                        "opening_balance_amount": {
+                                                            "type": "number",
+                                                            "format": "float",
+                                                            "example": 1200
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "billing_address": {
+                                                "properties": {
+                                                    "attention": {
+                                                        "type": "string",
+                                                        "example": "Mr.John"
+                                                    },
+                                                    "address": {
+                                                        "type": "string",
+                                                        "example": "4900 Hopyard Rd"
+                                                    },
+                                                    "street2": {
+                                                        "type": "string",
+                                                        "example": "Suit 310"
+                                                    },
+                                                    "city": {
+                                                        "type": "string",
+                                                        "example": "Pleasanton"
+                                                    },
+                                                    "state": {
+                                                        "type": "string",
+                                                        "example": "California"
+                                                    },
+                                                    "zip": {
+                                                        "type": "integer",
+                                                        "example": 94588
+                                                    },
+                                                    "country": {
+                                                        "type": "string",
+                                                        "example": "U.S.A"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "shipping_address": {
+                                                "properties": {
+                                                    "attention": {
+                                                        "type": "string",
+                                                        "example": "Mr.John"
+                                                    },
+                                                    "address": {
+                                                        "type": "string",
+                                                        "example": "4900 Hopyard Rd"
+                                                    },
+                                                    "street2": {
+                                                        "type": "string",
+                                                        "example": "Suit 310"
+                                                    },
+                                                    "city": {
+                                                        "type": "string",
+                                                        "example": "Pleasanton"
+                                                    },
+                                                    "state": {
+                                                        "type": "string",
+                                                        "example": "California"
+                                                    },
+                                                    "zip": {
+                                                        "type": "integer",
+                                                        "example": 94588
+                                                    },
+                                                    "country": {
+                                                        "type": "string",
+                                                        "example": "U.S.A"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "contact_persons": {
+                                                "type": "array",
+                                                "items": {
+                                                    "properties": {
+                                                        "salutation": {
+                                                            "type": "string",
+                                                            "example": "Mr"
+                                                        },
+                                                        "first_name": {
+                                                            "type": "string",
+                                                            "example": "Will"
+                                                        },
+                                                        "last_name": {
+                                                            "type": "string",
+                                                            "example": "Smith"
+                                                        },
+                                                        "email": {
+                                                            "type": "string",
+                                                            "example": "willsmith@bowmanfurniture.com"
+                                                        },
+                                                        "phone": {
+                                                            "type": "string",
+                                                            "example": "+1-925-921-9201"
+                                                        },
+                                                        "mobile": {
+                                                            "type": "string",
+                                                            "example": "+1-4054439562"
+                                                        },
+                                                        "is_primary_contact": {
+                                                            "type": "boolean",
+                                                            "example": true
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "default_templates": {
+                                                "properties": {
+                                                    "invoice_template_id": {
+                                                        "type": "integer",
+                                                        "example": 460000000052069
+                                                    },
+                                                    "invoice_template_name": {
+                                                        "type": "string",
+                                                        "example": "Custom Classic"
+                                                    },
+                                                    "estimate_template_id": {
+                                                        "type": "integer",
+                                                        "example": 460000000000179
+                                                    },
+                                                    "estimate_template_name": {
+                                                        "type": "string",
+                                                        "example": "Service - Professional"
+                                                    },
+                                                    "creditnote_template_id": {
+                                                        "type": "integer",
+                                                        "example": 460000000000211
+                                                    },
+                                                    "creditnote_template_name": {
+                                                        "type": "string",
+                                                        "example": "Fixed Cost - Professional"
+                                                    },
+                                                    "invoice_email_template_id": {
+                                                        "type": "integer",
+                                                        "example": 460000000052071
+                                                    },
+                                                    "invoice_email_template_name": {
+                                                        "type": "string",
+                                                        "example": "Custom Invoice Notification"
+                                                    },
+                                                    "estimate_email_template_id": {
+                                                        "type": "integer",
+                                                        "example": 460000000052073
+                                                    },
+                                                    "estimate_email_template_name": {
+                                                        "type": "string",
+                                                        "example": "Custom Estimate Notification"
+                                                    },
+                                                    "creditnote_email_template_id": {
+                                                        "type": "integer",
+                                                        "example": 460000000052075
+                                                    },
+                                                    "creditnote_email_template_name": {
+                                                        "type": "string",
+                                                        "example": "Custom Credit Note Notification"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "language_code": {
+                                                "type": "string",
+                                                "example": "en"
+                                            },
+                                            "notes": {
+                                                "type": "string",
+                                                "example": "Payment option : Through check"
+                                            },
+                                            "vat_reg_no": {
+                                                "type": "string",
+                                                "example": "string"
+                                            },
+                                            "tax_reg_no": {
+                                                "type": "integer",
+                                                "example": 12345678912345
+                                            },
+                                            "country_code": {
+                                                "type": "string",
+                                                "example": "US"
+                                            },
+                                            "vat_treatment": {
+                                                "type": "string",
+                                                "example": "string"
+                                            },
+                                            "tax_treatment": {
+                                                "type": "string",
+                                                "example": "string"
+                                            },
+                                            "tax_regime": {
+                                                "type": "string",
+                                                "example": "general_legal_person"
+                                            },
+                                            "legal_name": {
+                                                "type": "string",
+                                                "example": "ESCUELA KEMPER URGATE"
+                                            },
+                                            "is_tds_registered": {
+                                                "type": "boolean",
+                                                "example": true
+                                            },
+                                            "avatax_exempt_no": {
+                                                "type": "string",
+                                                "example": "string"
+                                            },
+                                            "avatax_use_code": {
+                                                "type": "string",
+                                                "example": "string"
+                                            },
+                                            "tax_exemption_id": {
+                                                "type": "integer",
+                                                "example": 11149000000061054
+                                            },
+                                            "tax_authority_id": {
+                                                "type": "integer",
+                                                "example": 11149000000061052
+                                            },
+                                            "tax_id": {
+                                                "type": "integer",
+                                                "example": 11149000000061058
+                                            },
+                                            "is_taxable": {
+                                                "type": "boolean",
+                                                "example": true
+                                            },
+                                            "facebook": {
+                                                "type": "string",
+                                                "example": "zoho"
+                                            },
+                                            "twitter": {
+                                                "type": "string",
+                                                "example": "zoho"
+                                            },
+                                            "place_of_contact": {
+                                                "type": "string",
+                                                "example": "TN"
+                                            },
+                                            "gst_no": {
+                                                "type": "string",
+                                                "example": "22AAAAA0000A1Z5"
+                                            },
+                                            "gst_treatment": {
+                                                "type": "string",
+                                                "example": "business_gst"
+                                            },
+                                            "tax_authority_name": {
+                                                "type": "string",
+                                                "example": "string"
+                                            },
+                                            "tax_exemption_code": {
+                                                "type": "string",
+                                                "example": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Customers"
+                ],
+                "summary": "Create a new customer",
+                "operationId": "19125dcc32fa31005b044b6dec322ea8",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "contact_name": {
+                                        "type": "string",
+                                        "example": "Bowman and Co"
+                                    },
+                                    "company_name": {
+                                        "type": "string",
+                                        "example": "Bowman and Co"
+                                    },
+                                    "payment_terms": {
+                                        "type": "integer",
+                                        "example": 15
+                                    },
+                                    "currency_id": {
+                                        "type": "integer",
+                                        "example": 460000000000097
+                                    },
+                                    "website": {
+                                        "type": "string",
+                                        "example": "www.bowmanfurniture.com"
+                                    },
+                                    "contact_type": {
+                                        "type": "string",
+                                        "example": "customer"
+                                    },
+                                    "custom_fields": {
+                                        "type": "array",
+                                        "items": {
+                                            "properties": {
+                                                "value": {
+                                                    "type": "string",
+                                                    "example": "GBGD078"
+                                                },
+                                                "index": {
+                                                    "type": "integer",
+                                                    "example": 1
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "opening_balances": {
+                                        "type": "array",
+                                        "items": {
+                                            "properties": {
+                                                "location_id": {
+                                                    "type": "string",
+                                                    "example": "460000000038080"
+                                                },
+                                                "exchange_rate": {
+                                                    "type": "number",
+                                                    "format": "float",
+                                                    "example": 1
+                                                },
+                                                "opening_balance_amount": {
+                                                    "type": "number",
+                                                    "format": "float",
+                                                    "example": 1200
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "billing_address": {
+                                        "properties": {
+                                            "attention": {
+                                                "type": "string",
+                                                "example": "Mr.John"
+                                            },
+                                            "address": {
+                                                "type": "string",
+                                                "example": "4900 Hopyard Rd"
+                                            },
+                                            "street2": {
+                                                "type": "string",
+                                                "example": "Suit 310"
+                                            },
+                                            "city": {
+                                                "type": "string",
+                                                "example": "Pleasanton"
+                                            },
+                                            "state": {
+                                                "type": "string",
+                                                "example": "California"
+                                            },
+                                            "zip": {
+                                                "type": "integer",
+                                                "example": 94588
+                                            },
+                                            "country": {
+                                                "type": "string",
+                                                "example": "U.S.A"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "shipping_address": {
+                                        "properties": {
+                                            "attention": {
+                                                "type": "string",
+                                                "example": "Mr.John"
+                                            },
+                                            "address": {
+                                                "type": "string",
+                                                "example": "4900 Hopyard Rd"
+                                            },
+                                            "street2": {
+                                                "type": "string",
+                                                "example": "Suit 310"
+                                            },
+                                            "city": {
+                                                "type": "string",
+                                                "example": "Pleasanton"
+                                            },
+                                            "state": {
+                                                "type": "string",
+                                                "example": "California"
+                                            },
+                                            "zip": {
+                                                "type": "integer",
+                                                "example": 94588
+                                            },
+                                            "country": {
+                                                "type": "string",
+                                                "example": "U.S.A"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "contact_persons": {
+                                        "type": "array",
+                                        "items": {
+                                            "properties": {
+                                                "salutation": {
+                                                    "type": "string",
+                                                    "example": "Mr"
+                                                },
+                                                "first_name": {
+                                                    "type": "string",
+                                                    "example": "Will"
+                                                },
+                                                "last_name": {
+                                                    "type": "string",
+                                                    "example": "Smith"
+                                                },
+                                                "email": {
+                                                    "type": "string",
+                                                    "example": "willsmith@bowmanfurniture.com"
+                                                },
+                                                "phone": {
+                                                    "type": "string",
+                                                    "example": "+1-925-921-9201"
+                                                },
+                                                "mobile": {
+                                                    "type": "string",
+                                                    "example": "+1-4054439562"
+                                                },
+                                                "is_primary_contact": {
+                                                    "type": "boolean",
+                                                    "example": true
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "default_templates": {
+                                        "properties": {
+                                            "invoice_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052069
+                                            },
+                                            "invoice_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Classic"
+                                            },
+                                            "estimate_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000000179
+                                            },
+                                            "estimate_template_name": {
+                                                "type": "string",
+                                                "example": "Service - Professional"
+                                            },
+                                            "creditnote_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000000211
+                                            },
+                                            "creditnote_template_name": {
+                                                "type": "string",
+                                                "example": "Fixed Cost - Professional"
+                                            },
+                                            "invoice_email_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052071
+                                            },
+                                            "invoice_email_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Invoice Notification"
+                                            },
+                                            "estimate_email_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052073
+                                            },
+                                            "estimate_email_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Estimate Notification"
+                                            },
+                                            "creditnote_email_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052075
+                                            },
+                                            "creditnote_email_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Credit Note Notification"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "language_code": {
+                                        "type": "string",
+                                        "example": "en"
+                                    },
+                                    "notes": {
+                                        "type": "string",
+                                        "example": "Payment option : Through check"
+                                    },
+                                    "vat_reg_no": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_reg_no": {
+                                        "type": "integer",
+                                        "example": 12345678912345
+                                    },
+                                    "country_code": {
+                                        "type": "string",
+                                        "example": "US"
+                                    },
+                                    "vat_treatment": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_treatment": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_regime": {
+                                        "type": "string",
+                                        "example": "general_legal_person"
+                                    },
+                                    "legal_name": {
+                                        "type": "string",
+                                        "example": "ESCUELA KEMPER URGATE"
+                                    },
+                                    "is_tds_registered": {
+                                        "type": "boolean",
+                                        "example": true
+                                    },
+                                    "avatax_exempt_no": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "avatax_use_code": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_exemption_id": {
+                                        "type": "integer",
+                                        "example": 11149000000061054
+                                    },
+                                    "tax_authority_id": {
+                                        "type": "integer",
+                                        "example": 11149000000061052
+                                    },
+                                    "tax_id": {
+                                        "type": "integer",
+                                        "example": 11149000000061058
+                                    },
+                                    "is_taxable": {
+                                        "type": "boolean",
+                                        "example": true
+                                    },
+                                    "facebook": {
+                                        "type": "string",
+                                        "example": "zoho"
+                                    },
+                                    "twitter": {
+                                        "type": "string",
+                                        "example": "zoho"
+                                    },
+                                    "place_of_contact": {
+                                        "type": "string",
+                                        "example": "TN"
+                                    },
+                                    "gst_no": {
+                                        "type": "string",
+                                        "example": "22AAAAA0000A1Z5"
+                                    },
+                                    "gst_treatment": {
+                                        "type": "string",
+                                        "example": "business_gst"
+                                    },
+                                    "tax_authority_name": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_exemption_code": {
+                                        "type": "string",
+                                        "example": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Customer created successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "contact_name": {
+                                            "type": "string",
+                                            "example": "Bowman and Co"
+                                        },
+                                        "company_name": {
+                                            "type": "string",
+                                            "example": "Bowman and Co"
+                                        },
+                                        "payment_terms": {
+                                            "type": "integer",
+                                            "example": 15
+                                        },
+                                        "currency_id": {
+                                            "type": "integer",
+                                            "example": 460000000000097
+                                        },
+                                        "website": {
+                                            "type": "string",
+                                            "example": "www.bowmanfurniture.com"
+                                        },
+                                        "contact_type": {
+                                            "type": "string",
+                                            "example": "customer"
+                                        },
+                                        "custom_fields": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "value": {
+                                                        "type": "string",
+                                                        "example": "GBGD078"
+                                                    },
+                                                    "index": {
+                                                        "type": "integer",
+                                                        "example": 1
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "opening_balances": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "location_id": {
+                                                        "type": "string",
+                                                        "example": "460000000038080"
+                                                    },
+                                                    "exchange_rate": {
+                                                        "type": "number",
+                                                        "format": "float",
+                                                        "example": 1
+                                                    },
+                                                    "opening_balance_amount": {
+                                                        "type": "number",
+                                                        "format": "float",
+                                                        "example": 1200
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "billing_address": {
+                                            "properties": {
+                                                "attention": {
+                                                    "type": "string",
+                                                    "example": "Mr.John"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "example": "4900 Hopyard Rd"
+                                                },
+                                                "street2": {
+                                                    "type": "string",
+                                                    "example": "Suit 310"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "example": "Pleasanton"
+                                                },
+                                                "state": {
+                                                    "type": "string",
+                                                    "example": "California"
+                                                },
+                                                "zip": {
+                                                    "type": "integer",
+                                                    "example": 94588
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "example": "U.S.A"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "shipping_address": {
+                                            "properties": {
+                                                "attention": {
+                                                    "type": "string",
+                                                    "example": "Mr.John"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "example": "4900 Hopyard Rd"
+                                                },
+                                                "street2": {
+                                                    "type": "string",
+                                                    "example": "Suit 310"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "example": "Pleasanton"
+                                                },
+                                                "state": {
+                                                    "type": "string",
+                                                    "example": "California"
+                                                },
+                                                "zip": {
+                                                    "type": "integer",
+                                                    "example": 94588
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "example": "U.S.A"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "contact_persons": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "salutation": {
+                                                        "type": "string",
+                                                        "example": "Mr"
+                                                    },
+                                                    "first_name": {
+                                                        "type": "string",
+                                                        "example": "Will"
+                                                    },
+                                                    "last_name": {
+                                                        "type": "string",
+                                                        "example": "Smith"
+                                                    },
+                                                    "email": {
+                                                        "type": "string",
+                                                        "example": "willsmith@bowmanfurniture.com"
+                                                    },
+                                                    "phone": {
+                                                        "type": "string",
+                                                        "example": "+1-925-921-9201"
+                                                    },
+                                                    "mobile": {
+                                                        "type": "string",
+                                                        "example": "+1-4054439562"
+                                                    },
+                                                    "is_primary_contact": {
+                                                        "type": "boolean",
+                                                        "example": true
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "default_templates": {
+                                            "properties": {
+                                                "invoice_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052069
+                                                },
+                                                "invoice_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Classic"
+                                                },
+                                                "estimate_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000000179
+                                                },
+                                                "estimate_template_name": {
+                                                    "type": "string",
+                                                    "example": "Service - Professional"
+                                                },
+                                                "creditnote_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000000211
+                                                },
+                                                "creditnote_template_name": {
+                                                    "type": "string",
+                                                    "example": "Fixed Cost - Professional"
+                                                },
+                                                "invoice_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052071
+                                                },
+                                                "invoice_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Invoice Notification"
+                                                },
+                                                "estimate_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052073
+                                                },
+                                                "estimate_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Estimate Notification"
+                                                },
+                                                "creditnote_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052075
+                                                },
+                                                "creditnote_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Credit Note Notification"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "language_code": {
+                                            "type": "string",
+                                            "example": "en"
+                                        },
+                                        "notes": {
+                                            "type": "string",
+                                            "example": "Payment option : Through check"
+                                        },
+                                        "vat_reg_no": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_reg_no": {
+                                            "type": "integer",
+                                            "example": 12345678912345
+                                        },
+                                        "country_code": {
+                                            "type": "string",
+                                            "example": "US"
+                                        },
+                                        "vat_treatment": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_treatment": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_regime": {
+                                            "type": "string",
+                                            "example": "general_legal_person"
+                                        },
+                                        "legal_name": {
+                                            "type": "string",
+                                            "example": "ESCUELA KEMPER URGATE"
+                                        },
+                                        "is_tds_registered": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "avatax_exempt_no": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "avatax_use_code": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_exemption_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061054
+                                        },
+                                        "tax_authority_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061052
+                                        },
+                                        "tax_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061058
+                                        },
+                                        "is_taxable": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "facebook": {
+                                            "type": "string",
+                                            "example": "zoho"
+                                        },
+                                        "twitter": {
+                                            "type": "string",
+                                            "example": "zoho"
+                                        },
+                                        "place_of_contact": {
+                                            "type": "string",
+                                            "example": "TN"
+                                        },
+                                        "gst_no": {
+                                            "type": "string",
+                                            "example": "22AAAAA0000A1Z5"
+                                        },
+                                        "gst_treatment": {
+                                            "type": "string",
+                                            "example": "business_gst"
+                                        },
+                                        "tax_authority_name": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_exemption_code": {
+                                            "type": "string",
+                                            "example": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "api/v1/ahwstore/customers/{id}": {
+            "get": {
+                "tags": [
+                    "Customers"
+                ],
+                "summary": "Get a specific customer",
+                "operationId": "144577eebe11cbf4f54c5d40b5460c3f",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Customer ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "contact_name": {
+                                            "type": "string",
+                                            "example": "Bowman and Co"
+                                        },
+                                        "company_name": {
+                                            "type": "string",
+                                            "example": "Bowman and Co"
+                                        },
+                                        "payment_terms": {
+                                            "type": "integer",
+                                            "example": 15
+                                        },
+                                        "currency_id": {
+                                            "type": "integer",
+                                            "example": 460000000000097
+                                        },
+                                        "website": {
+                                            "type": "string",
+                                            "example": "www.bowmanfurniture.com"
+                                        },
+                                        "contact_type": {
+                                            "type": "string",
+                                            "example": "customer"
+                                        },
+                                        "custom_fields": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "value": {
+                                                        "type": "string",
+                                                        "example": "GBGD078"
+                                                    },
+                                                    "index": {
+                                                        "type": "integer",
+                                                        "example": 1
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "opening_balances": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "location_id": {
+                                                        "type": "string",
+                                                        "example": "460000000038080"
+                                                    },
+                                                    "exchange_rate": {
+                                                        "type": "number",
+                                                        "format": "float",
+                                                        "example": 1
+                                                    },
+                                                    "opening_balance_amount": {
+                                                        "type": "number",
+                                                        "format": "float",
+                                                        "example": 1200
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "billing_address": {
+                                            "properties": {
+                                                "attention": {
+                                                    "type": "string",
+                                                    "example": "Mr.John"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "example": "4900 Hopyard Rd"
+                                                },
+                                                "street2": {
+                                                    "type": "string",
+                                                    "example": "Suit 310"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "example": "Pleasanton"
+                                                },
+                                                "state": {
+                                                    "type": "string",
+                                                    "example": "California"
+                                                },
+                                                "zip": {
+                                                    "type": "integer",
+                                                    "example": 94588
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "example": "U.S.A"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "shipping_address": {
+                                            "properties": {
+                                                "attention": {
+                                                    "type": "string",
+                                                    "example": "Mr.John"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "example": "4900 Hopyard Rd"
+                                                },
+                                                "street2": {
+                                                    "type": "string",
+                                                    "example": "Suit 310"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "example": "Pleasanton"
+                                                },
+                                                "state": {
+                                                    "type": "string",
+                                                    "example": "California"
+                                                },
+                                                "zip": {
+                                                    "type": "integer",
+                                                    "example": 94588
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "example": "U.S.A"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "contact_persons": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "salutation": {
+                                                        "type": "string",
+                                                        "example": "Mr"
+                                                    },
+                                                    "first_name": {
+                                                        "type": "string",
+                                                        "example": "Will"
+                                                    },
+                                                    "last_name": {
+                                                        "type": "string",
+                                                        "example": "Smith"
+                                                    },
+                                                    "email": {
+                                                        "type": "string",
+                                                        "example": "willsmith@bowmanfurniture.com"
+                                                    },
+                                                    "phone": {
+                                                        "type": "string",
+                                                        "example": "+1-925-921-9201"
+                                                    },
+                                                    "mobile": {
+                                                        "type": "string",
+                                                        "example": "+1-4054439562"
+                                                    },
+                                                    "is_primary_contact": {
+                                                        "type": "boolean",
+                                                        "example": true
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "default_templates": {
+                                            "properties": {
+                                                "invoice_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052069
+                                                },
+                                                "invoice_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Classic"
+                                                },
+                                                "estimate_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000000179
+                                                },
+                                                "estimate_template_name": {
+                                                    "type": "string",
+                                                    "example": "Service - Professional"
+                                                },
+                                                "creditnote_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000000211
+                                                },
+                                                "creditnote_template_name": {
+                                                    "type": "string",
+                                                    "example": "Fixed Cost - Professional"
+                                                },
+                                                "invoice_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052071
+                                                },
+                                                "invoice_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Invoice Notification"
+                                                },
+                                                "estimate_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052073
+                                                },
+                                                "estimate_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Estimate Notification"
+                                                },
+                                                "creditnote_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052075
+                                                },
+                                                "creditnote_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Credit Note Notification"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "language_code": {
+                                            "type": "string",
+                                            "example": "en"
+                                        },
+                                        "notes": {
+                                            "type": "string",
+                                            "example": "Payment option : Through check"
+                                        },
+                                        "vat_reg_no": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_reg_no": {
+                                            "type": "integer",
+                                            "example": 12345678912345
+                                        },
+                                        "country_code": {
+                                            "type": "string",
+                                            "example": "US"
+                                        },
+                                        "vat_treatment": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_treatment": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_regime": {
+                                            "type": "string",
+                                            "example": "general_legal_person"
+                                        },
+                                        "legal_name": {
+                                            "type": "string",
+                                            "example": "ESCUELA KEMPER URGATE"
+                                        },
+                                        "is_tds_registered": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "avatax_exempt_no": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "avatax_use_code": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_exemption_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061054
+                                        },
+                                        "tax_authority_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061052
+                                        },
+                                        "tax_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061058
+                                        },
+                                        "is_taxable": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "facebook": {
+                                            "type": "string",
+                                            "example": "zoho"
+                                        },
+                                        "twitter": {
+                                            "type": "string",
+                                            "example": "zoho"
+                                        },
+                                        "place_of_contact": {
+                                            "type": "string",
+                                            "example": "TN"
+                                        },
+                                        "gst_no": {
+                                            "type": "string",
+                                            "example": "22AAAAA0000A1Z5"
+                                        },
+                                        "gst_treatment": {
+                                            "type": "string",
+                                            "example": "business_gst"
+                                        },
+                                        "tax_authority_name": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_exemption_code": {
+                                            "type": "string",
+                                            "example": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Customer not found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Customers"
+                ],
+                "summary": "Update a customer",
+                "operationId": "e7c5fb386e142c7ce566f787d422c6b9",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Customer ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "contact_name": {
+                                        "type": "string",
+                                        "example": "Bowman and Co"
+                                    },
+                                    "company_name": {
+                                        "type": "string",
+                                        "example": "Bowman and Co"
+                                    },
+                                    "payment_terms": {
+                                        "type": "integer",
+                                        "example": 15
+                                    },
+                                    "currency_id": {
+                                        "type": "integer",
+                                        "example": 460000000000097
+                                    },
+                                    "website": {
+                                        "type": "string",
+                                        "example": "www.bowmanfurniture.com"
+                                    },
+                                    "contact_type": {
+                                        "type": "string",
+                                        "example": "customer"
+                                    },
+                                    "custom_fields": {
+                                        "type": "array",
+                                        "items": {
+                                            "properties": {
+                                                "value": {
+                                                    "type": "string",
+                                                    "example": "GBGD078"
+                                                },
+                                                "index": {
+                                                    "type": "integer",
+                                                    "example": 1
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "opening_balances": {
+                                        "type": "array",
+                                        "items": {
+                                            "properties": {
+                                                "location_id": {
+                                                    "type": "string",
+                                                    "example": "460000000038080"
+                                                },
+                                                "exchange_rate": {
+                                                    "type": "number",
+                                                    "format": "float",
+                                                    "example": 1
+                                                },
+                                                "opening_balance_amount": {
+                                                    "type": "number",
+                                                    "format": "float",
+                                                    "example": 1200
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "billing_address": {
+                                        "properties": {
+                                            "attention": {
+                                                "type": "string",
+                                                "example": "Mr.John"
+                                            },
+                                            "address": {
+                                                "type": "string",
+                                                "example": "4900 Hopyard Rd"
+                                            },
+                                            "street2": {
+                                                "type": "string",
+                                                "example": "Suit 310"
+                                            },
+                                            "city": {
+                                                "type": "string",
+                                                "example": "Pleasanton"
+                                            },
+                                            "state": {
+                                                "type": "string",
+                                                "example": "California"
+                                            },
+                                            "zip": {
+                                                "type": "integer",
+                                                "example": 94588
+                                            },
+                                            "country": {
+                                                "type": "string",
+                                                "example": "U.S.A"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "shipping_address": {
+                                        "properties": {
+                                            "attention": {
+                                                "type": "string",
+                                                "example": "Mr.John"
+                                            },
+                                            "address": {
+                                                "type": "string",
+                                                "example": "4900 Hopyard Rd"
+                                            },
+                                            "street2": {
+                                                "type": "string",
+                                                "example": "Suit 310"
+                                            },
+                                            "city": {
+                                                "type": "string",
+                                                "example": "Pleasanton"
+                                            },
+                                            "state": {
+                                                "type": "string",
+                                                "example": "California"
+                                            },
+                                            "zip": {
+                                                "type": "integer",
+                                                "example": 94588
+                                            },
+                                            "country": {
+                                                "type": "string",
+                                                "example": "U.S.A"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "contact_persons": {
+                                        "type": "array",
+                                        "items": {
+                                            "properties": {
+                                                "salutation": {
+                                                    "type": "string",
+                                                    "example": "Mr"
+                                                },
+                                                "first_name": {
+                                                    "type": "string",
+                                                    "example": "Will"
+                                                },
+                                                "last_name": {
+                                                    "type": "string",
+                                                    "example": "Smith"
+                                                },
+                                                "email": {
+                                                    "type": "string",
+                                                    "example": "willsmith@bowmanfurniture.com"
+                                                },
+                                                "phone": {
+                                                    "type": "string",
+                                                    "example": "+1-925-921-9201"
+                                                },
+                                                "mobile": {
+                                                    "type": "string",
+                                                    "example": "+1-4054439562"
+                                                },
+                                                "is_primary_contact": {
+                                                    "type": "boolean",
+                                                    "example": true
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "default_templates": {
+                                        "properties": {
+                                            "invoice_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052069
+                                            },
+                                            "invoice_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Classic"
+                                            },
+                                            "estimate_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000000179
+                                            },
+                                            "estimate_template_name": {
+                                                "type": "string",
+                                                "example": "Service - Professional"
+                                            },
+                                            "creditnote_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000000211
+                                            },
+                                            "creditnote_template_name": {
+                                                "type": "string",
+                                                "example": "Fixed Cost - Professional"
+                                            },
+                                            "invoice_email_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052071
+                                            },
+                                            "invoice_email_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Invoice Notification"
+                                            },
+                                            "estimate_email_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052073
+                                            },
+                                            "estimate_email_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Estimate Notification"
+                                            },
+                                            "creditnote_email_template_id": {
+                                                "type": "integer",
+                                                "example": 460000000052075
+                                            },
+                                            "creditnote_email_template_name": {
+                                                "type": "string",
+                                                "example": "Custom Credit Note Notification"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "language_code": {
+                                        "type": "string",
+                                        "example": "en"
+                                    },
+                                    "notes": {
+                                        "type": "string",
+                                        "example": "Payment option : Through check"
+                                    },
+                                    "vat_reg_no": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_reg_no": {
+                                        "type": "integer",
+                                        "example": 12345678912345
+                                    },
+                                    "country_code": {
+                                        "type": "string",
+                                        "example": "US"
+                                    },
+                                    "vat_treatment": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_treatment": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_regime": {
+                                        "type": "string",
+                                        "example": "general_legal_person"
+                                    },
+                                    "legal_name": {
+                                        "type": "string",
+                                        "example": "ESCUELA KEMPER URGATE"
+                                    },
+                                    "is_tds_registered": {
+                                        "type": "boolean",
+                                        "example": true
+                                    },
+                                    "avatax_exempt_no": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "avatax_use_code": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_exemption_id": {
+                                        "type": "integer",
+                                        "example": 11149000000061054
+                                    },
+                                    "tax_authority_id": {
+                                        "type": "integer",
+                                        "example": 11149000000061052
+                                    },
+                                    "tax_id": {
+                                        "type": "integer",
+                                        "example": 11149000000061058
+                                    },
+                                    "is_taxable": {
+                                        "type": "boolean",
+                                        "example": true
+                                    },
+                                    "facebook": {
+                                        "type": "string",
+                                        "example": "zoho"
+                                    },
+                                    "twitter": {
+                                        "type": "string",
+                                        "example": "zoho"
+                                    },
+                                    "place_of_contact": {
+                                        "type": "string",
+                                        "example": "TN"
+                                    },
+                                    "gst_no": {
+                                        "type": "string",
+                                        "example": "22AAAAA0000A1Z5"
+                                    },
+                                    "gst_treatment": {
+                                        "type": "string",
+                                        "example": "business_gst"
+                                    },
+                                    "tax_authority_name": {
+                                        "type": "string",
+                                        "example": "string"
+                                    },
+                                    "tax_exemption_code": {
+                                        "type": "string",
+                                        "example": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Customer updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "contact_name": {
+                                            "type": "string",
+                                            "example": "Bowman and Co"
+                                        },
+                                        "company_name": {
+                                            "type": "string",
+                                            "example": "Bowman and Co"
+                                        },
+                                        "payment_terms": {
+                                            "type": "integer",
+                                            "example": 15
+                                        },
+                                        "currency_id": {
+                                            "type": "integer",
+                                            "example": 460000000000097
+                                        },
+                                        "website": {
+                                            "type": "string",
+                                            "example": "www.bowmanfurniture.com"
+                                        },
+                                        "contact_type": {
+                                            "type": "string",
+                                            "example": "customer"
+                                        },
+                                        "custom_fields": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "value": {
+                                                        "type": "string",
+                                                        "example": "GBGD078"
+                                                    },
+                                                    "index": {
+                                                        "type": "integer",
+                                                        "example": 1
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "opening_balances": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "location_id": {
+                                                        "type": "string",
+                                                        "example": "460000000038080"
+                                                    },
+                                                    "exchange_rate": {
+                                                        "type": "number",
+                                                        "format": "float",
+                                                        "example": 1
+                                                    },
+                                                    "opening_balance_amount": {
+                                                        "type": "number",
+                                                        "format": "float",
+                                                        "example": 1200
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "billing_address": {
+                                            "properties": {
+                                                "attention": {
+                                                    "type": "string",
+                                                    "example": "Mr.John"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "example": "4900 Hopyard Rd"
+                                                },
+                                                "street2": {
+                                                    "type": "string",
+                                                    "example": "Suit 310"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "example": "Pleasanton"
+                                                },
+                                                "state": {
+                                                    "type": "string",
+                                                    "example": "California"
+                                                },
+                                                "zip": {
+                                                    "type": "integer",
+                                                    "example": 94588
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "example": "U.S.A"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "shipping_address": {
+                                            "properties": {
+                                                "attention": {
+                                                    "type": "string",
+                                                    "example": "Mr.John"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "example": "4900 Hopyard Rd"
+                                                },
+                                                "street2": {
+                                                    "type": "string",
+                                                    "example": "Suit 310"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "example": "Pleasanton"
+                                                },
+                                                "state": {
+                                                    "type": "string",
+                                                    "example": "California"
+                                                },
+                                                "zip": {
+                                                    "type": "integer",
+                                                    "example": 94588
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "example": "U.S.A"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "contact_persons": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "salutation": {
+                                                        "type": "string",
+                                                        "example": "Mr"
+                                                    },
+                                                    "first_name": {
+                                                        "type": "string",
+                                                        "example": "Will"
+                                                    },
+                                                    "last_name": {
+                                                        "type": "string",
+                                                        "example": "Smith"
+                                                    },
+                                                    "email": {
+                                                        "type": "string",
+                                                        "example": "willsmith@bowmanfurniture.com"
+                                                    },
+                                                    "phone": {
+                                                        "type": "string",
+                                                        "example": "+1-925-921-9201"
+                                                    },
+                                                    "mobile": {
+                                                        "type": "string",
+                                                        "example": "+1-4054439562"
+                                                    },
+                                                    "is_primary_contact": {
+                                                        "type": "boolean",
+                                                        "example": true
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "default_templates": {
+                                            "properties": {
+                                                "invoice_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052069
+                                                },
+                                                "invoice_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Classic"
+                                                },
+                                                "estimate_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000000179
+                                                },
+                                                "estimate_template_name": {
+                                                    "type": "string",
+                                                    "example": "Service - Professional"
+                                                },
+                                                "creditnote_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000000211
+                                                },
+                                                "creditnote_template_name": {
+                                                    "type": "string",
+                                                    "example": "Fixed Cost - Professional"
+                                                },
+                                                "invoice_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052071
+                                                },
+                                                "invoice_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Invoice Notification"
+                                                },
+                                                "estimate_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052073
+                                                },
+                                                "estimate_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Estimate Notification"
+                                                },
+                                                "creditnote_email_template_id": {
+                                                    "type": "integer",
+                                                    "example": 460000000052075
+                                                },
+                                                "creditnote_email_template_name": {
+                                                    "type": "string",
+                                                    "example": "Custom Credit Note Notification"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "language_code": {
+                                            "type": "string",
+                                            "example": "en"
+                                        },
+                                        "notes": {
+                                            "type": "string",
+                                            "example": "Payment option : Through check"
+                                        },
+                                        "vat_reg_no": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_reg_no": {
+                                            "type": "integer",
+                                            "example": 12345678912345
+                                        },
+                                        "country_code": {
+                                            "type": "string",
+                                            "example": "US"
+                                        },
+                                        "vat_treatment": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_treatment": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_regime": {
+                                            "type": "string",
+                                            "example": "general_legal_person"
+                                        },
+                                        "legal_name": {
+                                            "type": "string",
+                                            "example": "ESCUELA KEMPER URGATE"
+                                        },
+                                        "is_tds_registered": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "avatax_exempt_no": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "avatax_use_code": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_exemption_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061054
+                                        },
+                                        "tax_authority_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061052
+                                        },
+                                        "tax_id": {
+                                            "type": "integer",
+                                            "example": 11149000000061058
+                                        },
+                                        "is_taxable": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "facebook": {
+                                            "type": "string",
+                                            "example": "zoho"
+                                        },
+                                        "twitter": {
+                                            "type": "string",
+                                            "example": "zoho"
+                                        },
+                                        "place_of_contact": {
+                                            "type": "string",
+                                            "example": "TN"
+                                        },
+                                        "gst_no": {
+                                            "type": "string",
+                                            "example": "22AAAAA0000A1Z5"
+                                        },
+                                        "gst_treatment": {
+                                            "type": "string",
+                                            "example": "business_gst"
+                                        },
+                                        "tax_authority_name": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "tax_exemption_code": {
+                                            "type": "string",
+                                            "example": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input"
+                    },
+                    "404": {
+                        "description": "Customer not found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Customers"
+                ],
+                "summary": "Delete a customer",
+                "operationId": "b9a722a8d5a812f76501b0e8a4b8d28e",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Customer ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Customer deleted successfully"
+                    },
+                    "404": {
+                        "description": "Customer not found"
+                    }
+                }
+            }
+        },
+        "/api/v1/ahwstore/sales-orders": {
+            "get": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Get all sales orders",
+                "operationId": "5ba2c59858f232be8837f8ef6b671144",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/SalesOrderResponse"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Create a new sales order",
+                "operationId": "1e203b8aa6ba4a7d7a293568c505ecb4",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/SalesOrderRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Sales order created successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SalesOrderResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/v1/ahwstore/sales-orders/{id}": {
+            "get": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Get a specific sales order",
+                "operationId": "9551eb82a03b2576caf70cb41c2782f0",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Sales Order ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SalesOrderResponse"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Sales order not found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Update a sales order",
+                "operationId": "ecd869dfac97234196cc2431587e8470",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Sales Order ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/SalesOrderUpdateRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Sales order updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SalesOrderResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input"
+                    },
+                    "404": {
+                        "description": "Sales order not found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Delete a sales order",
+                "operationId": "2a80deb8bc938f69b17f38647cd2bced",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Sales Order ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Sales order deleted successfully"
+                    },
+                    "404": {
+                        "description": "Sales order not found"
+                    }
+                }
+            }
+        },
+        "/api/v1/ahwstore/sales-orders/{id}/status/confirmed": {
+            "post": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Mark a sales order as Confirmed",
+                "operationId": "50f6d8d2f9ece64a9882fb0931a7b13f",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Sales Order ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sales order status changed to Confirmed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 0
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Sales order status has been changed to 'Confirmed'."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/ahwstore/sales-orders/{id}/status/void": {
+            "post": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Mark a sales order as Void",
+                "operationId": "3d75bd735b95ae09ea4857eb151640c3",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Sales Order ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sales order status changed to Void",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 0
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The status of the Sales Order has been changed to void."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/ahwstore/sales-orders/status/confirmed": {
+            "post": {
+                "tags": [
+                    "SalesOrders"
+                ],
+                "summary": "Bulk confirm sales orders",
+                "operationId": "8023f0926738082584395fce75bf6442",
+                "parameters": [
+                    {
+                        "name": "salesorder_ids",
+                        "in": "query",
+                        "description": "Comma-separated list of sales order IDs",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "4815000000045208,4815000000045274,4815000000045340"
+                        }
+                    },
+                    {
+                        "name": "organization_id",
+                        "in": "query",
+                        "description": "Organization ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "10234695"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Bulk sales order status changed to Confirmed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 0
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Sales order status has been changed to Confirmed."
+                                        },
+                                        "data": {
+                                            "properties": {
+                                                "email_success_info": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "properties": {
+                                                            "code": {
+                                                                "type": "integer",
+                                                                "example": 0
+                                                            },
+                                                            "message": {
+                                                                "type": "string",
+                                                                "example": "The status of the sales order has been changed to Open."
+                                                            },
+                                                            "ids": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "string",
+                                                                    "example": "4815000000045208,4815000000045274,4815000000045340"
+                                                                }
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                },
+                                                "email_error_info": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object"
+                                                    }
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "SalesOrderResponse": {
+                "properties": {
+                    "salesorder_id": {
+                        "type": "string",
+                        "example": "4815000000045208"
+                    },
+                    "customer_id": {
+                        "type": "integer",
+                        "example": 12345
+                    },
+                    "customer_name": {
+                        "type": "string",
+                        "example": "John Doe"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-01-15"
+                    },
+                    "shipment_date": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-01-20"
+                    },
+                    "delivery_method": {
+                        "type": "string",
+                        "example": "Standard"
+                    },
+                    "reference_number": {
+                        "type": "string",
+                        "example": "REF-001"
+                    },
+                    "notes": {
+                        "type": "string",
+                        "example": "Order notes"
+                    },
+                    "terms": {
+                        "type": "string",
+                        "example": "Net 30"
+                    },
+                    "total": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 1250.5
+                    },
+                    "status": {
+                        "type": "string",
+                        "example": "confirmed"
+                    },
+                    "line_items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/LineItem"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "SalesOrderRequest": {
+                "required": [
+                    "customer_id",
+                    "date",
+                    "line_items"
+                ],
+                "properties": {
+                    "customer_id": {
+                        "type": "integer",
+                        "example": 12345
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-01-15"
+                    },
+                    "shipment_date": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-01-20"
+                    },
+                    "delivery_method": {
+                        "type": "string",
+                        "example": "Standard"
+                    },
+                    "reference_number": {
+                        "type": "string",
+                        "example": "REF-001"
+                    },
+                    "notes": {
+                        "type": "string",
+                        "example": "Order notes"
+                    },
+                    "terms": {
+                        "type": "string",
+                        "example": "Net 30"
+                    },
+                    "line_items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/LineItemRequest"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "SalesOrderUpdateRequest": {
+                "properties": {
+                    "customer_id": {
+                        "type": "integer",
+                        "example": 12345
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-01-15"
+                    },
+                    "shipment_date": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-01-20"
+                    },
+                    "delivery_method": {
+                        "type": "string",
+                        "example": "Standard"
+                    },
+                    "reference_number": {
+                        "type": "string",
+                        "example": "REF-001"
+                    },
+                    "notes": {
+                        "type": "string",
+                        "example": "Order notes"
+                    },
+                    "terms": {
+                        "type": "string",
+                        "example": "Net 30"
+                    },
+                    "line_items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/LineItemRequest"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "LineItem": {
+                "properties": {
+                    "line_item_id": {
+                        "type": "string",
+                        "example": "4815000000045209"
+                    },
+                    "item_id": {
+                        "type": "integer",
+                        "example": 67890
+                    },
+                    "name": {
+                        "type": "string",
+                        "example": "Product Name"
+                    },
+                    "quantity": {
+                        "type": "integer",
+                        "example": 2
+                    },
+                    "rate": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 125.5
+                    },
+                    "tax_percentage": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 10
+                    },
+                    "item_total": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 251
+                    }
+                },
+                "type": "object"
+            },
+            "LineItemRequest": {
+                "required": [
+                    "item_id",
+                    "name",
+                    "quantity",
+                    "rate",
+                    "item_total"
+                ],
+                "properties": {
+                    "item_id": {
+                        "type": "integer",
+                        "example": 67890
+                    },
+                    "name": {
+                        "type": "string",
+                        "example": "Product Name"
+                    },
+                    "quantity": {
+                        "type": "integer",
+                        "example": 2
+                    },
+                    "rate": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 125.5
+                    },
+                    "tax_percentage": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 10
+                    },
+                    "item_total": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 251
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "description": "Enter token in format (Bearer <token>)",
+                "name": "Authorization",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Customers",
+            "description": "Customers"
+        },
+        {
+            "name": "SalesOrders",
+            "description": "SalesOrders"
+        }
+    ]
 }

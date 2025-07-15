@@ -20,7 +20,7 @@ Route::middleware(['web'])->group(function () {
 
     Route::get('/create-client', function (Request $request) {
         $user = User::find(auth()->user()->id);
- 
+
         // Creating an OAuth app client that belongs to the given user...
         $client = app(ClientRepository::class)->createAuthorizationCodeGrantClient(
             user: $user,
@@ -29,7 +29,7 @@ Route::middleware(['web'])->group(function () {
             confidential: false,
             enableDeviceFlow: true
         );
-         
+
         // Retrieving all the OAuth app clients that belong to the user...
         $clients = $user->oauthApps()->get();
 
@@ -89,9 +89,9 @@ Route::middleware(['web'])->group(function () {
             $tokenRequest->headers->set('Content-Type', 'application/x-www-form-urlencoded');
 
             $response = app()->handle($tokenRequest);
-            
+
             return response()->json(json_decode($response->getContent(), true));
-           
+
         } catch (\Exception $e) {
             return response()->json([
                 'error' => $e->getMessage(),
@@ -129,7 +129,7 @@ Route::middleware(['web'])->group(function () {
             $tokenRequest->headers->set('Content-Type', 'application/x-www-form-urlencoded');
 
             $response = app()->handle($tokenRequest);
-            
+
             return response()->json(json_decode($response->getContent(), true));
             /* $response = Http::timeout(60)->asForm()->post('http://localhost:8000/oauth/token', [
                 'grant_type' => 'authorization_code',
@@ -148,4 +148,8 @@ Route::middleware(['web'])->group(function () {
             ]);
         }
     });
+});
+
+Route::get('/v1/documentation', function () {
+    return response()->file(storage_path('api-docs/api-docs.json'));
 });

@@ -2,6 +2,9 @@
   'Modules\\AHWStore\\Providers\\EventServiceProvider' => 
   array (
   ),
+  'Modules\\Developers\\Providers\\EventServiceProvider' => 
+  array (
+  ),
   'Modules\\Roles\\Providers\\EventServiceProvider' => 
   array (
     'SocialiteProviders\\Manager\\SocialiteWasCalled' => 

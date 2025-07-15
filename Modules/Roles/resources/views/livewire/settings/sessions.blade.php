@@ -1,19 +1,18 @@
 <?php
 
 use Livewire\Volt\Component;
+use Mary\Traits\Toast;
 
 new class extends Component {
+    use Toast;
+    
     public $sessions = [];
-    public bool $showConfirmPasswordModal = false;
+    public string $password = '';
+    public bool $showConfirmModal = false;
 
     public function mount()
     {
         $this->sessions = $this->getSessions();
-    }
-
-    public function openConfirmPasswordModal()
-    {
-        $this->showConfirmPasswordModal = true;
     }
 
     public function getSessions()
@@ -61,6 +60,10 @@ new class extends Component {
     #[\Livewire\Attributes\On('logoutOtherSessions')]
     public function logoutOtherSessions()
     {
+        $this->validate([
+            'password' => ['required', 'string', 'current_password'],
+        ]);
+
         $userId = auth()->id();
         $currentSessionId = session()->getId();
 
@@ -71,6 +74,10 @@ new class extends Component {
 
         $this->sessions = $this->getSessions();
 
+        $this->showConfirmModal = false;
+        $this->password = '';
+
+        $this->success('Logged out successfully!', position:'bottom-right');
         $this->dispatch('sessionsUpdated');
     }
 }; ?>
@@ -108,7 +115,7 @@ new class extends Component {
         <div class="flex mt-8 items-center gap-4">
             <div class="flex items-center justify-end">
                 <x-mary-button label="{{ __('Log Out Other Browser Sessions') }}" type="button"
-                    wire:click="openConfirmPasswordModal" class="btn-primary" spinner />
+                @click="$wire.showConfirmModal = true"  class="btn-primary" spinner />
             </div>
 
             <x-action-message class="me-3" on="sessionsUpdated">
@@ -116,7 +123,16 @@ new class extends Component {
             </x-action-message>
         </div>
 
-        <livewire:settings.confirm-password :show="$showConfirmPasswordModal" callback="logoutOtherSessions" wire:key="confirm-password-modal" />
+        <x-mary-modal wire:model="showConfirmModal" :title="__('Log Out Other Browser Sessions')" :subtitle="__('log out your active sessions on other browsers and devices')">
+            <x-mary-form wire:submit="logoutOtherSessions" no-separator>
+                <x-mary-password :label="__('Password')" wire:model="password" :placeholder="__('Password')" password-icon="o-lock-closed"
+                    password-visible-icon="o-lock-open" inline right required autocomplete="current-password" />
+                <x-slot:actions>
+                    <x-mary-button label="{{ __('Cancel') }}" @click="$wire.showConfirmModal = false" />
+                    <x-mary-button label="{{ __('Confirm') }}" class="btn-primary" type="submit" spinner />
+                </x-slot:actions>
+            </x-mary-form>
+        </x-mary-modal>
 
     </x-roles::settings.layout>
 </section>

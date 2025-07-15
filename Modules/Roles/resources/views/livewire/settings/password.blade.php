@@ -5,8 +5,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\ValidationException;
 use Livewire\Volt\Component;
+use Mary\Traits\Toast;
 
 new class extends Component {
+    use Toast;
+
     public string $current_password = '';
     public string $password = '';
     public string $password_confirmation = '';
@@ -23,7 +26,6 @@ new class extends Component {
             ]);
         } catch (ValidationException $e) {
             $this->reset('current_password', 'password', 'password_confirmation');
-
             throw $e;
         }
 
@@ -32,8 +34,10 @@ new class extends Component {
         ]);
 
         $this->reset('current_password', 'password', 'password_confirmation');
-
+        $this->success('Password updated successfully!', position:'bottom-right');
         $this->dispatch('password-updated');
+
+        $this->redirectIntended(default: route('settings.profile', absolute: false), navigate: true);
     }
 }; ?>
 
@@ -51,7 +55,7 @@ new class extends Component {
             <x-mary-password :label="__('New Password')" wire:model="password" :placeholder="__('New password')" password-icon="o-lock-closed"
             password-visible-icon="o-lock-open" inline right required autocomplete="new-password" />
 
-            <!-- New Password -->
+            <!-- Confirm Password -->
             <x-mary-password :label="__('Confirm Password')" wire:model="password_confirmation" :placeholder="__('Confirm password')" password-icon="o-lock-closed"
             password-visible-icon="o-lock-open" inline right required autocomplete="new-password" />
 

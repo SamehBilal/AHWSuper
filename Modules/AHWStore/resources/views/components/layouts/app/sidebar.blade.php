@@ -6,8 +6,6 @@
 </head>
 
 <body class="min-h-screen flex flex-col" x-data x-on:set-page-title.window="document.title = $event.detail.title">
-    <input type="hidden" name="userId" value="{{ auth()->user()->id ?? '' }}" />
-
 
     <x-mary-nav sticky full-width>
 
@@ -142,8 +140,45 @@
         </x-mary-menu>
 
         <div class="mt-auto w-full flex flex-col items-center">
-            <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" class="!w-10" />
-            <livewire:theme />
+            <x-mary-menu activate-by-route vertical class="space-y-2">
+                <livewire:theme />
+                <x-mary-popover position="right-start" offset="0">
+                    <x-slot:trigger>
+                        <x-mary-menu-item icon="o-book-open"
+                            link="/api/docs" no-wire-navigate />
+                    </x-slot:trigger>
+                    <x-slot:content>
+                        <div class="grid place-content-center border-t border-base-300">API Documentation!</div>
+                        {{-- <div class="mockup-browser border-base-300 border w-full">
+                            <div class="mockup-browser-toolbar">
+                                <div class="input">{{ route('dashboard') }}</div>
+                            </div>
+                            <div class="grid place-content-center border-t border-base-300 h-80">Hello!</div>
+                        </div> --}}
+                    </x-slot:content>
+                </x-mary-popover>
+
+                <x-mary-popover position="right-start" offset="0">
+                    <x-slot:trigger>
+                        <div class="mary-menu-item flex items-center justify-center !w-10 !h-10 cursor-pointer">
+                            <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" class="!w-8 !h-8" />
+                        </div>
+                    </x-slot:trigger>
+                    <x-slot:content>
+                        <div class="grid place-content-center border-t border-base-300">Profile</div>
+                    </x-slot:content>
+                </x-mary-popover>
+                <x-mary-popover position="right-start" offset="0">
+                    <x-slot:trigger>
+                        <div class="mary-menu-item flex items-center justify-center !w-10 !h-10 cursor-pointer">
+                            <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" class="!w-8 !h-8" />
+                        </div>
+                    </x-slot:trigger>
+                    <x-slot:content>
+                        <div class="grid place-content-center border-t border-base-300">Profile</div>
+                    </x-slot:content>
+                </x-mary-popover>
+            </x-mary-menu >
         </div>
     </aside>
 

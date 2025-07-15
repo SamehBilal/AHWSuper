@@ -5,8 +5,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\Rule;
 use Livewire\Volt\Component;
+use Mary\Traits\Toast;
 
 new class extends Component {
+    use Toast;
+
     public string $name = '';
     public string $email = '';
 
@@ -47,6 +50,7 @@ new class extends Component {
 
         $user->save();
 
+        $this->success('Profile updated successfully!', position:'bottom-right');
         $this->dispatch('profile-updated', name: $user->name);
     }
 
