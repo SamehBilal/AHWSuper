@@ -6,6 +6,7 @@ use Livewire\Volt\Volt;
 use Modules\Roles\Http\Controllers\Auth\SocialAuthController;
 
 Route::middleware('guest')->group(function () {
+
     Volt::route('login', 'auth.login')
         ->name('login');
 
@@ -25,6 +26,8 @@ Route::middleware('guest')->group(function () {
 
     Route::get('available-drivers', [SocialAuthController::class, 'getAvailableDrivers'])
     ->name('social.available-drivers');
+
+    
 });
 
 Route::middleware('auth')->group(function () {

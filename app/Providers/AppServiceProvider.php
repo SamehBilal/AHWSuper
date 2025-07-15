@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
 use Carbon\CarbonInterval;
+use Livewire\Livewire;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,9 +26,47 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Passport::loadKeysFrom(__DIR__.'/../secrets/oauth');
+        // By providing a view name...
+        Passport::authorizationView(function ($parameters) {
+            return view('roles::livewire.auth.authorize1', [
+            'client' => $parameters['client'],
+            'user' => $parameters['user'],
+            'scopes' => $parameters['scopes'],
+            'request' => $parameters['request'],
+            'authToken' => $parameters['authToken'],
+        ]);});
+        /* Passport::authorizationView(function ($parameters) {
+            return view('roles::authorize', [
+                'client' => $parameters['client'],
+                'user' => $parameters['user'],
+                'scopes' => $parameters['scopes'],
+                'request' => $parameters['request'],
+                'authToken' => $parameters['authToken'],
+            ]);
+            return Livewire::mount('auth.authorize', [
+                'client' => $parameters['client'],
+                'user' => $parameters['user'],
+                'scopes' => $parameters['scopes'],
+                'request' => $parameters['request'], // This will be used in mount() only
+                'authToken' => $parameters['authToken'] ?? null,
+            ]);
+        }); */
+
+        // By providing a closure...
+        /* Passport::authorizationView(
+            fn($parameters) => Inertia::render('Auth/OAuth/Authorize', [
+                'request' => $parameters['request'],
+                'authToken' => $parameters['authToken'],
+                'client' => $parameters['client'],
+                'user' => $parameters['user'],
+                'scopes' => $parameters['scopes'],
+            ])
+        ); */
+
+        Passport::loadKeysFrom(__DIR__ . '/../secrets/oauth');
         Passport::tokensExpireIn(CarbonInterval::days(15));
         Passport::refreshTokensExpireIn(CarbonInterval::days(30));
         Passport::personalAccessTokensExpireIn(CarbonInterval::months(6));
+        Passport::enablePasswordGrant();
     }
 }
