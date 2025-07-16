@@ -66,16 +66,16 @@ new #[Layout('developers::components.layouts.first')] class extends Component {
                 Manage your API clients and create new integrations easily.
             </p>
             <div class="relative flex flex-col justify-center md:flex-row md:space-x-4">
-                <button @click="$wire.showModal = true"
+                <a href="{{ route('developers.dashboard') }}"
                     class="flex cursor-pointer items-center w-full px-6 py-3 mb-3 text-lg text-white bg-primary rounded-md md:mb-0 hover:bg-primary-700 md:w-auto"
-                    data-primary="purple-500" data-rounded="rounded-md">
-                    Create New App
+                    data-primary="purple-500" data-rounded="rounded-md" wire:navigate>
+                    Go to Dashboard
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"></line>
                         <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
-                </button>
+                </a>
                 <a href="/api/docs" target="_blank"
                     class="flex cursor-pointer items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
                     data-rounded="rounded-md">

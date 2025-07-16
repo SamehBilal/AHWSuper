@@ -41,10 +41,10 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
         Session::regenerate();
 
         if (request('from') === 'developers'){
-            $this->redirectIntended(default: route('developers.dashboard', absolute: false), navigate: false);
+            $this->redirectIntended(default: route('developers.apps', absolute: false), navigate: false);
         }
 
-        $this->redirectIntended(default: route('developers.dashboard', absolute: false), navigate: true);
+        $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
     }
 
     /**

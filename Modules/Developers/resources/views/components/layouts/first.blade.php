@@ -6,8 +6,9 @@
 </head>
 
 <body class="min-h-screen overflow-x-hidden">
+   
     {{ $slot }}
-    <section class="{{-- text-gray-700 --}} bg-white fixed bottom-0 w-full {{-- body-font fixed bottom-0 w-full --}}"
+    <section class="{{-- text-gray-700 --}} bg-white  w-full {{-- body-font fixed bottom-0 w-full --}}"
     {!! $attributes ?? '' !!}>
     <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
         <a href="#_"
