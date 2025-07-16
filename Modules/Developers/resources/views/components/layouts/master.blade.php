@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
 
 <head>
     @include('partials.head')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https:////cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f11420;
         }
 
         .organic-shape {
             position: absolute;
-            z-index: 1;
+            z-index: 11;
+        }
+
+        .organic-shape svg {
+            fill: #fff;
+            transform: rotate(25deg);
+            opacity: 0.9;
+        }
+
+        .organic-shape #hands-svg {
+            transform: rotate(-25deg) !important;
+            opacity: 1 !important;
         }
 
         .cactus {
@@ -82,7 +96,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 120px;
+            height: 25vh;
             background: white;
             clip-path: polygon(
                 0% 60px,
@@ -156,7 +170,7 @@
 
 
 
-<body class="bg-yellow-400 min-h-screen overflow-x-hidden" x-data x-on:set-page-title.window="document.title = $event.detail.title">
+<body class="bg-yellow-400 min-h-screen overflow-x-hidden">
     {{-- <x-mary-main with-nav full-width> --}}
         <!-- Content Area -->
         {{-- <x-slot:content> --}}

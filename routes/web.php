@@ -9,7 +9,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
+    ->middleware(['auth', 'verified', 'two-factor'])
     ->name('dashboard');
 
 require __DIR__.'/auth.php';

@@ -7,6 +7,7 @@ use Illuminate\Support\ServiceProvider;
 use Nwidart\Modules\Traits\PathNamespace;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
+use Livewire\Volt\Volt;
 
 class DevelopersServiceProvider extends ServiceProvider
 {
@@ -26,7 +27,25 @@ class DevelopersServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
+        $this->registerVoltComponents(); // Move this to separate method
         $this->loadMigrationsFrom(module_path($this->name, 'database/migrations'));
+    }
+
+    protected function registerVoltComponents(): void
+    {
+        // Try both possible paths
+        $voltPaths = [
+            module_path($this->name, 'Resources/views/livewire'),
+            module_path($this->name, 'resources/views/livewire'), // lowercase fallback
+        ];
+
+        $existingPaths = array_filter($voltPaths, function($path) {
+            return is_dir($path);
+        });
+
+        if (!empty($existingPaths)) {
+            Volt::mount($existingPaths);
+        }
     }
 
     /**
@@ -123,11 +142,24 @@ class DevelopersServiceProvider extends ServiceProvider
     public function registerViews(): void
     {
         $viewPath = resource_path('views/modules/'.$this->nameLower);
-        $sourcePath = module_path($this->name, 'resources/views');
+        // Try both paths
+        $sourcePaths = [
+            module_path($this->name, 'Resources/views'),
+            module_path($this->name, 'resources/views'),
+        ];
 
-        $this->publishes([$sourcePath => $viewPath], ['views', $this->nameLower.'-module-views']);
+        $sourcePath = null;
+        foreach ($sourcePaths as $path) {
+            if (is_dir($path)) {
+                $sourcePath = $path;
+                break;
+            }
+        }
 
-        $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $this->nameLower);
+        if ($sourcePath) {
+            $this->publishes([$sourcePath => $viewPath], ['views', $this->nameLower.'-module-views']);
+            $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $this->nameLower);
+        }
 
         Blade::componentNamespace(config('modules.namespace').'\\' . $this->name . '\\View\\Components', $this->nameLower);
     }
