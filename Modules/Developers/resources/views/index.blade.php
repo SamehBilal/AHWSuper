@@ -3,7 +3,7 @@
 
 <head>
     @include('partials.head')
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
@@ -179,7 +179,6 @@
                 <div class="badge badge-neutral badge-outline mt-1">for developers</div>
             </h1>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#" class="text-amber-50 hover:text-grey-700 font-medium transition-colors">Home</a>
                 <a href="#" class="text-amber-50 hover:text-grey-700 font-medium transition-colors">API</a>
                 <a href="#" class="text-amber-50 hover:text-grey-700 font-medium transition-colors">Docs</a>
                 <a href="#" class="text-amber-50 hover:text-grey-700 font-medium transition-colors">Community</a>

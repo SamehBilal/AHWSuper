@@ -5,7 +5,7 @@ use Modules\Developers\Http\Controllers\DevelopersController;
 use Livewire\Volt\Volt;
 
 Route::middleware(['web'])->prefix('developers')->name('developers.')->group(function () {
-    Volt::route('/', 'index')
+    Volt::route('/', 'theme.index')
     ->name('index');
 
     /* Route::get('/', function () {
@@ -15,5 +15,7 @@ Route::middleware(['web'])->prefix('developers')->name('developers.')->group(fun
 });
 
 Route::middleware(['auth', 'verified', 'two-factor'])->prefix('developers')->name('developers.')->group(function () {
+    Volt::route('/dashboard', 'admin.index')->name('dashboard');
+    Volt::route('/apps', 'admin.apps')->name('apps');
     Route::resource('developers', DevelopersController::class)->names('developers');
 });
