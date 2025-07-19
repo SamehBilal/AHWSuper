@@ -43,6 +43,26 @@ return Application::configure(basePath: dirname(__DIR__))
                     'message' => $e->getMessage(),
                 ], method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500);
             }
+
+            // Handle unauthenticated web requests for modules
+            if ($e instanceof \Illuminate\Auth\AuthenticationException) {
+                // Match the first segment as the module name
+                $path = ltrim($request->path(), '/');
+                $segments = explode('/', $path);
+                $module = $segments[0] ?? null;
+                // List your module names here as needed
+                $modules = ['developers', 'roles', 'ahwstore'];
+                if ($module && in_array($module, $modules)) {
+                    if ($module === 'roles') {
+                        // Exception: roles module goes to login without 'from'
+                        return redirect()->guest(route('login'));
+                    } else {
+                        return redirect()->guest(route('login', ['from' => $module]));
+                    }
+                }
+                // Default behavior
+                return redirect()->guest(route('login'));
+            }
         });
     })
     ->create();

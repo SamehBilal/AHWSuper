@@ -20,6 +20,8 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
 
     public bool $remember = false;
 
+    public ?string $from = null;
+
     /**
      * Handle an incoming authentication request.
      */
@@ -40,7 +42,7 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
         RateLimiter::clear($this->throttleKey());
         Session::regenerate();
 
-        if (request('from') === 'developers'){
+        if ($this->from === 'developers'){
             $this->redirectIntended(default: route('developers.apps', absolute: false), navigate: false);
         }
 
@@ -85,6 +87,7 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
     <x-auth-session-status class="text-center" :status="session('status')" />
 
     <form wire:submit="login" class="flex flex-col gap-6">
+        <input type="hidden" wire:model="from" value="{{ request('from') }}">
         <!-- Email Address -->
         <x-mary-input :label="__('Email address')" type="email" wire:model="email" placeholder="email@example.com" inline clearable
             required autofocus autocomplete="email" />
@@ -118,7 +121,7 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
     @if (Route::has('register'))
         <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
             {{ __('First time around here? ') }}
-            <a href="{{ route('register') }}" class="underline" wire:navigate>{{ __('Sign up') }}</a>
+            <a href="{{ route('register', array_filter(['from' => $from ?? request('from')])) }}" class="underline" wire:navigate>{{ __('Sign up') }}</a>
         </div>
     @endif
 </div>

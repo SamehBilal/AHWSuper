@@ -1,6 +1,6 @@
 <div x-data="{
     bannerVisible: false,
-    bannerVisibleAfter: 300
+    bannerVisibleAfter: 5000
 }"
 x-show="bannerVisible"
 x-transition:enter="transition ease-out duration-500"

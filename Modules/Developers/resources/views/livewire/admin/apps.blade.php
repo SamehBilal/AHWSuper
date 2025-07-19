@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
 
-new #[Layout('developers::components.layouts.first')] class extends Component {
+new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base-100'])] class extends Component {
     use Toast;
 
     public $pageTitle = 'Arabhardware | Developers';

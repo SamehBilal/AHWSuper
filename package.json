@@ -23,6 +23,7 @@
     "devDependencies": {
         "daisyui": "^5.0.43",
         "laravel-echo": "^2.1.6",
-        "pusher-js": "^8.4.0"
+        "pusher-js": "^8.4.0",
+        "sass-embedded": "^1.89.2"
     }
 }

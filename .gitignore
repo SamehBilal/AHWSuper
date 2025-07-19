@@ -1,6 +1,7 @@
 /.phpunit.cache
 /node_modules
 Modules/Roles/node_modules
+Modules/Developers/node_modules
 /public/build
 /public/hot
 /public/storage
