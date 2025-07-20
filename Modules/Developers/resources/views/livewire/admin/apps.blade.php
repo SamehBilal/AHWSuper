@@ -25,7 +25,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
     {
         $user = Auth::user();
         $this->clients = $user->oauthApps()->get();
-        //dd($this->clients);
+        dd($this->clients);
     }
 
     public function createClient()
@@ -40,7 +40,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
         //dd([$this->name,$this->redirect]);
 
         // Creating an OAuth app client that belongs to the given user...
-        $client = app(ClientRepository::class)->createAuthorizationCodeGrantClient(user: $user, name: $this->name, redirectUris: [$this->redirect], confidential: false, enableDeviceFlow: true);
+        $client = app(ClientRepository::class)->createAuthorizationCodeGrantClient(user: $user, name: $this->name, redirectUris: [$this->redirect], confidential: true, enableDeviceFlow: true);
 
         // Retrieving all the OAuth app clients that belong to the user...
         $this->clients = $user->oauthApps()->get();
@@ -82,8 +82,8 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
                     API Documentation
                 </a>
             </div>
-            <div class="relative flex flex-col justify-center md:flex-row md:space-x-4 items-center min-h-[60vh] p-2">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+            <div class="relative flex flex-col justify-center md:flex-row md:space-x-4 items-center min-h-[60vh] pt-32 pb-32">
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
                     <!-- New App Card -->
                     <div class="flex flex-col items-center justify-center w-48 h-48 border-2 border-dashed border-gray-400 rounded-lg cursor-pointer hover:bg-gray-50"
                         @click="$wire.showModal = true">
@@ -96,7 +96,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
                         <div class="flex flex-col items-center justify-center w-48 h-48 bg-white border rounded-lg shadow">
                             <img src="{{asset('app.webp')}}" width="80">
                             <span class="font-bold text-lg">{{ $client->name }}</span>
-                            {{-- <span class="text-xs text-gray-500 mt-2 break-all">ID: {{ $client->id }}</span> --}}
+                            <span class="text-xs text-gray-500 mt-2 break-all">ID: {{ $client->plainSecret }}</span>
                         </div>
                     @endforeach
                 </div>
