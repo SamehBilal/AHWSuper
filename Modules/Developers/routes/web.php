@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Modules\Developers\Http\Controllers\DevelopersController;
 use Livewire\Volt\Volt;
 
+
 Route::middleware(['web'])->prefix('developers')->name('developers.')->group(function () {
+    Volt::route('privacy-policy', 'theme.privacy-policy')->name('privacy');
     Volt::route('/', 'theme.index')
     ->name('index');
 

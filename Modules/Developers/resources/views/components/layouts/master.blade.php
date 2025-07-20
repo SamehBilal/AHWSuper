@@ -5,7 +5,7 @@
     @include('developers::partials.theme.head')
 </head>
 
-<body class="bg-primary min-h-screen overflow-x-hidden">
+<body class="min-h-screen overflow-x-hidden">
     @include('developers::partials.theme.navbar', ['class' => $navbarClass ?? 'bg-primary'])
         {{ $slot }}
 

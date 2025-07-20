@@ -1,21 +1,25 @@
 <!-- Desktop menu -->
 <nav class="{{ @$class }} relative z-20 flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
     <div class="flex md:flex space-x-8 items-center">
-        <a href="{{ route('developers.index') }}" class="text-2xl flex space-x-1  font-bold text-gray-900">
-            <x-app-logo-icon white class="w-8" />
+        <a href="{{ route('developers.index') }}" class="text-2xl flex space-x-1  font-bold text-gray-900" wire:navigate>
+            @if(@$class == 'bg-base-100')
+                <x-app-logo-icon  class="w-8"  />
+            @else
+                <x-app-logo-icon white class="w-8"  />
+            @endif
             <div class="badge badge-neutral badge-outline mt-1">for developers</div>
         </a>
         <div class="hidden md:flex items-center space-x-8">
-            <a href="/api/docs" class="text-amber-50 hover:text-grey-700 font-medium transition-colors">API</a>
-            <a href="#" class="text-amber-50 hover:text-grey-700 font-medium transition-colors">Docs</a>
-            <a href="#" class="text-amber-50 hover:text-grey-700 font-medium transition-colors">Community</a>
+            <a href="/api/docs" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors">API</a>
+            <a href="#" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors">Docs</a>
+            <a href="#" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors">Community</a>
         </div>
     </div>
 
     <div class="hidden md:flex items-center space-x-4">
         @guest
             <a href="{{ route('login', ['from' => 'developers']) }}"
-                class="text-amber-50 hover:text-grey-700 font-medium transition-colors cursor-pointer">Sign In</a>
+                class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors cursor-pointer">Sign In</a>
             <a href="{{ route('register', ['from' => 'developers']) }}"
                 class="btn btn-ghost btn-sm sm:btn-sm md:btn-md lg:btn-md xl:btn-md  cursor-pointer text-sm font-medium tracking-wide text-white  rounded-md bg-neutral-950 hover:bg-neutral-900 ">Join Now</a>
         @else
@@ -34,14 +38,14 @@
 </nav>
 
 <!-- Mobile menu -->
-<div id="mobile-menu" class="hidden md:hidden {{ @$class }} px-4 py-2 relative z-20 transition-all duration-300 transform opacity-0 -translate-y-4">
+<div id="mobile-menu" class="hidden md:hidden {{ @$class }} px-4 py-2 absolute w-full z-20 transition-all duration-300 transform opacity-0 -translate-y-4">
     <div class="flex flex-col space-y-2">
-        <a href="/api/docs" class="text-amber-50 hover:text-grey-700 font-medium py-2">API</a>
-        <a href="#" class="text-amber-50 hover:text-grey-700 font-medium py-2">Docs</a>
-        <a href="#" class="text-amber-50 hover:text-grey-700 font-medium py-2">Community</a>
+        <a href="/api/docs" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium py-2">API</a>
+        <a href="#" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium py-2">Docs</a>
+        <a href="#" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium py-2">Community</a>
         <div class="border-t border-gray-700 my-2"></div>
         @guest
-            <a href="{{ route('login', ['from' => 'developers']) }}" class="text-amber-50 hover:text-grey-700 font-medium py-2">Sign In</a>
+            <a href="{{ route('login', ['from' => 'developers']) }}" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium py-2">Sign In</a>
             <a href="{{ route('register', ['from' => 'developers']) }}" class="btn btn-ghost btn-sm w-full text-sm font-medium tracking-wide text-white rounded-md bg-neutral-950 hover:bg-neutral-900 py-2">Join Now</a>
         @else
             <a href="{{ route('developers.dashboard') }}" class="btn btn-ghost btn-sm w-full text-sm font-medium tracking-wide text-white rounded-md bg-neutral-950 hover:bg-neutral-900 py-2">Dashboard</a>

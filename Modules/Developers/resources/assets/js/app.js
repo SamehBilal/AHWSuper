@@ -1,15 +1,5 @@
 
 
-// Add subtle animations on scroll
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const cactus = document.querySelector('.cactus').parentElement;
-    const snake = document.querySelector('.snake').parentElement;
-
-    cactus.style.transform = `translateY(${scrolled * 0.1}px)`;
-    snake.style.transform = `translateY(${scrolled * -0.1}px)`;
-});
-
 // Add hover effects to decorative elements
 document.querySelectorAll('.organic-shape').forEach(shape => {
     shape.addEventListener('mouseenter', () => {
@@ -22,8 +12,11 @@ document.querySelectorAll('.organic-shape').forEach(shape => {
     });
 });
 
-var svg = $('#hands-svg');
-svg.setActive = false;
+// Replace jQuery selector with vanilla JS
+var svg = document.getElementById('hands-svg');
+if (svg) {
+    svg.setActive = false;
+}
 
 var svgHands = function(element) {
     var
@@ -155,7 +148,7 @@ var svgHands = function(element) {
         }
     });
 
-    timeline.append(tl_lh).append(tl_rh, -2);
+    timeline.add(tl_lh).add(tl_rh, "-=2");
 
     timeline.pause().progress();
 
@@ -163,25 +156,31 @@ var svgHands = function(element) {
 }
 
 // Autoplay on page load
-$(document).ready(function() {
-    setTimeout(function() {
-        svg.setActive = true;
-        var timeline = svgHands();
-        timeline.eventCallback("onComplete", function() {
-            svg.setActive = false; // Allow mouseenter again
-        });
-        timeline.play();
-    }, 1500); // 2 second delay
+// Replace $(document).ready with DOMContentLoaded event
+window.addEventListener('DOMContentLoaded', function() {
+    if (svg) {
+        setTimeout(function() {
+            svg.setActive = true;
+            var timeline = svgHands();
+            timeline.eventCallback("onComplete", function() {
+                svg.setActive = false; // Allow mouseenter again
+            });
+            timeline.play();
+        }, 1500); // 2 second delay
+    }
 });
 
-svg.on("mouseenter", function() {
-    if (svg.setActive == false) {
-        svg.setActive = true;
-        var timeline = svgHands();
-        timeline.eventCallback("onComplete", function() {
-            svg.setActive = false;
-        });
-        timeline.play();
-    }
-    return svg.setActive = true;
-});
+// Replace svg.on('mouseenter', ...) with addEventListener
+if (svg) {
+    svg.addEventListener('mouseenter', function() {
+        if (svg.setActive == false) {
+            svg.setActive = true;
+            var timeline = svgHands();
+            timeline.eventCallback("onComplete", function() {
+                svg.setActive = false;
+            });
+            timeline.play();
+        }
+        return svg.setActive = true;
+    });
+}

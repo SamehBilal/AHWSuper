@@ -12,8 +12,8 @@ export default defineConfig({
     build: {
         outDir: '../../public/build-developers',
         emptyOutDir: true,
-        manifest: true,
-        cssCodeSplit: false, // Extract CSS to separate files
+        manifest: 'manifest.json', // <-- changed from true to 'manifest.json'
+        cssCodeSplit: true, // Extract CSS to separate files
         assetsDir: 'assets', // Directory for static assets
         rollupOptions: {
             output: {
@@ -35,8 +35,8 @@ export default defineConfig({
             publicDirectory: '../../public',
             buildDirectory: 'build-developers',
             input: [
-                './resources/assets/js/app.js',
-                './resources/assets/css/app.css'
+                'resources/assets/js/app.js',
+                'resources/assets/css/app.css'
             ],
             refresh: true,
         }),

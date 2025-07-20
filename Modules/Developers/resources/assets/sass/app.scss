@@ -33,6 +33,51 @@
     );
 }
 
+.wave-bottom-border {
+    position: relative;
+    background: #f11420;
+    /* min-height: 320px; */
+    overflow: visible;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60px;
+        background: #fff;
+        z-index: 2;
+        pointer-events: none;
+        clip-path: polygon(
+            0% 60px,
+            5% 50px,
+            10% 45px,
+            15% 40px,
+            20% 35px,
+            25% 30px,
+            30% 28px,
+            35% 30px,
+            40% 35px,
+            45% 40px,
+            50% 45px,
+            55% 50px,
+            60% 55px,
+            65% 50px,
+            70% 45px,
+            75% 40px,
+            80% 35px,
+            85% 30px,
+            90% 35px,
+            95% 40px,
+            100% 45px,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
 #hands-svg {
     transform: rotate(-25deg) !important;
     opacity: 1 !important;
@@ -64,10 +109,24 @@
     animation-iteration-count: infinite;
     opacity: 0;
 }
-.loading-blurbs code.typescript { animation-delay: var(--animation-duration); }
-.loading-blurbs code.ruby { animation-delay: calc(var(--animation-duration) * 2); }
-.loading-blurbs code.csharp { animation-delay: calc(var(--animation-duration) * 3); }
-.loading-blurbs code.cplusplus { animation-delay: calc(var(--animation-duration) * 4); }
-.loading-blurbs code.java { animation-delay: calc(var(--animation-duration) * 5); }
-.loading-blurbs code.swift { animation-delay: calc(var(--animation-duration) * 6); }
-.loading-blurbs code.php { animation-delay: calc(var(--animation-duration) * 7); }
+.loading-blurbs code.typescript {
+    animation-delay: var(--animation-duration);
+}
+.loading-blurbs code.ruby {
+    animation-delay: calc(var(--animation-duration) * 2);
+}
+.loading-blurbs code.csharp {
+    animation-delay: calc(var(--animation-duration) * 3);
+}
+.loading-blurbs code.cplusplus {
+    animation-delay: calc(var(--animation-duration) * 4);
+}
+.loading-blurbs code.java {
+    animation-delay: calc(var(--animation-duration) * 5);
+}
+.loading-blurbs code.swift {
+    animation-delay: calc(var(--animation-duration) * 6);
+}
+.loading-blurbs code.php {
+    animation-delay: calc(var(--animation-duration) * 7);
+}

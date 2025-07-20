@@ -82,26 +82,27 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
                     API Documentation
                 </a>
             </div>
-        </div>
-        <div class="flex justify-center items-center min-h-[60vh]">
-            <div class="flex gap-6">
-                <!-- New App Card -->
-                <div class="flex flex-col items-center justify-center w-48 h-48 border-2 border-dashed border-gray-400 rounded-lg cursor-pointer hover:bg-gray-50"
-                    @click="$wire.showModal = true">
-                    <span class="text-gray-400 text-4xl">+</span>
-                    <span class="mt-2 text-gray-500 font-semibold">New App</span>
-                </div>
-
-                <!-- Existing Clients -->
-                @foreach ($clients as $client)
-                    <div class="flex flex-col items-center justify-center w-48 h-48 bg-white border rounded-lg shadow">
-                        <img src="{{asset('app.webp')}}" width="80">
-                        <span class="font-bold text-lg">{{ $client->name }}</span>
-                        {{-- <span class="text-xs text-gray-500 mt-2 break-all">ID: {{ $client->id }}</span> --}}
+            <div class="relative flex flex-col justify-center md:flex-row md:space-x-4 items-center min-h-[60vh] p-2">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+                    <!-- New App Card -->
+                    <div class="flex flex-col items-center justify-center w-48 h-48 border-2 border-dashed border-gray-400 rounded-lg cursor-pointer hover:bg-gray-50"
+                        @click="$wire.showModal = true">
+                        <span class="text-gray-400 text-4xl">+</span>
+                        <span class="mt-2 text-gray-500 font-semibold">New App</span>
                     </div>
-                @endforeach
+    
+                    <!-- Existing Clients -->
+                    @foreach ($clients as $client)
+                        <div class="flex flex-col items-center justify-center w-48 h-48 bg-white border rounded-lg shadow">
+                            <img src="{{asset('app.webp')}}" width="80">
+                            <span class="font-bold text-lg">{{ $client->name }}</span>
+                            {{-- <span class="text-xs text-gray-500 mt-2 break-all">ID: {{ $client->id }}</span> --}}
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
+        
     </section>
 
     <x-mary-modal wire:model="showModal" :title="__('Create New App')" :subtitle="__('Fill in the details to create a new OAuth app for API access.')">

@@ -10,8 +10,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-prim
     public $pageTitle = 'Arabhardware | Developers';
 }; ?>
 
-
-<div class="">
+<div class="wave-bottom-border min-h-[60vh]">
 
     <!-- Main Content -->
     <main class="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-260px)] px-4 sm:px-6 lg:px-8">
@@ -52,7 +51,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-prim
                     clearInterval(gsapInterval2);
                 }
             }, 5);"
-                class="invisible block pb-0.5 overflow-hidden text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-amber-50 mb-6 leading-tight">
+                class="invisible block pb-0.5 overflow-hidden text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-amber-50 mb-3 sm:mb-6 leading-tight">
                 Start Building Today
             </h2>
             <p class="text-lg sm:text-xl md:text-2xl text-amber-50 mb-8 max-w-2xl mx-auto">
@@ -72,16 +71,16 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-prim
                 </span>
 
                 <a href="{{ route('developers.apps') }}"
-                    class="btn btn-ghost btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl cursor-pointer text-xl font-medium tracking-wide text-white rounded-md bg-neutral-950 hover:bg-neutral-900 ">Get
+                    class="btn btn-ghost btn-xs sm:btn-md md:btn-md lg:btn-lg xl:btn-xl cursor-pointer text-xl font-medium tracking-wide text-white rounded-md bg-neutral-950 hover:bg-neutral-900 px-6 py-3 sm:px-8 sm:py-5 " wire:navigate>Get
                     Started</a>
             </div>
         </div>
     </main>
 
     <!-- (Left Side) -->
-    <div class="absolute z-[11] left-4 sm:left-8 md:left-16 top-1/2 -translate-y-1/2 flex justify-center items-center">
+    <div class="absolute z-[11] left-4 sm:left-8 md:left-16 top-1/2 -translate-y-1/2 flex justify-center items-center hidden lg:flex lg:w-[300px] xl:w-[400px] 2xl:w-[500px]">
         <div class="flex justify-center items-center" style="color: oklch(14% 0.005 285.823);">
-            <div class="w-[400px] h-[180px] text-center relative loading-blurbs">
+            <div class="w-[150px] lg:w-[300px] xl:w-[400px] 2xl:w-[500px] h-[70px] lg:h-[140px] xl:h-[180px] 2xl:h-[220px] text-center relative loading-blurbs">
                 <code class="python">
                     print("<strong>Powered by AHW</strong>")
                 </code>
@@ -110,10 +109,13 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-prim
     </div>
 
     <!-- (Right Side) -->
-    <div class="absolute z-[11] right-4 sm:right-8 md:right-16 top-1/2 -translate-y-1/2">
-        <svg id="hands-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="350px" height="350px" viewBox="0 0 196 196" enable-background="new 0 0 196 196"
-            xml:space="preserve">
+    <div class="absolute z-[11] right-4 sm:right-8 md:right-16 top-1/2 -translate-y-1/2 hidden lg:block">
+        <div class="w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] xl:w-[350px] xl:h-[350px] 2xl:w-[400px] 2xl:h-[400px]">
+            <svg id="hands-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px"
+                width="100%" height="100%"
+                viewBox="0 0 196 196" enable-background="new 0 0 196 196"
+                xml:space="preserve">
             <g id="keyboard_full">
                 <g id="keyboard">
 
@@ -203,6 +205,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-prim
                 </g>
             </g>
         </svg>
+        </div>
     </div>
 
 </div>
