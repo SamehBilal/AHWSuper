@@ -35,8 +35,8 @@ export default defineConfig({
             publicDirectory: '../../public',
             buildDirectory: 'build-developers',
             input: [
-                'resources/assets/js/app.js',
-                'resources/assets/css/app.css'
+                './resources/assets/js/app.js',
+                './resources/assets/css/app.css'
             ],
             refresh: true,
         }),

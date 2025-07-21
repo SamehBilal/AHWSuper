@@ -10,7 +10,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-prim
     public $pageTitle = 'Arabhardware | Developers';
 }; ?>
 
-<div class="wave-bottom-border min-h-[60vh]">
+<div class="wave-bottom-border min-h-[75vh]">
 
     <!-- Main Content -->
     <main class="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-260px)] px-4 sm:px-6 lg:px-8">
