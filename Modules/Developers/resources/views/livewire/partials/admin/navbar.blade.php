@@ -33,11 +33,11 @@ new class extends Component {
             <div class="badge badge-neutral badge-outline ">for developers</div>
         </a>
 
-        <x-mary-select label="My Apps" wire:model="app" icon="o-user" :options="$clients" inline />
-
     </x-slot:brand>
 
     <x-slot:actions>
+
+        <x-mary-select label="My Apps" wire:model="app" icon="o-arrow-right-end-on-rectangle" :options="$clients" inline />
 
         <x-mary-button icon="o-magnifying-glass" class="btn-primary-content btn-dash"
             @click.stop="$dispatch('mary-search-open')">

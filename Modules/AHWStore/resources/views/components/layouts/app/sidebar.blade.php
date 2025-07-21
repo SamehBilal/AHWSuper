@@ -215,7 +215,7 @@
                             <x-mary-list-item :item="$user" value="name" sub-value="email" no-separator no-hover
                                 class="pt-2">
                                 <x-slot:avatar>
-                                    <x-avatar {{-- :image="'https://avatar.iran.liara.run/public'" --}} placeholder="RT"
+                                    <x-mary-avatar :image="'https://avatar.iran.liara.run/public'" placeholder="{{ $user->initials() }}"
                                         alt="My image" />
                                 </x-slot:avatar>
                                 <x-slot:actions>
@@ -252,7 +252,7 @@
                     @if ($user = auth()->user())
                         <x-mary-list-item :item="$user" value="name" sub-value="email" no-separator no-hover class="pt-2">
                             <x-slot:avatar>
-                                <x-avatar {{-- :image="'https://avatar.iran.liara.run/public'" --}} placeholder="RT"
+                                <x-mary-avatar :image="'https://avatar.iran.liara.run/public'" placeholder="{{ $user->initials() }}"
                                     alt="My image" />
                             </x-slot:avatar>
                             <x-slot:actions>

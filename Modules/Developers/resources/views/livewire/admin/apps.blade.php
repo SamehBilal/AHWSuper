@@ -83,14 +83,14 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
                 </a>
             </div>
             <div class="relative flex flex-col justify-center md:flex-row md:space-x-4 items-center min-h-[60vh] pt-24">
-                <div class="grid grid-cols-5 gap-5">
+                <div class="{{ $clients->count() > 3 ? 'grid grid-cols-5 gap-5':'flex gap-6' }}">
                     <!-- New App Card -->
                     <div class="flex flex-col items-center justify-center w-48 h-48 border-2 border-dashed border-gray-400 rounded-lg cursor-pointer hover:bg-gray-50"
                         @click="$wire.showModal = true">
                         <span class="text-gray-400 text-4xl">+</span>
                         <span class="mt-2 text-gray-500 font-semibold">New App</span>
                     </div>
-    
+
                     <!-- Existing Clients -->
                     @foreach ($clients as $client)
                         <a href="{{ route('developers.dashboard') }}" class="flex flex-col items-center justify-center w-48 h-48 bg-white border rounded-lg shadow hover:bg-gray-50 transition cursor-pointer">
@@ -102,7 +102,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <x-mary-modal wire:model="showModal" :title="__('Create New App')" :subtitle="__('Fill in the details to create a new OAuth app for API access.')">

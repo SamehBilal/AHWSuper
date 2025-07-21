@@ -55,13 +55,13 @@
             </x-mary-menu>
         </div>
     </div>
-    
+
     <!-- Desktop Layout -->
     <div class="hidden lg:block">
         @if ($user = auth()->user())
             <x-mary-list-item :item="$user" value="name" sub-value="email" no-separator no-hover class="pt-2">
                 <x-slot:avatar>
-                    <x-avatar placeholder="RT" alt="My image" />
+                    <x-mary-avatar placeholder="{{ $user->initials() }}" alt="My image" />
                 </x-slot:avatar>
                 <x-slot:actions>
                     <x-mary-button icon="o-power" class="btn-circle btn-ghost btn-xs" tooltip-left="logoff"
