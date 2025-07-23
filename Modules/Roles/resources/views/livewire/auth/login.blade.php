@@ -22,6 +22,11 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
 
     public ?string $from = null;
 
+    public function mount()
+    {
+        $this->from = request('from') ?? null;
+    }
+
     /**
      * Handle an incoming authentication request.
      */
@@ -42,11 +47,12 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
         RateLimiter::clear($this->throttleKey());
         Session::regenerate();
 
-        if ($this->from === 'developers'){
-            $this->redirectIntended(default: route('developers.apps', absolute: false), navigate: false);
-        }
 
-        $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
+        if ($this->from == 'developers'){
+            $this->redirectIntended(default: route('developers.apps', absolute: false), navigate: false);
+        } else {
+            $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
+        }
     }
 
     /**

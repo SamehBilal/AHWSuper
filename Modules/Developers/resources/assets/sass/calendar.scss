@@ -21,7 +21,7 @@
 
 .dark{
     --bg-body: var(--dark-body);
-    --bg-main: var(--dark-main);
+    --bg-main: transparent;
     --bg-second: var(--dark-second);
     --color-hover: var(--dark-hover);
     --color-txt: var(--dark-text);
@@ -36,8 +36,8 @@
 }
 
 .calendar{
-    height: max-content;
-    width: max-content;
+    /* height: max-content;
+    width: max-content; */
     background-color: var(--bg-main);
     border-radius: 14px;
     padding: 18px;
@@ -46,7 +46,7 @@
 }
 
 .light .calendar{
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
 }
 
 .calendar-header{

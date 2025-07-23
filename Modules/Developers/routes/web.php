@@ -19,5 +19,6 @@ Route::middleware(['web'])->prefix('developers')->name('developers.')->group(fun
 Route::middleware(['auth', 'verified', 'two-factor'])->prefix('developers')->name('developers.')->group(function () {
     Volt::route('/dashboard', 'admin.index')->name('dashboard');
     Volt::route('/apps', 'admin.apps')->name('apps');
+    Volt::route('/login-button', 'admin.login-button')->name('login-button');
     Route::resource('developers', DevelopersController::class)->names('developers');
 });

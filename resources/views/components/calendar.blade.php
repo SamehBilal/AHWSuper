@@ -1,4 +1,4 @@
-<div class="calendar">
+<div class="calendar border border-dashed bg-base-100 border-base-content/10 border-b-[length:var(--border)]">
     <div class="calendar-header">
         <span class="month-picker" id="month-picker">
             October
