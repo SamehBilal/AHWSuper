@@ -1,2 +1,30 @@
 @import '../sass/app.scss';
 @import '../sass/calendar.scss';
+/* Import highlight.js theme */
+@import 'highlight.js/styles/dracula.css';
+
+.code-highlight code {
+    /* @apply text-xs leading-relaxed; */
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+/* Override highlight.js styles */
+.hljs {
+    border-radius: 0.5rem;
+}
+
+/* Dark theme adjustments */
+/* [data-theme="dark"] .hljs {
+    background: var(--fallback-b3,oklch(var(--b3)/1)) !important;
+} */
+
+/* Light theme adjustments */
+/* [data-theme="light"] .hljs {
+    background: #f8f9fa !important;
+    color: #333 !important;
+} */
+
+/* Custom overrides can be added here if needed */
+.hljs .hljs-name {
+    color: #ff79c6;
+}

@@ -4,7 +4,7 @@
 <div >
     <x-auth-header :title="__('Log in to your account')" :description="__('Enter your email and password below to log in')" />
 
-    <form class="flex mt-10 flex-col gap-6 w-full">
+    <div class="flex mt-10 flex-col gap-6 w-full">
         <!-- Email Address -->
         <x-mary-input id="email-{{ $formId }}" :label="__('Email address')" type="email" placeholder="email@example.com" inline clearable
             required />
@@ -26,10 +26,10 @@
         <x-mary-checkbox id="remember-{{ $formId }}" :label="__('Remember me for 30 days')" />
 
         <div class="flex items-center justify-end">
-            <x-mary-button label="{{ __('Log in') }}" type="submit"  class="w-full btn-primary"
+            <x-mary-button label="{{ __('Log in') }}" class="w-full btn-primary"
                 spinner />
         </div>
-    </form>
+    </div>
 
     <div class="divider">or</div>
 

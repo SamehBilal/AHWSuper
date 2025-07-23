@@ -12,5 +12,9 @@
     "sass": "^1.69.5",
     "sass-embedded": "^1.89.2",
     "vite": "^7.0.5"
+  },
+  "dependencies": {
+    "@highlightjs/cdn-assets": "^11.11.1",
+    "highlight.js": "^11.11.1"
   }
 }

@@ -76,12 +76,37 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                             </i>
                         </button>
                     </div>
-                    <div class="mockup-code text-xs">
-                        <pre><code>&lt;button class="btn bg-red-500 hover:bg-red-600 border-0 text-white px-8 py-3 text-base rounded-lg flex items-center space-x-3 shadow-md"&gt;
-        &lt;i class="fas fa-sign-in-alt"&gt;&lt;/i&gt;
+                    <div class="code-highlight text-xs relative group">
+                        <!-- Copy button (optional) -->
+                        {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
+                        <button
+                            class="absolute top-2 right-2 btn btn-xs btn-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                            onclick="copyCodeToClipboard(this)" title="Copy code" tooltip-left="Create">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </button>
+<pre><code class="language-html rounded-lg p-18">&lt;!-- Arab Hardware Login Button --&gt;
+&lt;button id="ahw-login-btn" style="background:#d32f2f;color:#fff;padding:16px 32px;border:none;
+    border-radius:8px;display:flex;align-items:center;gap:12px;font-size:16px;box-shadow:0 2px 8px #0001;
+    cursor:pointer;" onclick="ahwLogin()"&gt;
+        &lt;img src=\"https://yourdomain.com/button-arrow.png\" alt=\"\" height=\"20\" /&gt;
         &lt;span&gt;تسجيل الدخول بواسطة عرب هاردوير&lt;/span&gt;
-        &lt;i class="fas fa-chevron-right"&gt;&lt;/i&gt;
-    &lt;/button&gt;</code></pre>
+        &lt;img src=\"https://yourdomain.com/button_logo.png\" alt=\"\" height=\"20\" /&gt;
+&lt;/button&gt;
+&lt;script&gt;
+    function ahwLogin() {
+        var clientId = 'YOUR_CLIENT_ID';
+        var redirectUri = 'YOUR_REDIRECT_URI';
+        var authUrl = 'https://api.arabhardware.net/oauth/authorize?'+
+            'client_id=' + encodeURIComponent(clientId) +
+            '&redirect_uri=' + encodeURIComponent(redirectUri) +
+            '&response_type=code&scope=profile email';
+        window.location.href = authUrl;
+    }
+&lt;/script&gt;</code></pre>
                     </div>
                 </div>
 
@@ -101,12 +126,37 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                             </i>
                         </button>
                     </div>
-                    <div class="mockup-code w-full text-xs">
-                        <pre><code>&lt;button class="btn bg-red-500 hover:bg-red-600 border-0 text-white px-6 py-2 text-sm rounded-lg flex items-center space-x-2 shadow-md"&gt;
-        &lt;i class="fas fa-sign-in-alt"&gt;&lt;/i&gt;
+                    <div class="code-highlight text-xs relative group">
+                        <!-- Copy button (optional) -->
+                        {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
+                        <button
+                            class="absolute top-2 right-2 btn btn-xs btn-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                            onclick="copyCodeToClipboard(this)" title="Copy code" tooltip-left="Create">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </button>
+<pre><code class="language-html rounded-lg p-18">&lt;!-- Arab Hardware Login Button --&gt;
+&lt;button id="ahw-login-btn" style="background:#d32f2f;color:#fff;padding:16px 32px;border:none;
+    border-radius:8px;display:flex;align-items:center;gap:12px;font-size:16px;box-shadow:0 2px 8px #0001;
+    cursor:pointer;" onclick="ahwLogin()"&gt;
+        &lt;img src=\"https://yourdomain.com/button-arrow.png\" alt=\"\" height=\"20\" /&gt;
         &lt;span&gt;الدخول بواسطة عرب هاردوير&lt;/span&gt;
-        &lt;i class="fas fa-chevron-right"&gt;&lt;/i&gt;
-    &lt;/button&gt;</code></pre>
+        &lt;img src=\"https://yourdomain.com/button_logo.png\" alt=\"\" height=\"20\" /&gt;
+&lt;/button&gt;
+&lt;script&gt;
+    function ahwLogin() {
+        var clientId = 'YOUR_CLIENT_ID';
+        var redirectUri = 'YOUR_REDIRECT_URI';
+        var authUrl = 'https://api.arabhardware.net/oauth/authorize?'+
+            'client_id=' + encodeURIComponent(clientId) +
+            '&redirect_uri=' + encodeURIComponent(redirectUri) +
+            '&response_type=code&scope=profile email';
+        window.location.href = authUrl;
+    }
+&lt;/script&gt;</code></pre>
                     </div>
                 </div>
 
@@ -130,11 +180,36 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                             </i>
                         </button>
                     </div>
-                    <div class="mockup-code text-xs">
-                        <pre><code>&lt;button class="btn bg-red-500 hover:bg-red-600 border-0 text-white px-4 py-2 text-xs rounded-lg flex items-center space-x-1 shadow-md"&gt;
-        &lt;i class="fas fa-sign-in-alt"&gt;&lt;/i&gt;
-        &lt;i class="fas fa-chevron-right"&gt;&lt;/i&gt;
-    &lt;/button&gt;</code></pre>
+                    <div class="code-highlight text-xs relative group">
+                        <!-- Copy button (optional) -->
+                        {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
+                        <button
+                            class="absolute top-2 right-2 btn btn-xs btn-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                            onclick="copyCodeToClipboard(this)" title="Copy code" tooltip-left="Create">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </button>
+<pre><code class="language-html rounded-lg p-18">&lt;!-- Arab Hardware Login Button --&gt;
+&lt;button id="ahw-login-btn" style="background:#d32f2f;color:#fff;padding:16px 32px;border:none;
+    border-radius:8px;display:flex;align-items:center;gap:12px;font-size:16px;box-shadow:0 2px 8px #0001;
+    cursor:pointer;" onclick="ahwLogin()"&gt;
+        &lt;img src=\"https://yourdomain.com/button-arrow.png\" alt=\"\" height=\"20\" /&gt;
+        &lt;img src=\"https://yourdomain.com/button_logo.png\" alt=\"\" height=\"20\" /&gt;
+&lt;/button&gt;
+&lt;script&gt;
+    function ahwLogin() {
+        var clientId = 'YOUR_CLIENT_ID';
+        var redirectUri = 'YOUR_REDIRECT_URI';
+        var authUrl = 'https://api.arabhardware.net/oauth/authorize?'+
+            'client_id=' + encodeURIComponent(clientId) +
+            '&redirect_uri=' + encodeURIComponent(redirectUri) +
+            '&response_type=code&scope=profile email';
+        window.location.href = authUrl;
+    }
+&lt;/script&gt;</code></pre>
                     </div>
                 </div>
 
@@ -167,7 +242,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                                 </svg>
                             </div>
                             <div class="timeline-end timeline-box">Create an application in <br /> Arabhardware
-                                Developer
+                                Developer<br />
                                 Portal
                             </div>
                             <hr />
@@ -198,7 +273,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                                 </svg>
                             </div>
                             <div class="timeline-end timeline-box">Add OAuth flow to<br /> your application</div>
-                            <hr />
+                            {{-- <hr /> --}}
                         </li>
                     </ul>
                 </div>
@@ -374,3 +449,54 @@ const { access_token } = await tokenResponse.json();</code></pre>
         });
     });
 </script>
+
+@script
+    <script>
+        // Copy function for the code block
+        function copyCodeToClipboard(button) {
+            const codeBlock = button.parentElement.querySelector('code');
+            const text = codeBlock.textContent;
+
+            navigator.clipboard.writeText(text).then(() => {
+                // Change button appearance temporarily
+                const originalHTML = button.innerHTML;
+                button.innerHTML = `
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+        `;
+                button.classList.add('btn-success');
+
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.classList.remove('btn-success');
+                }, 2000);
+            }).catch(() => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+            });
+        }
+
+        // Initialize highlighting for this component
+        document.addEventListener('livewire:updated', () => {
+            if (window.hljs) {
+                // Re-highlight only the code blocks in this component
+                $el.querySelectorAll('pre code').forEach((block) => {
+                    hljs.highlightElement(block);
+                });
+            }
+        });
+
+        // Initial highlight
+        if (window.hljs) {
+            $el.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightElement(block);
+            });
+        }
+    </script>
+@endscript

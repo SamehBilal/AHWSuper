@@ -5,5 +5,3 @@
  */
 
 import './echo';
-import "cally";
-
