@@ -56,7 +56,7 @@
 
         <!-- Large Button with Full Text -->
         <button
-            class="btn bg-primary text-white px-6 py-2 rounded-lg flex items-center justify-between w-full border-primary text-base shadow-lg">
+            class="ahw-btn btn bg-primary text-white px-6 py-2 rounded-lg flex items-center justify-between w-full border-primary text-base shadow-lg">
             <i class="fas fa-sign-in-alt text-lg">
                 <img src="{{ asset('button-arrow.png') }}" alt="" height="20">
             </i>

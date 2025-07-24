@@ -65,7 +65,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                     <h4 class="text-lg font-medium mb-3">Large Button</h4>
                     <div class="alert p-6 rounded-lg mb-4">
                         <button
-                            class="btn bg-primary text-white  py-6  rounded-lg flex items-center justify-between  border-primary text-base shadow-lg">
+                            class="ahw-btn btn bg-primary text-white py-6 rounded-lg flex items-center justify-between  border-primary text-base shadow-lg">
                             <i class="fas fa-sign-in-alt text-lg">
                                 <img src="{{ asset('button-arrow.png') }}" alt="" height="20">
                             </i>
@@ -76,7 +76,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                             </i>
                         </button>
                     </div>
-                    <div class="code-highlight text-xs relative group">
+                    <div class="mockup-code bg-[#282a36] code-highlight text-xs relative group">
                         <!-- Copy button (optional) -->
                         {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
                         <button
@@ -115,7 +115,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                     <h4 class="text-lg font-medium mb-3">Medium Button</h4>
                     <div class="alert p-6 rounded-lg mb-4">
                         <button
-                            class="btn bg-primary text-white  py-6  rounded-lg flex items-center justify-between  border-primary text-base shadow-lg">
+                            class="ahw-btn btn bg-primary text-white  py-6  rounded-lg flex items-center justify-between  border-primary text-base shadow-lg">
                             <i class="fas fa-sign-in-alt text-lg">
                                 <img src="{{ asset('button-arrow.png') }}" alt="" height="20">
                             </i>
@@ -126,7 +126,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                             </i>
                         </button>
                     </div>
-                    <div class="code-highlight text-xs relative group">
+                    <div class="mockup-code bg-[#282a36] code-highlight text-xs relative group">
                         <!-- Copy button (optional) -->
                         {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
                         <button
@@ -180,7 +180,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                             </i>
                         </button>
                     </div>
-                    <div class="code-highlight text-xs relative group">
+                    <div class="mockup-code bg-[#282a36] code-highlight text-xs relative group">
                         <!-- Copy button (optional) -->
                         {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
                         <button
@@ -283,7 +283,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                 <div class="mt-8 space-y-6">
                     <div>
                         <h4 class="text-lg font-medium  mb-3">OAuth Flow</h4>
-                        <div class="mockup-code">
+                        <div class="mockup-code bg-[#282a36]">
                             <pre><code>// 1. Redirect user to authorization URL
 const authUrl = `https://api.arabhardware.net/oauth/authorize?` +
 `client_id=${CLIENT_ID}&` +
@@ -298,11 +298,11 @@ const tokenResponse = await fetch('https://api.arabhardware.net/oauth/token', {
 method: 'POST',
 headers: { 'Content-Type': 'application/json' },
 body: JSON.stringify({
-    client_id: CLIENT_ID,
-    client_secret: CLIENT_SECRET,
-    code: authCode,
-    grant_type: 'authorization_code'
-})
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
+        code: authCode,
+        grant_type: 'authorization_code'
+    })
 });
 
 const { access_token } = await tokenResponse.json();</code></pre>
