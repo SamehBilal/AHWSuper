@@ -21,10 +21,10 @@
     <x-mary-toast />
 
     <x-mary-spotlight search-text="Find your apps" no-results-text="Ops! Nothing here.">
-        {{-- <div x-data="{ query: { withUsers: true, withActions: true } }" x-init="$watch('query', value => $dispatch('mary-search', new URLSearchParams(value).toString()))" class="flex gap-8 p-3">
+        <div x-data="{ query: { withUsers: true, withActions: true } }" x-init="$watch('query', value => $dispatch('mary-search', new URLSearchParams(value).toString()))" class="flex gap-8 p-3">
             <x-mary-checkbox label="Users" x-model="query.withUsers" />
             <x-mary-checkbox label="Actions" x-model="query.withActions" />
-        </div> --}}
+        </div>
     </x-mary-spotlight>
 </body>
 

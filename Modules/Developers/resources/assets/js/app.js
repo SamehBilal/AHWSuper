@@ -17,7 +17,9 @@ window.hljs = hljs;
 // Initialize highlight.js
 function initializeHighlight() {
     if (typeof hljs !== 'undefined') {
-        hljs.highlightAll();
+        document.querySelectorAll('pre code:not([data-highlighted])').forEach((block) => {
+            hljs.highlightElement(block);
+        });
     }
 }
 

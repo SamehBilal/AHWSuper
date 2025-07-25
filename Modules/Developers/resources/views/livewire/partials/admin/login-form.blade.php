@@ -60,7 +60,7 @@
             <i class="fas fa-sign-in-alt text-lg">
                 <img src="{{ asset('button-arrow.png') }}" alt="" height="20">
             </i>
-            <span class="flex-1 text-center mx-4">تسجيل الدخول <span class="font-semibold">بواسطة عرب هاردوير</span></span>
+            <span class="flex-1 text-center mx-4">تسجيل الدخول <span class="font-[600]!">بواسطة عرب هاردوير</span></span>
             <i class="fas fa-chevron-left text-lg">
                 <img src="{{ asset('button_logo.png') }}" alt="" height="20">
             </i>

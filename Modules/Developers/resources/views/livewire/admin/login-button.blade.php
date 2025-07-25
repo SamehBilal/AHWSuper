@@ -95,15 +95,15 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     transition: box-shadow 0.2s, outline 0.2s;outline: none;position: relative;"
     onmouseover="this.style.boxShadow='0 0 0 6px rgba(211,47,47,0.18), 0 6px 16px rgba(211,47,47,0.15)'"
     onmouseout="this.style.boxShadow='0 4px 16px rgba(211,47,47,0.15)'" onclick="ahwLogin()"&gt;
-        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000':config('app.url')}}/button-arrow.png" alt="Arabhardware" height="20" /&gt;
+        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/button-arrow.png" alt="Arabhardware" height="20" /&gt;
         &lt;span&gt;تسجيل الدخول &lt;span style="font-weight:600;" &gt; بواسطة عرب هاردوير &lt;/span&gt; &lt;/span&gt;
-        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000':config('app.url')}}/button_logo.png" alt="Arabhardware" height="20" /&gt;
+        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/button_logo.png" alt="Arabhardware" height="20" /&gt;
 &lt;/button&gt;
 &lt;script&gt;
     function ahwLogin() {
         var clientId = 'YOUR_CLIENT_ID';
         var redirectUri = 'YOUR_REDIRECT_URI';
-        var authUrl = 'https://api.arabhardware.net/oauth/authorize?'+
+        var authUrl = '{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/authorize?'+
             'client_id=' + encodeURIComponent(clientId) +
             '&redirect_uri=' + encodeURIComponent(redirectUri) +
             '&response_type=code&scope=profile email';
@@ -148,15 +148,15 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     transition: box-shadow 0.2s, outline 0.2s;outline: none;position: relative;"
     onmouseover="this.style.boxShadow='0 0 0 6px rgba(211,47,47,0.18), 0 6px 16px rgba(211,47,47,0.15)'"
     onmouseout="this.style.boxShadow='0 4px 16px rgba(211,47,47,0.15)'" onclick="ahwLogin()"&gt;
-        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000':config('app.url')}}/button-arrow.png" alt="Arabhardware" height="20" /&gt;
+        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/button-arrow.png" alt="Arabhardware" height="20" /&gt;
         &lt;span&gt;الدخول &lt;span style="font-weight:600;" &gt; بواسطة عرب هاردوير &lt;/span&gt; &lt;/span&gt;
-        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000':config('app.url')}}/button_logo.png" alt="Arabhardware" height="20" /&gt;
+        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/button_logo.png" alt="Arabhardware" height="20" /&gt;
 &lt;/button&gt;
 &lt;script&gt;
     function ahwLogin() {
         var clientId = 'YOUR_CLIENT_ID';
         var redirectUri = 'YOUR_REDIRECT_URI';
-        var authUrl = 'https://api.arabhardware.net/oauth/authorize?'+
+        var authUrl = '{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/authorize?'+
             'client_id=' + encodeURIComponent(clientId) +
             '&redirect_uri=' + encodeURIComponent(redirectUri) +
             '&response_type=code&scope=profile email';
@@ -187,50 +187,9 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                         </button>
                     </div>
 
-
-
-
                     <!-- name of each tab group should be unique -->
                     <div class="tabs tabs-lift tabs-bottom">
-                        <input type="radio" name="my_tabs_5" class="tab" aria-label="With arrow" />
-                        <div class="tab-content bg-base-100 border-base-300 p-6">
-                            <div class="mockup-code bg-[#282a36] code-highlight text-xs relative group">
-                                <!-- Copy button (optional) -->
-                                {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
-                                <button
-                                    class="absolute top-2 right-2 btn btn-xs btn-primary opacity-0 group-hover:opacity-100 transition-opacity"
-                                    onclick="copyCodeToClipboard(this)" title="Copy code" tooltip-left="Create">
-                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <pre><code class="language-html rounded-lg p-18">&lt;!-- Arab Hardware Login Button --&gt;
-&lt;button id="ahw-login-btn" style="background: #d32f2f;color: #fff;padding: 16px 32px;border: none;
-    border-radius: 8px;display: flex;align-items: center;gap: 12px;font-size: 16px;font-family: inherit;
-    font-weight: 500;box-shadow: 0 2px 8px rgba(211,47,47,0.15);cursor: pointer;
-    transition: box-shadow 0.2s, outline 0.2s;outline: none;position: relative;"
-    onmouseover="this.style.boxShadow='0 0 0 6px rgba(211,47,47,0.18), 0 6px 16px rgba(211,47,47,0.15)'"
-    onmouseout="this.style.boxShadow='0 4px 16px rgba(211,47,47,0.15)'" onclick="ahwLogin()"&gt;
-        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000':config('app.url')}}/button-arrow.png" alt="Arabhardware" height="20" /&gt;
-        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000':config('app.url')}}/button_logo.png" alt="Arabhardware" height="20" /&gt;
-&lt;/button&gt;
-&lt;script&gt;
-    function ahwLogin() {
-        var clientId = 'YOUR_CLIENT_ID';
-        var redirectUri = 'YOUR_REDIRECT_URI';
-        var authUrl = 'https://api.arabhardware.net/oauth/authorize?'+
-            'client_id=' + encodeURIComponent(clientId) +
-            '&redirect_uri=' + encodeURIComponent(redirectUri) +
-            '&response_type=code&scope=profile email';
-        window.location.href = authUrl;
-    }
-&lt;/script&gt;</code></pre>
-                            </div>
-                        </div>
-}
-                        <input type="radio" name="my_tabs_5" class="tab" aria-label="Without arrow"
+                        <input type="radio" name="my_tabs_5" class="tab" aria-label="With arrow"
                             checked="checked" />
                         <div class="tab-content bg-base-100 border-base-300 p-6">
                             <div class="mockup-code bg-[#282a36] code-highlight text-xs relative group">
@@ -252,13 +211,51 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     transition: box-shadow 0.2s, outline 0.2s;outline: none;position: relative;"
     onmouseover="this.style.boxShadow='0 0 0 6px rgba(211,47,47,0.18), 0 6px 16px rgba(211,47,47,0.15)'"
     onmouseout="this.style.boxShadow='0 4px 16px rgba(211,47,47,0.15)'" onclick="ahwLogin()"&gt;
-        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000':config('app.url')}/button_logo.png" alt="Arabhardware" height="20" /&gt;
+        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/button-arrow.png" alt="Arabhardware" height="20" /&gt;
+        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/button_logo.png" alt="Arabhardware" height="20" /&gt;
 &lt;/button&gt;
 &lt;script&gt;
     function ahwLogin() {
         var clientId = 'YOUR_CLIENT_ID';
         var redirectUri = 'YOUR_REDIRECT_URI';
-        var authUrl = 'https://api.arabhardware.net/oauth/authorize?'+
+        var authUrl = '{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/authorize?'+
+            'client_id=' + encodeURIComponent(clientId) +
+            '&redirect_uri=' + encodeURIComponent(redirectUri) +
+            '&response_type=code&scope=profile email';
+        window.location.href = authUrl;
+    }
+&lt;/script&gt;</code></pre>
+                            </div>
+                        </div>
+
+                        <input type="radio" name="my_tabs_5" class="tab" aria-label="Without arrow" />
+                        <div class="tab-content bg-base-100 border-base-300 p-6">
+                            <div class="mockup-code bg-[#282a36] code-highlight text-xs relative group">
+                                <!-- Copy button (optional) -->
+                                {{-- <x-mary-button icon="o-plus" class="absolute top-2 right-2 btn-circle btn-ghost btn-xs" tooltip-left="Create" /> --}}
+                                <button
+                                    class="absolute top-2 right-2 btn btn-xs btn-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                                    onclick="copyCodeToClipboard(this)" title="Copy code" tooltip-left="Create">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <pre><code class="language-html rounded-lg p-18">&lt;!-- Arab Hardware Login Button --&gt;
+&lt;button id="ahw-login-btn" style="background: #d32f2f;color: #fff;padding: 16px 32px;border: none;
+    border-radius: 8px;display: flex;align-items: center;gap: 12px;font-size: 16px;
+    font-family: inherit;font-weight: 500;box-shadow: 0 2px 8px rgba(211,47,47,0.15);cursor: pointer;
+    transition: box-shadow 0.2s, outline 0.2s;outline: none;position: relative;"
+    onmouseover="this.style.boxShadow='0 0 0 6px rgba(211,47,47,0.18), 0 6px 16px rgba(211,47,47,0.15)'"
+    onmouseout="this.style.boxShadow='0 4px 16px rgba(211,47,47,0.15)'" onclick="ahwLogin()"&gt;
+        &lt;img src="{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/button_logo.png" alt="Arabhardware" height="20" /&gt;
+&lt;/button&gt;
+&lt;script&gt;
+    function ahwLogin() {
+        var clientId = 'YOUR_CLIENT_ID';
+        var redirectUri = 'YOUR_REDIRECT_URI';
+        var authUrl = '{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/authorize?'+
             'client_id=' + encodeURIComponent(clientId) +
             '&redirect_uri=' + encodeURIComponent(redirectUri) +
             '&response_type=code&scope=profile email';
@@ -342,7 +339,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                         <h4 class="text-lg font-medium  mb-3">OAuth Flow</h4>
                         <div class="mockup-code bg-[#282a36]">
                             <pre><code>// 1. Redirect user to authorization URL
-const authUrl = `https://api.arabhardware.net/oauth/authorize?` +
+const authUrl = `{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/authorize?` +
 `client_id=${CLIENT_ID}&` +
 `redirect_uri=${REDIRECT_URI}&` +
 `response_type=code&` +
@@ -351,7 +348,7 @@ const authUrl = `https://api.arabhardware.net/oauth/authorize?` +
 window.location.href = authUrl;
 
 // 2. Handle the callback and exchange code for token
-const tokenResponse = await fetch('https://api.arabhardware.net/oauth/token', {
+const tokenResponse = await fetch('{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/token', {
 method: 'POST',
 headers: { 'Content-Type': 'application/json' },
 body: JSON.stringify({
@@ -375,106 +372,104 @@ const { access_token } = await tokenResponse.json();</code></pre>
         <div class="lg:col-span-1 flex flex-col min-h-screen">
             <div class="space-y-6 sticky top-20 ">
                 <!-- Quick Start -->
-                <div class="card  shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title text-lg text-gray-900 mb-4">
-                            <i class="fas fa-rocket text-blue-500 mr-2"></i>
+                <x-mary-card
+                    class="col-span-2 border border-dashed bg-base-100 border-base-content/10 border-b-[length:var(--border)] ">
+                    <x-slot:title>
+                        <h2 class="card-title text-xl flex gap-1 mb-4">
+                            <img class="text-red-500 h-8" src="{{ asset('rocket.webp') }}" alt="">
                             Quick Start
-                        </h3>
-                        <div class="space-y-3">
-                            <a href="#"
-                                class="block p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm font-medium text-blue-700">Developer Portal</span>
-                                    <i class="fas fa-external-link-alt text-blue-500"></i>
-                                </div>
-                            </a>
-                            <a href="#"
-                                class="block p-3 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm font-medium text-green-700">API Documentation</span>
-                                    <i class="fas fa-book text-green-500"></i>
-                                </div>
-                            </a>
-                            <a href="#"
-                                class="block p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm font-medium text-purple-700">SDK Downloads</span>
-                                    <i class="fas fa-download text-purple-500"></i>
-                                </div>
-                            </a>
-                        </div>
+                        </h2>
+                    </x-slot:title>
+                    <div class="space-y-3 flex flex-col ">
+                        <a href="{{ route('developers.dashboard') }}" wire:navigate>
+                            <x-mary-alert class="alert-warning" title="Developer Portal" icon="o-home" />
+                        </a>
+                        <a href="#">
+                            <x-mary-alert icon="o-document" class="alert-success">
+                                API <strong>documentation.</strong>
+                                <x-slot:actions>
+                                    <x-mary-icon name="o-arrow-top-right-on-square"
+                                        class="inline-block stroke-current" />
+                                </x-slot:actions>
+                            </x-mary-alert>
+                        </a>
+                        <a href="#">
+                            <x-mary-alert icon="o-arrow-down-tray" class="alert-info">
+                                SDK <strong>download.</strong>
+                            </x-mary-alert>
+                        </a>
                     </div>
-                </div>
+
+                </x-mary-card>
 
                 <!-- OAuth Endpoints -->
-                <div class="card bg-white shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title text-lg text-gray-900 mb-4">
-                            <i class="fas fa-server text-green-500 mr-2"></i>
+                <x-mary-card
+                    class="col-span-2 border border-dashed bg-base-100 border-base-content/10 border-b-[length:var(--border)] ">
+                    <x-slot:title>
+                        <h2 class="card-title text-xl flex gap-1 mb-4">
+                            <img class="text-red-500 h-8" src="{{ asset('api.webp') }}" alt="">
                             OAuth Endpoints
-                        </h3>
-                        <div class="space-y-3 text-sm">
-                            <div>
-                                <div class="font-medium text-gray-700 mb-1">Authorization URL</div>
-                                <code
-                                    class="text-xs bg-gray-100 p-2 rounded block break-all">https://api.arabhardware.net/oauth/authorize</code>
-                            </div>
-                            <div>
-                                <div class="font-medium text-gray-700 mb-1">Token URL</div>
-                                <code
-                                    class="text-xs bg-gray-100 p-2 rounded block break-all">https://api.arabhardware.net/oauth/token</code>
-                            </div>
-                            <div>
-                                <div class="font-medium text-gray-700 mb-1">User Info</div>
-                                <code
-                                    class="text-xs bg-gray-100 p-2 rounded block break-all">https://api.arabhardware.net/user</code>
-                            </div>
+                        </h2>
+                    </x-slot:title>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <div class="font-medium mb-1">Authorization URL</div>
+                            <code
+                                class="text-xs alert p-2 rounded block break-all">{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/authorize</code>
+                        </div>
+                        <div>
+                            <div class="font-medium mb-1">Token URL</div>
+                            <code
+                                class="text-xs alert p-2 rounded block break-all">{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/oauth/token</code>
+                        </div>
+                        <div>
+                            <div class="font-medium mb-1">User Info</div>
+                            <code
+                                class="text-xs alert p-2 rounded block break-all">{{ config('app.url') == 'http://localhost' ? 'http://localhost:8000' : config('app.url') }}/user</code>
                         </div>
                     </div>
-                </div>
+                </x-mary-card>
+
 
                 <!-- Supported Scopes -->
-                <div class="card bg-white shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title text-lg text-gray-900 mb-4">
-                            <i class="fas fa-shield-alt text-orange-500 mr-2"></i>
+                <x-mary-card
+                    class="col-span-2 border border-dashed bg-base-100 border-base-content/10 border-b-[length:var(--border)] ">
+                    <x-slot:title>
+                        <h2 class="card-title text-xl flex gap-1 mb-4">
+                            <img class="text-red-500 h-8" src="{{ asset('scopes.webp') }}" alt="">
                             Supported Scopes
-                        </h3>
-                        <div class="space-y-2 text-sm">
-                            <div class="flex items-center space-x-2">
-                                <div class="badge badge-outline badge-sm">profile</div>
-                                <span class="text-gray-600">Basic profile information</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <div class="badge badge-outline badge-sm">email</div>
-                                <span class="text-gray-600">Email address</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <div class="badge badge-outline badge-sm">posts</div>
-                                <span class="text-gray-600">Read user posts</span>
-                            </div>
+                        </h2>
+                    </x-slot:title>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <x-mary-badge value="profile" class="badge-dash" />
+                            <span class="text-gray-600">Basic profile information</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <x-mary-badge value="email" class="badge-dash" />
+                            <span class="text-gray-600">Email address</span>
                         </div>
                     </div>
-                </div>
+                </x-mary-card>
 
                 <!-- Support -->
-                <div class="card bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg">
-                    <div class="card-body">
-                        <h3 class="card-title text-lg mb-4">
-                            <i class="fas fa-headset mr-2"></i>
+                <x-mary-card
+                    class="col-span-2 bg-primary border border-dashed text-white shadow-lg border-base-content/10 border-b-[length:var(--border)] ">
+                    <x-slot:title>
+                        <h2 class="card-title text-xl flex gap-1 mb-4">
+                            <img class="text-red-500 h-8" src="{{ asset('magic.webp') }}" alt="">
                             Need Help?
-                        </h3>
-                        <p class="text-sm text-red-100 mb-4">
-                            Our developer support team is here to help you integrate successfully.
-                        </p>
-                        <button
-                            class="btn btn-outline btn-sm text-white border-white hover:bg-white hover:text-red-500">
-                            <i class="fas fa-envelope mr-2"></i>
-                            Contact Support
-                        </button>
-                    </div>
-                </div>
+                        </h2>
+                    </x-slot:title>
+                    <p class="text-sm text-red-100 mb-4">
+                        Our developer support team is here to help you integrate successfully.
+                    </p>
+                    <button
+                        class="btn w-full btn-outline btn-sm text-white border-white hover:bg-white hover:text-red-500">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Contact Support
+                    </button>
+                </x-mary-card>
             </div>
         </div>
     </div>
