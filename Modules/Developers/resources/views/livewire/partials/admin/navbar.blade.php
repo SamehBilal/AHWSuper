@@ -3,19 +3,10 @@
 use Livewire\Volt\Component;
 
 new class extends Component {
-    public $app;
-    public $clients = [];
 
     public function mount()
     {
-        $this->loadClients();
-    }
-
-    public function loadClients()
-    {
-        $user = Auth::user();
-        $this->clients = $user->oauthApps()->get();
-        //dd($this->clients);
+        //
     }
 
 }; ?>
@@ -36,8 +27,6 @@ new class extends Component {
     </x-slot:brand>
 
     <x-slot:actions>
-
-        <x-mary-select label="My Apps" wire:model="app" icon="o-arrow-right-end-on-rectangle" :options="$clients" inline />
 
         <x-mary-button icon="o-magnifying-glass" class="btn-primary-content btn-dash"
             @click.stop="$dispatch('mary-search-open')">

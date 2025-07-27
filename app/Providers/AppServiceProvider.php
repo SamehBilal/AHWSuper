@@ -2,12 +2,13 @@
 
 namespace App\Providers;
 
+use App\Models\Passport\Client;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
 use Carbon\CarbonInterval;
 use App\Models\User;
 use Illuminate\Support\Facades\Gate;
-
+use Modules\Developers\Models\Client as ModelsClient;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -36,6 +37,7 @@ class AppServiceProvider extends ServiceProvider
             'authToken' => $parameters['authToken'],
         ]);});
 
+        Passport::useClientModel(ModelsClient::class);
         Passport::loadKeysFrom(__DIR__ . '/../secrets/oauth');
         Passport::tokensExpireIn(CarbonInterval::days(15));
         Passport::refreshTokensExpireIn(CarbonInterval::days(30));

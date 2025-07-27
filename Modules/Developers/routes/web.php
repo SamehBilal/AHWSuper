@@ -3,17 +3,16 @@
 use Illuminate\Support\Facades\Route;
 use Modules\Developers\Http\Controllers\DevelopersController;
 use Livewire\Volt\Volt;
-
+use Modules\Developers\Http\Controllers\AppTesterController;
 
 Route::middleware(['web'])->prefix('developers')->name('developers.')->group(function () {
     Volt::route('privacy-policy', 'theme.privacy-policy')->name('privacy');
     Volt::route('/', 'theme.index')
-    ->name('index');
+        ->name('index');
 
     /* Route::get('/', function () {
         return view('developers::index');
     })->name('home'); */
-
 });
 
 Route::middleware(['auth', 'verified', 'two-factor'])->prefix('developers')->name('developers.')->group(function () {
@@ -25,10 +24,23 @@ Route::middleware(['auth', 'verified', 'two-factor'])->prefix('developers')->nam
         Volt::route('/app-verification', 'admin.app-verification')->name('app-verification');
         Volt::route('/oauth2', 'admin.oauth2')->name('oauth2');
         Volt::route('/app-testers', 'admin.app-testers')->name('app-testers');
-        Volt::route('/general-information', 'admin.general-information')->name('general-information');
         Volt::route('/apps', 'admin.apps.index')->name('apps.index');
         Volt::route('/apps/create', 'admin.apps.create')->name('apps.create');
-        Volt::route('/apps/{app}/edit', 'admin.apps.edit')->name('apps.edit');
+        Volt::route('/apps/{app}/edit', 'admin.apps.create')->name('apps.edit');
+
+        Route::get('/app-tester/{token}', [AppTesterController::class, 'show'])
+            ->name('app-tester.show');
+        Route::post('/app-tester/{token}/accept', [AppTesterController::class, 'accept'])
+            ->name('app-tester.accept');
+        Route::post('/app-tester/{token}/reject', [AppTesterController::class, 'reject'])
+            ->name('app-tester.reject');
+
+
+           /*  Route::middleware(['auth', 'app.tester'])->group(function () {
+    Route::get('/apps/{app}/test-dashboard', [TestController::class, 'dashboard']);
+    Route::get('/apps/{app}/beta-features', [TestController::class, 'beta']);
+    Route::post('/apps/{app}/report-bug', [TestController::class, 'reportBug']);
+}); */
     });
     Route::resource('developers', DevelopersController::class)->names('developers');
 });

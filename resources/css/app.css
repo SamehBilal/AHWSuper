@@ -274,7 +274,7 @@ select:focus[data-flux-control] {
     position: absolute;
     width: 5.4rem;
     height: 6.8rem;
-    left: 1rem;
+    left: 1.3rem;
     top: 6.7rem;
     background-color: rgba(99, 102, 115, 0.709804);
     border-radius: 0.6rem;
@@ -291,35 +291,35 @@ select:focus[data-flux-control] {
 .box_1 :nth-child(1) {
     width: 1.8rem;
     height: 0.3rem;
-    top: 1.2rem;
+    top: 0.6rem;
     left: 1.3rem;
 }
 
 .box_1 :nth-child(2) {
     width: 1rem;
     height: 0.3rem;
-    top: 1.2rem;
+    top: 0.6rem;
     left: 3.3rem;
 }
 
 .box_1 :nth-child(3) {
     width: 1.1rem;
     height: 0.3rem;
-    top: 2rem;
+    top: 1.4rem;
     left: 2.1rem;
 }
 
 .box_1 :nth-child(4) {
     width: 1.4rem;
     height: 0.3rem;
-    top: 2rem;
+    top: 1.4rem;
     left: 3.3rem;
 }
 
 .box_1 :nth-child(5) {
     width: 0.7rem;
     height: 0.3rem;
-    top: 2.7rem;
+    top: 2.1rem;
     left: 2.7rem;
     box-shadow: 1rem 0px #f11420, 1.8rem 0px #f11420, -0.5rem 11px #f11420;
 }
@@ -327,7 +327,7 @@ select:focus[data-flux-control] {
 .box_1 :nth-child(6) {
     width: 1.8rem;
     height: 0.3rem;
-    top: 4.1rem;
+    top: 3.5rem;
     left: 1.2rem;
     box-shadow: 1rem 22px #f11420, 0rem 43px #f11420;
 }
@@ -335,7 +335,7 @@ select:focus[data-flux-control] {
 .box_1 :nth-child(7) {
     width: 0.8rem;
     height: 0.3rem;
-    top: 4.8rem;
+    top: 4.2rem;
     left: 1.7rem;
     box-shadow: 0rem 22px #f11420;
 }
@@ -344,7 +344,7 @@ select:focus[data-flux-control] {
     position: absolute;
     width: 6.4rem;
     height: 4.4rem;
-    left: 7.3rem;
+    left: 7.6rem;
     top: 1.7rem;
     background-color: rgba(99, 102, 115, 0.709804);
     border-radius: 0.6rem;
@@ -355,7 +355,6 @@ select:focus[data-flux-control] {
 .box_2 div {
     position: absolute;
     border-radius: 1rem;
-    background: #f11420;
 }
 
 .box_2 :nth-child(1) {
@@ -363,7 +362,7 @@ select:focus[data-flux-control] {
     width: 0.2rem;
     height: 0.6rem;
     left: 0.8rem;
-    top: -0.4rem;
+    top: -1rem;
     box-shadow: 1.1rem 0.5rem #f11420, 2.5rem -0.5rem #f11420, 6rem 0.5rem #f11420;
 }
 
@@ -372,7 +371,7 @@ select:focus[data-flux-control] {
     width: 0.2rem;
     height: 0.6rem;
     left: 0.8rem;
-    top: 0rem;
+    top: -0.6rem;
     box-shadow: 0.5rem -1.1rem #f11420, -0.9rem -2rem #f11420, 0.2rem -5.5rem #f11420;
 }
 
@@ -383,7 +382,7 @@ select:focus[data-flux-control] {
     background: #f11420;
     position: absolute;
     border-radius: 6rem;
-    top: 2.4rem;
+    top: 1.8rem;
     left: 2.2rem;
 }
 
@@ -394,7 +393,7 @@ select:focus[data-flux-control] {
     background: #f11420;
     position: absolute;
     border-radius: 6rem;
-    top: 1.1rem;
+    top: 0.5rem;
     left: 2rem;
     transform: rotate(-68deg);
     box-shadow: -2.2rem 2.8rem #f11420;
@@ -404,7 +403,7 @@ select:focus[data-flux-control] {
     position: absolute;
     width: 4.9rem;
     height: 4.2rem;
-    left: 7.3rem;
+    left: 7.6rem;
     top: 7.4rem;
     background-color: rgba(99, 102, 115, 0.709804);
     border-radius: 0.6rem;

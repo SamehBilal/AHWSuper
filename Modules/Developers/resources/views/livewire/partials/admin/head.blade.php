@@ -9,7 +9,7 @@
 
 {{-- <meta name="pgToken" content="{{ csrf_token() }}"> --}}
 
-<title>{{ $pageTitle ?? "Arabhardware" }}</title>
+<title>{{ $title ?? "Arabhardware" }}</title>
 
 <link rel="preload" href="{{ asset('fonts/helvetica/HelveticaNeuellight.woff2') }}" as="font" type="font/woff2" crossorigin="">
 <link rel="shortcut icon" href="{{ @$favicon ?? /* url('favicon.png') */"https://arabhardware.net/favicon.png" }} " type="image/x-icon">
@@ -111,3 +111,8 @@
     gtag('config', 'G-4Q0YRG9XSF');
 </script>
 
+{{-- Cropper.js --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css" />
+
+</style>
