@@ -1,33 +1,32 @@
 @php
     $formId = $formId ?? uniqid('login_');
 @endphp
-<div >
+<div>
     <x-auth-header :title="__('Log in to your account')" :description="__('Enter your email and password below to log in')" />
 
     <div class="flex mt-10 flex-col gap-6 w-full">
         <!-- Email Address -->
-        <x-mary-input id="email-{{ $formId }}" :label="__('Email address')" type="email" placeholder="email@example.com" inline clearable
-            required />
+        <x-mary-input id="email-{{ $formId }}" :label="__('Email address')" type="email" placeholder="email@example.com"
+            inline clearable required />
 
         <div class="relative">
             <!-- Forgot Password Link -->
 
-                <a class="absolute underline end-0 top-0 text-sm" >
-                    {{ __('Forgot your password?') }}
-                </a>
+            <a class="absolute underline end-0 top-0 text-sm">
+                {{ __('Forgot your password?') }}
+            </a>
 
         </div>
 
         <!-- Password -->
-        <x-mary-password id="password-{{ $formId }}" :label="__('Password')"  :placeholder="__('Password')" password-icon="o-lock-closed"
-            password-visible-icon="o-lock-open" inline right required />
+        <x-mary-password id="password-{{ $formId }}" :label="__('Password')" :placeholder="__('Password')"
+            password-icon="o-lock-closed" password-visible-icon="o-lock-open" inline right required />
 
         <!-- Remember Me -->
         <x-mary-checkbox id="remember-{{ $formId }}" :label="__('Remember me for 30 days')" />
 
         <div class="flex items-center justify-end">
-            <x-mary-button label="{{ __('Log in') }}" class="w-full btn-primary"
-                spinner />
+            <x-mary-button label="{{ __('Log in') }}" class="w-full btn-primary" spinner />
         </div>
     </div>
 
@@ -56,11 +55,12 @@
 
         <!-- Large Button with Full Text -->
         <button
-            class="ahw-btn btn bg-primary text-white px-6 py-2 rounded-lg flex items-center justify-between w-full border-primary text-base shadow-lg">
+            class="ahw-btn btn bg-primary text-white px-6 py-2 rounded-lg flex items-center justify-between  border-primary text-base shadow-lg hover:shadow-lg hover:ring-6 hover:ring-primary/60 transition-all duration-200">
             <i class="fas fa-sign-in-alt text-lg">
                 <img src="{{ asset('button-arrow.png') }}" alt="" height="20">
             </i>
-            <span class="flex-1 text-center mx-4">تسجيل الدخول <span class="font-[600]!">بواسطة عرب هاردوير</span></span>
+            <span class="flex-1 text-center mx-4">تسجيل الدخول <span class="font-[600]!">بواسطة عرب
+                    هاردوير</span></span>
             <i class="fas fa-chevron-left text-lg">
                 <img src="{{ asset('button_logo.png') }}" alt="" height="20">
             </i>

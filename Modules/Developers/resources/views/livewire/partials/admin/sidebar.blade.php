@@ -20,7 +20,7 @@ new class extends Component {
         <div class="flex">
 
             <div class="flex flex-col justify-between h-[calc(100vh-65px)] w-16 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
-                <x-mary-menu activate-by-route vertical class="space-y-2 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
+                <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" vertical class="space-y-2 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
 
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
@@ -93,6 +93,16 @@ new class extends Component {
                             {{ __('Editors') }}
                         </x-slot:content>
                     </x-mary-popover>
+                    <x-mary-popover position="right-start" offset="0">
+                        <x-slot:trigger>
+                            <x-mary-menu-item icon="o-cloud" :tooltip="__('Developers')"
+                                link="{{ route('developers.dashboard') }}" :active="request()->is('developers/admin*')" wire:navigate >
+                            </x-mary-menu-item>
+                        </x-slot:trigger>
+                        <x-slot:content>
+                            {{ __('Developers') }}
+                        </x-slot:content>
+                    </x-mary-popover>
 
                 </x-mary-menu>
 
@@ -149,7 +159,7 @@ new class extends Component {
                     <x-mary-menu-item title="Dashboard" icon="o-home" link="{{ route('developers.dashboard') }}"
                         route="developers.dashboard" />
                     <x-mary-menu-item title="My Apps" icon="o-code-bracket" link="{{ route('developers.apps.index') }}"
-                        route="developers.apps.index" />
+                        active-by-url="/developers/admin/apps*"   />
                     <x-mary-menu-item title="App Verification" icon="o-check-badge"
                         link="{{ route('developers.app-verification') }}" route="developers.app-verification" />
                     <x-mary-menu-item title="Login Button" icon="o-paper-airplane"

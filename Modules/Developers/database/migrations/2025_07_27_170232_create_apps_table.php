@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('website_url')->nullable();
             $table->string('callback_url');
-            $table->json('redirect_uris');
+            $table->json('redirect_uris'); // Multiple redirect URIs
             $table->string('logo_url')->nullable();
             $table->json('screenshots')->nullable();
             $table->enum('status', ['pending', 'approved', 'suspended', 'rejected'])->default('pending');
@@ -30,7 +30,7 @@ return new class extends Migration
             $table->foreignId('developer_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('oauth_client_id')->nullable()->constrained('oauth_clients')->onDelete('set null');
             $table->timestamps();
-
+            
             $table->index(['status', 'is_public']);
             $table->index('developer_id');
         });

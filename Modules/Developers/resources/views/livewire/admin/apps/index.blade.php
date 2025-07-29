@@ -22,12 +22,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     public $perPage = 25;
     public $total = 0;
     public $hasMorePage = false;
-    public $perPageOptions = [
-        ['id' => 10, 'name' => 10],
-        ['id' => 25, 'name' => 25],
-        ['id' => 50, 'name' => 50],
-        ['id' => 100, 'name' => 100]
-    ];
+    public $perPageOptions = [['id' => 10, 'name' => 10], ['id' => 25, 'name' => 25], ['id' => 50, 'name' => 50], ['id' => 100, 'name' => 100]];
     public $sortField = 'created_at';
     public $sortDirection = 'desc';
     public $sortBy = ['column' => 'created_at', 'direction' => 'desc'];
@@ -38,15 +33,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
         $this->page = 1;
         $this->perPage = 25;
         $this->loadClientsData();
-        $this->headers = [
-            ['key' => 'icon', 'label' => '', 'class' => 'w-12'],
-            ['key' => 'name', 'label' => 'App Name'],
-            ['key' => 'client_id', 'label' => 'Client ID'],
-            ['key' => 'grant_types', 'label' => 'Grant Types'],
-            ['key' => 'created_at', 'label' => 'Created'],
-            ['key' => 'revoked', 'label' => 'Status'],
-            ['key' => 'actions', 'label' => 'Actions', 'class' => 'text-center'],
-        ];
+        $this->headers = [['key' => 'icon', 'label' => '', 'class' => 'w-12'], ['key' => 'name', 'label' => 'App Name'], ['key' => 'client_id', 'label' => 'Client ID'], ['key' => 'grant_types', 'label' => 'Grant Types'], ['key' => 'created_at', 'label' => 'Created'], ['key' => 'revoked', 'label' => 'Status'], ['key' => 'actions', 'label' => 'Actions', 'class' => 'text-center']];
     }
 
     public function loadClientsData()
@@ -55,7 +42,8 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
             $this->loading = true;
 
             // Get OAuth clients for the authenticated user
-            $clients = $this->user->oauthApps()
+            $clients = $this->user
+                ->oauthApps()
                 ->when($this->sortBy['column'] === 'created_at', function ($query) {
                     return $query->orderBy('created_at', $this->sortBy['direction']);
                 })
@@ -115,7 +103,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     {
         $offset = ($this->page - 1) * $this->perPage;
         $this->filteredList = $this->filteredList->slice($offset, $this->perPage);
-        $this->hasMorePage = $this->total > ($this->page * $this->perPage);
+        $this->hasMorePage = $this->total > $this->page * $this->perPage;
     }
 
     public function refreshMyApps()
@@ -147,9 +135,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
 
         $filtered = $this->list->filter(function ($client) {
             $searchTerm = strtolower($this->search);
-            return str_contains(strtolower($client['name']), $searchTerm) ||
-                   str_contains(strtolower($client['client_id']), $searchTerm) ||
-                   str_contains(strtolower($client['grant_types']), $searchTerm);
+            return str_contains(strtolower($client['name']), $searchTerm) || str_contains(strtolower($client['client_id']), $searchTerm) || str_contains(strtolower($client['grant_types']), $searchTerm);
         });
 
         $this->total = $filtered->count();
@@ -170,12 +156,12 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
         // return redirect()->route('developers.apps.show', $clientId);
     }
 
-    public function editClient($clientId)
+    /* public function editClient($clientId)
     {
         //$this->warning('Editing OAuth client: ' . $clientId, position: 'bottom-right');
         // You can redirect to an edit page
         return redirect()->route('developers.apps.edit', $clientId);
-    }
+    } */
 
     public function revokeClient($clientId)
     {
@@ -231,7 +217,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
         <div class="lg:col-span-2 space-y-8">
             <section class="w-full">
 
-             <x-mary-header icon="o-code-bracket" icon-classes="bg-primary text-white rounded-full p-1 w-6 h-6"
+                <x-mary-header icon="o-code-bracket" icon-classes="bg-primary text-white rounded-full p-1 w-6 h-6"
                     title="My Apps" subtitle="List of all your OAuth applications" separator progress-indicator="save"
                     progress-indicator-class="progress-primary">
                     <x-slot:middle class="!justify-end">
@@ -240,8 +226,8 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                     </x-slot:middle>
                     <x-slot:actions>
                         <x-mary-select wire:model.live="perPage" :options="$perPageOptions" class="w-20 btn-sm" />
-                        <x-mary-button wire:click="refreshMyApps" icon="o-arrow-path" class="btn-sm"
-                            :loading="$loading" title="Refresh your apps" />
+                        <x-mary-button wire:click="refreshMyApps" icon="o-arrow-path" class="btn-sm" :loading="$loading"
+                            title="Refresh your apps" />
                         <x-mary-button link="{{ route('developers.apps.create') }}" icon="o-plus"
                             class="btn-primary btn-sm" />
                     </x-slot:actions>
@@ -252,7 +238,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                         <table class="table table-zebra w-full min-w-full">
                             <thead>
                                 <tr>
-                                    @foreach($headers as $header)
+                                    @foreach ($headers as $header)
                                         <th class="{{ $header['class'] ?? '' }}">
                                             <div class="skeleton h-8 w-full min-w-full"></div>
                                         </th>
@@ -260,11 +246,11 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                @for($i = 0; $i < 9; $i++)
+                                @for ($i = 0; $i < 9; $i++)
                                     <tr>
-                                        @foreach($headers as $header)
+                                        @foreach ($headers as $header)
                                             <td class="{{ $header['class'] ?? '' }}">
-                                                @if(isset($header['key']) && $header['key'] === 'icon')
+                                                @if (isset($header['key']) && $header['key'] === 'icon')
                                                     <div class="skeleton h-12 w-12 rounded-lg mx-auto"></div>
                                                 @elseif(isset($header['key']) && $header['key'] === 'actions')
                                                     <div class="flex gap-1 justify-center">
@@ -285,7 +271,8 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                 </div>
 
                 <div wire:loading.remove>
-                    <x-mary-table :headers="$headers" :rows="$filteredList" class="table-zebra" sortable wire:model.live="sortBy">
+                    <x-mary-table :headers="$headers" :rows="$filteredList" class="table-zebra" sortable
+                        wire:model.live="sortBy">
                         {{-- Icon column styling --}}
                         @scope('cell_icon', $row)
                             <div class="flex items-center justify-center">
@@ -307,7 +294,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
 
                         {{-- Status column styling --}}
                         @scope('cell_revoked', $row)
-                            @if($row['revoked'] === 'Active')
+                            @if ($row['revoked'] === 'Active')
                                 <x-mary-badge value="Active" class="badge-success badge-sm" />
                             @else
                                 <x-mary-badge value="Revoked" class="badge-error badge-sm" />
@@ -317,56 +304,43 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                         {{-- Actions column styling --}}
                         @scope('cell_actions', $row)
                             <div class="flex gap-1 justify-center">
-                                <x-mary-button
-                                    class="btn-sm btn-ghost hover:btn-info"
-                                    title="View App Details"
-                                    wire:click="viewClient('{{ $row['id'] }}')"
-                                    icon="o-eye"
-                                />
-                                <x-mary-button
-                                    class="btn-sm btn-ghost hover:btn-warning"
-                                    title="Edit App"
-                                    wire:click="editClient('{{ $row['id'] }}')"
-                                    icon="o-pencil"
-                                />
-                                @if($row['revoked'] === 'Active')
-                                    <x-mary-button
-                                        class="btn-sm btn-ghost hover:btn-error"
-                                        title="Revoke App"
-                                        wire:click="revokeClient('{{ $row['id'] }}')"
-                                        icon="o-no-symbol"
-                                    />
+                                <x-mary-button class="btn-sm btn-ghost hover:btn-info" title="View App Details"
+                                    wire:click="viewClient('{{ $row['id'] }}')" icon="o-eye" />
+                                <x-mary-button class="btn-sm btn-ghost hover:btn-warning" title="Edit App" wire:navigate
+                                    href="{{ route('developers.apps.edit', $row['id']) }}"
+                                    wire:loading.class.remove="loading" icon="o-pencil" />
+                                @if ($row['revoked'] === 'Active')
+                                    <x-mary-button class="btn-sm btn-ghost hover:btn-error" title="Revoke App"
+                                        wire:click="revokeClient('{{ $row['id'] }}')" icon="o-no-symbol" />
                                 @else
-                                    <x-mary-button
-                                        class="btn-sm btn-ghost hover:btn-success"
-                                        title="Restore App"
-                                        wire:click="restoreClient('{{ $row['id'] }}')"
-                                        icon="o-arrow-path"
-                                    />
+                                    <x-mary-button class="btn-sm btn-ghost hover:btn-success" title="Restore App"
+                                        wire:click="restoreClient('{{ $row['id'] }}')" icon="o-arrow-path" />
                                 @endif
                             </div>
                         @endscope
                     </x-mary-table>
 
-                    @if($page > 1 || $hasMorePage)
+                    @if ($page > 1 || $hasMorePage)
                         <div class="flex justify-end mt-4 min-h-[40px]">
-                            @if($loading)
+                            @if ($loading)
                                 <div class="flex items-center justify-center w-full">
                                     <span class="loading loading-spinner loading-md text-primary"></span>
                                 </div>
                             @else
                                 <div class="join">
-                                    <button class="join-item btn" @if($page == 1) disabled @endif wire:click="goToPage({{ $page - 1 }})">«</button>
+                                    <button class="join-item btn" @if ($page == 1) disabled @endif
+                                        wire:click="goToPage({{ $page - 1 }})">«</button>
                                     <button class="join-item btn btn-active">Page {{ $page }}</button>
-                                    <button class="join-item btn" @if(!$hasMorePage) disabled @endif wire:click="goToPage({{ $page + 1 }})">»</button>
+                                    <button class="join-item btn" @if (!$hasMorePage) disabled @endif
+                                        wire:click="goToPage({{ $page + 1 }})">»</button>
                                 </div>
                             @endif
                         </div>
                     @endif
                 </div>
 
-            {{--<x-mary-table :headers="$headers" :rows="$clients"  with-pagination per-page="perPage"
-                :per-page-values="[3, 5, 10]" --}} {{-- Notice the `:` bind  />--}}
+                {{-- <x-mary-table :headers="$headers" :rows="$clients"  with-pagination per-page="perPage"
+                :per-page-values="[3, 5, 10]" --}} {{-- Notice the `:` bind  /> --}}
             </section>
         </div>
 

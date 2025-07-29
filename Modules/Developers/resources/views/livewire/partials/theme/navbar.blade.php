@@ -10,8 +10,7 @@
             <div class="badge badge-neutral badge-outline mt-1">for developers</div>
         </a>
         <div class="hidden md:flex items-center space-x-8">
-            <a href="/api/docs" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors">API</a>
-            <a href="#" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors">Docs</a>
+            <a href="/api/docs" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors">API Docs</a>
             <a href="#" class="{{ @$class == 'bg-base-100' ? 'text-nutural hover:text-grey-700':'text-amber-50 hover:text-grey-700' }} font-medium transition-colors">Community</a>
         </div>
     </div>

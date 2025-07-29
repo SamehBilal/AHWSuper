@@ -54,7 +54,7 @@ class Spotlight
                         'avatar'        => asset('app.webp'),
                         'name'          => $client->name,
                         'description'   => $client->id,
-                        'link'          => "/developers/apps"
+                        'link'          => route('developers.apps.edit', $client->id),
                     ];
                 });
     }
@@ -92,7 +92,7 @@ class Spotlight
                 'icon'          => Blade::render("<x-mary-icon name='o-plus' class='w-11 h-11 p-2 bg-primary/10 rounded-full' />"),
                 'name'          => 'Create App',
                 'description'   => 'Create a new app',
-                'link'          => '/users/create'
+                'link'          => route('developers.apps.create')
             ]
         ])->filter(fn(array $item) => str($item['name'] . $item['description'])->contains($search, true));
     }

@@ -93,7 +93,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
 
                     <!-- Existing Clients -->
                     @foreach ($clients as $client)
-                        <a href="{{ route('developers.dashboard') }}" class="flex flex-col items-center justify-center w-48 h-48 bg-white border rounded-lg shadow hover:bg-gray-50 transition cursor-pointer">
+                        <a href="{{ route('developers.apps.edit', $client->id) }}" class="flex flex-col items-center justify-center w-48 h-48 bg-white border rounded-lg shadow hover:bg-gray-50 transition cursor-pointer">
                             <img src="{{asset('app.webp')}}" width="80">
                             <span class="font-bold text-lg">{{ $client->name }}</span>
                             {{-- <span class="text-xs text-gray-500 mt-2 break-all">{{ $client->id }}</span> --}}

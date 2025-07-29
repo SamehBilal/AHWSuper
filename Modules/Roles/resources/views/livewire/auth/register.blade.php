@@ -15,6 +15,7 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
     public string $password_confirmation = '';
     public string $phone = '';
     public string $phone_key = '+20';
+    public ?string $from = null;
     public array $phone_keys = [
         ['id' => '+20', 'name' => 'Egypt (+20)'],
         ['id' => '+1', 'name' => 'United States (+1)'],
@@ -44,6 +45,11 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
 
     ];
 
+    public function mount()
+    {
+        $this->from = request('from') ?? null;
+    }
+
     /**
      * Handle an incoming registration request.
      */
@@ -61,7 +67,11 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
 
         Auth::login($user);
 
-        $this->redirectIntended(route('dashboard', absolute: false), navigate: true);
+        if ($this->from == 'developers'){
+            $this->redirectIntended(default: route('developers.apps', absolute: false), navigate: false);
+        } else {
+            $this->redirectIntended(route('dashboard', absolute: false), navigate: true);
+        }
     }
 }; ?>
 
@@ -72,6 +82,7 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
     <x-auth-session-status class="text-center" :status="session('status')" />
 
     <form wire:submit="register" class="flex flex-col gap-6">
+        <input type="hidden" wire:model="from" value="{{ request('from') }}">
         <!-- Name -->
         <x-mary-input :label="__('Name')" wire:model="name" placeholder="{{ __('Full name') }}" inline clearable
             required autofocus autocomplete="name" />
@@ -102,7 +113,7 @@ new #[Layout('roles::components.layouts.auth')] class extends Component {
 
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
         {{ __('Already have an account?') }}
-        <a href="{{ route('login') }}" class="underline" wire:navigate>{{ __('Log in') }}</a>
+        <a href="{{ route('login', array_filter(['from' => $from ?? request('from')])) }}" class="underline" wire:navigate>{{ __('Log in') }}</a>
     </div>
 
 

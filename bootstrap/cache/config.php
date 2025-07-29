@@ -150,9 +150,9 @@
       'reverb' => 
       array (
         'driver' => 'reverb',
-        'key' => 'ojeyjsaam1cvfoujvrik',
-        'secret' => 's5qbznhtbetfjnjpznnh',
-        'app_id' => '732050',
+        'key' => 'k4se8qqvyrjombvvi9s1',
+        'secret' => 'elmto72kkdkdbbx3flrk',
+        'app_id' => '928329',
         'options' => 
         array (
           'host' => 'localhost',
@@ -1866,9 +1866,9 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       array (
         0 => 
         array (
-          'key' => 'ojeyjsaam1cvfoujvrik',
-          'secret' => 's5qbznhtbetfjnjpznnh',
-          'app_id' => '732050',
+          'key' => 'k4se8qqvyrjombvvi9s1',
+          'secret' => 'elmto72kkdkdbbx3flrk',
+          'app_id' => '928329',
           'options' => 
           array (
             'host' => 'localhost',
