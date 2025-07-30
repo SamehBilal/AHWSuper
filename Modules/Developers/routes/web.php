@@ -4,11 +4,15 @@ use Illuminate\Support\Facades\Route;
 use Modules\Developers\Http\Controllers\DevelopersController;
 use Livewire\Volt\Volt;
 use Modules\Developers\Http\Controllers\AppTesterController;
+use Modules\Developers\Http\Controllers\OAuthController;
 
 Route::middleware(['web'])->prefix('developers')->name('developers.')->group(function () {
     Volt::route('privacy-policy', 'theme.privacy-policy')->name('privacy');
     Volt::route('/', 'theme.index')
         ->name('index');
+
+        Route::get('/oauth/authorize', [OAuthController::class, 'authorize'])->name('passport.authorizations.authorize');
+
 
     /* Route::get('/', function () {
         return view('developers::index');

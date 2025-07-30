@@ -10,7 +10,6 @@
   --rotation: 25;
   --fan-speed: 2;
   --state: running;
-  --bg: #344c65;
   --shade-one: #f2f2f2;
   --shade-two: #e6e6e6;
   --shade-three: #d9d9d9;
@@ -22,15 +21,14 @@
   --cage-one: rgba(255,255,255,0.4);
   --cage-two: rgba(255,255,255,0.2);
 }
-body {
+.fan-container {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: var(--bg);
   overflow: hidden;
   transform: scale(0.75);
 }
-img {
+.fan-container img {
   height: 20%;
   position: absolute;
   top: 50%;
@@ -39,56 +37,56 @@ img {
   filter: grayscale(1);
   opacity: 0.5;
 }
-input[type="radio"] {
+.fan-container input[type="radio"] {
   position: fixed;
   top: 0;
   left: 100%;
   opacity: 0;
 }
-#zero:checked ~ .scene {
+.fan-container #zero:checked ~ .scene {
   --blade-speed: 0;
   --state: paused;
 }
-#zero:checked ~ .scene .fan__stalk {
+.fan-container #zero:checked ~ .scene .fan__stalk {
   transform: translate(-50%, 25%);
 }
-#one:checked ~ .scene {
+.fan-container #one:checked ~ .scene {
   --blade-speed: 1;
   --state: running;
 }
-#one:checked ~ .scene .fan__control:nth-of-type(2) {
+.fan-container #one:checked ~ .scene .fan__control:nth-of-type(2) {
   transition: transform 0.1s cubic-bezier(0, 1.4, 0.2, 1.4);
   transform: translate(0, 50%);
 }
-#two:checked ~ .scene {
+.fan-container #two:checked ~ .scene {
   --blade-speed: 0.5;
   --state: running;
 }
-#two:checked ~ .scene .fan__control:nth-of-type(3) {
+.fan-container #two:checked ~ .scene .fan__control:nth-of-type(3) {
   transition: transform 0.1s cubic-bezier(0, 1.4, 0.2, 1.4);
   transform: translate(0, 50%);
 }
-#three:checked ~ .scene {
+.fan-container #three:checked ~ .scene {
   --blade-speed: 0.25;
   --state: running;
 }
-#three:checked ~ .scene .fan__control:nth-of-type(4) {
+.fan-container #three:checked ~ .scene .fan__control:nth-of-type(4) {
   transition: transform 0.1s cubic-bezier(0, 1.4, 0.2, 1.4);
   transform: translate(0, 50%);
 }
-.cuboid {
+.fan-container .cuboid {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.cuboid__side:nth-of-type(1) {
+.fan-container .cuboid__side:nth-of-type(1) {
   height: calc(var(--thickness) * 1vmin);
   width: 100%;
   position: absolute;
   top: 0;
   transform: translate(0, -50%) rotateX(90deg);
 }
-.cuboid__side:nth-of-type(2) {
+.fan-container .cuboid__side:nth-of-type(2) {
   height: 100%;
   width: calc(var(--thickness) * 1vmin);
   position: absolute;
@@ -96,14 +94,14 @@ input[type="radio"] {
   right: 0;
   transform: translate(50%, -50%) rotateY(90deg);
 }
-.cuboid__side:nth-of-type(3) {
+.fan-container .cuboid__side:nth-of-type(3) {
   width: 100%;
   height: calc(var(--thickness) * 1vmin);
   position: absolute;
   bottom: 0;
   transform: translate(0%, 50%) rotateX(90deg);
 }
-.cuboid__side:nth-of-type(4) {
+.fan-container .cuboid__side:nth-of-type(4) {
   height: 100%;
   width: calc(var(--thickness) * 1vmin);
   position: absolute;
@@ -111,7 +109,7 @@ input[type="radio"] {
   top: 50%;
   transform: translate(-50%, -50%) rotateY(90deg);
 }
-.cuboid__side:nth-of-type(5) {
+.fan-container .cuboid__side:nth-of-type(5) {
   height: 100%;
   width: 100%;
   transform: translate3d(0, 0, calc(var(--thickness) * 0.5vmin));
@@ -119,7 +117,7 @@ input[type="radio"] {
   top: 0;
   left: 0;
 }
-.cuboid__side:nth-of-type(6) {
+.fan-container .cuboid__side:nth-of-type(6) {
   height: 100%;
   width: 100%;
   transform: translate3d(0, 0, calc(var(--thickness) * -0.5vmin)) rotateY(180deg);
@@ -131,17 +129,17 @@ input[type="radio"] {
   --height: 70vmin;
   --width: 40vmin;
 }
-label {
+.fan-container label {
   transition: transform 0.1s;
   cursor: pointer;
 }
-label:hover {
+.fan-container label:hover {
   transform: translate(0, 20%);
 }
-label:active {
+.fan-container label:active {
   transform: translate(0, 40%);
 }
-.scene {
+.fan-container .scene {
   position: absolute;
   height: var(--width);
   width: var(--width);
@@ -149,7 +147,7 @@ label:active {
   left: 50%;
   transform: translate3d(-50%, -50%, 0vmin) rotateX(-24deg) rotateY(34deg) rotateX(90deg);
 }
-.fan {
+.fan-container .fan {
   height: var(--height);
   width: var(--width);
   position: absolute;
@@ -157,7 +155,7 @@ label:active {
   left: 50%;
   transform: translate(-50%, -50%) rotateX(-90deg) rotateX(calc(var(--rotateX, 0) * 1deg)) rotateY(calc(var(--rotateY, 0) * 1deg));
 }
-.fan__base {
+.fan-container .fan__base {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -165,7 +163,7 @@ label:active {
   height: 8%;
   width: 80%;
 }
-.fan__controls {
+.fan-container .fan__controls {
   height: 6%;
   width: 50%;
   position: absolute;
@@ -176,7 +174,7 @@ label:active {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 6%;
 }
-.fan__housing {
+.fan-container .fan__housing {
   height: 150%;
   width: 150%;
   border-radius: 50%;
@@ -187,8 +185,8 @@ label:active {
   background: var(--cage-one);
   transform: translate3d(-50%, -50%, calc(var(--width) * 0.45));
 }
-.fan__housing-rear,
-.fan__housing-front {
+.fan-container .fan__housing-rear,
+.fan-container .fan__housing-front {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -198,10 +196,10 @@ label:active {
   border-radius: 50%;
   border: 1vmin solid var(--shade-one);
 }
-.fan__housing-front {
+.fan-container .fan__housing-front {
   transform: translate3d(-50%, -50%, calc(var(--width) * 0.11));
 }
-.fan__housing-front:after {
+.fan-container .fan__housing-front:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -212,11 +210,11 @@ label:active {
   border-radius: 50%;
   background: var(--shade-one);
 }
-.fan__housing-rear {
+.fan-container .fan__housing-rear {
   transform: translate3d(-50%, -50%, calc(var(--width) * -0.1));
   border: 1vmin solid var(--shade-two);
 }
-.fan__head {
+.fan-container .fan__head {
   height: var(--width);
   width: var(--width);
   position: absolute;
@@ -226,7 +224,7 @@ label:active {
   -webkit-animation: fan calc(var(--fan-speed, 1) * 1s) infinite alternate ease-in-out var(--state);
           animation: fan calc(var(--fan-speed, 1) * 1s) infinite alternate ease-in-out var(--state);
 }
-.fan__rotater {
+.fan-container .fan__rotater {
   top: 50%;
   width: calc(var(--width) * 0.2);
   height: calc(var(--width) * 0.2);
@@ -234,7 +232,7 @@ label:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.fan__spine {
+.fan-container .fan__spine {
   height: 57.5%;
   bottom: 8%;
   width: 20%;
@@ -242,7 +240,7 @@ label:active {
   left: 50%;
   transform: translate3d(-50%, 0%, calc(var(--width) * -0.25));
 }
-.fan__stalk {
+.fan-container .fan__stalk {
   height: 150%;
   left: 50%;
   bottom: 0;
@@ -251,7 +249,7 @@ label:active {
   width: 25%;
   position: absolute;
 }
-.fan__blades {
+.fan-container .fan__blades {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -261,7 +259,7 @@ label:active {
   -webkit-animation: rotate calc(var(--blade-speed, 0) * 1s) infinite linear;
           animation: rotate calc(var(--blade-speed, 0) * 1s) infinite linear;
 }
-.fan__blade {
+.fan-container .fan__blade {
   height: 300%;
   width: 100%;
   background: var(--shade-one);
@@ -271,16 +269,16 @@ label:active {
   transform-origin: 50% 0;
   transform: translate(-50%, 0) rotate(calc(var(--rotate, 0) * 1deg));
 }
-.fan__blade:nth-of-type(1) {
+.fan-container .fan__blade:nth-of-type(1) {
   --rotate: 0;
 }
-.fan__blade:nth-of-type(2) {
+.fan-container .fan__blade:nth-of-type(2) {
   --rotate: calc(360 / 3 * 1);
 }
-.fan__blade:nth-of-type(3) {
+.fan-container .fan__blade:nth-of-type(3) {
   --rotate: calc(360 / 3 * 2);
 }
-.fan__barrel {
+.fan-container .fan__barrel {
   height: 22.5%;
   width: 22.5%;
   position: absolute;
@@ -288,100 +286,100 @@ label:active {
   left: 50%;
   transform: translate3d(-50%, -50%, calc(var(--width) * 0.3));
 }
-.base {
+.fan-container .base {
   --thickness: calc(40 * 0.8);
 }
-.base div {
+.fan-container .base div {
   background: var(--shade-two);
 }
-.base div:nth-of-type(1) {
+.fan-container .base div:nth-of-type(1) {
   background: var(--shade-one);
 }
-.base div:nth-of-type(5) {
+.fan-container .base div:nth-of-type(5) {
   background: var(--shade-three);
 }
-.base div:nth-of-type(4) {
+.fan-container .base div:nth-of-type(4) {
   background: va(--shade-six);
 }
-.control {
+.fan-container .control {
   --thickness: calc(((40 * 0.5) - ((40 * 0.5) * 0.18)) / 3);
 }
-.control div {
+.fan-container .control div {
   background: var(--shade-five);
 }
-.control div:nth-of-type(1) {
+.fan-container .control div:nth-of-type(1) {
   background: var(--shade-three);
 }
-.control div:nth-of-type(5) {
+.fan-container .control div:nth-of-type(5) {
   background: var(--shade-six);
 }
-.control div:nth-of-type(4) {
+.fan-container .control div:nth-of-type(4) {
   background: va(--shade-eight);
 }
-.fan__control:nth-of-type(1) .control {
-  --shade-three: #f7d4ba;
-  --shade-five: #f2b78c;
-  --shade-six: #f0a875;
-  --shade-eight: #eb8b47;
+.fan-container .fan__control:nth-of-type(1) .control {
+  --shade-three: #f08389;
+  --shade-five: #e24451;
+  --shade-six: #d42736;
+  --shade-eight: #ad040f;
 }
-.spine {
+.fan-container .spine {
   --thickness: calc(40 * 0.2);
 }
-.spine div {
+.fan-container .spine div {
   background: var(--shade-three);
 }
-.spine div:nth-of-type(1) {
+.fan-container .spine div:nth-of-type(1) {
   background: var(--shade-two);
 }
-.spine div:nth-of-type(5) {
+.fan-container .spine div:nth-of-type(5) {
   background: var(--shade-four);
 }
-.spine div:nth-of-type(4) {
+.fan-container .spine div:nth-of-type(4) {
   background: va(--shade-seven);
 }
-.rotater {
+.fan-container .rotater {
   --thickness: calc(40 * 0.2);
 }
-.rotater div {
+.fan-container .rotater div {
   background: var(--shade-two);
 }
-.rotater div:nth-of-type(1) {
+.fan-container .rotater div:nth-of-type(1) {
   background: var(--shade-one);
 }
-.rotater div:nth-of-type(5) {
+.fan-container .rotater div:nth-of-type(5) {
   background: var(--shade-three);
 }
-.rotater div:nth-of-type(4) {
+.fan-container .rotater div:nth-of-type(4) {
   background: va(--shade-six);
 }
-.barrel {
+.fan-container .barrel {
   --thickness: calc(40 * 0.5);
 }
-.barrel div {
+.fan-container .barrel div {
   background: var(--shade-three);
 }
-.barrel div:nth-of-type(1) {
+.fan-container .barrel div:nth-of-type(1) {
   background: var(--shade-two);
 }
-.barrel div:nth-of-type(5) {
+.fan-container .barrel div:nth-of-type(5) {
   background: var(--shade-four);
 }
-.barrel div:nth-of-type(4) {
+.fan-container .barrel div:nth-of-type(4) {
   background: va(--shade-seven);
 }
-.stalk {
+.fan-container .stalk {
   --thickness: calc(40 * 0.05);
 }
-.stalk div {
+.fan-container .stalk div {
   background: var(--shade-four);
 }
-.stalk div:nth-of-type(1) {
+.fan-container .stalk div:nth-of-type(1) {
   background: var(--shade-three);
 }
-.stalk div:nth-of-type(5) {
+.fan-container .stalk div:nth-of-type(5) {
   background: var(--shade-five);
 }
-.stalk div:nth-of-type(4) {
+.fan-container .stalk div:nth-of-type(4) {
   background: va(--shade-eight);
 }
 @-webkit-keyframes fan {
@@ -419,7 +417,7 @@ label:active {
 
 </style>
 
-
+<div class="fan-container">
 <input type="radio" name="fan" id="zero"/>
 <input type="radio" name="fan" id="one" checked="true"/>
 <input type="radio" name="fan" id="two"/>
@@ -526,8 +524,9 @@ label:active {
           <div class="fan__blade"></div>
           <div class="fan__blade"></div>
         </div>
-        <div class="fan__housing-front"><img src="https://assets.codepen.io/605876/avatar.png"/></div>
+        <div class="fan__housing-front"><img src="https://arabhardware.net/theme-assets/images/logo.svg"/></div>
       </div>
     </div>
   </div>
+</div>
 </div>

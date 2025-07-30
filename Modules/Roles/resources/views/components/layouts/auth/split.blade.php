@@ -11,14 +11,37 @@
         class="relative grid h-dvh flex-col items-center justify-center px-8 sm:px-0 lg:max-w-none lg:grid-cols-2 lg:px-0">
         <div
             class="bg-muted relative hidden h-full flex-col p-10 text-white lg:flex dark:border-e dark:border-neutral-800">
-            <div class="absolute inset-0 split-bg bg-neutral-900"
-                style="{{ request('from') === 'developers'
-                    ? ''
-                    : "background-image: url('" . asset('build-roles/img/auth_aurora_2x.png') . "')" }}">
+            @php
+                $authTemplates = [
+                    'roles::components.layouts.auth.split-templates.developers',
+                    'roles::components.layouts.auth.split-templates.cards',
+                    'roles::components.layouts.auth.split-templates.alto',
+                    'roles::components.layouts.auth.split-templates.fan',
+                    'roles::components.layouts.auth.split-templates.types-of-coffee',
+                    'roles::components.layouts.auth.split-templates.fireworks',
+                    'roles::components.layouts.auth.split-templates.timeline',
+                    'roles::components.layouts.auth.split-templates.room',
+                    /* 'roles::components.layouts.auth.split-templates.workspace',
+                    'roles::components.layouts.auth.split-templates.graphic-card', */
+                    'roles::components.layouts.auth.split-templates.default',
+                    // Add more templates as needed
+                ];
+
+                $requestedTemplate = request('from');
+
+                if ($requestedTemplate && in_array("roles::components.layouts.auth.split-templates.{$requestedTemplate}", $authTemplates)) {
+                    $selectedTemplate = "roles::components.layouts.auth.split-templates.{$requestedTemplate}";
+                } else {
+                    $selectedTemplate = $authTemplates[array_rand($authTemplates)];
+                }
+            @endphp
+            <div class="absolute inset-0 split-bg bg-neutral-900">
+                @include($selectedTemplate)
             </div>
+
             <a href="{{ route('home') }}" class="relative z-20 flex items-center text-lg font-medium" wire:navigate>
                 <span class="flex h-10 w-10 items-center justify-center rounded-md">
-                    <x-app-logo-icon 
+                    <x-app-logo-icon
                         class="me-2 fill-current text-white" />
                 </span>
                 {{ config('app.name', 'Arabhardware') }}
@@ -29,35 +52,6 @@
             @endphp
 
             <div class="relative z-20 mt-auto">
-                @if (request('from') === 'developers')
-                <div class="login-shape">
-                    <div class="objects">
-                        <div class="objects_computer"></div>
-                        <div class="objects_table"></div>
-                        <div class="objects_cup"></div>
-                        <div class="smoke"></div>
-                        <div class="objects_chair"></div>
-                    </div>
-                    <div class="box">
-                        <div class="box_1">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="box_2">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="box_3"></div>
-                    </div>
-                </div>
-                @endif
                 <blockquote class="space-y-2">
                     <div class="font-medium [:where(&)]:text-white [:where(&)]:dark:text-white text-base [&:has(+[data-flux-subheading])]:mb-2 [[data-flux-subheading]+&]:mt-2"
                         size="lg">&ldquo;{{ trim($message) }}&rdquo;</div>

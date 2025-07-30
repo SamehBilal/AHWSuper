@@ -5,14 +5,15 @@
     @include('developers::livewire.partials.admin.head', ['title' => $pageTitle ?? 'Admin Dashboard | Arabhardware'])
 </head>
 
-<body class="min-h-screen overflow-x-hidden">
+<body class="min-h-screen overflow-x-hidden" data-theme="dark">
+    {{--  Navbar --}}
     <livewire:partials.admin.navbar />
 
     <x-mary-main with-nav full-width>
 
         <livewire:partials.admin.sidebar />
 
-        <x-slot:content>
+        <x-slot:content> 
             {{ $slot }}
         </x-slot:content>
     </x-mary-main>

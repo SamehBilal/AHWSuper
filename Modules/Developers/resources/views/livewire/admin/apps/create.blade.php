@@ -18,8 +18,9 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     // Form fields
     public $clientId = null; // For edit mode
     public $name = '';
-    public $bio = '';
+    public $description = '';
     public $redirect_uris = []; // Multiple redirect URLs
+    public $callback_urls = []; // Multiple redirect URLs
     public $grant_types = []; // Multiple redirect URLs
     public $website_url = '';
     public $privacy_policy_url = '';
@@ -112,7 +113,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
 
             // Load additional fields if they exist (assuming you have a meta table or json field)
             $meta = json_decode($this->client->meta ?? '{}', true);
-            $this->bio = $meta['bio'] ?? '';
+            $this->description = $meta['description'] ?? '';
             $this->website_url = $meta['website_url'] ?? '';
             $this->privacy_policy_url = $meta['privacy_policy_url'] ?? '';
             $this->tags = $meta['tags'] ?? [];
@@ -132,9 +133,11 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     {
         return [
             'name' => ['required', 'string', 'max:255'],
-            'bio' => ['nullable', 'string', 'max:1000'],
+            'description' => ['nullable', 'string', 'max:1000'],
             'redirect_uris' => ['required', 'array', 'min:1', 'max:10'],
             'redirect_uris.*' => ['required', 'url', 'max:255'],
+            'callback_urls' => ['required', 'array', 'min:1', 'max:10'],
+            'callback_urls.*' => ['required', 'url', 'max:255'],
             'grant_types' => ['required', 'array', 'min:1'],
             'grant_types.*' => ['string', 'in:' . implode(',', array_keys($this->availableGrantTypes))],
             'owner_id' => ['required', 'exists:users,id'],
@@ -183,7 +186,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
 
         // Store additional metadata
         $meta = [
-            'bio' => $this->bio,
+            'description' => $this->description,
             'website_url' => $this->website_url,
             'privacy_policy_url' => $this->privacy_policy_url,
             'tags' => $this->tags,
@@ -219,7 +222,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
 
         // Update additional metadata
         $meta = [
-            'bio' => $this->bio,
+            'description' => $this->description,
             'website_url' => $this->website_url,
             'privacy_policy_url' => $this->privacy_policy_url,
             'tags' => $this->tags,
@@ -420,7 +423,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                     <!-- App Description -->
                     <x-mary-textarea
                         label="Description"
-                        wire:model="bio"
+                        wire:model="description"
                         placeholder="Describe what your app does..."
                         rows="4"
                         clearable

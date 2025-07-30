@@ -1,10 +1,10 @@
 <style>
 #draw {
   overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  position: relative;
+  top: 5%;
+  left: 5%;
+  transform: translateX(-5%) translateY(-5%);
   min-width: 100%;
   min-height: 100%;
 }
