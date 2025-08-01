@@ -150,9 +150,9 @@
       'reverb' => 
       array (
         'driver' => 'reverb',
-        'key' => 'k4se8qqvyrjombvvi9s1',
-        'secret' => 'elmto72kkdkdbbx3flrk',
-        'app_id' => '928329',
+        'key' => 'ojeyjsaam1cvfoujvrik',
+        'secret' => 's5qbznhtbetfjnjpznnh',
+        'app_id' => '732050',
         'options' => 
         array (
           'host' => 'localhost',
@@ -296,14 +296,14 @@
   ),
   'database' => 
   array (
-    'default' => 'sqlite',
+    'default' => 'pgsql',
     'connections' => 
     array (
       'sqlite' => 
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\database\\database.sqlite',
+        'database' => 'AHWSuper',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -315,10 +315,10 @@
         'driver' => 'mysql',
         'url' => NULL,
         'host' => '127.0.0.1',
-        'port' => '3306',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'port' => '5432',
+        'database' => 'AHWSuper',
+        'username' => 'postgres',
+        'password' => 'root',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -335,10 +335,10 @@
         'driver' => 'mariadb',
         'url' => NULL,
         'host' => '127.0.0.1',
-        'port' => '3306',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'port' => '5432',
+        'database' => 'AHWSuper',
+        'username' => 'postgres',
+        'password' => 'root',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -356,9 +356,9 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '5432',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'database' => 'AHWSuper',
+        'username' => 'postgres',
+        'password' => 'root',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -369,11 +369,11 @@
       array (
         'driver' => 'sqlsrv',
         'url' => NULL,
-        'host' => 'localhost',
-        'port' => '1433',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'host' => '127.0.0.1',
+        'port' => '5432',
+        'database' => 'AHWSuper',
+        'username' => 'postgres',
+        'password' => 'root',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -1556,6 +1556,11 @@ RjvzFO71HlbnKhoDKYdbNDOeVUTOzwVhc6o20foeDxN37O5PEWu0QS3UuLleyXpv
 XOpJf31ZgV639YT5ET04oukCAwEAAQ==
 -----END PUBLIC KEY-----',
     'connection' => NULL,
+    'client_table' => 'developers.oauth_clients',
+    'access_token_table' => 'developers.oauth_access_tokens',
+    'refresh_token_table' => 'developers.oauth_refresh_tokens',
+    'auth_code_table' => 'developers.oauth_auth_codes',
+    'device_codes' => 'developers.oauth_device_codes',
   ),
   'permission' => 
   array (
@@ -1812,13 +1817,13 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
     ),
     'batching' => 
     array (
-      'database' => 'sqlite',
+      'database' => 'pgsql',
       'table' => 'job_batches',
     ),
     'failed' => 
     array (
       'driver' => 'database-uuids',
-      'database' => 'sqlite',
+      'database' => 'pgsql',
       'table' => 'failed_jobs',
     ),
   ),
@@ -1866,9 +1871,9 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       array (
         0 => 
         array (
-          'key' => 'k4se8qqvyrjombvvi9s1',
-          'secret' => 'elmto72kkdkdbbx3flrk',
-          'app_id' => '928329',
+          'key' => 'ojeyjsaam1cvfoujvrik',
+          'secret' => 's5qbznhtbetfjnjpznnh',
+          'app_id' => '732050',
           'options' => 
           array (
             'host' => 'localhost',
@@ -2171,7 +2176,7 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
     array (
       'database' => 
       array (
-        'connection' => 'sqlite',
+        'connection' => 'pgsql',
         'chunk' => 1000,
       ),
     ),

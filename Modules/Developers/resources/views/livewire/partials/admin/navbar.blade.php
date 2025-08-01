@@ -39,15 +39,15 @@ new class extends Component {
             <x-mary-menu-item title="Move" />
 
             <x-slot:trigger>
-                <x-mary-button icon="o-bell" class="btn btn-circle btn-ghost !w-10 !rounded-lg" />
+                <x-mary-button icon="o-bell" class="btn btn-circle btn-ghost !w-8 !rounded-lg" />
             </x-slot:trigger>
         </x-mary-dropdown>
-        <x-mary-theme-toggle class="btn btn-circle btn-ghost !w-10 !rounded-lg" />
+        <x-mary-theme-toggle class="btn btn-circle btn-ghost !w-8 !rounded-lg" />
 
         <x-mary-dropdown class="btn-ghost btn-sm cursor-pointer" responsive right>
             <x-slot:trigger>
                 <x-mary-avatar placeholder="{{ auth()->user()->initials() }}"
-                    class="!w-10 !rounded-lg cursor-pointer" />
+                    class="!w-8 !rounded-lg cursor-pointer" />
             </x-slot:trigger>
             <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" title="{{ auth()->user()->name }}"
                 subtitle="{{ auth()->user()->email }}" class="!w-10" />

@@ -17,11 +17,14 @@ class OAuthController extends PassportAuthorizationController
         })->first();
 
         if (!$app || $app->status !== 'approved') {
-            return response()->json(['error' => 'Application not found or not approved'], 404);
+            return response()->json([
+                'error' => 'invalid_client',
+                'error_description' => 'Application not found or not approved'
+            ], 404);
         }
 
         // Add app info to the authorization view
-        $request->merge(['app' => $app]);
+         $request->merge(['app' => $app]);
 
         return parent::authorize($request);
     }

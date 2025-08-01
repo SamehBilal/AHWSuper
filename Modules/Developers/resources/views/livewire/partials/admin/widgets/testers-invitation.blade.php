@@ -13,11 +13,11 @@
             <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                     <span class="text-white text-sm font-bold">
-                        {{ substr($invitation->oauthApp->name, 0, 2) }}
+                        {{ substr($invitation->app->name, 0, 2) }}
                     </span>
                 </div>
                 <div>
-                    <p class="font-medium text-gray-900">{{ $invitation->oauthApp->name }}</p>
+                    <p class="font-medium text-gray-900">{{ $invitation->app->name }}</p>
                     <p class="text-sm text-gray-500">Invited by {{ $invitation->invitedBy->name }}</p>
                 </div>
             </div>

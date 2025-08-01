@@ -17,6 +17,6 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('/invitations/{token}/reject', [TesterApiController::class, 'reject']);
 });
 
-Route::middleware('api.key')->group(function () {
+Route::middleware('api.key')->prefix('v1')->group(function () {
     //
 });

@@ -19,7 +19,7 @@ class NotifyAppOwnerOfTesterChange
      */
     public function handle(TesterStatusChanged $event): void
     {
-        $appOwner = $event->tester->oauthApp->user;
+        $appOwner = $event->tester->app->user;
 
         $appOwner->notify(
             new TesterStatusChangedNotification(

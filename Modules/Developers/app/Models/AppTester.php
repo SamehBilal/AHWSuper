@@ -14,7 +14,7 @@ class AppTester extends Model
      * The attributes that are mass assignable.
      */
    protected $fillable = [
-        'oauth_client_id',
+        'app_id',
         'user_id',
         'invited_by',
         'email',
@@ -31,9 +31,9 @@ class AppTester extends Model
         'rejected_at' => 'datetime',
     ];
 
-    public function oauthClients()
+    public function app()
     {
-        return $this->belongsTo(Client::class, 'oauth_client_id');
+        return $this->belongsTo(App::class, 'app_id');
     }
 
     public function user()

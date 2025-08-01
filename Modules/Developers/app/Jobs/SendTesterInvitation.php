@@ -28,6 +28,6 @@ class SendTesterInvitation implements ShouldQueue
     public function handle(): void
     {
         Mail::to($this->tester->email)
-            ->send(new AppTesterInvitation($this->tester, $this->tester->oauthApp));
+            ->send(new AppTesterInvitation($this->tester, $this->tester->app));
     }
 }

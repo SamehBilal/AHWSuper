@@ -3,6 +3,7 @@
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
 use Mary\Traits\Toast;
+use Illuminate\Support\Facades\Hash;
 
 new #[Layout('developers::components.layouts.admin', ['pageTitle' => 'Arabhardware | OAuth2'])] class extends Component {
     use Toast;

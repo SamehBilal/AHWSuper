@@ -20,7 +20,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
     public $name = '';
     public $description = '';
     public $redirect_uris = []; // Multiple redirect URLs
-    public $callback_urls = []; // Multiple redirect URLs
+    public $callback_url = []; // Multiple redirect URLs
     public $grant_types = []; // Multiple redirect URLs
     public $website_url = '';
     public $privacy_policy_url = '';
@@ -136,8 +136,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
             'description' => ['nullable', 'string', 'max:1000'],
             'redirect_uris' => ['required', 'array', 'min:1', 'max:10'],
             'redirect_uris.*' => ['required', 'url', 'max:255'],
-            'callback_urls' => ['required', 'array', 'min:1', 'max:10'],
-            'callback_urls.*' => ['required', 'url', 'max:255'],
+            'callback_url' => ['required', 'url', 'max:255'],
             'grant_types' => ['required', 'array', 'min:1'],
             'grant_types.*' => ['string', 'in:' . implode(',', array_keys($this->availableGrantTypes))],
             'owner_id' => ['required', 'exists:users,id'],

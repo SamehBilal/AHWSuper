@@ -105,7 +105,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
 
     </section>
 
-    <x-mary-modal wire:model="showModal" :title="__('Create New App')" :subtitle="__('Fill in the details to create a new OAuth app for API access.')">
+    <x-mary-modal without-trap-focus wire:model="showModal" :title="__('Create New App')" :subtitle="__('Fill in the details to create a new OAuth app for API access.')">
         <x-mary-form wire:submit="createClient" no-separator>
             <!-- Name -->
             <x-mary-input :label="__('Name')" wire:model="name" placeholder="{{ __('App name') }}" inline clearable

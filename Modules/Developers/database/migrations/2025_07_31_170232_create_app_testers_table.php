@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('app_testers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('oauth_client_id')->constrained()->onDelete('cascade');
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('invited_by')->constrained('users')->onDelete('cascade');
+            $table->unsignedBigInteger('app_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('invited_by');
             $table->string('email');
             $table->text('message')->nullable();
             $table->enum('status', ['pending', 'accepted', 'rejected'])->default('pending');
@@ -24,7 +24,11 @@ return new class extends Migration
             $table->timestamp('rejected_at')->nullable();
             $table->timestamps();
 
-            $table->unique(['oauth_app_id', 'user_id']);
+            $table->foreign('app_id')->references('id')->on('developers.apps')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('public.users')->onDelete('cascade');
+            $table->foreign('invited_by')->references('id')->on('public.users')->onDelete('cascade');
+
+            $table->unique(['app_id', 'user_id']);
         });
     }
 

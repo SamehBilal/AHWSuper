@@ -2,23 +2,30 @@
 
 namespace Modules\Developers\Models;
 
-use Laravel\Passport\Client as BaseClient;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Laravel\Passport\Client as PassportClient;
 use Modules\Developers\Models\AppTester;
 
-class Client extends BaseClient
+class Client extends PassportClient
 {
     /**
      * Determine if the client should skip the authorization prompt.
+     *
+     * @param  \Laravel\Passport\Scope[]  $scopes
      */
-    /* public function skipsAuthorization(): bool
+    public function skipsAuthorization(Authenticatable $user, array $scopes): bool
     {
         return $this->firstParty();
-    } */
-
-    public function testers()
-    {
-        return $this->hasMany(AppTester::class, 'oauth_client_id');
     }
+
+    protected $table = 'developers.oauth_clients';
+
+    // Add relationship to our App model
+    public function developerApp()
+    {
+        return $this->hasOne(App::class, 'oauth_client_id');
+    }
+
     /**
      * Determine if the client is a first-party client.
      */

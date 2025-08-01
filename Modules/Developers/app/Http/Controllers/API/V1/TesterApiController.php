@@ -4,7 +4,7 @@ namespace Modules\Developers\Http\Controllers\API\V1;
 
 use App\Http\Controllers\Controller;
 use Modules\Developers\Models\AppTester;
-use Modules\Developers\Models\Client as OAuthApp;
+use Modules\Developers\Models\App;
 use Modules\Developers\Services\TesterService;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
@@ -15,7 +15,7 @@ class TesterApiController extends Controller
         private TesterService $testerService
     ) {}
 
-    public function index(OAuthApp $app): JsonResponse
+    public function index(App $app): JsonResponse
     {
         $this->authorize('view', $app);
 
@@ -29,7 +29,7 @@ class TesterApiController extends Controller
         ]);
     }
 
-    public function store(Request $request, OAuthApp $app): JsonResponse
+    public function store(Request $request, App $app): JsonResponse
     {
         $this->authorize('update', $app);
 
@@ -57,11 +57,11 @@ class TesterApiController extends Controller
         }
     }
 
-    public function destroy(OAuthApp $app, AppTester $tester): JsonResponse
+    public function destroy(App $app, AppTester $tester): JsonResponse
     {
         $this->authorize('update', $app);
 
-        if ($tester->oauth_app_id !== $app->id) {
+        if ($tester->app_id !== $app->id) {
             return response()->json(['message' => 'Tester not found'], 404);
         }
 
@@ -72,7 +72,7 @@ class TesterApiController extends Controller
         ]);
     }
 
-    public function resend(OAuthApp $app, AppTester $tester): JsonResponse
+    public function resend(App $app, AppTester $tester): JsonResponse
     {
         $this->authorize('update', $app);
 
@@ -96,7 +96,7 @@ class TesterApiController extends Controller
 
             return response()->json([
                 'message' => 'Invitation accepted successfully',
-                'tester' => $tester->load(['oauthApp', 'user']),
+                'tester' => $tester->load(['App', 'user']),
             ]);
         } catch (\Exception $e) {
             return response()->json([
@@ -112,7 +112,7 @@ class TesterApiController extends Controller
 
             return response()->json([
                 'message' => 'Invitation rejected successfully',
-                'tester' => $tester->load(['oauthApp', 'user']),
+                'tester' => $tester->load(['App', 'user']),
             ]);
         } catch (\Exception $e) {
             return response()->json([

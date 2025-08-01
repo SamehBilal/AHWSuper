@@ -6,7 +6,7 @@ namespace Modules\Developers\Http\Middleware;
 use Closure;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Http\Request;
-use Modules\Developers\Models\Client as OAuthApp;
+use Modules\Developers\Models\App;
 
 class CheckAppTester
 {
@@ -24,7 +24,7 @@ class CheckAppTester
             return redirect()->route('login');
         }
 
-        $app = OAuthApp::findOrFail($appId);
+        $app = App::findOrFail($appId);
 
         // Check if user is the app owner or an accepted tester
         $isOwner = $app->user_id === $user->id;

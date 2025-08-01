@@ -37,8 +37,8 @@ class TesterStatusChanged extends Notification
 
         return (new MailMessage)
             ->subject("Tester {$status} your invitation")
-            ->line("{$this->tester->user->name} has {$status} your testing invitation for {$this->tester->oauthApp->name}.")
-            ->action('View Application', route('developer.apps.show', $this->tester->oauthApp))
+            ->line("{$this->tester->user->name} has {$status} your testing invitation for {$this->tester->app->name}.")
+            ->action('View Application', route('developer.apps.show', $this->tester->app))
             ->line('Thank you for using Arabhardware Developers Platform!');
     }
 
@@ -49,7 +49,7 @@ class TesterStatusChanged extends Notification
     {
         return [
             'client_id'        => $this->tester->oauth_client_id,
-            'app_name'      => $this->tester->oauthApp->name,
+            'app_name'      => $this->tester->app->name,
             'tester_name'   => $this->tester->user->name,
             'action'        => $this->action,
         ];

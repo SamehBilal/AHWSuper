@@ -3,7 +3,7 @@
 namespace Modules\Developers\Services;
 
 use Modules\Developers\Models\AppTester;
-use Modules\Developers\Models\Client as OAuthApp;
+use Modules\Developers\Models\App;
 use Modules\Developers\Emails\AppTesterInvitation;
 use Modules\Developers\Notifications\TesterStatusChanged;
 use App\Models\User;
@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 
 class TesterService
 {
-    public function inviteTester(OAuthApp $app, User $invitedBy, string $email, ?string $message = null): AppTester
+    public function inviteTester(App $app, User $invitedBy, string $email, ?string $message = null): AppTester
     {
         $user = User::where('email', $email)->firstOrFail();
 
@@ -83,6 +83,6 @@ class TesterService
             throw new \Exception('Can only resend pending invitations.');
         }
 
-        Mail::to($tester->email)->send(new AppTesterInvitation($tester, $tester->oauthApp));
+        Mail::to($tester->email)->send(new AppTesterInvitation($tester, $tester->app));
     }
 }

@@ -19,8 +19,10 @@ new class extends Component {
 
         <div class="flex">
 
-            <div class="flex flex-col justify-between h-[calc(100vh-65px)] w-16 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
-                <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" vertical class="space-y-2 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
+            <div
+                class="flex flex-col justify-between h-[calc(100vh-65px)] w-16 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
+                <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" vertical
+                    class="space-y-2 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
 
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
@@ -96,7 +98,7 @@ new class extends Component {
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
                             <x-mary-menu-item icon="o-cloud" :tooltip="__('Developers')"
-                                link="{{ route('developers.dashboard') }}" :active="request()->is('developers/admin*')" wire:navigate >
+                                link="{{ route('developers.dashboard') }}" :active="request()->is('developers/admin*')" wire:navigate>
                             </x-mary-menu-item>
                         </x-slot:trigger>
                         <x-slot:content>
@@ -106,7 +108,8 @@ new class extends Component {
 
                 </x-mary-menu>
 
-                <x-mary-menu activate-by-route vertical class="space-y-2 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
+                <x-mary-menu activate-by-route vertical
+                    class="justify-items-center space-y-2 bg-base-100 border-base-content/10 border-r-[length:var(--border)]">
                     <livewire:theme />
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
@@ -115,18 +118,41 @@ new class extends Component {
                         <x-slot:content>
                             <div class="grid place-content-center border-t border-base-300">API Documentation!</div>
                             <div class="mockup-browser border-base-300 border w-full">
-                        <div class="mockup-browser-toolbar">
-                            <div class="input">{{ route('dashboard') }}</div>
-                        </div>
-                        <div class="grid place-content-center border-t border-base-300 h-80">Hello!</div>
-                    </div>
+                                <div class="mockup-browser-toolbar">
+                                    <div class="input">{{ route('dashboard') }}</div>
+                                </div>
+                                <div class="grid place-content-center border-t border-base-300 h-80">Hello!</div>
+                            </div>
                         </x-slot:content>
                     </x-mary-popover>
+                    <x-mary-dropdown
+                        class="justify-content-center justify-items-center justify-center btn-ghost btn-sm cursor-pointer"
+                        responsive no-x-anchor top>
+                        <x-slot:trigger>
+                            <x-mary-avatar placeholder="{{ auth()->user()->initials() }}"
+                                class="!w-8 !rounded-lg cursor-pointer" />
+                        </x-slot:trigger>
 
+                        <x-mary-avatar placeholder="{{ auth()->user()->initials() }}"
+                            title="{{ auth()->user()->name }}" subtitle="{{ auth()->user()->email }}"
+                            class="!w-10" />
+
+                        <x-mary-menu-separator />
+
+                        <x-mary-menu-item icon="o-cog-8-tooth" title="Profile" route="settings.profile"
+                            link="{{ route('settings.profile') }}" wire:navigate />
+
+                        <x-mary-menu-item icon="o-arrow-right-start-on-rectangle" title="{{ __('Log Out') }}"
+                            class="w-full" @click.prevent="document.getElementById('logout').submit();" />
+                        <form id="logout" method="POST" action="{{ route('logout') }}" class="w-full">
+                            @csrf
+                        </form>
+                    </x-mary-dropdown>
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
-                            <div class="mary-menu-item flex items-center justify-center !w-10 !h-10 cursor-pointer">
-                                <x-mary-avatar placeholder="{{ auth()->user()->initials() }}" class="!w-8 !h-8" />
+                            <div class="mary-menu-item flex items-center justify-center !w-8 !h-8 cursor-pointer">
+                                <x-mary-avatar placeholder="{{ auth()->user()->initials() }}"
+                                    class="!w-8 !rounded-lg cursor-pointer" />
                             </div>
                         </x-slot:trigger>
                         <x-slot:content>
@@ -148,7 +174,8 @@ new class extends Component {
                     </x-slot:avatar>
                     <x-slot:actions>
                         <a href="{{ route('developers.apps.create') }}">
-                            <x-mary-button icon="o-plus" class="btn-circle btn-ghost btn-xs" tooltip-left="Create" />
+                            <x-mary-button icon="o-plus" class="btn-circle btn-ghost btn-xs"
+                                tooltip-left="Create" />
                         </a>
                     </x-slot:actions>
                 </x-mary-list-item>
@@ -158,16 +185,18 @@ new class extends Component {
                 <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" class="flex-2">
                     <x-mary-menu-item title="Dashboard" icon="o-home" link="{{ route('developers.dashboard') }}"
                         route="developers.dashboard" />
-                    <x-mary-menu-item title="My Apps" icon="o-code-bracket" link="{{ route('developers.apps.index') }}"
-                        active-by-url="/developers/admin/apps*"   />
+                    <x-mary-menu-item title="My Apps" icon="o-code-bracket"
+                        link="{{ route('developers.apps.index') }}" active-by-url="/developers/admin/apps*" />
                     <x-mary-menu-item title="App Verification" icon="o-check-badge"
                         link="{{ route('developers.app-verification') }}" route="developers.app-verification" />
                     <x-mary-menu-item title="Login Button" icon="o-paper-airplane"
                         link="{{ route('developers.login-button') }}" route="developers.login-button" />
-                    <x-mary-menu-item title="OAuth2" icon="o-arrow-right-end-on-rectangle" link="{{ route('developers.oauth2') }}"
-                        route="developers.oauth2" />
+                    <x-mary-menu-item title="OAuth2" icon="o-arrow-right-end-on-rectangle"
+                        link="{{ route('developers.oauth2') }}" route="developers.oauth2" />
                     <x-mary-menu-item title="App Testers" icon="o-shield-check"
                         link="{{ route('developers.app-testers') }}" route="developers.app-testers" />
+                    <x-mary-menu-item title="My Tickets" icon="o-ticket"
+                        link="{{ route('developers.tickets') }}" route="developers.tickets" />
                 </x-mary-menu>
 
             </div>

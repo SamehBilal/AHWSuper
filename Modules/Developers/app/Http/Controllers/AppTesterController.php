@@ -24,7 +24,7 @@ class AppTesterController extends Controller
         $tester->accept();
 
         return redirect()->route('developer.dashboard')->with('success',
-            "You've successfully joined as a tester for {$tester->oauthApp->name}!");
+            "You've successfully joined as a tester for {$tester->app->name}!");
     }
 
     public function reject(string $token)
@@ -47,7 +47,7 @@ class AppTesterController extends Controller
 
     public function show(string $token)
     {
-        $tester = AppTester::with(['oauthApp', 'invitedBy'])
+        $tester = AppTester::with(['app', 'invitedBy'])
             ->where('invitation_token', $token)
             ->firstOrFail();
 

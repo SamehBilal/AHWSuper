@@ -31,6 +31,7 @@ Route::middleware(['auth', 'verified', 'two-factor'])->prefix('developers')->nam
         Volt::route('/apps', 'admin.apps.index')->name('apps.index');
         Volt::route('/apps/create', 'admin.apps.create')->name('apps.create');
         Volt::route('/apps/{app}/edit', 'admin.apps.create')->name('apps.edit');
+        Volt::route('/tickets', 'admin.tickets')->name('tickets');
 
         Route::get('/app-tester/{token}', [AppTesterController::class, 'show'])
             ->name('app-tester.show');
@@ -38,6 +39,11 @@ Route::middleware(['auth', 'verified', 'two-factor'])->prefix('developers')->nam
             ->name('app-tester.accept');
         Route::post('/app-tester/{token}/reject', [AppTesterController::class, 'reject'])
             ->name('app-tester.reject');
+
+            /* Route::get('/developer-apps', [DeveloperAppsController::class, 'index']);
+    Route::post('/developer-apps/{app}/approve', [DeveloperAppsController::class, 'approve']);
+    Route::post('/developer-apps/{app}/suspend', [DeveloperAppsController::class, 'suspend']);
+    Route::post('/developer-apps/{app}/reject', [DeveloperAppsController::class, 'reject']); */
 
 
            /*  Route::middleware(['auth', 'app.tester'])->group(function () {

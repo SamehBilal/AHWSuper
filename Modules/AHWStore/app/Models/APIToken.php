@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class APIToken extends Model
 {
     use HasFactory;
-    protected $table = 'api_tokens';
+    protected $table = 'store.api_tokens';
 
     /**
      * The attributes that are mass assignable.

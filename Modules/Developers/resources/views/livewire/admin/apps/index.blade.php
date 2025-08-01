@@ -7,12 +7,12 @@ use Livewire\WithPagination;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Passport\Client;
 
-new #[Layout('developers::components.layouts.admin')] class extends Component {
+new #[Layout('developers::components.layouts.admin', ['pageTitle' => 'Arabhardware | My Apps'])] class extends Component {
+
     use Toast;
     use WithPagination;
 
     public $user;
-    public $pageTitle = 'Arabhardware | Developers';
     public $list;
     public $headers;
     public $search = '';
@@ -217,7 +217,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
         <div class="lg:col-span-2 space-y-8">
             <section class="w-full">
 
-                <x-mary-header icon="o-code-bracket" icon-classes="bg-primary text-white rounded-full p-1 w-6 h-6"
+                <x-mary-header icon="o-code-bracket" icon-classes="bg-primary text-white rounded-md p-1 w-6 h-6"
                     title="My Apps" subtitle="List of all your OAuth applications" separator progress-indicator="save"
                     progress-indicator-class="progress-primary">
                     <x-slot:middle class="!justify-end">
@@ -229,7 +229,7 @@ new #[Layout('developers::components.layouts.admin')] class extends Component {
                         <x-mary-button wire:click="refreshMyApps" icon="o-arrow-path" class="btn-sm" :loading="$loading"
                             title="Refresh your apps" />
                         <x-mary-button link="{{ route('developers.apps.create') }}" icon="o-plus"
-                            class="btn-primary btn-sm" />
+                            class="btn-primary btn-md" />
                     </x-slot:actions>
                 </x-mary-header>
 

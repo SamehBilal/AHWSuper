@@ -11,6 +11,7 @@ use Illuminate\Support\Str;
 use Spatie\Permission\Traits\HasRoles;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
+use Modules\Developers\Models\App;
 
 class User extends Authenticatable implements OAuthenticatable
 {
@@ -71,5 +72,15 @@ class User extends Authenticatable implements OAuthenticatable
     public function receivesBroadcastNotificationsOn(): string
     {
         return 'users.'.$this->id;
+    }
+
+    public function developerApps()
+    {
+        return $this->hasMany(App::class, 'developer_id');
+    }
+
+    public function isDeveloper(): bool
+    {
+        return $this->developerApps()->exists();
     }
 }

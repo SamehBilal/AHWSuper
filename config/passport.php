@@ -43,4 +43,11 @@ return [
 
     'connection' => env('PASSPORT_CONNECTION'),
 
+
+    'client_table' => 'developers.oauth_clients',
+    'access_token_table' => 'developers.oauth_access_tokens',
+    'refresh_token_table' => 'developers.oauth_refresh_tokens',
+    'auth_code_table' => 'developers.oauth_auth_codes',
+    'device_codes' => 'developers.oauth_device_codes',
+
 ];
