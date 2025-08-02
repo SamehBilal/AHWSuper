@@ -27,6 +27,8 @@
             <x-mary-checkbox label="Actions" x-model="query.withActions" />
         </> --}}
     </x-mary-spotlight>
+
+    @stack('modals')
 </body>
 
 </html>

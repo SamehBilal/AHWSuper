@@ -1,7 +1,7 @@
 <style>
-    *,
-*:after,
-*:before {
+.fan-container *,
+.fan-container *::before,
+.fan-container *::after {
   box-sizing: border-box;
   transform-style: preserve-3d;
 }

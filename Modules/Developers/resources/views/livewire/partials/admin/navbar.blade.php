@@ -42,9 +42,9 @@ new class extends Component {
                 <x-mary-button icon="o-bell" class="btn btn-circle btn-ghost !w-8 !rounded-lg" />
             </x-slot:trigger>
         </x-mary-dropdown>
-        <x-mary-theme-toggle class="btn btn-circle btn-ghost !w-8 !rounded-lg" />
+        {{-- <x-mary-theme-toggle class="btn btn-circle btn-ghost !w-8 !rounded-lg" /> --}}
 
-        <x-mary-dropdown class="btn-ghost btn-sm cursor-pointer" responsive right>
+        {{-- <x-mary-dropdown class="btn-ghost btn-sm cursor-pointer" responsive right>
             <x-slot:trigger>
                 <x-mary-avatar placeholder="{{ auth()->user()->initials() }}"
                     class="!w-8 !rounded-lg cursor-pointer" />
@@ -62,7 +62,7 @@ new class extends Component {
             <form id="logout" method="POST" action="{{ route('logout') }}" class="w-full">
                 @csrf
             </form>
-        </x-mary-dropdown>
+        </x-mary-dropdown> --}}
 
     </x-slot:actions>
 </x-mary-nav>

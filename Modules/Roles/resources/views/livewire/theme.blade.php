@@ -23,36 +23,68 @@ new class extends Component {
 
     public function mount()
     {
-        // Get current theme from localStorage or default to light
+        // Get current theme from localStorage - this will be overridden by Alpine.js
         $this->selectedTheme = 'light';
     }
 
     public function setTheme($theme)
     {
-        $this->selectedTheme = $theme;
+        $this->selectedTheme = "$theme";
+        //$this->themeModal = false;
+
+        // Apply theme and save to localStorage immediately
+        $this->js("
+            document.documentElement.setAttribute('data-theme', '$theme');
+            localStorage.setItem('mary-theme', '$theme');
+        ");
+    }
+
+    public function closeModal()
+    {
         $this->themeModal = false;
+    }
+
+    public function openThemeModal()
+    {
+        $this->themeModal = true;
     }
 }; ?>
 
-<div>
+<div x-data="{
+    initTheme() {
+        // Get theme from localStorage or default to light
+        const savedTheme = localStorage.getItem('mary-theme') || 'light';
+        this.applyTheme(savedTheme);
+        $wire.selectedTheme = savedTheme;
+    },
+    applyTheme(theme) {
+        // Apply theme to the entire document
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('mary-theme', theme);
+    }
+}" x-init="initTheme()">
+
+    <!-- Keep modal INSIDE the component - not pushed -->
     <x-mary-modal wire:model="themeModal" title="{{ __('Change Theme') }}"
-        subtitle="{{ __('Select a theme for your app appearance.') }}">
+        subtitle="{{ __('Select a theme for your app appearance.') }}"
+        class="z-[9999]">
         <div class="py-4 space-y-4">
-            <div class="grid grid-cols-3 gap-3">
+            <div class="grid grid-cols-2 gap-4">
                 @foreach ($themes as $themeKey => $themeData)
-                    <div class="relative">
-                        <input type="radio" name="theme-buttons"
-                            class="btn theme-controller h-20 w-full flex-col gap-2 opacity-0 absolute inset-0"
-                            {{-- :aria-label="$themeData['name']" --}} value="{{ $themeKey }}"
-                            @if ($selectedTheme === $themeKey) checked @endif />
-                        <div class="btn btn-outline h-20 w-full flex-col gap-2 pointer-events-none">
+                    <div class="relative cursor-pointer" wire:click="setTheme('{{ $themeKey }}')">
+                        <div class="btn h-10 w-full flex-row gap-2"
+                            class="{{ $selectedTheme === $themeKey ? 'btn-primary' : 'btn-outline hover:btn-primary' }}">
+                            <input type="radio" name="theme-buttons"  @click="$dispatch('mary-toggle-theme')" {{ $selectedTheme === $themeKey ? 'checked' : '' }}
+                                class="btn theme-controller h-20 w-full flex-col gap-2 opacity-0 absolute inset-0"
+                                aria-label="{{ $themeData['name'] }}" value="{{ $themeKey }}" />
                             <x-mary-icon :name="$themeData['icon']" class="w-6 h-6" />
-                            <span class="text-sm">{{-- {{ $themeData['name'] }} --}}</span>
+                            <span class="text-sm">{{ $themeData['name'] }}</span>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
+
         <x-slot:actions>
             <x-mary-button label="{{ __('Cancel') }}" @click="$wire.themeModal = false" />
         </x-slot:actions>
@@ -64,12 +96,6 @@ new class extends Component {
         </x-slot:trigger>
         <x-slot:content>
             <div class="grid place-content-center border-t border-base-300">{{ __('Theme') }}</div>
-            {{-- <div class="mockup-browser border-base-300 border w-full">
-                            <div class="mockup-browser-toolbar">
-                                <div class="input">{{ route('dashboard') }}</div>
-                            </div>
-                            <div class="grid place-content-center border-t border-base-300 h-80">Hello!</div>
-                        </div> --}}
         </x-slot:content>
     </x-mary-popover>
 </div>

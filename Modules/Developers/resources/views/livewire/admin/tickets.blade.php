@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Modules\Developers\Models\Ticket;
 
-new #[Layout('developers::components.layouts.admin', ['pageTitle' => 'Arabhardware | My Problems'])] class extends Component {
+new #[Layout('developers::components.layouts.admin', ['pageTitle' => 'Arabhardware | My Tickets'])] class extends Component {
     use Toast;
     use WithPagination;
     use WithFileUploads;

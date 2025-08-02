@@ -25,7 +25,7 @@
         </div>
         <div class="flex items-end justify-end w-full pl-3 space-x-3 lg:flex-shrink-0 lg:w-auto">
             <a href="{{ route('developers.privacy') }}" @click="bannerVisible=false;" wire:navigate
-                class="inline-flex cursor-pointer items-center justify-center flex-shrink-0 w-1/2 px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border-2 rounded-md lg:w-auto text-neutral-600 hover:text-neutral-700 border-neutral-950 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none">
+                class="inline-flex cursor-pointer items-center justify-center flex-shrink-0 w-1/2 px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border-2 rounded-md lg:w-auto text-neutral-900 hover:text-neutral-700 border-neutral-950 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none">
                 {{-- Deny All --}}Privacy Policy
             </a>
             <button @click="bannerVisible=false;"
