@@ -35,8 +35,18 @@ new class extends Component {
         <x-mary-menu-separator />
         <x-mary-dropdown>
 
-            <x-mary-menu-item title="Archive" />
-            <x-mary-menu-item title="Move" />
+            <x-mary-card class="border border-dashed bg-base-100 border-base-content/10">
+                <div class="text-center py-12">
+                    <x-mary-icon name="o-bell-slash" class="w-16 h-16 mx-auto mb-4" />                    
+                    <h3 class="text-xl font-medium mb-2">No Notifications</h3>
+                    <p class="text-base-content/60">
+                        You don't have any Notifications yet.
+                    </p>
+                </div>
+            </x-mary-card>
+
+           {{--  <x-mary-menu-item title="Archive" />
+            <x-mary-menu-item title="Move" /> --}}
 
             <x-slot:trigger>
                 <x-mary-button icon="o-bell" class="btn btn-circle btn-ghost !w-8 !rounded-lg" />
@@ -44,7 +54,7 @@ new class extends Component {
         </x-mary-dropdown>
         {{-- <x-mary-theme-toggle class="btn btn-circle btn-ghost !w-8 !rounded-lg" /> --}}
 
-        {{-- <x-mary-dropdown class="btn-ghost btn-sm cursor-pointer" responsive right>
+        <x-mary-dropdown class="btn-ghost btn-sm cursor-pointer" responsive right>
             <x-slot:trigger>
                 <x-mary-avatar placeholder="{{ auth()->user()->initials() }}"
                     class="!w-8 !rounded-lg cursor-pointer" />
@@ -62,7 +72,7 @@ new class extends Component {
             <form id="logout" method="POST" action="{{ route('logout') }}" class="w-full">
                 @csrf
             </form>
-        </x-mary-dropdown> --}}
+        </x-mary-dropdown>
 
     </x-slot:actions>
 </x-mary-nav>

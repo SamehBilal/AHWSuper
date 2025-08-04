@@ -86,7 +86,7 @@
                 <x-mary-popover position="right-start" offset="0">
                     <x-slot:trigger>
                         <x-mary-menu-item icon="o-building-storefront" :tooltip="__('AHW Store')"
-                            route="ahwstore.dashboard" link="{{ route('ahwstore.dashboard') }}" wire:navigate />
+                            route="store.dashboard" link="{{ route('store.dashboard') }}" wire:navigate />
                     </x-slot:trigger>
                     <x-slot:content>
                         <div class="mockup-browser border-base-300 border w-full">
@@ -94,7 +94,7 @@
                                 <div class="input">https://ahw.store/</div>
                             </div>
                             <div class="grid place-content-center border-t border-base-300 h-80">
-                                <img src="{{ asset('ahwstores.png') }}" width="560px" alt="">
+                                <img src="{{ asset('store.png') }}" width="560px" alt="">
                             </div>
                         </div>
                     </x-slot:content>
@@ -167,25 +167,25 @@
                         <div
                             class="w-16 flex-shrink-0 flex flex-col items-center py-2  border-e border-zinc-200 dark:border-[#1E2938]">
                             <x-mary-menu activate-by-route vertical class="space-y-2">
-                                <x-mary-menu-item icon="o-home" :tooltip="__('Dashboard')" route="ahwstore.dashboard"
-                                    link="{{ route('ahwstore.dashboard') }}" wire:navigate />
+                                <x-mary-menu-item icon="o-home" :tooltip="__('Dashboard')" route="store.dashboard"
+                                    link="{{ route('store.dashboard') }}" wire:navigate />
                                 <x-mary-menu-item icon="o-shopping-cart" :tooltip="__('Items')"
-                                    route="ahwstore.items.index" link="{{ route('ahwstore.items.index') }}"
+                                    route="store.items.index" link="{{ route('store.items.index') }}"
                                     wire:navigate />
                                 <x-mary-menu-item icon="o-document-currency-dollar" :tooltip="__('Invoices')"
-                                    route="ahwstore.invoices.index" link="{{ route('ahwstore.invoices.index') }}"
+                                    route="store.invoices.index" link="{{ route('store.invoices.index') }}"
                                     wire:navigate />
                                 <x-mary-menu-item icon="o-user-group" :tooltip="__('Customers')"
-                                    route="ahwstore.customers.index" link="{{ route('ahwstore.customers.index') }}"
+                                    route="store.customers.index" link="{{ route('store.customers.index') }}"
                                     wire:navigate />
-                                <x-mary-menu-item icon="o-users" :tooltip="__('Vendors')" route="ahwstore.vendors.index"
-                                    link="{{ route('ahwstore.vendors.index') }}" wire:navigate />
+                                <x-mary-menu-item icon="o-users" :tooltip="__('Vendors')" route="store.vendors.index"
+                                    link="{{ route('store.vendors.index') }}" wire:navigate />
                                 <x-mary-menu-item icon="o-document-plus" :tooltip="__('Purchase orders')"
-                                    route="ahwstore.purchase-orders.index"
-                                    link="{{ route('ahwstore.purchase-orders.index') }}" wire:navigate />
+                                    route="store.purchase-orders.index"
+                                    link="{{ route('store.purchase-orders.index') }}" wire:navigate />
                                 <x-mary-menu-item title="{{ __('Monitoring') }}" icon="o-clipboard-document-list"
-                                    route="ahwstore.sales-orders.index"
-                                    link="{{ route('ahwstore.sales-orders.index') }}" wire:navigate />
+                                    route="store.sales-orders.index"
+                                    link="{{ route('store.sales-orders.index') }}" wire:navigate />
                             </x-mary-menu>
                         </div>
                         <div class="flex-1">
@@ -204,26 +204,26 @@
                                 <x-mary-menu-separator />
                             @endif
                             <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" :collapsed="false">
-                                <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="ahwstore.dashboard"
-                                    link="{{ route('ahwstore.dashboard') }}" wire:navigate />
+                                <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="store.dashboard"
+                                    link="{{ route('store.dashboard') }}" wire:navigate />
                                 <x-mary-menu-item title="{{ __('Items') }}" icon="o-shopping-cart"
-                                    route="ahwstore.items.index" link="{{ route('ahwstore.items.index') }}"
+                                    route="store.items.index" link="{{ route('store.items.index') }}"
                                     wire:navigate />
                                 <x-mary-menu-item title="{{ __('Invoices') }}" icon="o-document-currency-dollar"
-                                    route="ahwstore.invoices.index" link="{{ route('ahwstore.invoices.index') }}"
+                                    route="store.invoices.index" link="{{ route('store.invoices.index') }}"
                                     wire:navigate />
                                 <x-mary-menu-item title="{{ __('Customers') }}" icon="o-user-group"
-                                    route="ahwstore.customers.index" link="{{ route('ahwstore.customers.index') }}"
+                                    route="store.customers.index" link="{{ route('store.customers.index') }}"
                                     wire:navigate />
                                 <x-mary-menu-item title="{{ __('Vendors') }}" icon="o-users"
-                                    route="ahwstore.vendors.index" link="{{ route('ahwstore.vendors.index') }}"
+                                    route="store.vendors.index" link="{{ route('store.vendors.index') }}"
                                     wire:navigate />
                                 <x-mary-menu-item title="{{ __('Purchase orders') }}" icon="o-document-plus"
-                                    route="ahwstore.purchase-orders.index"
-                                    link="{{ route('ahwstore.purchase-orders.index') }}" wire:navigate />
+                                    route="store.purchase-orders.index"
+                                    link="{{ route('store.purchase-orders.index') }}" wire:navigate />
                                 <x-mary-menu-item title="{{ __('Monitoring') }}" icon="o-clipboard-document-list"
-                                    route="ahwstore.sales-orders.index"
-                                    link="{{ route('ahwstore.sales-orders.index') }}" wire:navigate />
+                                    route="store.sales-orders.index"
+                                    link="{{ route('store.sales-orders.index') }}" wire:navigate />
                                 
                             </x-mary-menu>
                         </div>
@@ -244,23 +244,23 @@
                             <x-mary-menu-separator />
                         @endif
                         <x-mary-menu activate-by-route active-bg-color="bg-primary text-white" :collapsed="false">
-                            <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="ahwstore.dashboard"
-                                link="{{ route('ahwstore.dashboard') }}" wire:navigate />
+                            <x-mary-menu-item title="{{ __('Dashboard') }}" icon="o-home" route="store.dashboard"
+                                link="{{ route('store.dashboard') }}" wire:navigate />
                             <x-mary-menu-item title="{{ __('Items') }}" icon="o-shopping-cart"
-                                route="ahwstore.items.index" link="{{ route('ahwstore.items.index') }}" wire:navigate />
+                                route="store.items.index" link="{{ route('store.items.index') }}" wire:navigate />
                             <x-mary-menu-item title="{{ __('Invoices') }}" icon="o-document-currency-dollar"
-                                route="ahwstore.invoices.index" link="{{ route('ahwstore.invoices.index') }}"
+                                route="store.invoices.index" link="{{ route('store.invoices.index') }}"
                                 wire:navigate />
                             <x-mary-menu-item title="{{ __('Customers') }}" icon="o-user-group"
-                                route="ahwstore.customers.index" link="{{ route('ahwstore.customers.index') }}"
+                                route="store.customers.index" link="{{ route('store.customers.index') }}"
                                 wire:navigate />
-                            <x-mary-menu-item title="{{ __('Vendors') }}" icon="o-users" route="ahwstore.vendors.index"
-                                link="{{ route('ahwstore.vendors.index') }}" wire:navigate />
+                            <x-mary-menu-item title="{{ __('Vendors') }}" icon="o-users" route="store.vendors.index"
+                                link="{{ route('store.vendors.index') }}" wire:navigate />
                             <x-mary-menu-item title="{{ __('Purchase orders') }}" icon="o-document-plus"
-                                route="ahwstore.purchase-orders.index"
-                                link="{{ route('ahwstore.purchase-orders.index') }}" wire:navigate />
+                                route="store.purchase-orders.index"
+                                link="{{ route('store.purchase-orders.index') }}" wire:navigate />
                             <x-mary-menu-item title="{{ __('Sales orders') }}" icon="o-clipboard-document-list"
-                                route="ahwstore.sales-orders.index" link="{{ route('ahwstore.sales-orders.index') }}"
+                                route="store.sales-orders.index" link="{{ route('store.sales-orders.index') }}"
                                 wire:navigate />
                             
                         </x-mary-menu>

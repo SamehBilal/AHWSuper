@@ -5,3 +5,8 @@
  */
 
 import './echo';
+(function () {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    //alert('Theme is set to: ' + savedTheme);
+    document.documentElement.setAttribute('data-theme', savedTheme);
+})();

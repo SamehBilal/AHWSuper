@@ -2345,10 +2345,6 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       'default' => 'icon',
     ),
   ),
-  'ahwstore' => 
-  array (
-    'name' => 'AHWStore',
-  ),
   'developers' => 
   array (
     'name' => 'Developers',
@@ -2356,6 +2352,10 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
   'roles' => 
   array (
     'name' => 'Roles',
+  ),
+  'store' => 
+  array (
+    'name' => 'Store',
   ),
   'tinker' => 
   array (

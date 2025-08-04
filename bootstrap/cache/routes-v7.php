@@ -589,7 +589,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::FqMn1OA1AL4QIC7P',
+            '_route' => 'generated::BJyaYd4Xr9wNv21i',
           ),
           1 => NULL,
           2 => 
@@ -609,7 +609,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::MkdYY3Z7dDnrPQiN',
+            '_route' => 'generated::qsUk42OM6jFIA3Tr',
           ),
           1 => NULL,
           2 => 
@@ -629,7 +629,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::n9dD7goREEigu0ww',
+            '_route' => 'generated::vlD5aEWxIULOCCLE',
           ),
           1 => NULL,
           2 => 
@@ -649,7 +649,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Mqd2k3P9WNdCBIfG',
+            '_route' => 'generated::pvH45t4hMvuGy1eW',
           ),
           1 => NULL,
           2 => 
@@ -669,7 +669,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::AR9mvzYmUp8ytA7l',
+            '_route' => 'generated::CLk4aOzNc4i7AAgL',
           ),
           1 => NULL,
           2 => 
@@ -708,7 +708,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::MQDhOKkLphfsfME7',
+            '_route' => 'generated::YdEGPO2PEr1MUR9Z',
           ),
           1 => NULL,
           2 => 
@@ -728,7 +728,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::8g3MX1WOXbLqQsHV',
+            '_route' => 'generated::vEGYx5r1bJHoNvZV',
           ),
           1 => NULL,
           2 => 
@@ -767,7 +767,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KDrzg8kux7tvFArF',
+            '_route' => 'generated::sWGC54Kx77KxZlIO',
           ),
           1 => NULL,
           2 => 
@@ -786,7 +786,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::cqyNB8LhzUciM1eo',
+            '_route' => 'generated::h4aZPGoVUlZr6uv6',
           ),
           1 => NULL,
           2 => 
@@ -806,7 +806,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::65y087yYL0c5gTa9',
+            '_route' => 'generated::wluumTCLb48e3hD6',
           ),
           1 => NULL,
           2 => 
@@ -826,7 +826,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::s7f1nJXwOs3y9Ufs',
+            '_route' => 'generated::zPmvZZpbtxW5GLXQ',
           ),
           1 => NULL,
           2 => 
@@ -846,7 +846,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nV5riHv9bMAPJeiA',
+            '_route' => 'generated::UvroqzuB5pQIWL4E',
           ),
           1 => NULL,
           2 => 
@@ -866,7 +866,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::dOWqK1jqYl16WIyj',
+            '_route' => 'generated::b7MHRdWRfdCziZrW',
           ),
           1 => NULL,
           2 => 
@@ -886,7 +886,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::FH1t4k1JB0gsoebd',
+            '_route' => 'generated::7EbtecpR5lba83KU',
           ),
           1 => NULL,
           2 => 
@@ -906,7 +906,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XZm0kTNatX9JXfwv',
+            '_route' => 'generated::lHPz3fAQVcfBy9Qn',
           ),
           1 => NULL,
           2 => 
@@ -947,401 +947,6 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'dashboard',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/v1/ahwstore/items' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.items.ahwstore.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.items.ahwstore.store',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/v1/ahwstore/sales-orders' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.salesOrders.ahwstore.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.salesOrders.ahwstore.store',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/v1/ahwstore/sales-orders/status/confirmed' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.generated::E5DGzYDW3CkHjFf8',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/v1/ahwstore/customers' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.customers.ahwstore.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.customers.ahwstore.store',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/v1/ahwstore/vendors' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.vendors.ahwstore.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.vendors.ahwstore.store',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/v1/ahwstore/invoices' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.invoices.ahwstore.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.invoices.ahwstore.store',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/v1/ahwstore/purchase-orders' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.purchaseOrders.ahwstore.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.purchaseOrders.ahwstore.store',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/dashboard' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.dashboard',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/customers' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.customers.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/vendors' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.vendors.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/invoices' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.invoices.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/sales-orders/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.sales-orders.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/sales-orders' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.sales-orders.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/purchase-orders' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.purchase-orders.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/ahwstore/items' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'ahwstore.items.index',
           ),
           1 => NULL,
           2 => 
@@ -1693,7 +1298,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2T10mCUxdrDumWuw',
+            '_route' => 'generated::7xEP3wC27pDpSmER',
           ),
           1 => NULL,
           2 => 
@@ -2047,6 +1652,437 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/api/v1/store/items' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.items.store.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.items.store.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/store/sales-orders' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.salesOrders.store.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.salesOrders.store.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/store/sales-orders/status/confirmed' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.generated::SuGp2PBoee5JT2tS',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/store/customers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.customers.store.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.customers.store.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/store/vendors' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.vendors.store.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.vendors.store.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/store/invoices' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.invoices.store.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.invoices.store.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/store/purchase-orders' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.purchaseOrders.store.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.purchaseOrders.store.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/stores' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.store.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.store.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/dashboard' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.dashboard',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/customers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.customers.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/vendors' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.vendors.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/invoices' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.invoices.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/sales-orders/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.sales-orders.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/sales-orders' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.sales-orders.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/purchase-orders' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.purchase-orders.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/admin/items' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.items.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/mary/toogle-sidebar' => 
       array (
         0 => 
@@ -2132,7 +2168,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::b4rbiqh8ogt4D8J5',
+            '_route' => 'generated::2i0OPuRhHq3fNMWZ',
           ),
           1 => NULL,
           2 => 
@@ -2151,7 +2187,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XBKjWw2B8OdYyXs7',
+            '_route' => 'generated::jP17itYDCZAHyB61',
           ),
           1 => NULL,
           2 => 
@@ -2170,7 +2206,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Ufk6glIRLBPxVsWR',
+            '_route' => 'generated::NRBVuRmnAp1i2xJR',
           ),
           1 => NULL,
           2 => 
@@ -2189,7 +2225,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Igu2xbwlSvlLaYqK',
+            '_route' => 'generated::uEqTe1VL4J5HxkUs',
           ),
           1 => NULL,
           2 => 
@@ -2208,7 +2244,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7RAG0CGr3eHlooUS',
+            '_route' => 'generated::CT7UcbQKybBLCuJj',
           ),
           1 => NULL,
           2 => 
@@ -2227,7 +2263,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::gWLFsDNQ9424rBlA',
+            '_route' => 'generated::1bbCQOAIWobR6lsU',
           ),
           1 => NULL,
           2 => 
@@ -2246,7 +2282,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::OCozJBJNl7ajnntw',
+            '_route' => 'generated::ySZV5opqEDyaAeN5',
           ),
           1 => NULL,
           2 => 
@@ -2265,7 +2301,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Xd5XBsKLFxE1EvAR',
+            '_route' => 'generated::bGYwaqi51exLVRck',
           ),
           1 => NULL,
           2 => 
@@ -2284,7 +2320,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Ouer6dGJZXJQykYG',
+            '_route' => 'generated::zKoH7dSfFgxLiuBr',
           ),
           1 => NULL,
           2 => 
@@ -2303,7 +2339,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::iP5jhz6SPdedTMn8',
+            '_route' => 'generated::RRsYzUpSopfom2h8',
           ),
           1 => NULL,
           2 => 
@@ -2322,7 +2358,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2hbcKtmkyoRWtyN9',
+            '_route' => 'generated::3V8M5SeFepMGIqc4',
           ),
           1 => NULL,
           2 => 
@@ -2341,7 +2377,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4Fcjzf2BZpwpU7KY',
+            '_route' => 'generated::Uf9jeDO8JvpICYo0',
           ),
           1 => NULL,
           2 => 
@@ -2360,7 +2396,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Rx4lj5iNum912O32',
+            '_route' => 'generated::6fnGzhPGGWJ6Z9p8',
           ),
           1 => NULL,
           2 => 
@@ -2379,7 +2415,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Y16PPFEdqTvYPZAp',
+            '_route' => 'generated::ssoHH6aRBcvWAolF',
           ),
           1 => NULL,
           2 => 
@@ -2398,7 +2434,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::dIYRgzHGmBkAn4LU',
+            '_route' => 'generated::qSXG6aGGZin07DMM',
           ),
           1 => NULL,
           2 => 
@@ -2417,7 +2453,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2JvefDqaLW1LAu7s',
+            '_route' => 'generated::DydMlLyy5cU6oQcd',
           ),
           1 => NULL,
           2 => 
@@ -2436,7 +2472,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::YEOlrUMiK5eH0p1r',
+            '_route' => 'generated::QKpLGIs7yRRch2Pi',
           ),
           1 => NULL,
           2 => 
@@ -2455,7 +2491,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::gWH3Q4DO9rKhPggP',
+            '_route' => 'generated::bcwyL52JDg6BzpZi',
           ),
           1 => NULL,
           2 => 
@@ -2474,7 +2510,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4ElTmq0MIxJR2Tf0',
+            '_route' => 'generated::gF0Nk5U3uV3n4ZRJ',
           ),
           1 => NULL,
           2 => 
@@ -2491,7 +2527,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::z6nByoiXYiiSQB5T',
+            '_route' => 'generated::hiNG6pkBI0zGaKrA',
           ),
           1 => NULL,
           2 => 
@@ -2510,7 +2546,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::cd2cox0MeWvCAMCq',
+            '_route' => 'generated::uxnwC4xjGDzqIHsY',
           ),
           1 => NULL,
           2 => 
@@ -2529,7 +2565,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Lj59frGE5eyj1D8B',
+            '_route' => 'generated::Nq6yLHMzJLeawNfg',
           ),
           1 => NULL,
           2 => 
@@ -2548,7 +2584,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::bg6rz17Qgw3VGRT3',
+            '_route' => 'generated::R4Vs0PGSE3nCNYwc',
           ),
           1 => NULL,
           2 => 
@@ -2567,7 +2603,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::hkjHVYpMVG2rpSNV',
+            '_route' => 'generated::Fngrkl2fouASxUis',
           ),
           1 => NULL,
           2 => 
@@ -2625,7 +2661,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/_debugbar/(?|c(?|lockwork/([^/]++)(*:42)|ache/([^/]++)(?:/([^/]++))?(*:76))|telescope/([^/]++)(*:102))|/d(?|ocs/asset/([^/]++)(*:134)|evelopers/(?|admin/app(?|s/([^/]++)/edit(*:182)|\\-tester/([^/]++)(?|(*:210)|/(?|accept(*:228)|reject(*:242))))|developers/([^/]++)(?|(*:275)|/edit(*:288)|(*:296))))|/monitoring/(?|horizon(?|/api/(?|m(?|onitoring/(?|([^/]++)(*:365)|(.*)(*:377))|etrics/(?|jobs/([^/]++)(*:409)|queues/([^/]++)(*:432)))|batches/(?|([^/]++)(*:461)|retry/([^/]++)(*:483))|jobs/(?|failed/([^/]++)(*:515)|retry/([^/]++)(*:537)|([^/]++)(*:553)))|(?:/((?:.*)))?(*:577))|telescope(?|/telescope\\-api/(?|m(?|ail/([^/]++)(?|(*:636)|/(?|preview(*:655)|download(*:671)))|odels/([^/]++)(*:695))|e(?|xceptions/([^/]++)(?|(*:729))|vents/([^/]++)(*:752))|logs/([^/]++)(*:774)|notifications/([^/]++)(*:804)|jobs/([^/]++)(*:825)|batches/([^/]++)(*:849)|gates/([^/]++)(*:871)|c(?|ache/([^/]++)(*:896)|ommands/([^/]++)(*:920)|lient\\-requests/([^/]++)(*:952))|queries/([^/]++)(*:977)|re(?|quests/([^/]++)(*:1005)|dis/([^/]++)(*:1026))|views/([^/]++)(*:1050)|schedule/([^/]++)(*:1076))|(?:/((?:.*)))?(*:1100)))|/l(?|ivewire/preview\\-file/([^/]++)(*:1146)|ogin/([^/]++)(?|(*:1171)|/callback(*:1189)))|/api/(?|v1/(?|ahwstore/(?|i(?|tems/([^/]++)(?|(*:1246))|nvoices/([^/]++)(?|(*:1275)))|sales\\-orders/([^/]++)(?|(*:1311)|/status/(?|confirmed(*:1340)|void(*:1353)))|customers/([^/]++)(?|(*:1385))|vendors/([^/]++)(?|(*:1414))|purchase\\-orders/([^/]++)(?|(*:1452)))|roles/([^/]++)(?|(*:1480)))|apps/([^/]++)/testers(?|(*:1515)|/([^/]++)(?|(*:1536)|/resend(*:1552)))|invitations/([^/]++)/(?|accept(*:1593)|reject(*:1608)))|/r(?|oles/([^/]++)(?|(*:1640)|/edit(*:1654)|(*:1663))|eset\\-password/([^/]++)(*:1696))|/verify\\-email/([^/]++)/([^/]++)(*:1738)|/storage/(.*)(*:1760))/?$}sDu',
+      0 => '{^(?|/_debugbar/(?|c(?|lockwork/([^/]++)(*:42)|ache/([^/]++)(?:/([^/]++))?(*:76))|telescope/([^/]++)(*:102))|/d(?|ocs/asset/([^/]++)(*:134)|evelopers/(?|admin/app(?|s/([^/]++)/edit(*:182)|\\-tester/([^/]++)(?|(*:210)|/(?|accept(*:228)|reject(*:242))))|developers/([^/]++)(?|(*:275)|/edit(*:288)|(*:296))))|/monitoring/(?|horizon(?|/api/(?|m(?|onitoring/(?|([^/]++)(*:365)|(.*)(*:377))|etrics/(?|jobs/([^/]++)(*:409)|queues/([^/]++)(*:432)))|batches/(?|([^/]++)(*:461)|retry/([^/]++)(*:483))|jobs/(?|failed/([^/]++)(*:515)|retry/([^/]++)(*:537)|([^/]++)(*:553)))|(?:/((?:.*)))?(*:577))|telescope(?|/telescope\\-api/(?|m(?|ail/([^/]++)(?|(*:636)|/(?|preview(*:655)|download(*:671)))|odels/([^/]++)(*:695))|e(?|xceptions/([^/]++)(?|(*:729))|vents/([^/]++)(*:752))|logs/([^/]++)(*:774)|notifications/([^/]++)(*:804)|jobs/([^/]++)(*:825)|batches/([^/]++)(*:849)|gates/([^/]++)(*:871)|c(?|ache/([^/]++)(*:896)|ommands/([^/]++)(*:920)|lient\\-requests/([^/]++)(*:952))|queries/([^/]++)(*:977)|re(?|quests/([^/]++)(*:1005)|dis/([^/]++)(*:1026))|views/([^/]++)(*:1050)|schedule/([^/]++)(*:1076))|(?:/((?:.*)))?(*:1100)))|/l(?|ivewire/preview\\-file/([^/]++)(*:1146)|ogin/([^/]++)(?|(*:1171)|/callback(*:1189)))|/api/(?|apps/([^/]++)/testers(?|(*:1232)|/([^/]++)(?|(*:1253)|/resend(*:1269)))|invitations/([^/]++)/(?|accept(*:1310)|reject(*:1325))|v1/(?|roles/([^/]++)(?|(*:1358))|store(?|/(?|i(?|tems/([^/]++)(?|(*:1400))|nvoices/([^/]++)(?|(*:1429)))|sales\\-orders/([^/]++)(?|(*:1465)|/status/(?|confirmed(*:1494)|void(*:1507)))|customers/([^/]++)(?|(*:1539))|vendors/([^/]++)(?|(*:1568))|purchase\\-orders/([^/]++)(?|(*:1606)))|s/([^/]++)(?|(*:1630)))))|/r(?|oles/([^/]++)(?|(*:1664)|/edit(*:1678)|(*:1687))|eset\\-password/([^/]++)(*:1720))|/verify\\-email/([^/]++)/([^/]++)(*:1762)|/storage/(.*)(*:1784))/?$}sDu',
     ),
     3 => 
     array (
@@ -3134,7 +3170,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::cTZOERUgKwTHSwFW',
+            '_route' => 'generated::WXnUH3NwnQjRiT49',
           ),
           1 => 
           array (
@@ -3157,7 +3193,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::pH9VsLZVtPG88ymT',
+            '_route' => 'generated::pLiR2fviz8OqF6ze',
           ),
           1 => 
           array (
@@ -3180,7 +3216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LeRthTpGOLmtKYr0',
+            '_route' => 'generated::0ai5zE5tfh4defUi',
           ),
           1 => 
           array (
@@ -3203,7 +3239,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Xv8p5ywK5YsSqsXQ',
+            '_route' => 'generated::jQ7JG244I41xSxHV',
           ),
           1 => 
           array (
@@ -3226,7 +3262,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::zUsbBcb6qD0wjoyx',
+            '_route' => 'generated::MVjX6b1I1F2vTjZO',
           ),
           1 => 
           array (
@@ -3246,7 +3282,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::TGqI70DwjkMpdH7W',
+            '_route' => 'generated::3W6BQRR1RyQdYvT7',
           ),
           1 => 
           array (
@@ -3268,7 +3304,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::fvgqfnunEgNZv4Ep',
+            '_route' => 'generated::wZpzPASwwMFcdLvl',
           ),
           1 => 
           array (
@@ -3291,7 +3327,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::79pq1RW2ZGAtvYy1',
+            '_route' => 'generated::vsQAVCwjZIMSLFto',
           ),
           1 => 
           array (
@@ -3314,7 +3350,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::y95pdIgNdml40xWw',
+            '_route' => 'generated::3ir7K5PEpV2U2Ucx',
           ),
           1 => 
           array (
@@ -3337,7 +3373,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XVJQMU2OrCHXUMR8',
+            '_route' => 'generated::72m3pMo1lzTGsuTB',
           ),
           1 => 
           array (
@@ -3360,7 +3396,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::8D4DXE8xrhmNo911',
+            '_route' => 'generated::qpt4RLrV8jjfj1qh',
           ),
           1 => 
           array (
@@ -3383,7 +3419,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::TVPErbb16GY9ja2k',
+            '_route' => 'generated::jFW0x9bWqI16Veo4',
           ),
           1 => 
           array (
@@ -3406,7 +3442,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::s9XH9rnJFgQod1Y4',
+            '_route' => 'generated::K8VhCajUyiCENnUB',
           ),
           1 => 
           array (
@@ -3429,7 +3465,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::GQEYOYePWZCT4rML',
+            '_route' => 'generated::VCQku8zllywD08ld',
           ),
           1 => 
           array (
@@ -3452,7 +3488,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7lnPJHVFkafR705u',
+            '_route' => 'generated::KtAiUIyevVpYbCJT',
           ),
           1 => 
           array (
@@ -3475,7 +3511,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::A3ntLfIUTjLZMDYX',
+            '_route' => 'generated::ISYYnd9lwU0geD9m',
           ),
           1 => 
           array (
@@ -3498,7 +3534,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Mql4lIKaTr6d7Bkz',
+            '_route' => 'generated::JsbsXWOuAPC5Ye2H',
           ),
           1 => 
           array (
@@ -3521,7 +3557,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::x8HuwxuzJUc7Suof',
+            '_route' => 'generated::VL6a3u3BuVvlXMFg',
           ),
           1 => 
           array (
@@ -3544,7 +3580,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::IxjpSb7sd849rs7I',
+            '_route' => 'generated::ecCbOt0xy0WeTK6J',
           ),
           1 => 
           array (
@@ -3567,7 +3603,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::SNyXF6v09Kd3GdRK',
+            '_route' => 'generated::S9LvHk4KbKaQbLe7',
           ),
           1 => 
           array (
@@ -3660,7 +3696,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::5m43JCFWtT88RSnY',
+            '_route' => 'generated::heC2wwtOKOJaQ6qG',
           ),
           1 => 
           array (
@@ -3677,193 +3713,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1246 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.items.ahwstore.show',
-          ),
-          1 => 
-          array (
-            0 => 'item',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.items.ahwstore.update',
-          ),
-          1 => 
-          array (
-            0 => 'item',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.items.ahwstore.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'item',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      1275 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.invoices.ahwstore.show',
-          ),
-          1 => 
-          array (
-            0 => 'invoice',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.invoices.ahwstore.update',
-          ),
-          1 => 
-          array (
-            0 => 'invoice',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.invoices.ahwstore.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'invoice',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      1311 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.salesOrders.ahwstore.show',
-          ),
-          1 => 
-          array (
-            0 => 'sales_order',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.salesOrders.ahwstore.update',
-          ),
-          1 => 
-          array (
-            0 => 'sales_order',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.salesOrders.ahwstore.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'sales_order',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      1340 => 
+      1232 => 
       array (
         0 => 
         array (
@@ -3873,7 +3723,27 @@ app('router')->setCompiledRoutes(
           ),
           1 => 
           array (
-            0 => 'id',
+            0 => 'app',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.generated::mmF8Mg7SYZ3xV8P1',
+          ),
+          1 => 
+          array (
+            0 => 'app',
           ),
           2 => 
           array (
@@ -3885,17 +3755,41 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1353 => 
+      1253 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::PZtX8NftadWA0vjL',
+            '_route' => 'api.generated::ZnDGqpJEzhAzGr0u',
           ),
           1 => 
           array (
-            0 => 'id',
+            0 => 'app',
+            1 => 'tester',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1269 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.generated::DRb5ZA7M7oORM4Mn',
+          ),
+          1 => 
+          array (
+            0 => 'app',
+            1 => 'tester',
           ),
           2 => 
           array (
@@ -3907,193 +3801,51 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1385 => 
+      1310 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.customers.ahwstore.show',
+            '_route' => 'api.generated::ThFxvpgBWRT7dTqd',
           ),
           1 => 
           array (
-            0 => 'customer',
+            0 => 'token',
           ),
           2 => 
           array (
-            'GET' => 0,
-            'HEAD' => 1,
+            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.customers.ahwstore.update',
-          ),
-          1 => 
-          array (
-            0 => 'customer',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.customers.ahwstore.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'customer',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
+          5 => false,
           6 => NULL,
         ),
       ),
-      1414 => 
+      1325 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.vendors.ahwstore.show',
+            '_route' => 'api.generated::S6wvR4oaKblBsEMY',
           ),
           1 => 
           array (
-            0 => 'vendor',
+            0 => 'token',
           ),
           2 => 
           array (
-            'GET' => 0,
-            'HEAD' => 1,
+            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.vendors.ahwstore.update',
-          ),
-          1 => 
-          array (
-            0 => 'vendor',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.vendors.ahwstore.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'vendor',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
+          5 => false,
           6 => NULL,
         ),
       ),
-      1452 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.purchaseOrders.ahwstore.show',
-          ),
-          1 => 
-          array (
-            0 => 'purchase_order',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.purchaseOrders.ahwstore.update',
-          ),
-          1 => 
-          array (
-            0 => 'purchase_order',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'api.purchaseOrders.ahwstore.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'purchase_order',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      1480 => 
+      1358 => 
       array (
         0 => 
         array (
@@ -4155,17 +3907,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1515 => 
+      1400 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::63KQjSYccPNYtrCJ',
+            '_route' => 'api.items.store.show',
           ),
           1 => 
           array (
-            0 => 'app',
+            0 => 'item',
           ),
           2 => 
           array (
@@ -4174,41 +3926,38 @@ app('router')->setCompiledRoutes(
           ),
           3 => NULL,
           4 => false,
-          5 => false,
+          5 => true,
           6 => NULL,
         ),
         1 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::42TukjLw6fw6dASG',
+            '_route' => 'api.items.store.update',
           ),
           1 => 
           array (
-            0 => 'app',
+            0 => 'item',
           ),
           2 => 
           array (
-            'POST' => 0,
+            'PUT' => 0,
+            'PATCH' => 1,
           ),
           3 => NULL,
           4 => false,
-          5 => false,
+          5 => true,
           6 => NULL,
         ),
-      ),
-      1536 => 
-      array (
-        0 => 
+        2 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::rBFXEgyOVzqiJqhk',
+            '_route' => 'api.items.store.destroy',
           ),
           1 => 
           array (
-            0 => 'app',
-            1 => 'tester',
+            0 => 'item',
           ),
           2 => 
           array (
@@ -4220,18 +3969,141 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1552 => 
+      1429 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::ECKx4vq0NWfUAIPy',
+            '_route' => 'api.invoices.store.show',
           ),
           1 => 
           array (
-            0 => 'app',
-            1 => 'tester',
+            0 => 'invoice',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.invoices.store.update',
+          ),
+          1 => 
+          array (
+            0 => 'invoice',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.invoices.store.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'invoice',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1465 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.salesOrders.store.show',
+          ),
+          1 => 
+          array (
+            0 => 'sales_order',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.salesOrders.store.update',
+          ),
+          1 => 
+          array (
+            0 => 'sales_order',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.salesOrders.store.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'sales_order',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1494 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.generated::bFtYbGAYChl9nBil',
+          ),
+          1 => 
+          array (
+            0 => 'id',
           ),
           2 => 
           array (
@@ -4243,17 +4115,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1593 => 
+      1507 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::7S1y24hLF0aaZr5V',
+            '_route' => 'api.generated::5KBiLnKkI6p7ER7B',
           ),
           1 => 
           array (
-            0 => 'token',
+            0 => 'id',
           ),
           2 => 
           array (
@@ -4265,29 +4137,255 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1608 => 
+      1539 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::pj1vCjEonWzc9DDH',
+            '_route' => 'api.customers.store.show',
           ),
           1 => 
           array (
-            0 => 'token',
+            0 => 'customer',
           ),
           2 => 
           array (
-            'POST' => 0,
+            'GET' => 0,
+            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
-          5 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.customers.store.update',
+          ),
+          1 => 
+          array (
+            0 => 'customer',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.customers.store.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'customer',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
           6 => NULL,
         ),
       ),
-      1640 => 
+      1568 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.vendors.store.show',
+          ),
+          1 => 
+          array (
+            0 => 'vendor',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.vendors.store.update',
+          ),
+          1 => 
+          array (
+            0 => 'vendor',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.vendors.store.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'vendor',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1606 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.purchaseOrders.store.show',
+          ),
+          1 => 
+          array (
+            0 => 'purchase_order',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.purchaseOrders.store.update',
+          ),
+          1 => 
+          array (
+            0 => 'purchase_order',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.purchaseOrders.store.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'purchase_order',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1630 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.store.show',
+          ),
+          1 => 
+          array (
+            0 => 'store',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.store.update',
+          ),
+          1 => 
+          array (
+            0 => 'store',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.store.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'store',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1664 => 
       array (
         0 => 
         array (
@@ -4310,7 +4408,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1654 => 
+      1678 => 
       array (
         0 => 
         array (
@@ -4333,7 +4431,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1663 => 
+      1687 => 
       array (
         0 => 
         array (
@@ -4375,7 +4473,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1696 => 
+      1720 => 
       array (
         0 => 
         array (
@@ -4398,7 +4496,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1738 => 
+      1762 => 
       array (
         0 => 
         array (
@@ -4422,7 +4520,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1760 => 
+      1784 => 
       array (
         0 => 
         array (
@@ -6085,7 +6183,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:158:"function (\\Laravel\\Pulse\\Pulse $pulse, \\Illuminate\\View\\Factory $view) {
                         return $view->make(\'pulse::dashboard\');
-                    }";s:5:"scope";s:34:"Laravel\\Pulse\\PulseServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000c930000000000000000";}}',
+                    }";s:5:"scope";s:34:"Laravel\\Pulse\\PulseServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000cb00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'monitoring/pulse',
         'where' => 
@@ -6107,7 +6205,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::FqMn1OA1AL4QIC7P' => 
+    'generated::BJyaYd4Xr9wNv21i' => 
     array (
       'methods' => 
       array (
@@ -6119,7 +6217,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@fluxJs',
         'controller' => 'Flux\\AssetManager@fluxJs',
-        'as' => 'generated::FqMn1OA1AL4QIC7P',
+        'as' => 'generated::BJyaYd4Xr9wNv21i',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6135,7 +6233,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::MkdYY3Z7dDnrPQiN' => 
+    'generated::qsUk42OM6jFIA3Tr' => 
     array (
       'methods' => 
       array (
@@ -6147,7 +6245,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@fluxMinJs',
         'controller' => 'Flux\\AssetManager@fluxMinJs',
-        'as' => 'generated::MkdYY3Z7dDnrPQiN',
+        'as' => 'generated::qsUk42OM6jFIA3Tr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6163,7 +6261,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::n9dD7goREEigu0ww' => 
+    'generated::vlD5aEWxIULOCCLE' => 
     array (
       'methods' => 
       array (
@@ -6175,7 +6273,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@editorCss',
         'controller' => 'Flux\\AssetManager@editorCss',
-        'as' => 'generated::n9dD7goREEigu0ww',
+        'as' => 'generated::vlD5aEWxIULOCCLE',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6191,7 +6289,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Mqd2k3P9WNdCBIfG' => 
+    'generated::pvH45t4hMvuGy1eW' => 
     array (
       'methods' => 
       array (
@@ -6203,7 +6301,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@editorJs',
         'controller' => 'Flux\\AssetManager@editorJs',
-        'as' => 'generated::Mqd2k3P9WNdCBIfG',
+        'as' => 'generated::pvH45t4hMvuGy1eW',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6219,7 +6317,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::AR9mvzYmUp8ytA7l' => 
+    'generated::CLk4aOzNc4i7AAgL' => 
     array (
       'methods' => 
       array (
@@ -6231,7 +6329,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@editorMinJs',
         'controller' => 'Flux\\AssetManager@editorMinJs',
-        'as' => 'generated::AR9mvzYmUp8ytA7l',
+        'as' => 'generated::CLk4aOzNc4i7AAgL',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6278,7 +6376,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::MQDhOKkLphfsfME7' => 
+    'generated::YdEGPO2PEr1MUR9Z' => 
     array (
       'methods' => 
       array (
@@ -6290,7 +6388,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
-        'as' => 'generated::MQDhOKkLphfsfME7',
+        'as' => 'generated::YdEGPO2PEr1MUR9Z',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6306,7 +6404,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::8g3MX1WOXbLqQsHV' => 
+    'generated::vEGYx5r1bJHoNvZV' => 
     array (
       'methods' => 
       array (
@@ -6318,7 +6416,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
-        'as' => 'generated::8g3MX1WOXbLqQsHV',
+        'as' => 'generated::vEGYx5r1bJHoNvZV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6389,7 +6487,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::KDrzg8kux7tvFArF' => 
+    'generated::sWGC54Kx77KxZlIO' => 
     array (
       'methods' => 
       array (
@@ -6409,7 +6507,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::KDrzg8kux7tvFArF',
+        'as' => 'generated::sWGC54Kx77KxZlIO',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6425,7 +6523,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::cqyNB8LhzUciM1eo' => 
+    'generated::h4aZPGoVUlZr6uv6' => 
     array (
       'methods' => 
       array (
@@ -6442,13 +6540,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000000125f0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000012920000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::cqyNB8LhzUciM1eo',
+        'as' => 'generated::h4aZPGoVUlZr6uv6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6464,7 +6562,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::65y087yYL0c5gTa9' => 
+    'generated::wluumTCLb48e3hD6' => 
     array (
       'methods' => 
       array (
@@ -6495,13 +6593,13 @@ app('router')->setCompiledRoutes(
         $clients = $user->oauthApps()->get();
 
         \\dd($clients);
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011a20000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011c10000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::65y087yYL0c5gTa9',
+        'as' => 'generated::wluumTCLb48e3hD6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6517,7 +6615,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::s7f1nJXwOs3y9Ufs' => 
+    'generated::zPmvZZpbtxW5GLXQ' => 
     array (
       'methods' => 
       array (
@@ -6558,13 +6656,13 @@ app('router')->setCompiledRoutes(
         ]);
 
         return \\redirect(\'http://localhost:8000/oauth/authorize?\' . $query);
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011a40000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011c30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::s7f1nJXwOs3y9Ufs',
+        'as' => 'generated::zPmvZZpbtxW5GLXQ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6580,7 +6678,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::nV5riHv9bMAPJeiA' => 
+    'generated::UvroqzuB5pQIWL4E' => 
     array (
       'methods' => 
       array (
@@ -6631,13 +6729,13 @@ app('router')->setCompiledRoutes(
                 \'state\' => $request->state,
             ]);
         }
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d510000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000da70000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::nV5riHv9bMAPJeiA',
+        'as' => 'generated::UvroqzuB5pQIWL4E',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6653,7 +6751,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::dOWqK1jqYl16WIyj' => 
+    'generated::b7MHRdWRfdCziZrW' => 
     array (
       'methods' => 
       array (
@@ -6712,13 +6810,13 @@ app('router')->setCompiledRoutes(
                 \'state\' => $request->state,
             ]);
         }
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d550000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000da30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::dOWqK1jqYl16WIyj',
+        'as' => 'generated::b7MHRdWRfdCziZrW',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6734,7 +6832,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::FH1t4k1JB0gsoebd' => 
+    'generated::7EbtecpR5lba83KU' => 
     array (
       'methods' => 
       array (
@@ -6750,13 +6848,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:86:"function () {
     return \\response()->file(\\storage_path(\'api-docs/api-docs.json\'));
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011970000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011bd0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::FH1t4k1JB0gsoebd',
+        'as' => 'generated::7EbtecpR5lba83KU',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6772,7 +6870,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XZm0kTNatX9JXfwv' => 
+    'generated::lHPz3fAQVcfBy9Qn' => 
     array (
       'methods' => 
       array (
@@ -6800,8 +6898,8 @@ app('router')->setCompiledRoutes(
                     return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\sameh\\\\OneDrive\\\\Documents\\\\GitHub\\\\AHWSuper\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000012580000000000000000";}}',
-        'as' => 'generated::XZm0kTNatX9JXfwv',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"000000000000128b0000000000000000";}}',
+        'as' => 'generated::lHPz3fAQVcfBy9Qn',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6833,7 +6931,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000000116e0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000dc40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6903,1573 +7001,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.items.ahwstore.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/items',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.items.ahwstore.index',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@index',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@index',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.items.ahwstore.store' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/items',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.items.ahwstore.store',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@store',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@store',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.items.ahwstore.show' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/items/{item}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.items.ahwstore.show',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@show',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@show',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.items.ahwstore.update' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'PUT',
-        1 => 'PATCH',
-      ),
-      'uri' => 'api/v1/ahwstore/items/{item}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.items.ahwstore.update',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@update',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@update',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.items.ahwstore.destroy' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'DELETE',
-      ),
-      'uri' => 'api/v1/ahwstore/items/{item}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.items.ahwstore.destroy',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@destroy',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\ItemsController@destroy',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.salesOrders.ahwstore.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.salesOrders.ahwstore.index',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@index',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@index',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.salesOrders.ahwstore.store' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.salesOrders.ahwstore.store',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@store',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@store',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.salesOrders.ahwstore.show' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders/{sales_order}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.salesOrders.ahwstore.show',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@show',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@show',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.salesOrders.ahwstore.update' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'PUT',
-        1 => 'PATCH',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders/{sales_order}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.salesOrders.ahwstore.update',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@update',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@update',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.salesOrders.ahwstore.destroy' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'DELETE',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders/{sales_order}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.salesOrders.ahwstore.destroy',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@destroy',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@destroy',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
     'api.' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders/{id}/status/confirmed',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@markAsConfirmed',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@markAsConfirmed',
-        'as' => 'api.',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.generated::PZtX8NftadWA0vjL' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders/{id}/status/void',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@markAsVoid',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@markAsVoid',
-        'as' => 'api.generated::PZtX8NftadWA0vjL',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.generated::E5DGzYDW3CkHjFf8' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/sales-orders/status/confirmed',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@bulkMarkAsConfirmed',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\SalesOrdersController@bulkMarkAsConfirmed',
-        'as' => 'api.generated::E5DGzYDW3CkHjFf8',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.customers.ahwstore.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/customers',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.customers.ahwstore.index',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@index',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@index',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.customers.ahwstore.store' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/customers',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.customers.ahwstore.store',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@store',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@store',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.customers.ahwstore.show' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/customers/{customer}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.customers.ahwstore.show',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@show',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@show',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.customers.ahwstore.update' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'PUT',
-        1 => 'PATCH',
-      ),
-      'uri' => 'api/v1/ahwstore/customers/{customer}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.customers.ahwstore.update',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@update',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@update',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.customers.ahwstore.destroy' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'DELETE',
-      ),
-      'uri' => 'api/v1/ahwstore/customers/{customer}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.customers.ahwstore.destroy',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@destroy',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\CustomersController@destroy',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.vendors.ahwstore.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/vendors',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.vendors.ahwstore.index',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@index',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@index',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.vendors.ahwstore.store' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/vendors',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.vendors.ahwstore.store',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@store',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@store',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.vendors.ahwstore.show' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/vendors/{vendor}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.vendors.ahwstore.show',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@show',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@show',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.vendors.ahwstore.update' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'PUT',
-        1 => 'PATCH',
-      ),
-      'uri' => 'api/v1/ahwstore/vendors/{vendor}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.vendors.ahwstore.update',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@update',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@update',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.vendors.ahwstore.destroy' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'DELETE',
-      ),
-      'uri' => 'api/v1/ahwstore/vendors/{vendor}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.vendors.ahwstore.destroy',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@destroy',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\VendorsController@destroy',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.invoices.ahwstore.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/invoices',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.invoices.ahwstore.index',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@index',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@index',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.invoices.ahwstore.store' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/invoices',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.invoices.ahwstore.store',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@store',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@store',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.invoices.ahwstore.show' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/invoices/{invoice}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.invoices.ahwstore.show',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@show',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@show',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.invoices.ahwstore.update' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'PUT',
-        1 => 'PATCH',
-      ),
-      'uri' => 'api/v1/ahwstore/invoices/{invoice}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.invoices.ahwstore.update',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@update',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@update',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.invoices.ahwstore.destroy' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'DELETE',
-      ),
-      'uri' => 'api/v1/ahwstore/invoices/{invoice}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.invoices.ahwstore.destroy',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@destroy',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\InvoicesController@destroy',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.purchaseOrders.ahwstore.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/purchase-orders',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.purchaseOrders.ahwstore.index',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@index',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@index',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.purchaseOrders.ahwstore.store' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/v1/ahwstore/purchase-orders',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.purchaseOrders.ahwstore.store',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@store',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@store',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.purchaseOrders.ahwstore.show' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'api/v1/ahwstore/purchase-orders/{purchase_order}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.purchaseOrders.ahwstore.show',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@show',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@show',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.purchaseOrders.ahwstore.update' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'PUT',
-        1 => 'PATCH',
-      ),
-      'uri' => 'api/v1/ahwstore/purchase-orders/{purchase_order}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.purchaseOrders.ahwstore.update',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@update',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@update',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.purchaseOrders.ahwstore.destroy' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'DELETE',
-      ),
-      'uri' => 'api/v1/ahwstore/purchase-orders/{purchase_order}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'as' => 'api.purchaseOrders.ahwstore.destroy',
-        'uses' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@destroy',
-        'controller' => 'Modules\\AHWStore\\Http\\Controllers\\API\\PurchaseOrdersController@destroy',
-        'namespace' => NULL,
-        'prefix' => 'api/v1/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.dashboard' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/dashboard',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:9:"dashboard";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000115e0000000000000000";}}',
-        'as' => 'ahwstore.dashboard',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.customers.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/customers',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:15:"customers.index";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011480000000000000000";}}',
-        'as' => 'ahwstore.customers.index',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.vendors.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/vendors',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:13:"vendors.index";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d640000000000000000";}}',
-        'as' => 'ahwstore.vendors.index',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.invoices.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/invoices',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:14:"invoices.index";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011610000000000000000";}}',
-        'as' => 'ahwstore.invoices.index',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.sales-orders.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/sales-orders/create',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"sales-orders.create";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011640000000000000000";}}',
-        'as' => 'ahwstore.sales-orders.create',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.sales-orders.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/sales-orders',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:18:"sales-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011660000000000000000";}}',
-        'as' => 'ahwstore.sales-orders.index',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.purchase-orders.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/purchase-orders',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:21:"purchase-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011680000000000000000";}}',
-        'as' => 'ahwstore.purchase-orders.index',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'ahwstore.items.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'ahwstore/items',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:11:"items.index";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000116a0000000000000000";}}',
-        'as' => 'ahwstore.items.index',
-        'namespace' => NULL,
-        'prefix' => '/ahwstore',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'api.generated::63KQjSYccPNYtrCJ' => 
     array (
       'methods' => 
       array (
@@ -8486,7 +7018,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@index',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@index',
-        'as' => 'api.generated::63KQjSYccPNYtrCJ',
+        'as' => 'api.',
         'namespace' => NULL,
         'prefix' => 'api/apps/{app}/testers',
         'where' => 
@@ -8507,7 +7039,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::42TukjLw6fw6dASG' => 
+    'api.generated::mmF8Mg7SYZ3xV8P1' => 
     array (
       'methods' => 
       array (
@@ -8523,7 +7055,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@store',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@store',
-        'as' => 'api.generated::42TukjLw6fw6dASG',
+        'as' => 'api.generated::mmF8Mg7SYZ3xV8P1',
         'namespace' => NULL,
         'prefix' => 'api/apps/{app}/testers',
         'where' => 
@@ -8544,7 +7076,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::rBFXEgyOVzqiJqhk' => 
+    'api.generated::ZnDGqpJEzhAzGr0u' => 
     array (
       'methods' => 
       array (
@@ -8560,7 +7092,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@destroy',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@destroy',
-        'as' => 'api.generated::rBFXEgyOVzqiJqhk',
+        'as' => 'api.generated::ZnDGqpJEzhAzGr0u',
         'namespace' => NULL,
         'prefix' => 'api/apps/{app}/testers',
         'where' => 
@@ -8581,7 +7113,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::ECKx4vq0NWfUAIPy' => 
+    'api.generated::DRb5ZA7M7oORM4Mn' => 
     array (
       'methods' => 
       array (
@@ -8597,7 +7129,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@resend',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@resend',
-        'as' => 'api.generated::ECKx4vq0NWfUAIPy',
+        'as' => 'api.generated::DRb5ZA7M7oORM4Mn',
         'namespace' => NULL,
         'prefix' => 'api/apps/{app}/testers',
         'where' => 
@@ -8618,7 +7150,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::7S1y24hLF0aaZr5V' => 
+    'api.generated::ThFxvpgBWRT7dTqd' => 
     array (
       'methods' => 
       array (
@@ -8634,7 +7166,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@accept',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@accept',
-        'as' => 'api.generated::7S1y24hLF0aaZr5V',
+        'as' => 'api.generated::ThFxvpgBWRT7dTqd',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
@@ -8655,7 +7187,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::pj1vCjEonWzc9DDH' => 
+    'api.generated::S6wvR4oaKblBsEMY' => 
     array (
       'methods' => 
       array (
@@ -8671,7 +7203,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@reject',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@reject',
-        'as' => 'api.generated::pj1vCjEonWzc9DDH',
+        'as' => 'api.generated::S6wvR4oaKblBsEMY',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
@@ -8714,7 +7246,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d5d0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d9e0000000000000000";}}',
         'as' => 'developers.privacy',
         'namespace' => NULL,
         'prefix' => '/developers',
@@ -8758,7 +7290,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000117b0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d8e0000000000000000";}}',
         'as' => 'developers.index',
         'namespace' => NULL,
         'prefix' => '/developers',
@@ -8842,7 +7374,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000117e0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000da20000000000000000";}}',
         'as' => 'developers.apps',
         'namespace' => NULL,
         'prefix' => '/developers',
@@ -8888,7 +7420,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011820000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000daf0000000000000000";}}',
         'as' => 'developers.dashboard',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -8934,7 +7466,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011840000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db10000000000000000";}}',
         'as' => 'developers.login-button',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -8980,7 +7512,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011860000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db30000000000000000";}}',
         'as' => 'developers.app-verification',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -9026,7 +7558,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011880000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db50000000000000000";}}',
         'as' => 'developers.oauth2',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -9072,7 +7604,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000118a0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db70000000000000000";}}',
         'as' => 'developers.app-testers',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -9118,7 +7650,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000118c0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db90000000000000000";}}',
         'as' => 'developers.apps.index',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -9164,7 +7696,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000118e0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dbb0000000000000000";}}',
         'as' => 'developers.apps.create',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -9210,7 +7742,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011900000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dbd0000000000000000";}}',
         'as' => 'developers.apps.edit',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -9256,7 +7788,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011920000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dbf0000000000000000";}}',
         'as' => 'developers.tickets',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -9862,7 +8394,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2T10mCUxdrDumWuw' => 
+    'generated::7xEP3wC27pDpSmER' => 
     array (
       'methods' => 
       array (
@@ -9891,7 +8423,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::2T10mCUxdrDumWuw',
+        'as' => 'generated::7xEP3wC27pDpSmER',
       ),
       'fallback' => false,
       'defaults' => 
@@ -9933,7 +8465,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d570000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d770000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9979,7 +8511,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ab0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011970000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10025,7 +8557,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ad0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011990000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10071,7 +8603,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011af0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000119b0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10117,7 +8649,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b10000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000119d0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10163,7 +8695,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b30000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000119f0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10485,7 +9017,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b60000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011a20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10529,7 +9061,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b70000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011a30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10573,7 +9105,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011c00000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ac0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10617,7 +9149,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011c20000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ae0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10677,7 +9209,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5m43JCFWtT88RSnY' => 
+    'generated::heC2wwtOKOJaQ6qG' => 
     array (
       'methods' => 
       array (
@@ -10699,7 +9231,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::5m43JCFWtT88RSnY',
+        'as' => 'generated::heC2wwtOKOJaQ6qG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -10775,7 +9307,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011c70000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10859,7 +9391,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ca0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10904,7 +9436,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011cc0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10962,6 +9494,1768 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'api.items.store.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/items',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.items.store.index',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@index',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.items.store.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/items',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.items.store.store',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@store',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.items.store.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/items/{item}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.items.store.show',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@show',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.items.store.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/store/items/{item}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.items.store.update',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@update',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.items.store.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/store/items/{item}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.items.store.destroy',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@destroy',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\ItemsController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.salesOrders.store.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/sales-orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.salesOrders.store.index',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@index',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.salesOrders.store.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/sales-orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.salesOrders.store.store',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@store',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.salesOrders.store.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/sales-orders/{sales_order}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.salesOrders.store.show',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@show',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.salesOrders.store.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/store/sales-orders/{sales_order}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.salesOrders.store.update',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@update',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.salesOrders.store.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/store/sales-orders/{sales_order}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.salesOrders.store.destroy',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@destroy',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.generated::bFtYbGAYChl9nBil' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/sales-orders/{id}/status/confirmed',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsConfirmed',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsConfirmed',
+        'as' => 'api.generated::bFtYbGAYChl9nBil',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.generated::5KBiLnKkI6p7ER7B' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/sales-orders/{id}/status/void',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsVoid',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsVoid',
+        'as' => 'api.generated::5KBiLnKkI6p7ER7B',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.generated::SuGp2PBoee5JT2tS' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/sales-orders/status/confirmed',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@bulkMarkAsConfirmed',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@bulkMarkAsConfirmed',
+        'as' => 'api.generated::SuGp2PBoee5JT2tS',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.customers.store.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/customers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.customers.store.index',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@index',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.customers.store.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/customers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.customers.store.store',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@store',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.customers.store.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/customers/{customer}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.customers.store.show',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@show',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.customers.store.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/store/customers/{customer}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.customers.store.update',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@update',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.customers.store.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/store/customers/{customer}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.customers.store.destroy',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@destroy',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\CustomersController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.vendors.store.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/vendors',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.vendors.store.index',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@index',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.vendors.store.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/vendors',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.vendors.store.store',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@store',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.vendors.store.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/vendors/{vendor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.vendors.store.show',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@show',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.vendors.store.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/store/vendors/{vendor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.vendors.store.update',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@update',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.vendors.store.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/store/vendors/{vendor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.vendors.store.destroy',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@destroy',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\VendorsController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.invoices.store.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/invoices',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.invoices.store.index',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@index',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.invoices.store.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/invoices',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.invoices.store.store',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@store',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.invoices.store.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/invoices/{invoice}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.invoices.store.show',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@show',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.invoices.store.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/store/invoices/{invoice}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.invoices.store.update',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@update',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.invoices.store.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/store/invoices/{invoice}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.invoices.store.destroy',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@destroy',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\InvoicesController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.purchaseOrders.store.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/purchase-orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.purchaseOrders.store.index',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@index',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.purchaseOrders.store.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/store/purchase-orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.purchaseOrders.store.store',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@store',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.purchaseOrders.store.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/store/purchase-orders/{purchase_order}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.purchaseOrders.store.show',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@show',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.purchaseOrders.store.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/store/purchase-orders/{purchase_order}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.purchaseOrders.store.update',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@update',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.purchaseOrders.store.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/store/purchase-orders/{purchase_order}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'api.purchaseOrders.store.destroy',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@destroy',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\API\\PurchaseOrdersController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/store',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.store.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/stores',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'api.store.index',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\StoreController@index',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\StoreController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.store.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/stores',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'api.store.store',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\StoreController@store',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\StoreController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.store.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/stores/{store}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'api.store.show',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\StoreController@show',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\StoreController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.store.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/stores/{store}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'api.store.update',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\StoreController@update',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\StoreController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.store.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/stores/{store}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'api.store.destroy',
+        'uses' => 'Modules\\Store\\Http\\Controllers\\StoreController@destroy',
+        'controller' => 'Modules\\Store\\Http\\Controllers\\StoreController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.dashboard' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/dashboard',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:9:"dashboard";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d8a0000000000000000";}}',
+        'as' => 'store.dashboard',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.customers.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/customers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:15:"customers.index";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011d10000000000000000";}}',
+        'as' => 'store.customers.index',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.vendors.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/vendors',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:13:"vendors.index";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ec0000000000000000";}}',
+        'as' => 'store.vendors.index',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.invoices.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/invoices',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:14:"invoices.index";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ee0000000000000000";}}',
+        'as' => 'store.invoices.index',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.sales-orders.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/sales-orders/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"sales-orders.create";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011f00000000000000000";}}',
+        'as' => 'store.sales-orders.create',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.sales-orders.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/sales-orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:18:"sales-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011f20000000000000000";}}',
+        'as' => 'store.sales-orders.index',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.purchase-orders.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/purchase-orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:21:"purchase-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011f40000000000000000";}}',
+        'as' => 'store.purchase-orders.index',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.items.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'store/admin/items',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:11:"items.index";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011f60000000000000000";}}',
+        'as' => 'store.items.index',
+        'namespace' => NULL,
+        'prefix' => '/store/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'mary.toogle-sidebar' => 
     array (
       'methods' => 
@@ -10980,7 +11274,7 @@ app('router')->setCompiledRoutes(
     if ($request->collapsed) {
         \\session([\'mary-sidebar-collapsed\' => $request->collapsed]);
     }
-}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000011db0000000000000000";}}',
+}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012040000000000000000";}}',
         'as' => 'mary.toogle-sidebar',
       ),
       'fallback' => false,
@@ -11013,7 +11307,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:135:"function (\\Illuminate\\Http\\Request $request) {
     return \\app()->make(\\config(\'mary.components.spotlight.class\'))->search($request);
-}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000011dd0000000000000000";}}',
+}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012060000000000000000";}}',
         'as' => 'mary.spotlight',
       ),
       'fallback' => false,
@@ -11052,7 +11346,7 @@ app('router')->setCompiledRoutes(
     $url = \\Illuminate\\Support\\Facades\\Storage::disk($disk)->url($file);
 
     return [\'location\' => $url];
-}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000011df0000000000000000";}}',
+}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012080000000000000000";}}',
         'as' => 'mary.upload',
       ),
       'fallback' => false,
@@ -11107,7 +11401,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::b4rbiqh8ogt4D8J5' => 
+    'generated::2i0OPuRhHq3fNMWZ' => 
     array (
       'methods' => 
       array (
@@ -11125,7 +11419,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::b4rbiqh8ogt4D8J5',
+        'as' => 'generated::2i0OPuRhHq3fNMWZ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11141,7 +11435,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::cTZOERUgKwTHSwFW' => 
+    'generated::WXnUH3NwnQjRiT49' => 
     array (
       'methods' => 
       array (
@@ -11160,7 +11454,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::cTZOERUgKwTHSwFW',
+        'as' => 'generated::WXnUH3NwnQjRiT49',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11176,7 +11470,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::pH9VsLZVtPG88ymT' => 
+    'generated::pLiR2fviz8OqF6ze' => 
     array (
       'methods' => 
       array (
@@ -11195,7 +11489,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::pH9VsLZVtPG88ymT',
+        'as' => 'generated::pLiR2fviz8OqF6ze',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11211,7 +11505,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LeRthTpGOLmtKYr0' => 
+    'generated::0ai5zE5tfh4defUi' => 
     array (
       'methods' => 
       array (
@@ -11230,7 +11524,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::LeRthTpGOLmtKYr0',
+        'as' => 'generated::0ai5zE5tfh4defUi',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11246,7 +11540,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XBKjWw2B8OdYyXs7' => 
+    'generated::jP17itYDCZAHyB61' => 
     array (
       'methods' => 
       array (
@@ -11264,7 +11558,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XBKjWw2B8OdYyXs7',
+        'as' => 'generated::jP17itYDCZAHyB61',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11280,7 +11574,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::zUsbBcb6qD0wjoyx' => 
+    'generated::MVjX6b1I1F2vTjZO' => 
     array (
       'methods' => 
       array (
@@ -11299,7 +11593,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::zUsbBcb6qD0wjoyx',
+        'as' => 'generated::MVjX6b1I1F2vTjZO',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11315,7 +11609,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::TGqI70DwjkMpdH7W' => 
+    'generated::3W6BQRR1RyQdYvT7' => 
     array (
       'methods' => 
       array (
@@ -11333,7 +11627,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::TGqI70DwjkMpdH7W',
+        'as' => 'generated::3W6BQRR1RyQdYvT7',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11349,7 +11643,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Ufk6glIRLBPxVsWR' => 
+    'generated::NRBVuRmnAp1i2xJR' => 
     array (
       'methods' => 
       array (
@@ -11367,7 +11661,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Ufk6glIRLBPxVsWR',
+        'as' => 'generated::NRBVuRmnAp1i2xJR',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11383,7 +11677,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Igu2xbwlSvlLaYqK' => 
+    'generated::uEqTe1VL4J5HxkUs' => 
     array (
       'methods' => 
       array (
@@ -11401,7 +11695,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Igu2xbwlSvlLaYqK',
+        'as' => 'generated::uEqTe1VL4J5HxkUs',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11417,7 +11711,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::79pq1RW2ZGAtvYy1' => 
+    'generated::vsQAVCwjZIMSLFto' => 
     array (
       'methods' => 
       array (
@@ -11436,7 +11730,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::79pq1RW2ZGAtvYy1',
+        'as' => 'generated::vsQAVCwjZIMSLFto',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11452,7 +11746,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7RAG0CGr3eHlooUS' => 
+    'generated::CT7UcbQKybBLCuJj' => 
     array (
       'methods' => 
       array (
@@ -11470,7 +11764,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::7RAG0CGr3eHlooUS',
+        'as' => 'generated::CT7UcbQKybBLCuJj',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11486,7 +11780,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::y95pdIgNdml40xWw' => 
+    'generated::3ir7K5PEpV2U2Ucx' => 
     array (
       'methods' => 
       array (
@@ -11505,7 +11799,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::y95pdIgNdml40xWw',
+        'as' => 'generated::3ir7K5PEpV2U2Ucx',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11521,7 +11815,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::gWLFsDNQ9424rBlA' => 
+    'generated::1bbCQOAIWobR6lsU' => 
     array (
       'methods' => 
       array (
@@ -11539,7 +11833,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::gWLFsDNQ9424rBlA',
+        'as' => 'generated::1bbCQOAIWobR6lsU',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11555,7 +11849,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XVJQMU2OrCHXUMR8' => 
+    'generated::72m3pMo1lzTGsuTB' => 
     array (
       'methods' => 
       array (
@@ -11574,7 +11868,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XVJQMU2OrCHXUMR8',
+        'as' => 'generated::72m3pMo1lzTGsuTB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11590,7 +11884,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::OCozJBJNl7ajnntw' => 
+    'generated::ySZV5opqEDyaAeN5' => 
     array (
       'methods' => 
       array (
@@ -11608,7 +11902,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::OCozJBJNl7ajnntw',
+        'as' => 'generated::ySZV5opqEDyaAeN5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11624,7 +11918,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::8D4DXE8xrhmNo911' => 
+    'generated::qpt4RLrV8jjfj1qh' => 
     array (
       'methods' => 
       array (
@@ -11643,7 +11937,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::8D4DXE8xrhmNo911',
+        'as' => 'generated::qpt4RLrV8jjfj1qh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11659,7 +11953,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Xd5XBsKLFxE1EvAR' => 
+    'generated::bGYwaqi51exLVRck' => 
     array (
       'methods' => 
       array (
@@ -11677,7 +11971,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Xd5XBsKLFxE1EvAR',
+        'as' => 'generated::bGYwaqi51exLVRck',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11693,7 +11987,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::fvgqfnunEgNZv4Ep' => 
+    'generated::wZpzPASwwMFcdLvl' => 
     array (
       'methods' => 
       array (
@@ -11712,7 +12006,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::fvgqfnunEgNZv4Ep',
+        'as' => 'generated::wZpzPASwwMFcdLvl',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11728,7 +12022,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Ouer6dGJZXJQykYG' => 
+    'generated::zKoH7dSfFgxLiuBr' => 
     array (
       'methods' => 
       array (
@@ -11746,7 +12040,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Ouer6dGJZXJQykYG',
+        'as' => 'generated::zKoH7dSfFgxLiuBr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11762,7 +12056,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::TVPErbb16GY9ja2k' => 
+    'generated::jFW0x9bWqI16Veo4' => 
     array (
       'methods' => 
       array (
@@ -11781,7 +12075,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::TVPErbb16GY9ja2k',
+        'as' => 'generated::jFW0x9bWqI16Veo4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11797,7 +12091,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::iP5jhz6SPdedTMn8' => 
+    'generated::RRsYzUpSopfom2h8' => 
     array (
       'methods' => 
       array (
@@ -11815,7 +12109,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::iP5jhz6SPdedTMn8',
+        'as' => 'generated::RRsYzUpSopfom2h8',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11831,7 +12125,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::s9XH9rnJFgQod1Y4' => 
+    'generated::K8VhCajUyiCENnUB' => 
     array (
       'methods' => 
       array (
@@ -11850,7 +12144,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::s9XH9rnJFgQod1Y4',
+        'as' => 'generated::K8VhCajUyiCENnUB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11866,7 +12160,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2hbcKtmkyoRWtyN9' => 
+    'generated::3V8M5SeFepMGIqc4' => 
     array (
       'methods' => 
       array (
@@ -11884,7 +12178,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::2hbcKtmkyoRWtyN9',
+        'as' => 'generated::3V8M5SeFepMGIqc4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11900,7 +12194,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::A3ntLfIUTjLZMDYX' => 
+    'generated::ISYYnd9lwU0geD9m' => 
     array (
       'methods' => 
       array (
@@ -11919,7 +12213,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::A3ntLfIUTjLZMDYX',
+        'as' => 'generated::ISYYnd9lwU0geD9m',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11935,7 +12229,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4Fcjzf2BZpwpU7KY' => 
+    'generated::Uf9jeDO8JvpICYo0' => 
     array (
       'methods' => 
       array (
@@ -11953,7 +12247,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4Fcjzf2BZpwpU7KY',
+        'as' => 'generated::Uf9jeDO8JvpICYo0',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11969,7 +12263,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Xv8p5ywK5YsSqsXQ' => 
+    'generated::jQ7JG244I41xSxHV' => 
     array (
       'methods' => 
       array (
@@ -11988,7 +12282,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Xv8p5ywK5YsSqsXQ',
+        'as' => 'generated::jQ7JG244I41xSxHV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12004,7 +12298,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Rx4lj5iNum912O32' => 
+    'generated::6fnGzhPGGWJ6Z9p8' => 
     array (
       'methods' => 
       array (
@@ -12022,7 +12316,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Rx4lj5iNum912O32',
+        'as' => 'generated::6fnGzhPGGWJ6Z9p8',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12038,7 +12332,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Mql4lIKaTr6d7Bkz' => 
+    'generated::JsbsXWOuAPC5Ye2H' => 
     array (
       'methods' => 
       array (
@@ -12057,7 +12351,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Mql4lIKaTr6d7Bkz',
+        'as' => 'generated::JsbsXWOuAPC5Ye2H',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12073,7 +12367,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Y16PPFEdqTvYPZAp' => 
+    'generated::ssoHH6aRBcvWAolF' => 
     array (
       'methods' => 
       array (
@@ -12091,7 +12385,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Y16PPFEdqTvYPZAp',
+        'as' => 'generated::ssoHH6aRBcvWAolF',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12107,7 +12401,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::IxjpSb7sd849rs7I' => 
+    'generated::ecCbOt0xy0WeTK6J' => 
     array (
       'methods' => 
       array (
@@ -12126,7 +12420,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::IxjpSb7sd849rs7I',
+        'as' => 'generated::ecCbOt0xy0WeTK6J',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12142,7 +12436,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::dIYRgzHGmBkAn4LU' => 
+    'generated::qSXG6aGGZin07DMM' => 
     array (
       'methods' => 
       array (
@@ -12160,7 +12454,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::dIYRgzHGmBkAn4LU',
+        'as' => 'generated::qSXG6aGGZin07DMM',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12176,7 +12470,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::GQEYOYePWZCT4rML' => 
+    'generated::VCQku8zllywD08ld' => 
     array (
       'methods' => 
       array (
@@ -12195,7 +12489,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::GQEYOYePWZCT4rML',
+        'as' => 'generated::VCQku8zllywD08ld',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12211,7 +12505,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2JvefDqaLW1LAu7s' => 
+    'generated::DydMlLyy5cU6oQcd' => 
     array (
       'methods' => 
       array (
@@ -12229,7 +12523,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::2JvefDqaLW1LAu7s',
+        'as' => 'generated::DydMlLyy5cU6oQcd',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12245,7 +12539,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::SNyXF6v09Kd3GdRK' => 
+    'generated::S9LvHk4KbKaQbLe7' => 
     array (
       'methods' => 
       array (
@@ -12264,7 +12558,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::SNyXF6v09Kd3GdRK',
+        'as' => 'generated::S9LvHk4KbKaQbLe7',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12280,7 +12574,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::YEOlrUMiK5eH0p1r' => 
+    'generated::QKpLGIs7yRRch2Pi' => 
     array (
       'methods' => 
       array (
@@ -12298,7 +12592,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::YEOlrUMiK5eH0p1r',
+        'as' => 'generated::QKpLGIs7yRRch2Pi',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12314,7 +12608,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::x8HuwxuzJUc7Suof' => 
+    'generated::VL6a3u3BuVvlXMFg' => 
     array (
       'methods' => 
       array (
@@ -12333,7 +12627,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::x8HuwxuzJUc7Suof',
+        'as' => 'generated::VL6a3u3BuVvlXMFg',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12349,7 +12643,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::gWH3Q4DO9rKhPggP' => 
+    'generated::bcwyL52JDg6BzpZi' => 
     array (
       'methods' => 
       array (
@@ -12367,7 +12661,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::gWH3Q4DO9rKhPggP',
+        'as' => 'generated::bcwyL52JDg6BzpZi',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12383,7 +12677,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7lnPJHVFkafR705u' => 
+    'generated::KtAiUIyevVpYbCJT' => 
     array (
       'methods' => 
       array (
@@ -12402,7 +12696,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::7lnPJHVFkafR705u',
+        'as' => 'generated::KtAiUIyevVpYbCJT',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12418,7 +12712,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4ElTmq0MIxJR2Tf0' => 
+    'generated::gF0Nk5U3uV3n4ZRJ' => 
     array (
       'methods' => 
       array (
@@ -12437,7 +12731,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4ElTmq0MIxJR2Tf0',
+        'as' => 'generated::gF0Nk5U3uV3n4ZRJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12453,7 +12747,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::z6nByoiXYiiSQB5T' => 
+    'generated::hiNG6pkBI0zGaKrA' => 
     array (
       'methods' => 
       array (
@@ -12471,7 +12765,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::z6nByoiXYiiSQB5T',
+        'as' => 'generated::hiNG6pkBI0zGaKrA',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12487,7 +12781,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::cd2cox0MeWvCAMCq' => 
+    'generated::uxnwC4xjGDzqIHsY' => 
     array (
       'methods' => 
       array (
@@ -12505,7 +12799,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::cd2cox0MeWvCAMCq',
+        'as' => 'generated::uxnwC4xjGDzqIHsY',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12521,7 +12815,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Lj59frGE5eyj1D8B' => 
+    'generated::Nq6yLHMzJLeawNfg' => 
     array (
       'methods' => 
       array (
@@ -12539,7 +12833,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Lj59frGE5eyj1D8B',
+        'as' => 'generated::Nq6yLHMzJLeawNfg',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12555,7 +12849,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::bg6rz17Qgw3VGRT3' => 
+    'generated::R4Vs0PGSE3nCNYwc' => 
     array (
       'methods' => 
       array (
@@ -12573,7 +12867,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::bg6rz17Qgw3VGRT3',
+        'as' => 'generated::R4Vs0PGSE3nCNYwc',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12625,7 +12919,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::hkjHVYpMVG2rpSNV' => 
+    'generated::Fngrkl2fouASxUis' => 
     array (
       'methods' => 
       array (
@@ -12651,7 +12945,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
         ),
-        'as' => 'generated::hkjHVYpMVG2rpSNV',
+        'as' => 'generated::Fngrkl2fouASxUis',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12683,7 +12977,7 @@ app('router')->setCompiledRoutes(
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012730000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012a70000000000000000";}}',
         'as' => 'storage.local',
       ),
       'fallback' => false,
@@ -12718,7 +13012,7 @@ app('router')->setCompiledRoutes(
                         \'spec\' => $generator($config),
                         \'config\' => $config,
                     ]);
-                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012710000000000000000";}}',
+                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012a50000000000000000";}}',
         'as' => 'scramble.docs.ui',
         'middleware' => 
         array (
@@ -12754,7 +13048,7 @@ app('router')->setCompiledRoutes(
                     $config = \\Dedoc\\Scramble\\Scramble::getGeneratorConfig($api);
 
                     return response()->json($generator($config), options: JSON_PRETTY_PRINT);
-                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"000000000000126f0000000000000000";}}',
+                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012a30000000000000000";}}',
         'as' => 'scramble.docs.document',
         'middleware' => 
         array (

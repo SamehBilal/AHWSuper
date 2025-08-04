@@ -51,7 +51,7 @@ return Application::configure(basePath: dirname(__DIR__))
                 $segments = explode('/', $path);
                 $module = $segments[0] ?? null;
                 // List your module names here as needed
-                $modules = ['developers', 'roles', 'ahwstore'];
+                $modules = ['developers', 'roles', 'ahwstore', 'store'];
                 if ($module && in_array($module, $modules)) {
                     if ($module === 'roles') {
                         // Exception: roles module goes to login without 'from'

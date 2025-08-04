@@ -42,7 +42,7 @@ new #[Layout('ahwstore::components.layouts.master')] class extends Component {
                 'image' => asset('ahwstores.webp'),
                 'title' => 'AHW Store first',
                 'description' => 'We love last week frameworks.',
-                'url' => '/docs/installation',
+                'url' => '/#',
                 'urlText' => 'Get started',
             ],
             /* [

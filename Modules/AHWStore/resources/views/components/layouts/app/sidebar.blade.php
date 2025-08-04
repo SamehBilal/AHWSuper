@@ -91,7 +91,7 @@
                             <div class="input">https://ahw.store/</div>
                         </div>
                         <div class="grid place-content-center border-t border-base-300 w-50">
-                            <img src="{{ asset('ahwstores.png') }}" height="580" alt="">
+                            <img src="{{ asset('store.png') }}" height="580" alt="">
                         </div>
                     </div>
                 </x-slot:content>

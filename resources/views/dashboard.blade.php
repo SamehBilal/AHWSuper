@@ -14,10 +14,10 @@
 
     $slides = [
         [
-            'image' => asset('ahwstores.png'),
+            'image' => asset('store.png'),
             'title' => 'AHW Store first',
             'description' => 'We love last week frameworks.',
-            /* 'url' => '/docs/installation',
+            /* 'url' => '/#',
             'urlText' => 'Get started', */
         ],
         [

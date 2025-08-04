@@ -21,7 +21,7 @@ class VoltServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-         $mountPaths = [
+         /* $mountPaths = [
             config('livewire.view_path', resource_path('views/livewire')),
             resource_path('views/pages'),
         ];
@@ -33,6 +33,12 @@ class VoltServiceProvider extends ServiceProvider
                 $mountPaths[] = $moduleLivewirePath;
             }
         }
+
+        Volt::mount($mountPaths); */
+        $mountPaths = [
+            config('livewire.view_path', resource_path('views/livewire')),
+            resource_path('views/pages'),
+        ];
 
         Volt::mount($mountPaths);
     }

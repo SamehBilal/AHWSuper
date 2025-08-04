@@ -1,5 +1,6 @@
 {
     "Roles": true,
-    "AHWStore": true,
-    "Developers": true
+    "AHWStore": false,
+    "Developers": true,
+    "Store": true
 }

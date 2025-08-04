@@ -1,7 +1,4 @@
 <?php return array (
-  'Modules\\AHWStore\\Providers\\EventServiceProvider' => 
-  array (
-  ),
   'Modules\\Developers\\Providers\\EventServiceProvider' => 
   array (
   ),
@@ -17,6 +14,9 @@
       5 => 'SocialiteProviders\\Microsoft\\MicrosoftExtendSocialite@handle',
       6 => 'SocialiteProviders\\Slack\\SlackExtendSocialite@handle',
     ),
+  ),
+  'Modules\\Store\\Providers\\EventServiceProvider' => 
+  array (
   ),
   'Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider' => 
   array (
