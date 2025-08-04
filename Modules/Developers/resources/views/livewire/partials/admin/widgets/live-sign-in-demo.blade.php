@@ -20,7 +20,7 @@ new class extends Component {
             </div>
 
             <div
-                class="font-medium [:where(&)]:text-zinc-800 [:where(&)]:dark:text-white text-2xl [&:has(+[data-flux-subheading])]:mb-2 [[data-flux-subheading]+&]:mt-2">
+                class="font-medium text-2xl [&:has(+[data-flux-subheading])]:mb-2 [[data-flux-subheading]+&]:mt-2">
                 Arabhardware Social Login Integration
             </div>
             <div class="text-sm">Experience seamless authentication with ArabHardware OAuth</div>

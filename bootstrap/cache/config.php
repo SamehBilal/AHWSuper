@@ -150,9 +150,9 @@
       'reverb' => 
       array (
         'driver' => 'reverb',
-        'key' => 'k4se8qqvyrjombvvi9s1',
-        'secret' => 'elmto72kkdkdbbx3flrk',
-        'app_id' => '928329',
+        'key' => 'ojeyjsaam1cvfoujvrik',
+        'secret' => 's5qbznhtbetfjnjpznnh',
+        'app_id' => '732050',
         'options' => 
         array (
           'host' => 'localhost',
@@ -303,7 +303,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'ahwsuper',
+        'database' => 'AHWSuper',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -316,7 +316,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '5432',
-        'database' => 'ahwsuper',
+        'database' => 'AHWSuper',
         'username' => 'postgres',
         'password' => 'root',
         'unix_socket' => '',
@@ -336,7 +336,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '5432',
-        'database' => 'ahwsuper',
+        'database' => 'AHWSuper',
         'username' => 'postgres',
         'password' => 'root',
         'unix_socket' => '',
@@ -356,7 +356,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '5432',
-        'database' => 'ahwsuper',
+        'database' => 'AHWSuper',
         'username' => 'postgres',
         'password' => 'root',
         'charset' => 'utf8',
@@ -371,7 +371,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '5432',
-        'database' => 'ahwsuper',
+        'database' => 'AHWSuper',
         'username' => 'postgres',
         'password' => 'root',
         'charset' => 'utf8',
@@ -1871,9 +1871,9 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
       array (
         0 => 
         array (
-          'key' => 'k4se8qqvyrjombvvi9s1',
-          'secret' => 'elmto72kkdkdbbx3flrk',
-          'app_id' => '928329',
+          'key' => 'ojeyjsaam1cvfoujvrik',
+          'secret' => 's5qbznhtbetfjnjpznnh',
+          'app_id' => '732050',
           'options' => 
           array (
             'host' => 'localhost',

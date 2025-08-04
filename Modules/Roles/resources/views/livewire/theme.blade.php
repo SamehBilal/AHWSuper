@@ -85,6 +85,7 @@ new class extends Component {
             </div>
         </div>
 
+
         <x-slot:actions>
             <x-mary-button label="{{ __('Cancel') }}" @click="$wire.themeModal = false" />
         </x-slot:actions>
@@ -98,4 +99,5 @@ new class extends Component {
             <div class="grid place-content-center border-t border-base-300">{{ __('Theme') }}</div>
         </x-slot:content>
     </x-mary-popover>
+    {{-- <x-mary-theme-toggle class="hidden" /> --}}
 </div>
