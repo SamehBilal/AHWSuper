@@ -23,3 +23,5 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+bootstrap/cache/config.php
+bootstrap/cache/routes-v7.php
