@@ -36,7 +36,13 @@
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
-@vite(['resources/assets/css/app.css', 'resources/assets/js/app.js'], 'build-developers')
+@if(app()->environment('local'))
+    {{-- For local development - use full paths --}}
+    @vite(['modules/developers/resources/assets/css/app.css', 'modules/developers/resources/assets/js/app.js'], 'build-developers')
+@else
+    {{-- For production - use relative paths that match manifest --}}
+    @vite(['resources/assets/css/app.css', 'resources/assets/js/app.js'], 'build-developers')
+@endif
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
