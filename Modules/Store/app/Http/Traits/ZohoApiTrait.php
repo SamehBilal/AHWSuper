@@ -10,7 +10,7 @@ trait ZohoApiTrait
     protected function getZohoSettings()
     {
         // You may want to cache this for performance
-        /* APIToken::create([
+        APIToken::create([
             'provider' => 'zoho',
             'access_token' => "1000.45864334a53f33b50b4dd38a0e4f6c77.612bdebad967b0f322a74ae51a63f7c2",
             'refresh_token' => "1000.54cfd932bfbcd3f04a766cac5d5cbf7b.4adb24c10b724f8351f679f172ae5ecf",
@@ -19,7 +19,7 @@ trait ZohoApiTrait
             'redirect_url' => 'http://127.0.0.1:8000/auth/zoho/callback',
             'base_url' => "https://www.zohoapis.com/inventory/v1/",
             'organization_id' => "889324195",
-        ]); */
+        ]);
 
         /* https://accounts.zoho.com/oauth/v2/auth?
                 scope=ZohoInventory.fullaccess.all&
