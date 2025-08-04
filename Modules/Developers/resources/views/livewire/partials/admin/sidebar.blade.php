@@ -58,8 +58,8 @@ new class extends Component {
 
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
-                            <x-mary-menu-item icon="o-user-group" :tooltip="__('User Management')" route="roles.index"
-                                link="{{ route('roles.index') }}" wire:navigate />
+                            <x-mary-menu-item icon="o-user-group" :tooltip="__('User Management')" 
+                                link="#" wire:navigate />
                         </x-slot:trigger>
                         <x-slot:content>
                             {{ __('User Management') }}
@@ -68,8 +68,8 @@ new class extends Component {
 
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
-                            <x-mary-menu-item icon="o-chart-bar" :tooltip="__('App Monitoring')" route="roles.index"
-                                link="{{ route('roles.index') }}" wire:navigate />
+                            <x-mary-menu-item icon="o-chart-bar" :tooltip="__('App Monitoring')"
+                                link="#" wire:navigate />
                         </x-slot:trigger>
                         <x-slot:content>
                             {{ __('App Monitoring') }}
@@ -78,8 +78,8 @@ new class extends Component {
 
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
-                            <x-mary-menu-item icon="o-briefcase" :tooltip="__('Ads Management')" route="roles.index"
-                                link="{{ route('roles.index') }}" wire:navigate />
+                            <x-mary-menu-item icon="o-briefcase" :tooltip="__('Ads Management')"
+                                link="#" wire:navigate />
                         </x-slot:trigger>
                         <x-slot:content>
                             {{ __('Ads Management') }}
@@ -88,8 +88,8 @@ new class extends Component {
 
                     <x-mary-popover position="right-start" offset="0">
                         <x-slot:trigger>
-                            <x-mary-menu-item icon="o-document-text" :tooltip="__('Editors')" route="roles.index"
-                                link="{{ route('roles.index') }}" wire:navigate />
+                            <x-mary-menu-item icon="o-document-text" :tooltip="__('Editors')"
+                                link="#" wire:navigate />
                         </x-slot:trigger>
                         <x-slot:content>
                             {{ __('Editors') }}
