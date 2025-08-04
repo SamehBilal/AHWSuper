@@ -36,7 +36,7 @@
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
-@vite(['Modules/Developers/resources/assets/css/app.css', 'Modules/Developers/resources/assets/js/app.js'], 'build-developers')
+@vite(['modules/developers/resources/assets/css/app.css', 'modules/developers/resources/assets/js/app.js'], 'build-developers')
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
