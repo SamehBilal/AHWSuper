@@ -1,16 +1,27 @@
 {
+  "_highlight-nSGkUMep.js": {
+    "file": "assets/highlight-nSGkUMep.js",
+    "name": "highlight"
+  },
   "resources/assets/css/app.css": {
-    "file": "assets/css/app-Z8KhxU_s.css",
+    "file": "assets/css/app-Dl0mNEwB.css",
     "src": "resources/assets/css/app.css",
     "isEntry": true,
     "names": [
       "app.css"
     ]
   },
+  "resources/assets/fonts/helvetica/HelveticaNeuellight.woff2": {
+    "file": "assets/HelveticaNeuellight-DmswXXy7.woff2",
+    "src": "resources/assets/fonts/helvetica/HelveticaNeuellight.woff2"
+  },
   "resources/assets/js/app.js": {
-    "file": "assets/app-DteYYhcy.js",
+    "file": "assets/app-Bnt3EDyU.js",
     "name": "app",
     "src": "resources/assets/js/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_highlight-nSGkUMep.js"
+    ]
   }
 }
