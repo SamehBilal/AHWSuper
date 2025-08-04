@@ -14,6 +14,6 @@ Route::get('/', function () {
 
 Route::redirect('dashboard', 'store/admin/dashboard')
     ->middleware(['auth', 'verified', 'two-factor'])
-    ->name('dashboard.redirect');
+    ->name('dashboard');
 
 require __DIR__.'/auth.php';

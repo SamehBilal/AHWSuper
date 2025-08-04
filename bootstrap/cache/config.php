@@ -6,7 +6,7 @@
   array (
     'name' => 'Arabhardware',
     'env' => 'local',
-    'debug' => false,
+    'debug' => true,
     'url' => 'http://localhost',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
@@ -656,6 +656,7 @@
     'middleware' => 
     array (
       0 => 'web',
+      1 => 'auth',
     ),
     'waits' => 
     array (
@@ -1645,7 +1646,7 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
     'middleware' => 
     array (
       0 => 'web',
-      1 => 'Laravel\\Pulse\\Http\\Middleware\\Authorize',
+      1 => 'auth',
     ),
     'recorders' => 
     array (
@@ -2189,7 +2190,7 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
     'middleware' => 
     array (
       0 => 'web',
-      1 => 'Laravel\\Telescope\\Http\\Middleware\\Authorize',
+      1 => 'auth',
     ),
     'only_paths' => 
     array (
