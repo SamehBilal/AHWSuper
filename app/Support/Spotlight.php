@@ -5,7 +5,7 @@ namespace App\Support;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Blade;
-use Modules\AHWStore\Http\Traits\ZohoApiTrait;
+use Modules\Store\Http\Traits\ZohoApiTrait;
 use Illuminate\Support\Facades\Auth;
 use Exception;
 

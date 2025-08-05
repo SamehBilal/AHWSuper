@@ -45,7 +45,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Passport::authorizationView(function ($parameters) {
-            return view('roles::livewire.auth.authorize1', [
+            return view('users::livewire.auth.authorize1', [
             'client' => $parameters['client'],
             'user' => $parameters['user'],
             'scopes' => $parameters['scopes'],

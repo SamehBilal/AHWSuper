@@ -4,24 +4,22 @@ use Livewire\Volt\Component;
 
 new class extends Component {
     public $user;
-    public $apps;
+    public $author;
+    public $message;
+    public $users;
 
     public function mount()
     {
+        [$this->message, $this->author] = str(Illuminate\Foundation\Inspiring::quotes()->random())->explode('-');
         $this->user = Auth::user();
-        $this->loadApps($this->user);
-    }
-
-    public function loadApps($user)
-    {
-        $this->apps = $user->developerApps()->get();
+        $this->users = \App\Models\User::count();
     }
 }; ?>
 
 <div class="card border border-dashed bg-base-100 border-base-content/10 border-b-[length:var(--border)] p-4">
     <div class="flex items-center w-full gap-4">
         <!-- Welcome -->
-        <div class="flex items-center w-1/2">
+        <div class="flex items-center w-1/3">
             <div class="relative">
                 <div class="avatar">
                     <div class="w-14 rounded-full">
@@ -40,22 +38,23 @@ new class extends Component {
             </div>
         </div>
 
-        <div class="flex w-1/2 items-center justify-between">
+        <div class="flex w-2/3 items-center justify-between">
             <!-- Tasks -->
-            <div class="text-center">
+            <div class="text-center w-2/3">
                 <div class="flex items-baseline justify-center space-x-2">
-                    <p class="text-4xl font-bold">{{ $apps->count() }}</p>
-                    <p class="text-xl">App(s)</p>
+                    <p class="text-4xl font-bold">{{ $users }}</p>
+                    <p class="text-xl">User(s)</p>
                 </div>
-                <p class="text-sm opacity-80">Are currently in your wallet</p>
+                <p class="text-sm opacity-80">Are currently in your system</p>
             </div>
 
-            <!-- CTA -->
-            <x-mary-card class=" bg-primary text-neutral-content ">
-                <p>Start using our team and project management tools</p>
-                <a href="/api/docs" class="link font-bold">Learn More</a>
+            <x-mary-card class="bg-primary text-neutral-content w-2/3"
+                title="Tip of today!">
+                <blockquote>"{{ trim($message) }}"</blockquote>
+                <p class="mt-1 font-semibold">{{ trim($author) }}</p>
+
                 <div class="absolute bottom-2 right-2 text-neutral-content">
-                    <x-mary-icon name="o-document" class="w-7 h-7  opacity-20" />
+                    <x-mary-icon name="o-trophy" class="w-7 h-7 opacity-20" />
                 </div>
             </x-mary-card>
         </div>

@@ -8,11 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-/* Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified', 'two-factor'])
-    ->name('dashboard'); */
-
-Route::redirect('dashboard', 'store/admin/dashboard')
+Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified', 'two-factor'])
     ->name('dashboard');
 

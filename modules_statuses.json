@@ -1,6 +1,6 @@
 {
-    "Roles": true,
-    "AHWStore": false,
     "Developers": true,
-    "Store": true
+    "Store": true,
+    "Users": true,
+    "Invoices": true
 }

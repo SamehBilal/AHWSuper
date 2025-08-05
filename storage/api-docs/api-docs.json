@@ -11,13 +11,13 @@
     },
     "servers": [
         {
-            "url": "http://localhost:8000",
+            "url": "https://demo.arabhardware.net",
             "description": "Arabhardware API Server"
         }
     ],
     "paths": {
         "/api/": {},
-        "api/v1/ahwstore/customers": {
+        "api/v1/store/customers": {
             "get": {
                 "tags": [
                     "Customers"
@@ -1009,7 +1009,7 @@
                 }
             }
         },
-        "api/v1/ahwstore/customers/{id}": {
+        "api/v1/store/customers/{id}": {
             "get": {
                 "tags": [
                     "Customers"
@@ -2049,7 +2049,7 @@
                 }
             }
         },
-        "/api/v1/ahwstore/sales-orders": {
+        "/api/v1/store/sales-orders": {
             "get": {
                 "tags": [
                     "SalesOrders"
@@ -2108,7 +2108,7 @@
                 }
             }
         },
-        "/api/v1/ahwstore/sales-orders/{id}": {
+        "/api/v1/store/sales-orders/{id}": {
             "get": {
                 "tags": [
                     "SalesOrders"
@@ -2215,7 +2215,7 @@
                 }
             }
         },
-        "/api/v1/ahwstore/sales-orders/{id}/status/confirmed": {
+        "/api/v1/store/sales-orders/{id}/status/confirmed": {
             "post": {
                 "tags": [
                     "SalesOrders"
@@ -2257,7 +2257,7 @@
                 }
             }
         },
-        "/api/v1/ahwstore/sales-orders/{id}/status/void": {
+        "/api/v1/store/sales-orders/{id}/status/void": {
             "post": {
                 "tags": [
                     "SalesOrders"
@@ -2299,7 +2299,7 @@
                 }
             }
         },
-        "/api/v1/ahwstore/sales-orders/status/confirmed": {
+        "/api/v1/store/sales-orders/status/confirmed": {
             "post": {
                 "tags": [
                     "SalesOrders"

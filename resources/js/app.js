@@ -5,6 +5,7 @@
  */
 
 import './echo';
+import './calendar';
 (function () {
     const savedTheme = localStorage.getItem('theme') || 'light';
     //alert('Theme is set to: ' + savedTheme);

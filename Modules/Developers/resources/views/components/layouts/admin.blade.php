@@ -7,7 +7,7 @@
 
 <body class="min-h-screen overflow-x-hidden" {{-- data-theme="dark" --}}>
     {{--  Navbar --}}
-    <livewire:partials.admin.navbar />
+    <livewire:admin.navbar :badge="true" :logoText="false" />
 
     <x-mary-main with-nav full-width>
 
@@ -23,7 +23,7 @@
 
     <x-mary-spotlight
         shortcut="{{ str_contains(request()->header('User-Agent'), 'Mac') ? 'meta.k' : 'ctrl.k' }}"
-        search-text="Find your apps" 
+        search-text="Find your apps"
         no-results-text="Ops! Nothing here.">
         {{-- <div x-data="{ query: { withUsers: true, withActions: true } }" x-init="$watch('query', value => $dispatch('mary-search', new URLSearchParams(value).toString()))" class="flex gap-8 p-3">
             <x-mary-checkbox label="Users" x-model="query.withUsers" />

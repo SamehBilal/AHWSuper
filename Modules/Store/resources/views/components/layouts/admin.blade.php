@@ -2,22 +2,17 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
 
 <head>
-    @include('store::livewire.partials.admin.head', ['title' => $pageTitle ?? 'Store Dashboard | Arabhardware'])
+    @include('store::livewire.store.partials.admin.head', ['title' => $pageTitle ?? 'Store Dashboard | Arabhardware'])
 </head>
 
 <body class="min-h-screen overflow-x-hidden" {{-- data-theme="dark" --}}>
     {{--  Navbar --}}
-    {{-- <livewire:partials.admin.navbar /> --}}
-    {{-- <livewire:store.partials.admin.navbar /> --}}
+    <livewire:admin.navbar :badge="false" :logoText="true" />
 
-    @include('store::livewire.partials.admin.navbar')
 
     <x-mary-main with-nav full-width>
 
-        {{-- @livewire('store::livewire.partials.admin.sidebar') --}}
-        {{-- @include('store::livewire.partials.admin.sidebar') --}}
-        {{-- <livewire:partials.admin.sidebar /> --}}
-        @include('store::livewire.partials.admin.sidebar')
+        <livewire:store.partials.admin.sidebar />
 
         <x-slot:content>
             {{ $slot }}

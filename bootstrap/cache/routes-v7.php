@@ -589,7 +589,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KlcuXzwSLQLs3Ias',
+            '_route' => 'generated::7u9lFWzEP6bVLQGc',
           ),
           1 => NULL,
           2 => 
@@ -609,7 +609,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::VLn3DeHzL2zViyWT',
+            '_route' => 'generated::K2TRQeWs81RD6Gv6',
           ),
           1 => NULL,
           2 => 
@@ -629,7 +629,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::aoemBUbhUpe1PD7u',
+            '_route' => 'generated::Dssqy8MWbAaXClb8',
           ),
           1 => NULL,
           2 => 
@@ -649,7 +649,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ar9uZrbth8bs6OzW',
+            '_route' => 'generated::72GTSvogyM5d5Nvz',
           ),
           1 => NULL,
           2 => 
@@ -669,7 +669,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Pz0fu3EOAfUF9Ex8',
+            '_route' => 'generated::a3my98MRWY1PtoSt',
           ),
           1 => NULL,
           2 => 
@@ -708,7 +708,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::b9Cp02QAwASCZUr4',
+            '_route' => 'generated::iBA7LSgD8XHuDPcK',
           ),
           1 => NULL,
           2 => 
@@ -728,7 +728,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::3871MH1yik0EOWon',
+            '_route' => 'generated::GNVEU8VzENdheeCC',
           ),
           1 => NULL,
           2 => 
@@ -767,7 +767,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::0SMIi1tyMSp9wiZT',
+            '_route' => 'generated::OlQlyNOOw0d3ETgt',
           ),
           1 => NULL,
           2 => 
@@ -786,7 +786,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::RDifbiN3ji6WtMOI',
+            '_route' => 'generated::q4KnKpaSVQU5M7Jj',
           ),
           1 => NULL,
           2 => 
@@ -806,7 +806,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::HrrMdZkm8q2qveyB',
+            '_route' => 'generated::cjL1ONtyZVnWKUkd',
           ),
           1 => NULL,
           2 => 
@@ -826,7 +826,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::oAGs3j4I0fK9VQ1f',
+            '_route' => 'generated::aJejR5gDwn1wdbbD',
           ),
           1 => NULL,
           2 => 
@@ -846,7 +846,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::UcsacZ6x5wdxkKme',
+            '_route' => 'generated::dvbDxxUF6tD55beq',
           ),
           1 => NULL,
           2 => 
@@ -866,7 +866,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::yxXAX8Fz23w4qmPR',
+            '_route' => 'generated::89Zb1iMM9kbwYP7N',
           ),
           1 => NULL,
           2 => 
@@ -886,7 +886,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::1YKJIiigwYzTho1r',
+            '_route' => 'generated::rKk1t8O7lQwqiKzF',
           ),
           1 => NULL,
           2 => 
@@ -906,7 +906,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::l5a582wWncoWr2mt',
+            '_route' => 'generated::rSH9GKulG1yU7qD0',
           ),
           1 => NULL,
           2 => 
@@ -953,11 +953,6 @@ app('router')->setCompiledRoutes(
           array (
             'GET' => 0,
             'HEAD' => 1,
-            'POST' => 2,
-            'PUT' => 3,
-            'PATCH' => 4,
-            'DELETE' => 5,
-            'OPTIONS' => 6,
           ),
           3 => NULL,
           4 => false,
@@ -1261,13 +1256,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/api/v1/roles' => 
+      '/api/v1/invoices' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.roles.index',
+            '_route' => 'api.invoices.index',
           ),
           1 => NULL,
           2 => 
@@ -1284,7 +1279,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.roles.store',
+            '_route' => 'api.invoices.store',
           ),
           1 => NULL,
           2 => 
@@ -1297,38 +1292,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/settings' => 
+      '/invoices/admin/dashboard' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::IM6MrRtqctQRw8Dd',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-            'POST' => 2,
-            'PUT' => 3,
-            'PATCH' => 4,
-            'DELETE' => 5,
-            'OPTIONS' => 6,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/settings/profile' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.profile',
+            '_route' => 'invoices.dashboard',
           ),
           1 => NULL,
           2 => 
@@ -1342,113 +1312,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/settings/password' => 
+      '/invoices' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'settings.password',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/settings/appearance' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.appearance',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/settings/two-factor' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.two-factor',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/settings/sessions' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.sessions',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/settings/users' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.users',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/roles' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'roles.index',
+            '_route' => 'invoices.index',
           ),
           1 => NULL,
           2 => 
@@ -1465,7 +1335,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'roles.store',
+            '_route' => 'invoices.store',
           ),
           1 => NULL,
           2 => 
@@ -1478,178 +1348,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/roles/create' => 
+      '/invoices/create' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'roles.create',
+            '_route' => 'invoices.create',
           ),
           1 => NULL,
           2 => 
           array (
             'GET' => 0,
             'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/login' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'login',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/register' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'register',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/forgot-password' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.request',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/available-drivers' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'social.available-drivers',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/verify-email' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'verification.notice',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/confirm-password' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.confirm',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/two-factor-verify' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'two-factor-verify',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/logout' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'logout',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
@@ -1735,7 +1446,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.generated::YiOhb7zuAoUeLcVM',
+            '_route' => 'api.generated::54X05ZvEp03fjYOt',
           ),
           1 => NULL,
           2 => 
@@ -2088,6 +1799,422 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/api/v1/users' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.users.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.users.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/settings' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+            'POST' => 2,
+            'PUT' => 3,
+            'PATCH' => 4,
+            'DELETE' => 5,
+            'OPTIONS' => 6,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/dashboard' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.dashboard',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/settings/profile' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.settings.profile',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/settings/password' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.settings.password',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/settings/appearance' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.settings.appearance',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/settings/two-factor' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.settings.two-factor',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/settings/sessions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.settings.sessions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/admin/settings/users' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.settings.users',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/users/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/login' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'login',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/register' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'register',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/forgot-password' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'password.request',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/available-drivers' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'social.available-drivers',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/verify-email' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'verification.notice',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/confirm-password' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'password.confirm',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/two-factor-verify' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'two-factor-verify',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/logout' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'logout',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/mary/toogle-sidebar' => 
       array (
         0 => 
@@ -2173,7 +2300,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QwDA9AvIink0Yhrh',
+            '_route' => 'generated::gnoohLEJ0a7lrOQb',
           ),
           1 => NULL,
           2 => 
@@ -2192,7 +2319,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::t947cCIUQNlKS5Bp',
+            '_route' => 'generated::wiJnRcytIG80aTdh',
           ),
           1 => NULL,
           2 => 
@@ -2211,7 +2338,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::wk6bOYEMI66oqD8P',
+            '_route' => 'generated::6SFBXlfPVVa1Cm6E',
           ),
           1 => NULL,
           2 => 
@@ -2230,7 +2357,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::AsNxUGfOk8Jx56dB',
+            '_route' => 'generated::ppYiXzvmLtFcbAnU',
           ),
           1 => NULL,
           2 => 
@@ -2249,7 +2376,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nOITmQQfnOTfSNEY',
+            '_route' => 'generated::jlG8yLypZV3EgWgj',
           ),
           1 => NULL,
           2 => 
@@ -2268,7 +2395,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Hnu2yKQqsAg4qL8K',
+            '_route' => 'generated::LwW0cQbF1vaQdGP4',
           ),
           1 => NULL,
           2 => 
@@ -2287,7 +2414,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::9d6042rfvvYkqTaI',
+            '_route' => 'generated::zWS0GUAUmOp4giBL',
           ),
           1 => NULL,
           2 => 
@@ -2306,7 +2433,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::AJfWCU0yK8TZyJIt',
+            '_route' => 'generated::wDTHbrzuEALkJ5Q2',
           ),
           1 => NULL,
           2 => 
@@ -2325,7 +2452,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::EwiKFwtwfe1Du94c',
+            '_route' => 'generated::TW1tAULw2Z2nDWzT',
           ),
           1 => NULL,
           2 => 
@@ -2344,7 +2471,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::oowefVs359iTO7DV',
+            '_route' => 'generated::VQkHYgw5K2L2XWI4',
           ),
           1 => NULL,
           2 => 
@@ -2363,7 +2490,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XgRpwHEdZnLMmF9x',
+            '_route' => 'generated::3CcFpO4Nsrn1sbIa',
           ),
           1 => NULL,
           2 => 
@@ -2382,7 +2509,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::l2q6xvnFdvcjYqjt',
+            '_route' => 'generated::bGLFdgXSxvnVC7JN',
           ),
           1 => NULL,
           2 => 
@@ -2401,7 +2528,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4fbbSS17CIzbJb8z',
+            '_route' => 'generated::DJdDhHSwIdhee4Wr',
           ),
           1 => NULL,
           2 => 
@@ -2420,7 +2547,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::mjzvNIsT9BH39x6P',
+            '_route' => 'generated::5brJKG1oh4VeqnDp',
           ),
           1 => NULL,
           2 => 
@@ -2439,7 +2566,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::clmAk3Q01D6U7fOo',
+            '_route' => 'generated::TQtEvHNBDlXrcxMI',
           ),
           1 => NULL,
           2 => 
@@ -2458,7 +2585,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::5dBsshExDn4A8Sgv',
+            '_route' => 'generated::Rrby0RztDedkOED7',
           ),
           1 => NULL,
           2 => 
@@ -2477,7 +2604,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::JPXAS4isRJwDnrFg',
+            '_route' => 'generated::H0lhtqQ8aAEbF3OG',
           ),
           1 => NULL,
           2 => 
@@ -2496,7 +2623,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::AZQ4bYvwQOjpasR5',
+            '_route' => 'generated::juSujEQ8dpFPENkK',
           ),
           1 => NULL,
           2 => 
@@ -2515,7 +2642,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::bDXXQPg0ladwYarW',
+            '_route' => 'generated::NyllLSUese6gTPlG',
           ),
           1 => NULL,
           2 => 
@@ -2532,7 +2659,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::M9XuEF1Rwz3Wj3XF',
+            '_route' => 'generated::9QO0zlZ3qN0wWpmw',
           ),
           1 => NULL,
           2 => 
@@ -2551,7 +2678,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::K0l9daRoRCZDTm3q',
+            '_route' => 'generated::MyMaH2dSU8srLk8P',
           ),
           1 => NULL,
           2 => 
@@ -2570,7 +2697,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XsmfRVZW8B3oCVtV',
+            '_route' => 'generated::UU4jr0Yr4PnZJeJb',
           ),
           1 => NULL,
           2 => 
@@ -2589,7 +2716,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::CUCpKFJZuiUfLko5',
+            '_route' => 'generated::oIujGDQzlFwrwj1n',
           ),
           1 => NULL,
           2 => 
@@ -2608,7 +2735,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KFSvVN3MUMQXOvTa',
+            '_route' => 'generated::rjZAR5BJmDkew2iJ',
           ),
           1 => NULL,
           2 => 
@@ -2666,7 +2793,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/_debugbar/(?|c(?|lockwork/([^/]++)(*:42)|ache/([^/]++)(?:/([^/]++))?(*:76))|telescope/([^/]++)(*:102))|/d(?|ocs/asset/([^/]++)(*:134)|evelopers/(?|admin/app(?|s/([^/]++)/edit(*:182)|\\-tester/([^/]++)(?|(*:210)|/(?|accept(*:228)|reject(*:242))))|developers/([^/]++)(?|(*:275)|/edit(*:288)|(*:296))))|/monitoring/(?|horizon(?|/api/(?|m(?|onitoring/(?|([^/]++)(*:365)|(.*)(*:377))|etrics/(?|jobs/([^/]++)(*:409)|queues/([^/]++)(*:432)))|batches/(?|([^/]++)(*:461)|retry/([^/]++)(*:483))|jobs/(?|failed/([^/]++)(*:515)|retry/([^/]++)(*:537)|([^/]++)(*:553)))|(?:/((?:.*)))?(*:577))|telescope(?|/telescope\\-api/(?|m(?|ail/([^/]++)(?|(*:636)|/(?|preview(*:655)|download(*:671)))|odels/([^/]++)(*:695))|e(?|xceptions/([^/]++)(?|(*:729))|vents/([^/]++)(*:752))|logs/([^/]++)(*:774)|notifications/([^/]++)(*:804)|jobs/([^/]++)(*:825)|batches/([^/]++)(*:849)|gates/([^/]++)(*:871)|c(?|ache/([^/]++)(*:896)|ommands/([^/]++)(*:920)|lient\\-requests/([^/]++)(*:952))|queries/([^/]++)(*:977)|re(?|quests/([^/]++)(*:1005)|dis/([^/]++)(*:1026))|views/([^/]++)(*:1050)|schedule/([^/]++)(*:1076))|(?:/((?:.*)))?(*:1100)))|/l(?|ivewire/preview\\-file/([^/]++)(*:1146)|ogin/([^/]++)(?|(*:1171)|/callback(*:1189)))|/api/(?|apps/([^/]++)/testers(?|(*:1232)|/([^/]++)(?|(*:1253)|/resend(*:1269)))|invitations/([^/]++)/(?|accept(*:1310)|reject(*:1325))|v1/(?|roles/([^/]++)(?|(*:1358))|store(?|/(?|i(?|tems/([^/]++)(?|(*:1400))|nvoices/([^/]++)(?|(*:1429)))|sales\\-orders/([^/]++)(?|(*:1465)|/status/(?|confirmed(*:1494)|void(*:1507)))|customers/([^/]++)(?|(*:1539))|vendors/([^/]++)(?|(*:1568))|purchase\\-orders/([^/]++)(?|(*:1606)))|s/([^/]++)(?|(*:1630)))))|/r(?|oles/([^/]++)(?|(*:1664)|/edit(*:1678)|(*:1687))|eset\\-password/([^/]++)(*:1720))|/verify\\-email/([^/]++)/([^/]++)(*:1762)|/storage/(.*)(*:1784))/?$}sDu',
+      0 => '{^(?|/_debugbar/(?|c(?|lockwork/([^/]++)(*:42)|ache/([^/]++)(?:/([^/]++))?(*:76))|telescope/([^/]++)(*:102))|/d(?|ocs/asset/([^/]++)(*:134)|evelopers/(?|admin/app(?|s/([^/]++)/edit(*:182)|\\-tester/([^/]++)(?|(*:210)|/(?|accept(*:228)|reject(*:242))))|developers/([^/]++)(?|(*:275)|/edit(*:288)|(*:296))))|/monitoring/(?|horizon(?|/api/(?|m(?|onitoring/(?|([^/]++)(*:365)|(.*)(*:377))|etrics/(?|jobs/([^/]++)(*:409)|queues/([^/]++)(*:432)))|batches/(?|([^/]++)(*:461)|retry/([^/]++)(*:483))|jobs/(?|failed/([^/]++)(*:515)|retry/([^/]++)(*:537)|([^/]++)(*:553)))|(?:/((?:.*)))?(*:577))|telescope(?|/telescope\\-api/(?|m(?|ail/([^/]++)(?|(*:636)|/(?|preview(*:655)|download(*:671)))|odels/([^/]++)(*:695))|e(?|xceptions/([^/]++)(?|(*:729))|vents/([^/]++)(*:752))|logs/([^/]++)(*:774)|notifications/([^/]++)(*:804)|jobs/([^/]++)(*:825)|batches/([^/]++)(*:849)|gates/([^/]++)(*:871)|c(?|ache/([^/]++)(*:896)|ommands/([^/]++)(*:920)|lient\\-requests/([^/]++)(*:952))|queries/([^/]++)(*:977)|re(?|quests/([^/]++)(*:1005)|dis/([^/]++)(*:1026))|views/([^/]++)(*:1050)|schedule/([^/]++)(*:1076))|(?:/((?:.*)))?(*:1100)))|/l(?|ivewire/preview\\-file/([^/]++)(*:1146)|ogin/([^/]++)(?|(*:1171)|/callback(*:1189)))|/api/(?|apps/([^/]++)/testers(?|(*:1232)|/([^/]++)(?|(*:1253)|/resend(*:1269)))|invitations/([^/]++)/(?|accept(*:1310)|reject(*:1325))|v1/(?|invoices/([^/]++)(?|(*:1361))|store(?|/(?|i(?|tems/([^/]++)(?|(*:1403))|nvoices/([^/]++)(?|(*:1432)))|sales\\-orders/([^/]++)(?|(*:1468)|/status/(?|confirmed(*:1497)|void(*:1510)))|customers/([^/]++)(?|(*:1542))|vendors/([^/]++)(?|(*:1571))|purchase\\-orders/([^/]++)(?|(*:1609)))|s/([^/]++)(?|(*:1633)))|users/([^/]++)(?|(*:1661))))|/invoices/([^/]++)(?|(*:1694)|/edit(*:1708)|(*:1717))|/users/([^/]++)(?|(*:1745)|/edit(*:1759)|(*:1768))|/reset\\-password/([^/]++)(*:1803)|/verify\\-email/([^/]++)/([^/]++)(*:1844)|/storage/(.*)(*:1866))/?$}sDu',
     ),
     3 => 
     array (
@@ -3175,7 +3302,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::3CDzlcEvwjpgtFgk',
+            '_route' => 'generated::tygvQ7W4SrbyuzIm',
           ),
           1 => 
           array (
@@ -3198,7 +3325,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Yg2H5hZTksybDDZ8',
+            '_route' => 'generated::dGJwe2snyRlHtSV6',
           ),
           1 => 
           array (
@@ -3221,7 +3348,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::FN0fFLT7gHIz0C7x',
+            '_route' => 'generated::ovQMy2zcGRnhRYYI',
           ),
           1 => 
           array (
@@ -3244,7 +3371,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::jRqNfkURFdqHGZQH',
+            '_route' => 'generated::730mQXbHOh8mP5HQ',
           ),
           1 => 
           array (
@@ -3267,7 +3394,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::58Ip93Tgza5E8Z2R',
+            '_route' => 'generated::mGzMVhlS8Emk8Wdn',
           ),
           1 => 
           array (
@@ -3287,7 +3414,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::YyM9Jmq5LCHyqFWv',
+            '_route' => 'generated::2QWuOn7UbuOR6MAg',
           ),
           1 => 
           array (
@@ -3309,7 +3436,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BZSKS84imQNU8ey2',
+            '_route' => 'generated::GojPTCCprTEJDHEX',
           ),
           1 => 
           array (
@@ -3332,7 +3459,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::s5SG9KkwvXBZBxQ1',
+            '_route' => 'generated::7JxwR2NIGFoUMgIc',
           ),
           1 => 
           array (
@@ -3355,7 +3482,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::UYvCHNUFypzHDKll',
+            '_route' => 'generated::NMLJdRgLpvWNxUWv',
           ),
           1 => 
           array (
@@ -3378,7 +3505,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::jKQyaaXIr48KdGcC',
+            '_route' => 'generated::jmaGdggSeI3XlrWP',
           ),
           1 => 
           array (
@@ -3401,7 +3528,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::P2utsA8gC9063nJk',
+            '_route' => 'generated::IW9S5AR1bHWSQkKy',
           ),
           1 => 
           array (
@@ -3424,7 +3551,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BjhUMIJm0umgw3aw',
+            '_route' => 'generated::fJ42sZHlmmfYmq6X',
           ),
           1 => 
           array (
@@ -3447,7 +3574,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::UIjJqwG3BiqWZeEq',
+            '_route' => 'generated::UY4bsuQoW5DfQNvd',
           ),
           1 => 
           array (
@@ -3470,7 +3597,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::q6MB05gvS3rupZas',
+            '_route' => 'generated::3pF26iPI2vgwAJyy',
           ),
           1 => 
           array (
@@ -3493,7 +3620,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::RlmRc65mXXkQNqfb',
+            '_route' => 'generated::tuwuyXmJxCfVg2dZ',
           ),
           1 => 
           array (
@@ -3516,7 +3643,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4nsIsOEh99wrndN1',
+            '_route' => 'generated::ycfcOR650fycID58',
           ),
           1 => 
           array (
@@ -3539,7 +3666,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::hXWjkrCaQ58jhZRy',
+            '_route' => 'generated::V3izqP8sYGMGeEj3',
           ),
           1 => 
           array (
@@ -3562,7 +3689,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::oHjW3aph8nIfXKbG',
+            '_route' => 'generated::YzTAPPsylmsxG2u6',
           ),
           1 => 
           array (
@@ -3585,7 +3712,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::kjWt6izYURxQkhqA',
+            '_route' => 'generated::PopE7XzuAJghlqu7',
           ),
           1 => 
           array (
@@ -3608,7 +3735,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::NCxle5XGOKtWek9h',
+            '_route' => 'generated::QYnpBHMiCSyRahAV',
           ),
           1 => 
           array (
@@ -3701,7 +3828,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::CzKCUzQrZuQvQBJR',
+            '_route' => 'generated::FtbGOnx2uYuvLBOM',
           ),
           1 => 
           array (
@@ -3744,7 +3871,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.generated::cH02coI5VGUa7bek',
+            '_route' => 'api.generated::3iMPaTsEmTQ5PNkn',
           ),
           1 => 
           array (
@@ -3766,7 +3893,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.generated::ktoZP9AHJG8rnMWE',
+            '_route' => 'api.generated::NH2R466Z5jrSXt5L',
           ),
           1 => 
           array (
@@ -3789,7 +3916,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.generated::DrscEpkxynP7wdtB',
+            '_route' => 'api.generated::pj5NgO8LMyIyu6Ge',
           ),
           1 => 
           array (
@@ -3812,7 +3939,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.generated::ykjpg1Z2FokH5fUa',
+            '_route' => 'api.generated::wLfnqhugrE5lzPJW',
           ),
           1 => 
           array (
@@ -3834,7 +3961,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.generated::ZYrvpUH8bsM3OwRw',
+            '_route' => 'api.generated::cST8LRQ4pzOtdRuC',
           ),
           1 => 
           array (
@@ -3850,17 +3977,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1358 => 
+      1361 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.roles.show',
+            '_route' => 'api.invoices.show',
           ),
           1 => 
           array (
-            0 => 'role',
+            0 => 'invoice',
           ),
           2 => 
           array (
@@ -3876,11 +4003,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.roles.update',
+            '_route' => 'api.invoices.update',
           ),
           1 => 
           array (
-            0 => 'role',
+            0 => 'invoice',
           ),
           2 => 
           array (
@@ -3896,11 +4023,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'api.roles.destroy',
+            '_route' => 'api.invoices.destroy',
           ),
           1 => 
           array (
-            0 => 'role',
+            0 => 'invoice',
           ),
           2 => 
           array (
@@ -3912,7 +4039,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1400 => 
+      1403 => 
       array (
         0 => 
         array (
@@ -3974,7 +4101,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1429 => 
+      1432 => 
       array (
         0 => 
         array (
@@ -4036,7 +4163,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1465 => 
+      1468 => 
       array (
         0 => 
         array (
@@ -4098,13 +4225,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1494 => 
+      1497 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::AuyBzjiwyfdtDGxU',
+            '_route' => 'api.generated::eSaL3yojIwjzVONp',
           ),
           1 => 
           array (
@@ -4120,13 +4247,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1507 => 
+      1510 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'api.generated::C5JaJONZ78J6Y0I8',
+            '_route' => 'api.generated::9Iaw2RUoXJgI2Fho',
           ),
           1 => 
           array (
@@ -4142,7 +4269,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1539 => 
+      1542 => 
       array (
         0 => 
         array (
@@ -4204,7 +4331,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1568 => 
+      1571 => 
       array (
         0 => 
         array (
@@ -4266,7 +4393,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1606 => 
+      1609 => 
       array (
         0 => 
         array (
@@ -4328,7 +4455,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1630 => 
+      1633 => 
       array (
         0 => 
         array (
@@ -4390,17 +4517,79 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1664 => 
+      1661 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'roles.show',
+            '_route' => 'api.users.show',
           ),
           1 => 
           array (
-            0 => 'role',
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.users.update',
+          ),
+          1 => 
+          array (
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'api.users.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1694 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'invoices.show',
+          ),
+          1 => 
+          array (
+            0 => 'invoice',
           ),
           2 => 
           array (
@@ -4413,17 +4602,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1678 => 
+      1708 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'roles.edit',
+            '_route' => 'invoices.edit',
           ),
           1 => 
           array (
-            0 => 'role',
+            0 => 'invoice',
           ),
           2 => 
           array (
@@ -4436,17 +4625,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1687 => 
+      1717 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'roles.update',
+            '_route' => 'invoices.update',
           ),
           1 => 
           array (
-            0 => 'role',
+            0 => 'invoice',
           ),
           2 => 
           array (
@@ -4462,11 +4651,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'roles.destroy',
+            '_route' => 'invoices.destroy',
           ),
           1 => 
           array (
-            0 => 'role',
+            0 => 'invoice',
           ),
           2 => 
           array (
@@ -4478,7 +4667,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1720 => 
+      1745 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.show',
+          ),
+          1 => 
+          array (
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1759 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.edit',
+          ),
+          1 => 
+          array (
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      1768 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.update',
+          ),
+          1 => 
+          array (
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1803 => 
       array (
         0 => 
         array (
@@ -4501,7 +4778,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1762 => 
+      1844 => 
       array (
         0 => 
         array (
@@ -4525,7 +4802,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1784 => 
+      1866 => 
       array (
         0 => 
         array (
@@ -6210,7 +6487,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:158:"function (\\Laravel\\Pulse\\Pulse $pulse, \\Illuminate\\View\\Factory $view) {
                         return $view->make(\'pulse::dashboard\');
-                    }";s:5:"scope";s:34:"Laravel\\Pulse\\PulseServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000caa0000000000000000";}}',
+                    }";s:5:"scope";s:34:"Laravel\\Pulse\\PulseServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000cc00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'monitoring/pulse',
         'where' => 
@@ -6232,7 +6509,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::KlcuXzwSLQLs3Ias' => 
+    'generated::7u9lFWzEP6bVLQGc' => 
     array (
       'methods' => 
       array (
@@ -6244,7 +6521,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@fluxJs',
         'controller' => 'Flux\\AssetManager@fluxJs',
-        'as' => 'generated::KlcuXzwSLQLs3Ias',
+        'as' => 'generated::7u9lFWzEP6bVLQGc',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6260,7 +6537,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::VLn3DeHzL2zViyWT' => 
+    'generated::K2TRQeWs81RD6Gv6' => 
     array (
       'methods' => 
       array (
@@ -6272,7 +6549,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@fluxMinJs',
         'controller' => 'Flux\\AssetManager@fluxMinJs',
-        'as' => 'generated::VLn3DeHzL2zViyWT',
+        'as' => 'generated::K2TRQeWs81RD6Gv6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6288,7 +6565,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::aoemBUbhUpe1PD7u' => 
+    'generated::Dssqy8MWbAaXClb8' => 
     array (
       'methods' => 
       array (
@@ -6300,7 +6577,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@editorCss',
         'controller' => 'Flux\\AssetManager@editorCss',
-        'as' => 'generated::aoemBUbhUpe1PD7u',
+        'as' => 'generated::Dssqy8MWbAaXClb8',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6316,7 +6593,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ar9uZrbth8bs6OzW' => 
+    'generated::72GTSvogyM5d5Nvz' => 
     array (
       'methods' => 
       array (
@@ -6328,7 +6605,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@editorJs',
         'controller' => 'Flux\\AssetManager@editorJs',
-        'as' => 'generated::ar9uZrbth8bs6OzW',
+        'as' => 'generated::72GTSvogyM5d5Nvz',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6344,7 +6621,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Pz0fu3EOAfUF9Ex8' => 
+    'generated::a3my98MRWY1PtoSt' => 
     array (
       'methods' => 
       array (
@@ -6356,7 +6633,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Flux\\AssetManager@editorMinJs',
         'controller' => 'Flux\\AssetManager@editorMinJs',
-        'as' => 'generated::Pz0fu3EOAfUF9Ex8',
+        'as' => 'generated::a3my98MRWY1PtoSt',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6403,7 +6680,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::b9Cp02QAwASCZUr4' => 
+    'generated::iBA7LSgD8XHuDPcK' => 
     array (
       'methods' => 
       array (
@@ -6415,7 +6692,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
-        'as' => 'generated::b9Cp02QAwASCZUr4',
+        'as' => 'generated::iBA7LSgD8XHuDPcK',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6431,7 +6708,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::3871MH1yik0EOWon' => 
+    'generated::GNVEU8VzENdheeCC' => 
     array (
       'methods' => 
       array (
@@ -6443,7 +6720,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
-        'as' => 'generated::3871MH1yik0EOWon',
+        'as' => 'generated::GNVEU8VzENdheeCC',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6514,7 +6791,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::0SMIi1tyMSp9wiZT' => 
+    'generated::OlQlyNOOw0d3ETgt' => 
     array (
       'methods' => 
       array (
@@ -6534,7 +6811,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::0SMIi1tyMSp9wiZT',
+        'as' => 'generated::OlQlyNOOw0d3ETgt',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6550,7 +6827,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::RDifbiN3ji6WtMOI' => 
+    'generated::q4KnKpaSVQU5M7Jj' => 
     array (
       'methods' => 
       array (
@@ -6567,13 +6844,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000012920000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000012c30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::RDifbiN3ji6WtMOI',
+        'as' => 'generated::q4KnKpaSVQU5M7Jj',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6589,7 +6866,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::HrrMdZkm8q2qveyB' => 
+    'generated::cjL1ONtyZVnWKUkd' => 
     array (
       'methods' => 
       array (
@@ -6620,13 +6897,13 @@ app('router')->setCompiledRoutes(
         $clients = $user->oauthApps()->get();
 
         \\dd($clients);
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011bb0000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011f40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::HrrMdZkm8q2qveyB',
+        'as' => 'generated::cjL1ONtyZVnWKUkd',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6642,7 +6919,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::oAGs3j4I0fK9VQ1f' => 
+    'generated::aJejR5gDwn1wdbbD' => 
     array (
       'methods' => 
       array (
@@ -6683,13 +6960,13 @@ app('router')->setCompiledRoutes(
         ]);
 
         return \\redirect(\'http://localhost:8000/oauth/authorize?\' . $query);
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011bd0000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011f60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::oAGs3j4I0fK9VQ1f',
+        'as' => 'generated::aJejR5gDwn1wdbbD',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6705,7 +6982,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::UcsacZ6x5wdxkKme' => 
+    'generated::dvbDxxUF6tD55beq' => 
     array (
       'methods' => 
       array (
@@ -6756,13 +7033,13 @@ app('router')->setCompiledRoutes(
                 \'state\' => $request->state,
             ]);
         }
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000da10000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011a20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::UcsacZ6x5wdxkKme',
+        'as' => 'generated::dvbDxxUF6tD55beq',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6778,7 +7055,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::yxXAX8Fz23w4qmPR' => 
+    'generated::89Zb1iMM9kbwYP7N' => 
     array (
       'methods' => 
       array (
@@ -6837,13 +7114,13 @@ app('router')->setCompiledRoutes(
                 \'state\' => $request->state,
             ]);
         }
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d9d0000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011a40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::yxXAX8Fz23w4qmPR',
+        'as' => 'generated::89Zb1iMM9kbwYP7N',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6859,7 +7136,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::1YKJIiigwYzTho1r' => 
+    'generated::rKk1t8O7lQwqiKzF' => 
     array (
       'methods' => 
       array (
@@ -6875,13 +7152,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:86:"function () {
     return \\response()->file(\\storage_path(\'api-docs/api-docs.json\'));
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011b70000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000011f00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::1YKJIiigwYzTho1r',
+        'as' => 'generated::rKk1t8O7lQwqiKzF',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6897,7 +7174,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::l5a582wWncoWr2mt' => 
+    'generated::rSH9GKulG1yU7qD0' => 
     array (
       'methods' => 
       array (
@@ -6925,8 +7202,8 @@ app('router')->setCompiledRoutes(
                     return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\sameh\\\\OneDrive\\\\Documents\\\\GitHub\\\\AHWSuper\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000012850000000000000000";}}',
-        'as' => 'generated::l5a582wWncoWr2mt',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000012b60000000000000000";}}',
+        'as' => 'generated::rSH9GKulG1yU7qD0',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6958,7 +7235,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000dbe0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d820000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6986,11 +7263,6 @@ app('router')->setCompiledRoutes(
       array (
         0 => 'GET',
         1 => 'HEAD',
-        2 => 'POST',
-        3 => 'PUT',
-        4 => 'PATCH',
-        5 => 'DELETE',
-        6 => 'OPTIONS',
       ),
       'uri' => 'dashboard',
       'action' => 
@@ -7002,8 +7274,8 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => '\\Illuminate\\Routing\\RedirectController@__invoke',
-        'controller' => '\\Illuminate\\Routing\\RedirectController',
+        'uses' => '\\Illuminate\\Routing\\ViewController@__invoke',
+        'controller' => '\\Illuminate\\Routing\\ViewController',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7014,8 +7286,14 @@ app('router')->setCompiledRoutes(
       'fallback' => false,
       'defaults' => 
       array (
-        'destination' => 'store/admin/dashboard',
-        'status' => 302,
+        'view' => 'dashboard',
+        'data' => 
+        array (
+        ),
+        'status' => 200,
+        'headers' => 
+        array (
+        ),
       ),
       'wheres' => 
       array (
@@ -7065,7 +7343,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::cH02coI5VGUa7bek' => 
+    'api.generated::3iMPaTsEmTQ5PNkn' => 
     array (
       'methods' => 
       array (
@@ -7081,7 +7359,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@store',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@store',
-        'as' => 'api.generated::cH02coI5VGUa7bek',
+        'as' => 'api.generated::3iMPaTsEmTQ5PNkn',
         'namespace' => NULL,
         'prefix' => 'api/apps/{app}/testers',
         'where' => 
@@ -7102,7 +7380,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::ktoZP9AHJG8rnMWE' => 
+    'api.generated::NH2R466Z5jrSXt5L' => 
     array (
       'methods' => 
       array (
@@ -7118,7 +7396,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@destroy',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@destroy',
-        'as' => 'api.generated::ktoZP9AHJG8rnMWE',
+        'as' => 'api.generated::NH2R466Z5jrSXt5L',
         'namespace' => NULL,
         'prefix' => 'api/apps/{app}/testers',
         'where' => 
@@ -7139,7 +7417,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::DrscEpkxynP7wdtB' => 
+    'api.generated::pj5NgO8LMyIyu6Ge' => 
     array (
       'methods' => 
       array (
@@ -7155,7 +7433,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@resend',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@resend',
-        'as' => 'api.generated::DrscEpkxynP7wdtB',
+        'as' => 'api.generated::pj5NgO8LMyIyu6Ge',
         'namespace' => NULL,
         'prefix' => 'api/apps/{app}/testers',
         'where' => 
@@ -7176,7 +7454,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::ykjpg1Z2FokH5fUa' => 
+    'api.generated::wLfnqhugrE5lzPJW' => 
     array (
       'methods' => 
       array (
@@ -7192,7 +7470,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@accept',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@accept',
-        'as' => 'api.generated::ykjpg1Z2FokH5fUa',
+        'as' => 'api.generated::wLfnqhugrE5lzPJW',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
@@ -7213,7 +7491,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::ZYrvpUH8bsM3OwRw' => 
+    'api.generated::cST8LRQ4pzOtdRuC' => 
     array (
       'methods' => 
       array (
@@ -7229,7 +7507,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@reject',
         'controller' => 'Modules\\Developers\\Http\\Controllers\\API\\V1\\TesterApiController@reject',
-        'as' => 'api.generated::ZYrvpUH8bsM3OwRw',
+        'as' => 'api.generated::cST8LRQ4pzOtdRuC',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
@@ -7272,7 +7550,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d980000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dad0000000000000000";}}',
         'as' => 'developers.privacy',
         'namespace' => NULL,
         'prefix' => '/developers',
@@ -7316,7 +7594,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d880000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dac0000000000000000";}}',
         'as' => 'developers.index',
         'namespace' => NULL,
         'prefix' => '/developers',
@@ -7400,7 +7678,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d9c0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dbc0000000000000000";}}',
         'as' => 'developers.apps',
         'namespace' => NULL,
         'prefix' => '/developers',
@@ -7446,7 +7724,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000da90000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dc20000000000000000";}}',
         'as' => 'developers.dashboard',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7492,7 +7770,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dab0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dc40000000000000000";}}',
         'as' => 'developers.login-button',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7538,7 +7816,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dad0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dc70000000000000000";}}',
         'as' => 'developers.app-verification',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7584,7 +7862,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000daf0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dc90000000000000000";}}',
         'as' => 'developers.oauth2',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7630,7 +7908,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db10000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dcb0000000000000000";}}',
         'as' => 'developers.app-testers',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7676,7 +7954,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db30000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dcd0000000000000000";}}',
         'as' => 'developers.apps.index',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7722,7 +8000,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db50000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dcf0000000000000000";}}',
         'as' => 'developers.apps.create',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7768,7 +8046,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db70000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dd10000000000000000";}}',
         'as' => 'developers.apps.edit',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -7814,7 +8092,7 @@ app('router')->setCompiledRoutes(
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db90000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000dd30000000000000000";}}',
         'as' => 'developers.tickets',
         'namespace' => NULL,
         'prefix' => 'developers/admin',
@@ -8232,14 +8510,14 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.roles.index' => 
+    'api.invoices.index' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'api/v1/roles',
+      'uri' => 'api/v1/invoices',
       'action' => 
       array (
         'middleware' => 
@@ -8247,9 +8525,9 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:api',
         ),
-        'as' => 'api.roles.index',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@index',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@index',
+        'as' => 'api.invoices.index',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@index',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@index',
         'namespace' => NULL,
         'prefix' => 'api/v1',
         'where' => 
@@ -8270,13 +8548,13 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.roles.store' => 
+    'api.invoices.store' => 
     array (
       'methods' => 
       array (
         0 => 'POST',
       ),
-      'uri' => 'api/v1/roles',
+      'uri' => 'api/v1/invoices',
       'action' => 
       array (
         'middleware' => 
@@ -8284,9 +8562,9 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:api',
         ),
-        'as' => 'api.roles.store',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@store',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@store',
+        'as' => 'api.invoices.store',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@store',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@store',
         'namespace' => NULL,
         'prefix' => 'api/v1',
         'where' => 
@@ -8307,14 +8585,14 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.roles.show' => 
+    'api.invoices.show' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'api/v1/roles/{role}',
+      'uri' => 'api/v1/invoices/{invoice}',
       'action' => 
       array (
         'middleware' => 
@@ -8322,9 +8600,9 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:api',
         ),
-        'as' => 'api.roles.show',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@show',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@show',
+        'as' => 'api.invoices.show',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@show',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@show',
         'namespace' => NULL,
         'prefix' => 'api/v1',
         'where' => 
@@ -8345,14 +8623,14 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.roles.update' => 
+    'api.invoices.update' => 
     array (
       'methods' => 
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
-      'uri' => 'api/v1/roles/{role}',
+      'uri' => 'api/v1/invoices/{invoice}',
       'action' => 
       array (
         'middleware' => 
@@ -8360,9 +8638,9 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:api',
         ),
-        'as' => 'api.roles.update',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@update',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@update',
+        'as' => 'api.invoices.update',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@update',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@update',
         'namespace' => NULL,
         'prefix' => 'api/v1',
         'where' => 
@@ -8383,13 +8661,13 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.roles.destroy' => 
+    'api.invoices.destroy' => 
     array (
       'methods' => 
       array (
         0 => 'DELETE',
       ),
-      'uri' => 'api/v1/roles/{role}',
+      'uri' => 'api/v1/invoices/{invoice}',
       'action' => 
       array (
         'middleware' => 
@@ -8397,9 +8675,9 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:api',
         ),
-        'as' => 'api.roles.destroy',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@destroy',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@destroy',
+        'as' => 'api.invoices.destroy',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@destroy',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@destroy',
         'namespace' => NULL,
         'prefix' => 'api/v1',
         'where' => 
@@ -8420,19 +8698,14 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::IM6MrRtqctQRw8Dd' => 
+    'invoices.dashboard' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
-        2 => 'POST',
-        3 => 'PUT',
-        4 => 'PATCH',
-        5 => 'DELETE',
-        6 => 'OPTIONS',
       ),
-      'uri' => 'settings',
+      'uri' => 'invoices/admin/dashboard',
       'action' => 
       array (
         'middleware' => 
@@ -8442,62 +8715,20 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => '\\Illuminate\\Routing\\RedirectController@__invoke',
-        'controller' => '\\Illuminate\\Routing\\RedirectController',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::IM6MrRtqctQRw8Dd',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-        'destination' => 'settings/profile',
-        'status' => 302,
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'settings.profile' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'settings/profile',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:16:"settings.profile";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:18:"invoices.dashboard";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d710000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000db40000000000000000";}}',
+        'as' => 'invoices.dashboard',
         'namespace' => NULL,
-        'prefix' => '',
+        'prefix' => '/invoices/admin',
         'where' => 
         array (
         ),
-        'as' => 'settings.profile',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8513,37 +8744,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'settings.password' => 
+    'invoices.index' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'settings/password',
+      'uri' => 'invoices',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:17:"settings.password";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011910000000000000000";}}',
+        'as' => 'invoices.index',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@index',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@index',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'settings.password',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8559,210 +8781,23 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'settings.appearance' => 
+    'invoices.create' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'settings/appearance',
+      'uri' => 'invoices/create',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"settings.appearance";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011930000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'settings.appearance',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'settings.two-factor' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'settings/two-factor',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"settings.two-factor";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011950000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'settings.two-factor',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'settings.sessions' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'settings/sessions',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:17:"settings.sessions";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011970000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'settings.sessions',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'settings.users' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'settings/users',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:14:"settings.users";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011990000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'settings.users',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'roles.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'roles',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
-        ),
-        'as' => 'roles.index',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@index',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@index',
+        'as' => 'invoices.create',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@create',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@create',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8783,65 +8818,22 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'roles.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'roles/create',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
-        ),
-        'as' => 'roles.create',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@create',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@create',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'roles.store' => 
+    'invoices.store' => 
     array (
       'methods' => 
       array (
         0 => 'POST',
       ),
-      'uri' => 'roles',
+      'uri' => 'invoices',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
         ),
-        'as' => 'roles.store',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@store',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@store',
+        'as' => 'invoices.store',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@store',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@store',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8862,26 +8854,23 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'roles.show' => 
+    'invoices.show' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'roles/{role}',
+      'uri' => 'invoices/{invoice}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
         ),
-        'as' => 'roles.show',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@show',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@show',
+        'as' => 'invoices.show',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@show',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@show',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8902,26 +8891,23 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'roles.edit' => 
+    'invoices.edit' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'roles/{role}/edit',
+      'uri' => 'invoices/{invoice}/edit',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
         ),
-        'as' => 'roles.edit',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@edit',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@edit',
+        'as' => 'invoices.edit',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@edit',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@edit',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8942,26 +8928,23 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'roles.update' => 
+    'invoices.update' => 
     array (
       'methods' => 
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
-      'uri' => 'roles/{role}',
+      'uri' => 'invoices/{invoice}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
         ),
-        'as' => 'roles.update',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@update',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@update',
+        'as' => 'invoices.update',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@update',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@update',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8982,529 +8965,27 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'roles.destroy' => 
+    'invoices.destroy' => 
     array (
       'methods' => 
       array (
         0 => 'DELETE',
       ),
-      'uri' => 'roles/{role}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'verified',
-          3 => 'two-factor',
-        ),
-        'as' => 'roles.destroy',
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\RolesController@destroy',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\RolesController@destroy',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'login' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'login',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'guest',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:10:"auth.login";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000119c0000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'login',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'register' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'register',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'guest',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:13:"auth.register";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000119d0000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'register',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.request' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'forgot-password',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'guest',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:20:"auth.forgot-password";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011a60000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.request',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.reset' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'reset-password/{token}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'guest',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"auth.reset-password";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011a80000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.reset',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'social.login' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'login/{provider}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'guest',
-        ),
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\Auth\\SocialAuthController@redirectToProvider',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\Auth\\SocialAuthController@redirectToProvider',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'social.login',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::CzKCUzQrZuQvQBJR' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'login/{provider}/callback',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'guest',
-        ),
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\Auth\\SocialAuthController@handleProviderCallback',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\Auth\\SocialAuthController@handleProviderCallback',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::CzKCUzQrZuQvQBJR',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'social.available-drivers' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'available-drivers',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'guest',
-        ),
-        'uses' => 'Modules\\Roles\\Http\\Controllers\\Auth\\SocialAuthController@getAvailableDrivers',
-        'controller' => 'Modules\\Roles\\Http\\Controllers\\Auth\\SocialAuthController@getAvailableDrivers',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'social.available-drivers',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'verification.notice' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'verify-email',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:17:"auth.verify-email";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ad0000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'verification.notice',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'verification.verify' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'verify-email/{id}/{hash}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'signed',
-          3 => 'throttle:6,1',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Auth\\VerifyEmailController@__invoke',
-        'controller' => 'App\\Http\\Controllers\\Auth\\VerifyEmailController',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'verification.verify',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.confirm' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'confirm-password',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:21:"auth.confirm-password";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b00000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.confirm',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'two-factor-verify' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'two-factor-verify',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'auth',
-          2 => 'has-two-factor',
-        ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:22:"auth.two-factor-verify";}s:8:"function";s:294:"function () use ($componentName) {
-            $container = \\Illuminate\\Container\\Container::getInstance();
-
-            return $container->call([
-                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
-                \'__invoke\',
-            ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011b20000000000000000";}}',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'two-factor-verify',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'logout' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'logout',
+      'uri' => 'invoices/{invoice}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Livewire\\Actions\\Logout@__invoke',
-        'controller' => 'App\\Livewire\\Actions\\Logout',
+        'as' => 'invoices.destroy',
+        'uses' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@destroy',
+        'controller' => 'Modules\\Invoices\\Http\\Controllers\\InvoicesController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'logout',
       ),
       'fallback' => false,
       'defaults' => 
@@ -9886,7 +9367,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::AuyBzjiwyfdtDGxU' => 
+    'api.generated::eSaL3yojIwjzVONp' => 
     array (
       'methods' => 
       array (
@@ -9901,7 +9382,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsConfirmed',
         'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsConfirmed',
-        'as' => 'api.generated::AuyBzjiwyfdtDGxU',
+        'as' => 'api.generated::eSaL3yojIwjzVONp',
         'namespace' => NULL,
         'prefix' => 'api/v1/store',
         'where' => 
@@ -9922,7 +9403,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::C5JaJONZ78J6Y0I8' => 
+    'api.generated::9Iaw2RUoXJgI2Fho' => 
     array (
       'methods' => 
       array (
@@ -9937,7 +9418,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsVoid',
         'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@markAsVoid',
-        'as' => 'api.generated::C5JaJONZ78J6Y0I8',
+        'as' => 'api.generated::9Iaw2RUoXJgI2Fho',
         'namespace' => NULL,
         'prefix' => 'api/v1/store',
         'where' => 
@@ -9958,7 +9439,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'api.generated::YiOhb7zuAoUeLcVM' => 
+    'api.generated::54X05ZvEp03fjYOt' => 
     array (
       'methods' => 
       array (
@@ -9973,7 +9454,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@bulkMarkAsConfirmed',
         'controller' => 'Modules\\Store\\Http\\Controllers\\API\\SalesOrdersController@bulkMarkAsConfirmed',
-        'as' => 'api.generated::YiOhb7zuAoUeLcVM',
+        'as' => 'api.generated::54X05ZvEp03fjYOt',
         'namespace' => NULL,
         'prefix' => 'api/v1/store',
         'where' => 
@@ -10931,7 +10412,7 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:9:"dashboard";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:15:"store.dashboard";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
@@ -10977,14 +10458,14 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:15:"customers.index";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:21:"store.customers.index";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011cb0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011c70000000000000000";}}',
         'as' => 'store.customers.index',
         'namespace' => NULL,
         'prefix' => '/store/admin',
@@ -11023,14 +10504,14 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:13:"vendors.index";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"store.vendors.index";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011e60000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011e20000000000000000";}}',
         'as' => 'store.vendors.index',
         'namespace' => NULL,
         'prefix' => '/store/admin',
@@ -11069,14 +10550,14 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:14:"invoices.index";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:20:"store.invoices.index";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011e80000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011e40000000000000000";}}',
         'as' => 'store.invoices.index',
         'namespace' => NULL,
         'prefix' => '/store/admin',
@@ -11115,14 +10596,14 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"sales-orders.create";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:25:"store.sales-orders.create";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ea0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011e60000000000000000";}}',
         'as' => 'store.sales-orders.create',
         'namespace' => NULL,
         'prefix' => '/store/admin',
@@ -11161,14 +10642,14 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:18:"sales-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:24:"store.sales-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ec0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011e80000000000000000";}}',
         'as' => 'store.sales-orders.index',
         'namespace' => NULL,
         'prefix' => '/store/admin',
@@ -11207,14 +10688,14 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:21:"purchase-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:27:"store.purchase-orders.index";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ee0000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ea0000000000000000";}}',
         'as' => 'store.purchase-orders.index',
         'namespace' => NULL,
         'prefix' => '/store/admin',
@@ -11253,20 +10734,1333 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'two-factor',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:11:"items.index";}s:8:"function";s:294:"function () use ($componentName) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:17:"store.items.index";}s:8:"function";s:294:"function () use ($componentName) {
             $container = \\Illuminate\\Container\\Container::getInstance();
 
             return $container->call([
                 $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
                 \'__invoke\',
             ]);
-        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011f00000000000000000";}}',
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ec0000000000000000";}}',
         'as' => 'store.items.index',
         'namespace' => NULL,
         'prefix' => '/store/admin',
         'where' => 
         array (
         ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.users.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/users',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:api',
+        ),
+        'as' => 'api.users.index',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@index',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@index',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.users.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/users',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:api',
+        ),
+        'as' => 'api.users.store',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@store',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@store',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.users.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/users/{user}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:api',
+        ),
+        'as' => 'api.users.show',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@show',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@show',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.users.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/v1/users/{user}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:api',
+        ),
+        'as' => 'api.users.update',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@update',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@update',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'api.users.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/v1/users/{user}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:api',
+        ),
+        'as' => 'api.users.destroy',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@destroy',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api/v1',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+        2 => 'POST',
+        3 => 'PUT',
+        4 => 'PATCH',
+        5 => 'DELETE',
+        6 => 'OPTIONS',
+      ),
+      'uri' => 'users/admin/settings',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => '\\Illuminate\\Routing\\RedirectController@__invoke',
+        'controller' => '\\Illuminate\\Routing\\RedirectController',
+        'as' => 'users.',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+        'destination' => 'settings/profile',
+        'status' => 302,
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.dashboard' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/admin/dashboard',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:15:"users.dashboard";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"0000000000000d930000000000000000";}}',
+        'as' => 'users.dashboard',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.settings.profile' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/admin/settings/profile',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:16:"settings.profile";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011fd0000000000000000";}}',
+        'as' => 'users.settings.profile',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.settings.password' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/admin/settings/password',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:17:"settings.password";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000011ff0000000000000000";}}',
+        'as' => 'users.settings.password',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.settings.appearance' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/admin/settings/appearance',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"settings.appearance";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012010000000000000000";}}',
+        'as' => 'users.settings.appearance',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.settings.two-factor' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/admin/settings/two-factor',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"settings.two-factor";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012030000000000000000";}}',
+        'as' => 'users.settings.two-factor',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.settings.sessions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/admin/settings/sessions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:17:"settings.sessions";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012050000000000000000";}}',
+        'as' => 'users.settings.sessions',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.settings.users' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/admin/settings/users',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:14:"settings.users";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012070000000000000000";}}',
+        'as' => 'users.settings.users',
+        'namespace' => NULL,
+        'prefix' => '/users/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'users.index',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@index',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'users.create',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@create',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'users',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'users.store',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@store',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/{user}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'users.show',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@show',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'users/{user}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'users.edit',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@edit',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'users/{user}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'users.update',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@update',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'users.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'users/{user}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'users.destroy',
+        'uses' => 'Modules\\Users\\Http\\Controllers\\UsersController@destroy',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\UsersController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'login' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'login',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'guest',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:10:"auth.login";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012090000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'login',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'register' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'register',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'guest',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:13:"auth.register";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012120000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'register',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'password.request' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'forgot-password',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'guest',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:20:"auth.forgot-password";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012140000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'password.request',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'password.reset' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'reset-password/{token}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'guest',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:19:"auth.reset-password";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012160000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'password.reset',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'social.login' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'login/{provider}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'guest',
+        ),
+        'uses' => 'Modules\\Users\\Http\\Controllers\\Auth\\SocialAuthController@redirectToProvider',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\Auth\\SocialAuthController@redirectToProvider',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'social.login',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::FtbGOnx2uYuvLBOM' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'login/{provider}/callback',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'guest',
+        ),
+        'uses' => 'Modules\\Users\\Http\\Controllers\\Auth\\SocialAuthController@handleProviderCallback',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\Auth\\SocialAuthController@handleProviderCallback',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::FtbGOnx2uYuvLBOM',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'social.available-drivers' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'available-drivers',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'guest',
+        ),
+        'uses' => 'Modules\\Users\\Http\\Controllers\\Auth\\SocialAuthController@getAvailableDrivers',
+        'controller' => 'Modules\\Users\\Http\\Controllers\\Auth\\SocialAuthController@getAvailableDrivers',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'social.available-drivers',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'verification.notice' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'verify-email',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:17:"auth.verify-email";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000121b0000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'verification.notice',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'verification.verify' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'verify-email/{id}/{hash}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'signed',
+          3 => 'throttle:6,1',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Auth\\VerifyEmailController@__invoke',
+        'controller' => 'App\\Http\\Controllers\\Auth\\VerifyEmailController',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'verification.verify',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'password.confirm' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'confirm-password',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:21:"auth.confirm-password";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"000000000000121e0000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'password.confirm',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'two-factor-verify' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'two-factor-verify',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'has-two-factor',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:1:{s:13:"componentName";s:22:"auth.two-factor-verify";}s:8:"function";s:294:"function () use ($componentName) {
+            $container = \\Illuminate\\Container\\Container::getInstance();
+
+            return $container->call([
+                $container->make(\\Livewire\\Volt\\LivewireManager::class)->new($componentName),
+                \'__invoke\',
+            ]);
+        }";s:5:"scope";s:25:"Livewire\\Volt\\VoltManager";s:4:"this";N;s:4:"self";s:32:"00000000000012200000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'two-factor-verify',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'logout' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'logout',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Livewire\\Actions\\Logout@__invoke',
+        'controller' => 'App\\Livewire\\Actions\\Logout',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'logout',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11300,7 +12094,7 @@ app('router')->setCompiledRoutes(
     if ($request->collapsed) {
         \\session([\'mary-sidebar-collapsed\' => $request->collapsed]);
     }
-}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000011fe0000000000000000";}}',
+}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"000000000000122f0000000000000000";}}',
         'as' => 'mary.toogle-sidebar',
       ),
       'fallback' => false,
@@ -11333,7 +12127,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:135:"function (\\Illuminate\\Http\\Request $request) {
     return \\app()->make(\\config(\'mary.components.spotlight.class\'))->search($request);
-}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012000000000000000000";}}',
+}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012310000000000000000";}}',
         'as' => 'mary.spotlight',
       ),
       'fallback' => false,
@@ -11372,7 +12166,7 @@ app('router')->setCompiledRoutes(
     $url = \\Illuminate\\Support\\Facades\\Storage::disk($disk)->url($file);
 
     return [\'location\' => $url];
-}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012020000000000000000";}}',
+}";s:5:"scope";s:34:"Illuminate\\Support\\ServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012330000000000000000";}}',
         'as' => 'mary.upload',
       ),
       'fallback' => false,
@@ -11427,7 +12221,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QwDA9AvIink0Yhrh' => 
+    'generated::gnoohLEJ0a7lrOQb' => 
     array (
       'methods' => 
       array (
@@ -11445,7 +12239,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::QwDA9AvIink0Yhrh',
+        'as' => 'generated::gnoohLEJ0a7lrOQb',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11461,7 +12255,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::3CDzlcEvwjpgtFgk' => 
+    'generated::tygvQ7W4SrbyuzIm' => 
     array (
       'methods' => 
       array (
@@ -11480,7 +12274,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::3CDzlcEvwjpgtFgk',
+        'as' => 'generated::tygvQ7W4SrbyuzIm',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11496,7 +12290,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Yg2H5hZTksybDDZ8' => 
+    'generated::dGJwe2snyRlHtSV6' => 
     array (
       'methods' => 
       array (
@@ -11515,7 +12309,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Yg2H5hZTksybDDZ8',
+        'as' => 'generated::dGJwe2snyRlHtSV6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11531,7 +12325,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::FN0fFLT7gHIz0C7x' => 
+    'generated::ovQMy2zcGRnhRYYI' => 
     array (
       'methods' => 
       array (
@@ -11550,7 +12344,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::FN0fFLT7gHIz0C7x',
+        'as' => 'generated::ovQMy2zcGRnhRYYI',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11566,7 +12360,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::t947cCIUQNlKS5Bp' => 
+    'generated::wiJnRcytIG80aTdh' => 
     array (
       'methods' => 
       array (
@@ -11584,7 +12378,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::t947cCIUQNlKS5Bp',
+        'as' => 'generated::wiJnRcytIG80aTdh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11600,7 +12394,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::58Ip93Tgza5E8Z2R' => 
+    'generated::mGzMVhlS8Emk8Wdn' => 
     array (
       'methods' => 
       array (
@@ -11619,7 +12413,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::58Ip93Tgza5E8Z2R',
+        'as' => 'generated::mGzMVhlS8Emk8Wdn',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11635,7 +12429,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::YyM9Jmq5LCHyqFWv' => 
+    'generated::2QWuOn7UbuOR6MAg' => 
     array (
       'methods' => 
       array (
@@ -11653,7 +12447,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::YyM9Jmq5LCHyqFWv',
+        'as' => 'generated::2QWuOn7UbuOR6MAg',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11669,7 +12463,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::wk6bOYEMI66oqD8P' => 
+    'generated::6SFBXlfPVVa1Cm6E' => 
     array (
       'methods' => 
       array (
@@ -11687,7 +12481,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::wk6bOYEMI66oqD8P',
+        'as' => 'generated::6SFBXlfPVVa1Cm6E',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11703,7 +12497,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::AsNxUGfOk8Jx56dB' => 
+    'generated::ppYiXzvmLtFcbAnU' => 
     array (
       'methods' => 
       array (
@@ -11721,7 +12515,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::AsNxUGfOk8Jx56dB',
+        'as' => 'generated::ppYiXzvmLtFcbAnU',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11737,7 +12531,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::s5SG9KkwvXBZBxQ1' => 
+    'generated::7JxwR2NIGFoUMgIc' => 
     array (
       'methods' => 
       array (
@@ -11756,7 +12550,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::s5SG9KkwvXBZBxQ1',
+        'as' => 'generated::7JxwR2NIGFoUMgIc',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11772,7 +12566,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::nOITmQQfnOTfSNEY' => 
+    'generated::jlG8yLypZV3EgWgj' => 
     array (
       'methods' => 
       array (
@@ -11790,7 +12584,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::nOITmQQfnOTfSNEY',
+        'as' => 'generated::jlG8yLypZV3EgWgj',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11806,7 +12600,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::UYvCHNUFypzHDKll' => 
+    'generated::NMLJdRgLpvWNxUWv' => 
     array (
       'methods' => 
       array (
@@ -11825,7 +12619,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::UYvCHNUFypzHDKll',
+        'as' => 'generated::NMLJdRgLpvWNxUWv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11841,7 +12635,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Hnu2yKQqsAg4qL8K' => 
+    'generated::LwW0cQbF1vaQdGP4' => 
     array (
       'methods' => 
       array (
@@ -11859,7 +12653,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Hnu2yKQqsAg4qL8K',
+        'as' => 'generated::LwW0cQbF1vaQdGP4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11875,7 +12669,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::jKQyaaXIr48KdGcC' => 
+    'generated::jmaGdggSeI3XlrWP' => 
     array (
       'methods' => 
       array (
@@ -11894,7 +12688,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::jKQyaaXIr48KdGcC',
+        'as' => 'generated::jmaGdggSeI3XlrWP',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11910,7 +12704,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::9d6042rfvvYkqTaI' => 
+    'generated::zWS0GUAUmOp4giBL' => 
     array (
       'methods' => 
       array (
@@ -11928,7 +12722,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::9d6042rfvvYkqTaI',
+        'as' => 'generated::zWS0GUAUmOp4giBL',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11944,7 +12738,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::P2utsA8gC9063nJk' => 
+    'generated::IW9S5AR1bHWSQkKy' => 
     array (
       'methods' => 
       array (
@@ -11963,7 +12757,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::P2utsA8gC9063nJk',
+        'as' => 'generated::IW9S5AR1bHWSQkKy',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11979,7 +12773,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::AJfWCU0yK8TZyJIt' => 
+    'generated::wDTHbrzuEALkJ5Q2' => 
     array (
       'methods' => 
       array (
@@ -11997,7 +12791,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::AJfWCU0yK8TZyJIt',
+        'as' => 'generated::wDTHbrzuEALkJ5Q2',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12013,7 +12807,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BZSKS84imQNU8ey2' => 
+    'generated::GojPTCCprTEJDHEX' => 
     array (
       'methods' => 
       array (
@@ -12032,7 +12826,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::BZSKS84imQNU8ey2',
+        'as' => 'generated::GojPTCCprTEJDHEX',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12048,7 +12842,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::EwiKFwtwfe1Du94c' => 
+    'generated::TW1tAULw2Z2nDWzT' => 
     array (
       'methods' => 
       array (
@@ -12066,7 +12860,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::EwiKFwtwfe1Du94c',
+        'as' => 'generated::TW1tAULw2Z2nDWzT',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12082,7 +12876,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BjhUMIJm0umgw3aw' => 
+    'generated::fJ42sZHlmmfYmq6X' => 
     array (
       'methods' => 
       array (
@@ -12101,7 +12895,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::BjhUMIJm0umgw3aw',
+        'as' => 'generated::fJ42sZHlmmfYmq6X',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12117,7 +12911,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::oowefVs359iTO7DV' => 
+    'generated::VQkHYgw5K2L2XWI4' => 
     array (
       'methods' => 
       array (
@@ -12135,7 +12929,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::oowefVs359iTO7DV',
+        'as' => 'generated::VQkHYgw5K2L2XWI4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12151,7 +12945,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::UIjJqwG3BiqWZeEq' => 
+    'generated::UY4bsuQoW5DfQNvd' => 
     array (
       'methods' => 
       array (
@@ -12170,7 +12964,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::UIjJqwG3BiqWZeEq',
+        'as' => 'generated::UY4bsuQoW5DfQNvd',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12186,7 +12980,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XgRpwHEdZnLMmF9x' => 
+    'generated::3CcFpO4Nsrn1sbIa' => 
     array (
       'methods' => 
       array (
@@ -12204,7 +12998,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XgRpwHEdZnLMmF9x',
+        'as' => 'generated::3CcFpO4Nsrn1sbIa',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12220,7 +13014,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4nsIsOEh99wrndN1' => 
+    'generated::ycfcOR650fycID58' => 
     array (
       'methods' => 
       array (
@@ -12239,7 +13033,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4nsIsOEh99wrndN1',
+        'as' => 'generated::ycfcOR650fycID58',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12255,7 +13049,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::l2q6xvnFdvcjYqjt' => 
+    'generated::bGLFdgXSxvnVC7JN' => 
     array (
       'methods' => 
       array (
@@ -12273,7 +13067,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::l2q6xvnFdvcjYqjt',
+        'as' => 'generated::bGLFdgXSxvnVC7JN',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12289,7 +13083,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::jRqNfkURFdqHGZQH' => 
+    'generated::730mQXbHOh8mP5HQ' => 
     array (
       'methods' => 
       array (
@@ -12308,7 +13102,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::jRqNfkURFdqHGZQH',
+        'as' => 'generated::730mQXbHOh8mP5HQ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12324,7 +13118,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4fbbSS17CIzbJb8z' => 
+    'generated::DJdDhHSwIdhee4Wr' => 
     array (
       'methods' => 
       array (
@@ -12342,7 +13136,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4fbbSS17CIzbJb8z',
+        'as' => 'generated::DJdDhHSwIdhee4Wr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12358,7 +13152,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::hXWjkrCaQ58jhZRy' => 
+    'generated::V3izqP8sYGMGeEj3' => 
     array (
       'methods' => 
       array (
@@ -12377,7 +13171,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::hXWjkrCaQ58jhZRy',
+        'as' => 'generated::V3izqP8sYGMGeEj3',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12393,7 +13187,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::mjzvNIsT9BH39x6P' => 
+    'generated::5brJKG1oh4VeqnDp' => 
     array (
       'methods' => 
       array (
@@ -12411,7 +13205,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::mjzvNIsT9BH39x6P',
+        'as' => 'generated::5brJKG1oh4VeqnDp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12427,7 +13221,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::kjWt6izYURxQkhqA' => 
+    'generated::PopE7XzuAJghlqu7' => 
     array (
       'methods' => 
       array (
@@ -12446,7 +13240,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::kjWt6izYURxQkhqA',
+        'as' => 'generated::PopE7XzuAJghlqu7',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12462,7 +13256,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::clmAk3Q01D6U7fOo' => 
+    'generated::TQtEvHNBDlXrcxMI' => 
     array (
       'methods' => 
       array (
@@ -12480,7 +13274,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::clmAk3Q01D6U7fOo',
+        'as' => 'generated::TQtEvHNBDlXrcxMI',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12496,7 +13290,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::q6MB05gvS3rupZas' => 
+    'generated::3pF26iPI2vgwAJyy' => 
     array (
       'methods' => 
       array (
@@ -12515,7 +13309,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::q6MB05gvS3rupZas',
+        'as' => 'generated::3pF26iPI2vgwAJyy',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12531,7 +13325,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5dBsshExDn4A8Sgv' => 
+    'generated::Rrby0RztDedkOED7' => 
     array (
       'methods' => 
       array (
@@ -12549,7 +13343,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::5dBsshExDn4A8Sgv',
+        'as' => 'generated::Rrby0RztDedkOED7',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12565,7 +13359,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::NCxle5XGOKtWek9h' => 
+    'generated::QYnpBHMiCSyRahAV' => 
     array (
       'methods' => 
       array (
@@ -12584,7 +13378,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::NCxle5XGOKtWek9h',
+        'as' => 'generated::QYnpBHMiCSyRahAV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12600,7 +13394,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::JPXAS4isRJwDnrFg' => 
+    'generated::H0lhtqQ8aAEbF3OG' => 
     array (
       'methods' => 
       array (
@@ -12618,7 +13412,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::JPXAS4isRJwDnrFg',
+        'as' => 'generated::H0lhtqQ8aAEbF3OG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12634,7 +13428,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::oHjW3aph8nIfXKbG' => 
+    'generated::YzTAPPsylmsxG2u6' => 
     array (
       'methods' => 
       array (
@@ -12653,7 +13447,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::oHjW3aph8nIfXKbG',
+        'as' => 'generated::YzTAPPsylmsxG2u6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12669,7 +13463,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::AZQ4bYvwQOjpasR5' => 
+    'generated::juSujEQ8dpFPENkK' => 
     array (
       'methods' => 
       array (
@@ -12687,7 +13481,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::AZQ4bYvwQOjpasR5',
+        'as' => 'generated::juSujEQ8dpFPENkK',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12703,7 +13497,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::RlmRc65mXXkQNqfb' => 
+    'generated::tuwuyXmJxCfVg2dZ' => 
     array (
       'methods' => 
       array (
@@ -12722,7 +13516,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::RlmRc65mXXkQNqfb',
+        'as' => 'generated::tuwuyXmJxCfVg2dZ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12738,7 +13532,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::bDXXQPg0ladwYarW' => 
+    'generated::NyllLSUese6gTPlG' => 
     array (
       'methods' => 
       array (
@@ -12757,7 +13551,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::bDXXQPg0ladwYarW',
+        'as' => 'generated::NyllLSUese6gTPlG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12773,7 +13567,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::M9XuEF1Rwz3Wj3XF' => 
+    'generated::9QO0zlZ3qN0wWpmw' => 
     array (
       'methods' => 
       array (
@@ -12791,7 +13585,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::M9XuEF1Rwz3Wj3XF',
+        'as' => 'generated::9QO0zlZ3qN0wWpmw',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12807,7 +13601,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::K0l9daRoRCZDTm3q' => 
+    'generated::MyMaH2dSU8srLk8P' => 
     array (
       'methods' => 
       array (
@@ -12825,7 +13619,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::K0l9daRoRCZDTm3q',
+        'as' => 'generated::MyMaH2dSU8srLk8P',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12841,7 +13635,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XsmfRVZW8B3oCVtV' => 
+    'generated::UU4jr0Yr4PnZJeJb' => 
     array (
       'methods' => 
       array (
@@ -12859,7 +13653,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XsmfRVZW8B3oCVtV',
+        'as' => 'generated::UU4jr0Yr4PnZJeJb',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12875,7 +13669,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::CUCpKFJZuiUfLko5' => 
+    'generated::oIujGDQzlFwrwj1n' => 
     array (
       'methods' => 
       array (
@@ -12893,7 +13687,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::CUCpKFJZuiUfLko5',
+        'as' => 'generated::oIujGDQzlFwrwj1n',
       ),
       'fallback' => false,
       'defaults' => 
@@ -12945,7 +13739,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::KFSvVN3MUMQXOvTa' => 
+    'generated::rjZAR5BJmDkew2iJ' => 
     array (
       'methods' => 
       array (
@@ -12971,7 +13765,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
         ),
-        'as' => 'generated::KFSvVN3MUMQXOvTa',
+        'as' => 'generated::rjZAR5BJmDkew2iJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -13003,7 +13797,7 @@ app('router')->setCompiledRoutes(
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"000000000000129e0000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012cf0000000000000000";}}',
         'as' => 'storage.local',
       ),
       'fallback' => false,
@@ -13038,7 +13832,7 @@ app('router')->setCompiledRoutes(
                         \'spec\' => $generator($config),
                         \'config\' => $config,
                     ]);
-                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"000000000000129c0000000000000000";}}',
+                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012cd0000000000000000";}}',
         'as' => 'scramble.docs.ui',
         'middleware' => 
         array (
@@ -13074,7 +13868,7 @@ app('router')->setCompiledRoutes(
                     $config = \\Dedoc\\Scramble\\Scramble::getGeneratorConfig($api);
 
                     return response()->json($generator($config), options: JSON_PRETTY_PRINT);
-                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"000000000000129a0000000000000000";}}',
+                }";s:5:"scope";s:38:"Dedoc\\Scramble\\ScrambleServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000012cb0000000000000000";}}',
         'as' => 'scramble.docs.document',
         'middleware' => 
         array (

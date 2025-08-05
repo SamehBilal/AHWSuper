@@ -3,8 +3,8 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
-use Modules\Roles\Http\Middleware\HasTwoFactorSecret;
-use Modules\Roles\Http\Middleware\TwoFactorAuthenticator;
+use Modules\Users\Http\Middleware\HasTwoFactorSecret;
+use Modules\Users\Http\Middleware\TwoFactorAuthenticator;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -51,10 +51,9 @@ return Application::configure(basePath: dirname(__DIR__))
                 $segments = explode('/', $path);
                 $module = $segments[0] ?? null;
                 // List your module names here as needed
-                $modules = ['developers', 'roles', 'ahwstore', 'store'];
+                $modules = ['developers', 'users', 'store'];
                 if ($module && in_array($module, $modules)) {
-                    if ($module === 'roles') {
-                        // Exception: roles module goes to login without 'from'
+                    if ($module === 'users') {
                         return redirect()->guest(route('login'));
                     } else {
                         return redirect()->guest(route('login', ['from' => $module]));

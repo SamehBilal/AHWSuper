@@ -749,7 +749,7 @@
           'annotations' => 
           array (
             0 => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\app',
-            1 => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\Modules/AHWStore/app/Http/Controllers',
+            1 => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\Modules/Store/app/Http/Controllers',
           ),
         ),
       ),
@@ -841,7 +841,7 @@
       ),
       'constants' => 
       array (
-        'L5_SWAGGER_CONST_HOST' => 'http://localhost:8000',
+        'L5_SWAGGER_CONST_HOST' => 'https://demo.arabhardware.net',
       ),
     ),
   ),
@@ -1081,8 +1081,8 @@
     'namespace' => 'Modules',
     'stubs' => 
     array (
-      'enabled' => false,
-      'path' => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\vendor/nwidart/laravel-modules/src/Commands/stubs',
+      'enabled' => true,
+      'path' => 'C:\\Users\\sameh\\OneDrive\\Documents\\GitHub\\AHWSuper\\stubs/nwidart-stubs',
       'files' => 
       array (
         'routes/web' => 'routes/web.php',
@@ -2350,13 +2350,17 @@ XOpJf31ZgV639YT5ET04oukCAwEAAQ==
   array (
     'name' => 'Developers',
   ),
-  'roles' => 
+  'invoices' => 
   array (
-    'name' => 'Roles',
+    'name' => 'Invoices',
   ),
   'store' => 
   array (
     'name' => 'Store',
+  ),
+  'users' => 
+  array (
+    'name' => 'Users',
   ),
   'tinker' => 
   array (

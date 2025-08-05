@@ -45,7 +45,7 @@ return [
                  */
                 'annotations' => [
                     base_path('app'),
-                    base_path('Modules/AHWStore/app/Http/Controllers'),
+                    base_path('Modules/Store/app/Http/Controllers'),
                 ],
             ],
         ],
@@ -313,7 +313,7 @@ return [
          * Constants which can be used in annotations
          */
         'constants' => [
-            'L5_SWAGGER_CONST_HOST' => env('L5_SWAGGER_CONST_HOST', 'http://localhost:8000'),
+            'L5_SWAGGER_CONST_HOST' => env('L5_SWAGGER_CONST_HOST', 'https://demo.arabhardware.net'),
         ],
     ],
 ];
