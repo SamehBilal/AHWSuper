@@ -50,8 +50,6 @@ new class extends Component {
                     <x-mary-menu-item title="Roles & Permissions" icon="o-shield-exclamation"
                         link="#"  />
 
-                    <x-mary-menu-item title="Settings" icon="o-cog-8-tooth" :active="request()->is('users/admin/settings*')"
-                        link="{{ route('users.settings.profile') }}" />
                 </x-mary-menu>
 
             </div>

@@ -50,7 +50,7 @@ new #[Layout('developers::components.layouts.master', ['navbarClass' => 'bg-base
         $this->showModal = false;
         $this->dispatch('app-created');
 
-        //$this->redirectIntended(default: route('users.settings.profile', absolute: false), navigate: true);
+        //$this->redirectIntended(default: route('settings.profile', absolute: false), navigate: true);
     }
 }; ?>
 <div>

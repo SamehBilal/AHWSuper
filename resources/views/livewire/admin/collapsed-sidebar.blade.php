@@ -5,7 +5,7 @@
 
         <x-mary-popover position="right-start" offset="0">
             <x-slot:trigger>
-                <x-mary-menu-item icon="o-home" :tooltip="__('Home')" route="dashboard" link="{{ route('dashboard') }}"
+                <x-mary-menu-item icon="o-home" :tooltip="__('Home')" route="dashboard" link="{{ route('dashboard') }}" :active="request()->is('admin*')"
                     wire:navigate />
             </x-slot:trigger>
             <x-slot:content>
@@ -45,19 +45,19 @@
 
         <x-mary-popover position="right-start" offset="0">
             <x-slot:trigger>
-                <x-mary-menu-item icon="o-chart-bar" :tooltip="__('App Monitoring')" link="#" wire:navigate />
+                <x-mary-menu-item icon="o-table-cells" :tooltip="__('Ads Management')" link="#" wire:navigate />
             </x-slot:trigger>
             <x-slot:content>
-                {{ __('App Monitoring') }}
+                {{ __('Ads Management') }}
             </x-slot:content>
         </x-mary-popover>
 
         <x-mary-popover position="right-start" offset="0">
             <x-slot:trigger>
-                <x-mary-menu-item icon="o-briefcase" :tooltip="__('Ads Management')" link="#" wire:navigate />
+                <x-mary-menu-item icon="o-finger-print" :tooltip="__('HR Management')" link="#" wire:navigate />
             </x-slot:trigger>
             <x-slot:content>
-                {{ __('Ads Management') }}
+                {{ __('HR Management') }}
             </x-slot:content>
         </x-mary-popover>
 
@@ -87,12 +87,38 @@
                 {{ __('Developers') }}
             </x-slot:content>
         </x-mary-popover>
+         <x-mary-popover position="right-start" offset="0">
+            <x-slot:trigger>
+                <x-mary-menu-item icon="o-photo" :tooltip="__('Media')" link="#" wire:navigate />
+            </x-slot:trigger>
+            <x-slot:content>
+                {{ __('Media') }}
+            </x-slot:content>
+        </x-mary-popover>
+        {{--  <x-mary-popover position="right-start" offset="0">
+            <x-slot:trigger>
+                <x-mary-menu-item icon="o-paint-brush" :tooltip="__('Fun Area')" link="#" wire:navigate />
+            </x-slot:trigger>
+            <x-slot:content>
+                {{ __('Fun Area') }}
+            </x-slot:content>
+        </x-mary-popover> --}}
 
     </x-mary-menu>
 
     <x-mary-menu activate-by-route vertical
         class="justify-items-center space-y-2 {{-- bg-base-100 --}} {{-- border-base-content/10 border-r-[length:var(--border)] --}}">
         {{-- <livewire:theme /> --}}
+
+        <x-mary-popover position="right-start" offset="0">
+            <x-slot:trigger>
+                <x-mary-menu-item icon="o-chart-pie" :tooltip="__('App Monitoring')" link="#" wire:navigate />
+            </x-slot:trigger>
+            <x-slot:content>
+                {{ __('App Monitoring') }}
+            </x-slot:content>
+        </x-mary-popover>
+
         <x-mary-popover position="right-start" offset="0">
             <x-slot:trigger>
                 <x-mary-menu-item icon="o-book-open" link="/api/docs" no-wire-navigate />
@@ -114,8 +140,8 @@
 
             <x-mary-menu-separator />
 
-            <x-mary-menu-item icon="o-cog-8-tooth" title="Profile" route="users.settings.profile"
-                link="{{ route('users.settings.profile') }}" wire:navigate />
+            <x-mary-menu-item icon="o-cog-8-tooth" title="Profile" route="settings.profile"
+                link="{{ route('settings.profile') }}" wire:navigate />
 
             <x-mary-menu-item icon="o-arrow-right-start-on-rectangle" title="{{ __('Log Out') }}" class="w-full"
                 @click.prevent="document.getElementById('logout').submit();" />

@@ -2,5 +2,6 @@
     "Developers": true,
     "Store": true,
     "Users": true,
-    "Invoices": true
+    "Invoices": true,
+    "Ads": true
 }

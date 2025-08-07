@@ -15,7 +15,7 @@ class Spotlight
     public function search(Request $request)
     {
         // Guests can not search
-        if(! Auth::user()) {
+        if (! Auth::user()) {
             return [];
         }
 
@@ -29,17 +29,19 @@ class Spotlight
     public function users(string $search = '')
     {
         return User::query()
-                ->where('name', 'like', "%$search%")
-                ->take(5)
-                ->get()
-                ->map(function (User $user) {
-                    return [
-                        'avatar' => $user->profile_picture ?? "https://avatar.iran.liara.run/public",
-                        'name' => $user->name,
-                        'description' => $user->email,
-                        'link' => "/users/{$user->id}"
-                    ];
-                });
+            ->where(function ($query) use ($search) {
+                $query->where('name', 'ilike', "%$search%")
+                    ->orWhere('email', 'ilike', "%$search%");
+            })->take(5)
+            ->get()
+            ->map(function (User $user) {
+                return [
+                    'avatar' => $user->profile_picture ?? "https://avatar.iran.liara.run/public",
+                    'name' => $user->name,
+                    'description' => $user->email,
+                    'link' => "/users/{$user->id}"
+                ];
+            });
     }
 
     public function applications(string $search = '')
@@ -47,16 +49,16 @@ class Spotlight
         $user = Auth::user();
         $clients = $user->oauthApps()->get();
         return $clients
-                ->filter(fn($client) => str($client->name)->contains($search, true))
-                ->take(5)
-                ->map(function ($client,$icon) {
-                    return [
-                        'avatar'        => asset('app.webp'),
-                        'name'          => $client->name,
-                        'description'   => $client->id,
-                        'link'          => route('developers.apps.edit', $client->id),
-                    ];
-                });
+            ->filter(fn($client) => str($client->name)->contains($search, true))
+            ->take(5)
+            ->map(function ($client, $icon) {
+                return [
+                    'avatar'        => asset('app.webp'),
+                    'name'          => $client->name,
+                    'description'   => $client->id,
+                    'link'          => route('developers.apps.edit', $client->id),
+                ];
+            });
     }
 
     public function items(string $search = '')
@@ -65,13 +67,13 @@ class Spotlight
             $response = $this->zohoRequest('items');
             $data = $response->json();
             return $data['items']->map(function ($item) {
-                    return [
-                        'avatar' => $item->profile_picture ?? "https://avatar.iran.liara.run/public",
-                        'name' => $item->name,
-                        'description' => $item->email,
-                        'link' => "/users/{$item->id}"
-                    ];
-                });
+                return [
+                    'avatar' => $item->profile_picture ?? "https://avatar.iran.liara.run/public",
+                    'name' => $item->name,
+                    'description' => $item->email,
+                    'link' => "/users/{$item->id}"
+                ];
+            });
         } catch (Exception $e) {
             return response()->json(['error' => 'Failed to fetch items: ' . $e->getMessage()], 500);
         }

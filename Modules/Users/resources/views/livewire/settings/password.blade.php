@@ -8,7 +8,7 @@ use Livewire\Volt\Component;
 use Mary\Traits\Toast;
 use Livewire\Attributes\Layout;
 
-new #[Layout('users::components.layouts.admin', ['pageTitle' => 'Arabhardware | Users Management'])] class extends Component {
+new #[Layout('components.layouts.app', ['pageTitle' => 'Arabhardware | Users Management'])] class extends Component {
     use Toast;
 
     public string $current_password = '';
@@ -38,7 +38,7 @@ new #[Layout('users::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
         $this->success('Password updated successfully!', position:'bottom-right');
         $this->dispatch('password-updated');
 
-        $this->redirectIntended(default: route('users.settings.profile', absolute: false), navigate: true);
+        $this->redirectIntended(default: route('settings.profile', absolute: false), navigate: true);
     }
 }; ?>
 

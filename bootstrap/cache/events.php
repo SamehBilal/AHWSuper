@@ -1,4 +1,7 @@
 <?php return array (
+  'Modules\\Ads\\Providers\\EventServiceProvider' => 
+  array (
+  ),
   'Modules\\Developers\\Providers\\EventServiceProvider' => 
   array (
   ),

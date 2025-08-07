@@ -324,24 +324,30 @@
                 <label for="item-0">2000</label>
                 <h2>2000</h2>
                 <p>
-                • PlayStation 2 launch revolutionizes gaming
-                • Nvidia GeForce 256 "world's first GPU"
-                • AMD Athlon processors debut
-                • USB 2.0 standard introduced
-                • Windows ME release
-                • Pentium 4 architecture
-                • The Sims becomes cultural phenomenon
+                • PlayStation 2 launch revolutionizes gaming <br>
+                • Nvidia GeForce 256 "world's first GPU" <br>
+                • AMD Athlon processors debut <br>
+                • USB 2.0 standard introduced <br>
+                • Windows ME release <br>
+                • Pentium 4 architecture <br>
+                • The Sims becomes cultural phenomenon <br>
                 • Counter-Strike mod gains popularity</p>
             </li>
             <li style="--i: 1;">
                 <input type="radio" id="item-1" name="gallery-item">
                 <label for="item-1">2001</label>
                 <h2>2001</h2>
-                <p>Microsoft Xbox enters console market • GameCube launches with innovative design • Game Boy Advance
-                    portable gaming • Windows XP changes computing • GeForce 3 introduces programmable shaders • Halo:
-                    Combat Evolved defines FPS • Grand Theft Auto: Vice City • iPod revolutionizes media • Pentium 4
-                    expands
-                    market reach</p>
+                <p>
+                    • Microsoft Xbox enters console market <br>
+                    • GameCube launches with innovative design <br>
+                    • Game Boy Advance portable gaming <br>
+                    • Windows XP changes computing <br>
+                    • GeForce 3 introduces programmable shaders <br>
+                    • Halo: Combat Evolved defines FPS <br>
+                    • Grand Theft Auto: Vice City <br>
+                    • iPod revolutionizes media <br>
+                    • Pentium 4 expands market reach
+                </p>
             </li>
             <li style="--i: 2;">
                 <input type="radio" id="item-2" name="gallery-item">

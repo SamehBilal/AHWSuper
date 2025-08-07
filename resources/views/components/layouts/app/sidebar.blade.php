@@ -44,8 +44,8 @@
 
                 <x-mary-menu-separator />
 
-                <x-mary-menu-item icon="o-cog-8-tooth" title="Profile" route="users.settings.profile"
-                    link="{{ route('users.settings.profile') }}" wire:navigate />
+                <x-mary-menu-item icon="o-cog-8-tooth" title="Profile" route="settings.profile"
+                    link="{{ route('settings.profile') }}" wire:navigate />
 
                 <x-mary-menu-item icon="o-arrow-right-start-on-rectangle" title="{{ __('Log Out') }}" class="w-full"
                     @click.prevent="document.getElementById('logout').submit();" />
