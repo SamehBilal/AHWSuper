@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark" data-theme="dark">
+{{-- This file is part of the Arabhardware Web App --}}
+{{-- It is used as a layout for the admin section of the Invoices module --}}
 
 <head>
     @include('invoices::livewire.invoices.partials.admin.head', ['title' => $pageTitle ?? 'Admin Dashboard | Arabhardware'])

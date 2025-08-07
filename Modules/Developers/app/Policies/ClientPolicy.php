@@ -5,7 +5,7 @@ namespace Modules\Developers\Policies;
 use Modules\Developers\Models\Client as OAuthApp;
 use App\Models\User;
 
-class OAuthAppPolicy
+class ClientPolicy
 {
     public function view(User $user, OAuthApp $app): bool
     {

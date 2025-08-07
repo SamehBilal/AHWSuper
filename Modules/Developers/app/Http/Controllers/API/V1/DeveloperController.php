@@ -8,7 +8,7 @@ use Modules\Developers\Models\App;
 use Modules\Developers\Models\ApiKey;
 use Modules\Developers\Services\AppService as DeveloperAppService;
 
-class TesterApiController extends Controller
+class DeveloperController extends Controller
 {
     protected $appService;
 
