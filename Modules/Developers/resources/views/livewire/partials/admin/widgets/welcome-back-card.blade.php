@@ -6,13 +6,15 @@ new class extends Component {
     public $user;
     public $author;
     public $message;
-    public $users;
+    public $model = [];
+    public $link = [];
 
-    public function mount()
+    public function mount($model=['name' => 'User', 'count' => 1], $link=null)
     {
+        $this->model = $model;
+        $this->link = $link;
         [$this->message, $this->author] = str(Illuminate\Foundation\Inspiring::quotes()->random())->explode('-');
         $this->user = Auth::user();
-        $this->users = \App\Models\User::count();
     }
 }; ?>
 
@@ -42,21 +44,32 @@ new class extends Component {
             <!-- Tasks -->
             <div class="text-center w-2/3">
                 <div class="flex items-baseline justify-center space-x-2">
-                    <p class="text-4xl font-bold">{{ $users }}</p>
-                    <p class="text-xl">User(s)</p>
+                    <p class="text-4xl font-bold">{{ $model['count'] }}</p>
+                    <p class="text-xl">{{ $model['name'] }}(s)</p>
                 </div>
-                <p class="text-sm opacity-80">Are currently in your system</p>
+                <p class="text-sm opacity-80">Are currently in our system</p>
             </div>
 
-            <x-mary-card class="bg-primary text-neutral-content w-2/3"
-                title="Tip of today!">
-                <blockquote>"{{ trim($message) }}"</blockquote>
-                <p class="mt-1 font-semibold">{{ trim($author) }}</p>
+            @if(@$link)
+                <!-- CTA -->
+                <x-mary-card class=" bg-primary text-neutral-content w-2/3">
+                    <p>{{ $link['data'] }}</p>
+                    <a href="{{ $link['route'] }}" class="link font-bold">Learn More</a>
+                    <div class="absolute bottom-2 right-2 text-neutral-content">
+                        <x-mary-icon name="o-document" class="w-7 h-7  opacity-20" />
+                    </div>
+                </x-mary-card>
+            @else
+                <x-mary-card class="bg-primary text-neutral-content w-2/3"
+                    title="Tip of today!">
+                    <blockquote>"{{ trim($message) }}"</blockquote>
+                    <p class="mt-1 font-semibold">{{ trim($author) }}</p>
 
-                <div class="absolute bottom-2 right-2 text-neutral-content">
-                    <x-mary-icon name="o-trophy" class="w-7 h-7 opacity-20" />
-                </div>
-            </x-mary-card>
+                    <div class="absolute bottom-2 right-2 text-neutral-content">
+                        <x-mary-icon name="o-trophy" class="w-7 h-7 opacity-20" />
+                    </div>
+                </x-mary-card>
+            @endif
         </div>
     </div>
 </div>

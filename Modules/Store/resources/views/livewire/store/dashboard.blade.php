@@ -75,7 +75,7 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
             ],
         ];
 
-        $this->loadDashboardData();
+        //$this->loadDashboardData();
     }
 
     public function updatedSelectedDateRange()
@@ -500,7 +500,7 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
 
 
     <!-- Date Range Filter -->
-    <div class="flex justify-between items-center mb-6">
+   {{--  <div class="flex justify-between items-center mb-6">
         <div class="flex items-center gap-4">
             <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Date Range:</label>
             <x-mary-select wire:model.live="selectedDateRange" :options="$dateRanges" class="w-48" />
@@ -523,14 +523,14 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
 
         <x-mary-stat title="Low Stock Alert" :value="$dashboardData['inventory_summary']['low_stock_items'] ?? 0" description="Items need reorder"
             icon="o-exclamation-triangle" class="shadow border" />
-    </div>
+    </div> --}}
 
 
     <!-- Sales Pipeline -->
     <div class="grid grid-cols-8 gap-x-8 gap-y-4 mt-5">
 
 
-        <div class="col-span-3">
+        {{-- <div class="col-span-3">
             <ul class="list bg-base-100 rounded-box shadow-md">
 
                 <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Recent Orders</li>
@@ -628,9 +628,6 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
                     <div class="stat-title">To be Packed</div>
                     <div class="stat-value">{{ $dashboardData['sales_activity']['to_be_packed'] ?? 0 }}</div>
                     <div class="stat-desc">21% more than last month</div>
-                    {{-- <div class="stat-actions">
-                        <button class="btn btn-xs btn-success">Add funds</button>
-                    </div> --}}
                 </div>
                 <div class="stat">
                     <div class="stat-figure text-primary">
@@ -639,9 +636,6 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
                     <div class="stat-title">To be Shipped</div>
                     <div class="stat-value"> {{ $dashboardData['sales_activity']['to_be_shipped'] ?? 0 }}</div>
                     <div class="stat-desc">↗︎ 400 (22%)</div>
-                    {{-- <div class="stat-actions">
-                        <button class="btn btn-xs btn-success">Add funds</button>
-                    </div> --}}
                 </div>
 
                 <div class="stat">
@@ -653,10 +647,6 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
                     <div class="stat-title">To be Delivered</div>
                     <div class="stat-value">{{ $dashboardData['sales_activity']['to_be_delivered'] ?? 0 }}</div>
                     <div class="stat-desc">↘︎ 90 (14%)</div>
-                    {{--  <div class="stat-actions">
-                        <button class="btn btn-xs">Withdrawal</button>
-                        <button class="btn btn-xs">Deposit</button>
-                    </div> --}}
                 </div>
 
                 <div class="stat">
@@ -666,9 +656,6 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
                     <div class="stat-title">To be Invoiced</div>
                     <div class="stat-value">{{ $dashboardData['sales_activity']['to_be_invoiced'] ?? 0 }}</div>
                     <div class="stat-desc">21% more than last month</div>
-                    {{-- <div class="stat-actions">
-                        <button class="btn btn-xs btn-success">Add funds</button>
-                    </div> --}}
                 </div>
 
                 <div class="stat">
@@ -681,10 +668,6 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
                     <div class="stat-value"> {{ $dashboardData['inventory_summary']['quantity_to_be_received'] ?? 0 }}
                     </div>
                     <div class="stat-desc">Jan 1st - Feb 1st</div>
-                    {{-- <div class="stat-actions">
-                        <button class="btn btn-xs">Withdrawal</button>
-                        <button class="btn btn-xs">Deposit</button>
-                    </div> --}}
                 </div>
             </div>
         </div>
@@ -759,7 +742,7 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
                     @endforelse
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         {{-- <div class="col-span-2">
             <calendar-date class="cally border   shadow-lg rounded-box">
@@ -777,7 +760,7 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
 
 
         <!-- Low Stock Items -->
-        @if (count($dashboardData['low_stock_items']) > 0)
+       {{--  @if (count($dashboardData['low_stock_items']) > 0)
             <div class="col-span-2 card bg-base-100 shadow-xl border border-base-300">
                 <div class="card-body">
                     <div class="flex items-center justify-between mb-6">
@@ -815,12 +798,12 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
                     </div>
                 </div>
             </div>
-        @endif
+        @endif --}}
 
     </div>
 
 
-    @if ($loading)
+   {{--  @if ($loading)
         <div class="flex items-center justify-center h-64">
             <div class="loading loading-spinner loading-lg text-primary"></div>
         </div>
@@ -831,5 +814,5 @@ new #[Layout('store::components.layouts.admin', ['pageTitle' => 'Arabhardware | 
 
             </div>
         </div>
-    @endif
+    @endif --}}
 </div>

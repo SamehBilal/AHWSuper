@@ -1,17 +1,19 @@
 <?php return array (
   'providers' => 
   array (
-    0 => 'Modules\\Developers\\Providers\\DevelopersServiceProvider',
-    1 => 'Modules\\Invoices\\Providers\\InvoicesServiceProvider',
-    2 => 'Modules\\Store\\Providers\\StoreServiceProvider',
-    3 => 'Modules\\Users\\Providers\\UsersServiceProvider',
+    0 => 'Modules\\Ads\\Providers\\AdsServiceProvider',
+    1 => 'Modules\\Developers\\Providers\\DevelopersServiceProvider',
+    2 => 'Modules\\Invoices\\Providers\\InvoicesServiceProvider',
+    3 => 'Modules\\Store\\Providers\\StoreServiceProvider',
+    4 => 'Modules\\Users\\Providers\\UsersServiceProvider',
   ),
   'eager' => 
   array (
-    0 => 'Modules\\Developers\\Providers\\DevelopersServiceProvider',
-    1 => 'Modules\\Invoices\\Providers\\InvoicesServiceProvider',
-    2 => 'Modules\\Store\\Providers\\StoreServiceProvider',
-    3 => 'Modules\\Users\\Providers\\UsersServiceProvider',
+    0 => 'Modules\\Ads\\Providers\\AdsServiceProvider',
+    1 => 'Modules\\Developers\\Providers\\DevelopersServiceProvider',
+    2 => 'Modules\\Invoices\\Providers\\InvoicesServiceProvider',
+    3 => 'Modules\\Store\\Providers\\StoreServiceProvider',
+    4 => 'Modules\\Users\\Providers\\UsersServiceProvider',
   ),
   'deferred' => 
   array (

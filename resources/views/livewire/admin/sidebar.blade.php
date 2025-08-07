@@ -45,6 +45,10 @@ new class extends Component {
                     <x-mary-menu-item title="Dashboard" icon="o-home" link="{{ route('dashboard') }}"
                         route="dashboard" />
 
+
+                    <x-mary-menu-item title="Settings" icon="o-cog-8-tooth" :active="request()->is('settings*')"
+                        link="{{ route('settings.profile') }}" />
+
                 </x-mary-menu>
 
             </div>

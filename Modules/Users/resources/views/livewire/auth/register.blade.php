@@ -70,7 +70,7 @@ new #[Layout('users::components.layouts.auth')] class extends Component {
         if ($this->from == 'developers'){
             $this->redirectIntended(default: route('developers.apps', absolute: false), navigate: false);
         } else {
-            $this->redirectIntended(route('store.dashboard', absolute: false), navigate: false);
+            $this->redirectIntended(route('dashboard', absolute: false), navigate: true);
         }
     }
 }; ?>

@@ -52,13 +52,14 @@ new class extends Component {
 
     public function setTheme($theme)
     {
-        $this->selectedTheme = "$theme";
+         $this->selectedTheme = $theme; // Remove extra quotes here
         //$this->themeModal = false;
 
-        // Apply theme and save to localStorage immediately
+        // Apply theme and save to localStorage with quotes
         $this->js("
             document.documentElement.setAttribute('data-theme', '$theme');
-            localStorage.setItem('mary-theme', '$theme');
+            /* document.body.setAttribute('data-theme', '$theme'); */
+            localStorage.setItem('mary-theme', '\"$theme\"');
         ");
     }
 
@@ -73,23 +74,11 @@ new class extends Component {
     }
 }; ?>
 
-<div x-data="{
-    initTheme() {
-            // Get theme from localStorage or default to light
-            const savedTheme = localStorage.getItem('mary-theme') || 'light';
-            this.applyTheme(savedTheme);
-            $wire.selectedTheme = savedTheme;
-        },
-        applyTheme(theme) {
-            // Apply theme to the entire document
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('mary-theme', theme);
-        }
-}" x-init="initTheme()">
+<div >
 
     <!-- Keep modal INSIDE the component - not pushed -->
     <x-mary-modal wire:model="themeModal" title="{{ __('Change Theme') }}"
-        subtitle="{{ __('Select a theme for your app appearance.') }}" class="z-[9999]">
+        subtitle="{{ __('Select a theme for your app appearance.') }}" class="z-[9999]" class="backdrop-blur">
         <div class="py-4 space-y-4">
             <div class="grid grid-cols-3 gap-4">
                 @foreach ($themes as $themeKey => $themeData)
@@ -113,15 +102,4 @@ new class extends Component {
     </x-mary-modal>
 
     <x-mary-button icon="o-swatch" class="btn btn-circle btn-ghost !w-8 !rounded-lg" @click="$wire.themeModal = true" />
-
-    {{-- <x-mary-popover position="right-start" offset="0">
-        <x-slot:trigger>
-            <x-mary-menu-item icon="o-swatch" @click="$wire.themeModal = true" />
-            <x-mary-button icon="o-swatch" class="btn btn-circle btn-ghost !w-8 !rounded-lg" @click="$wire.themeModal = true" />
-        </x-slot:trigger>
-        <x-slot:content>
-            <div class="grid place-content-center border-t border-base-300">{{ __('Theme') }}</div>
-        </x-slot:content>
-    </x-mary-popover> --}}
-    {{-- <x-mary-theme-toggle class="hidden" /> --}}
 </div>

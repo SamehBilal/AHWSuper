@@ -4,7 +4,7 @@ use Livewire\Volt\Component;
 use Mary\Traits\Toast;
 use Livewire\Attributes\Layout;
 
-new #[Layout('users::components.layouts.admin', ['pageTitle' => 'Arabhardware | Users Management'])] class extends Component {
+new #[Layout('components.layouts.app', ['pageTitle' => 'Arabhardware | Users Management'])] class extends Component {
     use Toast;
 
     public $sessions = [];

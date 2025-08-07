@@ -11,7 +11,7 @@ new class extends Component {
     }
 }; ?>
 
-<div x-data="{ active: 'dashboard' }">
+<div>
 
     <x-slot:sidebar drawer="main-drawer" {{-- collapsible --}}
         class="flex bg-base-100 border-base-content/10 border-r-[length:var(--border)] ">
@@ -23,7 +23,7 @@ new class extends Component {
 
             <div class="w-full">
 
-                <x-mary-list-item :item="['title' => 'Create App', 'subtitle' => 'Create new app']" value="title" sub-value="subtitle" no-separator no-hover
+                <x-mary-list-item :item="['title' => 'Create App', 'subtitle' => 'New app']" value="title" sub-value="subtitle" no-separator no-hover
                     class="pt-2 cursor-pointer">
                     <x-slot:avatar>
                         {{-- <x-mary-avatar :image="asset('new2.webp')" class="!w-10 !rounded-lg" alt="My image" /> --}}
